@@ -13,9 +13,12 @@
           @mouseover="hoverHomeTeam(fixture)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'home')"
-        >
-          <h2>{{ fixture.home_team }}</h2>
-          <img :src="fixture.home_logo" :alt="fixture.home_team" />
+          >
+          <p :class="['status', {statusHiddenHome: !fixture.result}] ">{{fixture.result === "home" ? 'V': fixture.result === "draw"? 'E': fixture.result === "away" ?'D': ''}}</p>
+          <div>
+            <h2>{{ fixture.home_team }}</h2>
+            <img :src="fixture.home_logo" :alt="fixture.home_team" />
+          </div>
         </div>
         <h2
           :class="['draw', { homeWinning: fixture.homeTeamWinning },{homeWon: fixture.result === 'home'}, { homeLosing: fixture.homeTeamLosing },{homeLost: fixture.result==='away'}, {drew: fixture.result === 'draw'}]"
@@ -31,8 +34,11 @@
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'away')"
         >
-          <img :src="fixture.away_logo" :alt="fixture.away_team" />
-          <h2>{{ fixture.away_team }}</h2>
+          <div>
+            <img :src="fixture.away_logo" :alt="fixture.away_team" />
+            <h2>{{ fixture.away_team }}</h2>
+          </div>
+          <p :class="['status', {statusHiddenAway: !fixture.result}] ">{{fixture.result === "away" ? 'V': fixture.result === "draw"? 'E': fixture.result === "home" ?'D': ''}}</p>
         </div>
       </div>
     </div>
@@ -94,32 +100,28 @@ export default defineComponent({
       this.$emit("winnerSelected", fixture)
     },
     hoverHomeTeam(fixture: IFixtures) {
-      if (!fixture.result) {
         fixture.homeTeamWinning = true;
         fixture.awayTeamLosing = true;
-      }
     },
     hoverAwayTeam(fixture: IFixtures) {
-      if (!fixture.result) {
         fixture.awayTeamWinning = true;
         fixture.homeTeamLosing = true;
         
-      }
 
     },
     hoverDraw(fixture: IFixtures) {
-      if (!fixture.result) {
         fixture.drawing = true;
-      }
+        fixture.homeTeamWinning = false;
+        fixture.homeTeamLosing = false;
+        fixture.awayTeamWinning = false;
+        fixture.awayTeamLosing = false;
     },
     resetStyles(fixture: IFixtures) {
-      if (!fixture.result) {
         fixture.drawing = false;
         fixture.homeTeamWinning = false;
         fixture.homeTeamLosing = false;
         fixture.awayTeamWinning = false;
         fixture.awayTeamLosing = false;
-      }
     },
   },
   computed: {
@@ -160,18 +162,42 @@ export default defineComponent({
 .fixtureMatches div {
   font-size: 1rem;
   display: flex;
-  min-width: 200px;
-  padding: 18px 0;
-  text-align: center;
   transition: 0.5s;
 }
-.winning {
-  cursor: pointer;
-  background-color: #00ff0088;
+.fixtureMatches {
+  display: flex;
+  justify-content: center;
 }
-.losing {
-  cursor: pointer;
-  background-color: #ff000088;
+.homeTeam{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.awayTeam{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.status{
+  color: gray;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  transform: translateX(0px);
+  transition: .3s;
+}
+.statusHiddenHome{
+  transform: translateX(-20px);
+}
+.statusHiddenAway{
+  transform: translateX(20px);
+}
+  .draw {
+  padding: 18px;
+  transition: --myColor1 0.5s, --myColor2 0.5s;
+  background: linear-gradient(120deg, var(--myColor1)50%, var(--myColor2)50%);
 }
 .winner{
   cursor: pointer;
@@ -180,32 +206,6 @@ export default defineComponent({
 .loser{
   cursor: pointer;
   background-color: #8a000088;
-}
-.fixtureMatches {
-  display: flex;
-  justify-content: center;
-}
-.homeTeam {
-  display: flex;
-  justify-content: end;
-}
-.homeTeam:hover,
-.awayTeam:hover {
-  cursor: pointer;
-  background-color: #00ff0088;
-}
-.draw {
-  padding: 18px;
-  transition: --myColor1 0.5s, --myColor2 0.5s;
-  background: linear-gradient(120deg, var(--myColor1)50%, var(--myColor2)50%);
-}
-.homeWinning {
-  --myColor1: #00ff0088;
-  --myColor2: #ff000088;
-}
-.homeLosing {
-  --myColor1: #ff000088;
-  --myColor2: #00ff0088;
 }
 .homeWon {
   --myColor1: #008f0088;
@@ -229,5 +229,21 @@ export default defineComponent({
   --myColor1: #eeff0088;
   --myColor2: #eeff0088;
   
+}
+.winning {
+  cursor: pointer;
+  background-color: #00ff0088;  
+}
+.losing {
+  cursor: pointer;
+  background-color: #ff000088;
+}
+.homeWinning {
+  --myColor1: #00ff0088;
+  --myColor2: #ff000088;
+}
+.homeLosing {
+  --myColor1: #ff000088;
+  --myColor2: #00ff0088;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="homeView">
     <h1 v-if="error">{{ error }}</h1>
-    <h1 v-if="loading">Carregando</h1>
+    <LoadingContainer v-if="loading" />
     <div class="mainContainer" v-else>
       <ChampionshipTableVue :table="displayTable" :chancesTable="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" />
       <FixturesContainerVue :fixtures="fixtures" @winnerSelected="updateFixtures" />
@@ -12,6 +12,7 @@
 <script lang="ts">
 import ChampionshipTableVue from "@/components/ChampionshipTable.vue";
 import FixturesContainerVue from "@/components/FixturesContainer.vue";
+import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
@@ -46,12 +47,12 @@ export default {
       calculating: true,
       error: "",
       chancesTable: {} as IPositionChances,
-      numOutcomes: 5000,
+      numOutcomes: 50000,
     };
   },
   watch: {
     displayTable() {
-      console.log("ads")
+      this.updateWinnersTablePositions()
       this.calculateChances();
     },
   },
@@ -78,8 +79,8 @@ export default {
     },
     updateWinnersTablePositions() {
       const winnersStore = useWinnersStore();
-      const libertadoresSpot = this.table.find((team) => team.team_name === "Fluminense");
-      const copaDoBrasilSpot = this.table.find((team) => team.team_name === "Sao Paulo");
+      const libertadoresSpot = this.displayTable.find((team) => team.team_name === "Fluminense");
+      const copaDoBrasilSpot = this.displayTable.find((team) => team.team_name === "Sao Paulo");
       winnersStore.updateWinnersTablePosition(libertadoresSpot!.position, copaDoBrasilSpot!.position);
       winnersStore.libertadoresSpots();
     },
@@ -102,21 +103,20 @@ export default {
       const updatedFixtures = this.fixtures.filter((fixture) => !fixture.result);
       const params = {type:'randomizeOutcome', payload: [JSON.stringify(updatedFixtures), JSON.stringify(this.displayTable), JSON.stringify(winnersStore),this.numOutcomes, false]}
       worker.postMessage(params);
-      // this.chancesTable = await worker.randomizeOutcome(updatedFixtures, this.displayTable, this.numOutcomes, false);
-      console.log(worker)
       worker.onmessage = (message)=>{
         this.chancesTable=message.data
+        this.calculating = false;
       }
 
-      this.calculating = false;
     },
   },
-  components: { ChampionshipTableVue, FixturesContainerVue },
+  components: { ChampionshipTableVue, FixturesContainerVue, LoadingContainer },
 };
 </script>
 
 <style scoped>
 .mainContainer {
+  margin-top: 10px;
   display: flex;
 }
 .homeView {

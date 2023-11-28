@@ -2,8 +2,6 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import type { IWinnersStore } from "@/interfaces/IWinnersStore";
-import { useWinnersStore } from "@/stores/libertadoresSpot";
-import type { Store } from "pinia";
 
 interface Score {
   [team: string]: number;
@@ -40,8 +38,10 @@ export function updateTable(table: ITable[], fixtures: IFixtures[]) {
     standings.sort((a, b) => {
       if (a.points !== b.points) {
         return b.points - a.points;
-      } else {
+      } else if(a.wins !== b.wins) {
         return b.wins - a.wins;
+      } else {
+        return b.goal_difference - a.goal_difference;
       }
     });
 
@@ -74,8 +74,6 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
 }
 
 export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[], store: IWinnersStore,numOutcomes: number, weighted: boolean): IPositionChances {
-  console.log("store");
-  // const winnersStore = useWinnersStore();
   const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy

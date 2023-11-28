@@ -47,17 +47,17 @@ export default {
 
 <style>
 .tableContainer {
+  border: 1px solid var(--brasileiraoSilver);  
   display: flex;
   max-width: 100vw;
 }
 .teamTable {
   border-collapse: collapse;
-  margin-top: 20px;
 }
 .teamTable tr {
   /* height: 50px; */
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid var(--brasileiraoSilver);
+  border-top: 1px solid var(--brasileiraoSilver);
 }
 
 .teamTable th,
@@ -67,7 +67,7 @@ export default {
 }
 
 .teamTable th {
-  background-color: #f2f2f2;
+  background-color: var(--brasileiraoSilver);
   table-layout: fixed;
 }
 .teamName {
