@@ -9,7 +9,9 @@
         <th>Rebaixamento</th>
       </tr>
     </thead>
-    <td v-if="calculating" colspan="4" class="calculating">Calculando</td>
+    <td v-if="calculating" colspan="4" class="calculating">
+      <h1><RefreshIcon width="25" /> Calculando</h1>
+    </td>
     <tbody v-if="!calculating">
       <tr
         v-for="(team, index) in table"
@@ -48,11 +50,11 @@ import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import { useWinnersStore } from "@/stores/libertadoresSpot";
 import { defineComponent, type PropType } from "vue";
+import RefreshIcon from "./icons/RefreshIcon.vue";
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
-
     return { winnersStore };
   },
   props: {
@@ -72,11 +74,19 @@ export default defineComponent({
       type: Boolean,
     },
   },
+  components: { RefreshIcon },
 });
 </script>
 
 <style scoped>
 .calculating {
-  background: cyan;
+  background: var(--brasileiraoBlue);
+  color: white;
+}
+.calculating h1{
+  position: fixed;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-family:"Playfair Display", Arial, Helvetica, sans-serif;
 }
 </style>

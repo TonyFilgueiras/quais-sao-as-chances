@@ -47,7 +47,7 @@ export default defineComponent({
   transform: translate(-50%, -50%);
   background-color: var(--brasileiraoBlue);
   color: white;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 4px;
   box-shadow: 0px 0px 1000px 100px black;
   transition: 0.3s;

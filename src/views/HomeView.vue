@@ -118,9 +118,6 @@ export default {
 .mainContainer {
   margin-top: 10px;
   display: flex;
-}
-.homeView {
-  width: fit-content;
-  margin: auto;
+  justify-content: space-around;
 }
 </style>

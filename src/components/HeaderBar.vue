@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import AboutIcon from "./AboutIcon.vue";
+import AboutIcon from "./icons/AboutIcon.vue";
 import AboutModel from "./AboutModel.vue";
 // import MenuIcon from './MenuIcon.vue';
 

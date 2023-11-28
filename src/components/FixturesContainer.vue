@@ -1,27 +1,43 @@
 <template>
   <div class="fixturesContainer">
     <nav class="fixturesNavigation">
-      <button @click="handleFixturesScroll(0)">esquerda</button>
+      <ArrowIconVue @click="handleFixturesScroll(0)" width="40" color="var(--brasileiraoSilver)" :right="false" />
       Rodada: {{ roundDisplay }}
-      <button @click="handleFixturesScroll(1)">direita</button>
+      <ArrowIconVue @click="handleFixturesScroll(1)" width="40" color="var(--brasileiraoSilver)" :right="true" />
     </nav>
     <div class="fixture" v-for="fixture in filteredFixtures" :key="fixture.id">
       <h2>{{ fixture.date }}</h2>
       <div class="fixtureMatches">
         <div
-          :class="['homeTeam', { winning: fixture.homeTeamWinning}, {winner: fixture.result === 'home' }, { losing: fixture.homeTeamLosing },{loser: fixture.result ==='away'}, { drawing: fixture.drawing  || fixture.result === 'draw' }]"
+          :class="[
+            'homeTeam',
+            { winning: fixture.homeTeamWinning },
+            { winner: fixture.result === 'home' },
+            { losing: fixture.homeTeamLosing },
+            { loser: fixture.result === 'away' },
+            { drawing: fixture.drawing || fixture.result === 'draw' },
+          ]"
           @mouseover="hoverHomeTeam(fixture)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'home')"
-          >
-          <p :class="['status', {statusHiddenHome: !fixture.result}] ">{{fixture.result === "home" ? 'V': fixture.result === "draw"? 'E': fixture.result === "away" ?'D': ''}}</p>
+        >
+          <p :class="['status', { statusHiddenHome: !fixture.result }]">
+            {{ fixture.result === "home" ? "V" : fixture.result === "draw" ? "E" : fixture.result === "away" ? "D" : "" }}
+          </p>
           <div>
             <h2>{{ fixture.home_team }}</h2>
             <img :src="fixture.home_logo" :alt="fixture.home_team" />
           </div>
         </div>
         <h2
-          :class="['draw', { homeWinning: fixture.homeTeamWinning },{homeWon: fixture.result === 'home'}, { homeLosing: fixture.homeTeamLosing },{homeLost: fixture.result==='away'}, {drew: fixture.result === 'draw'}]"
+          :class="[
+            'draw',
+            { homeWinning: fixture.homeTeamWinning },
+            { homeWon: fixture.result === 'home' },
+            { homeLosing: fixture.homeTeamLosing },
+            { homeLost: fixture.result === 'away' },
+            { drew: fixture.result === 'draw' },
+          ]"
           @mouseover="hoverDraw(fixture)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'draw')"
@@ -29,7 +45,14 @@
           X
         </h2>
         <div
-          :class="['awayTeam', { winning: fixture.awayTeamWinning}, {winner: fixture.result === 'away' }, { losing: fixture.awayTeamLosing },{loser: fixture.result ==='home'}, { drawing: fixture.drawing || fixture.result === 'draw' }]"
+          :class="[
+            'awayTeam',
+            { winning: fixture.awayTeamWinning },
+            { winner: fixture.result === 'away' },
+            { losing: fixture.awayTeamLosing },
+            { loser: fixture.result === 'home' },
+            { drawing: fixture.drawing || fixture.result === 'draw' },
+          ]"
           @mouseover="hoverAwayTeam(fixture)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'away')"
@@ -38,8 +61,11 @@
             <img :src="fixture.away_logo" :alt="fixture.away_team" />
             <h2>{{ fixture.away_team }}</h2>
           </div>
-          <p :class="['status', {statusHiddenAway: !fixture.result}] ">{{fixture.result === "away" ? 'V': fixture.result === "draw"? 'E': fixture.result === "home" ?'D': ''}}</p>
+          <p :class="['status', { statusHiddenAway: !fixture.result }]">
+            {{ fixture.result === "away" ? "V" : fixture.result === "draw" ? "E" : fixture.result === "home" ? "D" : "" }}
+          </p>
         </div>
+        <!-- <input type="checkbox" name="fsda" id="fdsa"> -->
       </div>
     </div>
   </div>
@@ -48,6 +74,7 @@
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
 import type IFixtures from "@/interfaces/IFixtures";
+import ArrowIconVue from "./icons/ArrowIcon.vue";
 export default defineComponent({
   data() {
     return {
@@ -61,7 +88,7 @@ export default defineComponent({
   props: {
     fixtures: {
       type: Array as PropType<IFixtures[]>,
-      required: true, 
+      required: true,
     },
   },
   async mounted() {
@@ -88,7 +115,6 @@ export default defineComponent({
               this.roundDisplay++;
             } while (this.filteredFixtures.length === 0);
           }
-
           break;
         default:
           break;
@@ -97,31 +123,29 @@ export default defineComponent({
     selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
       fixture.result = winner;
       // this.$emit("winnerSelected", [this.fixtures])
-      this.$emit("winnerSelected", fixture)
+      this.$emit("winnerSelected", fixture);
     },
     hoverHomeTeam(fixture: IFixtures) {
-        fixture.homeTeamWinning = true;
-        fixture.awayTeamLosing = true;
+      fixture.homeTeamWinning = true;
+      fixture.awayTeamLosing = true;
     },
     hoverAwayTeam(fixture: IFixtures) {
-        fixture.awayTeamWinning = true;
-        fixture.homeTeamLosing = true;
-        
-
+      fixture.awayTeamWinning = true;
+      fixture.homeTeamLosing = true;
     },
     hoverDraw(fixture: IFixtures) {
-        fixture.drawing = true;
-        fixture.homeTeamWinning = false;
-        fixture.homeTeamLosing = false;
-        fixture.awayTeamWinning = false;
-        fixture.awayTeamLosing = false;
+      fixture.drawing = true;
+      fixture.homeTeamWinning = false;
+      fixture.homeTeamLosing = false;
+      fixture.awayTeamWinning = false;
+      fixture.awayTeamLosing = false;
     },
     resetStyles(fixture: IFixtures) {
-        fixture.drawing = false;
-        fixture.homeTeamWinning = false;
-        fixture.homeTeamLosing = false;
-        fixture.awayTeamWinning = false;
-        fixture.awayTeamLosing = false;
+      fixture.drawing = false;
+      fixture.homeTeamWinning = false;
+      fixture.homeTeamLosing = false;
+      fixture.awayTeamWinning = false;
+      fixture.awayTeamLosing = false;
     },
   },
   computed: {
@@ -129,6 +153,7 @@ export default defineComponent({
       return this.fixtures.filter((fixture) => fixture.round === this.roundDisplay);
     },
   },
+  components: { ArrowIconVue },
 });
 </script>
 
@@ -145,12 +170,11 @@ export default defineComponent({
   inherits: false;
 }
 .fixturesContainer {
-  margin-top: 20px;
   overflow: hidden;
 }
 .fixturesContainer nav {
-  padding: 5px 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .fixture {
@@ -168,42 +192,42 @@ export default defineComponent({
   display: flex;
   justify-content: center;
 }
-.homeTeam{
+.homeTeam {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
 }
-.awayTeam{
+.awayTeam {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
 }
-.status{
+.status {
   color: gray;
   font-size: 2rem;
   font-weight: bold;
   padding: 5px;
   transform: translateX(0px);
-  transition: .3s;
+  transition: 0.3s;
 }
-.statusHiddenHome{
+.statusHiddenHome {
   transform: translateX(-20px);
 }
-.statusHiddenAway{
+.statusHiddenAway {
   transform: translateX(20px);
 }
-  .draw {
+.draw {
   padding: 18px;
   transition: --myColor1 0.5s, --myColor2 0.5s;
-  background: linear-gradient(120deg, var(--myColor1)50%, var(--myColor2)50%);
+  background: linear-gradient(120deg, var(--myColor1) 50%, var(--myColor2) 50%);
 }
-.winner{
+.winner {
   cursor: pointer;
   background-color: #008f0088;
 }
-.loser{
+.loser {
   cursor: pointer;
   background-color: #8a000088;
 }
@@ -224,15 +248,14 @@ export default defineComponent({
   cursor: pointer;
   background: #eeff0088;
 }
-.drew{
+.drew {
   cursor: pointer;
   --myColor1: #eeff0088;
   --myColor2: #eeff0088;
-  
 }
 .winning {
   cursor: pointer;
-  background-color: #00ff0088;  
+  background-color: #00ff0088;
 }
 .losing {
   cursor: pointer;

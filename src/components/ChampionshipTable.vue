@@ -47,7 +47,7 @@ export default {
 
 <style>
 .tableContainer {
-  border: 1px solid var(--brasileiraoSilver);  
+  border: 1px solid var(--brasileiraoSilver);
   display: flex;
   max-width: 100vw;
 }
@@ -62,6 +62,8 @@ export default {
 
 .teamTable th,
 .teamTable td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding: 10px;
   text-align: center;
 }
