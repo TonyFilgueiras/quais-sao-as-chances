@@ -35,15 +35,7 @@ export function updateTable(table: ITable[], fixtures: IFixtures[]) {
           break;
       }
     } // Sort standings by points and then by wins
-    standings.sort((a, b) => {
-      if (a.points !== b.points) {
-        return b.points - a.points;
-      } else if(a.wins !== b.wins) {
-        return b.wins - a.wins;
-      } else {
-        return b.goal_difference - a.goal_difference;
-      }
-    });
+    sortStandings(standings)
 
     // Update positions
     standings.forEach((team, index) => {
@@ -121,13 +113,7 @@ export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[
     }
 
     // Sort standings by points and then by wins
-    standings.sort((a, b) => {
-      if (a.points !== b.points) {
-        return b.points - a.points;
-      } else {
-        return b.wins - a.wins;
-      }
-    });
+    sortStandings(standings)
 
     // Update positions
     standings.forEach((team, index) => {
@@ -153,6 +139,7 @@ export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[
       }
     });
   }
+  console.log(positionCounts)
   return positionCounts;
 }
 
@@ -211,3 +198,14 @@ export function* generateAllPossibilities(fixtures: IFixtures[]): Generator<Poss
     console.error(err);
   }
 }
+function sortStandings(standings: ITable[]) {
+  standings.sort((a, b) => {
+    if (a.points !== b.points) {
+      return b.points - a.points;
+    } else if(a.wins !== b.wins) {
+      return b.wins - a.wins;
+    } else {
+      return b.goal_difference - a.goal_difference;
+    }
+  });
+ }
