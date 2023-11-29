@@ -80,4 +80,18 @@ button:hover {
   color: black;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .aboutContainer{
+    width: 90vw;
+    padding: 10px 5px;
+  }
+  .aboutContainer h1{
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  .aboutContainer p {
+    text-indent: 0.7rem;
+  }
+
+}
 </style>
