@@ -187,18 +187,13 @@ export default defineComponent({
   font-size: 1rem;
   display: flex;
   transition: 0.5s;
+  align-items: center;
 }
 .fixtureMatches {
   display: flex;
   justify-content: center;
 }
-.homeTeam {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 200px;
-}
-.awayTeam {
+.homeTeam,.awayTeam {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -268,5 +263,24 @@ export default defineComponent({
 .homeLosing {
   --myColor1: #ff000088;
   --myColor2: #00ff0088;
+}
+@media screen and (max-width: 700px) {
+  .fixtureMatches div{
+    font-size: 0.7rem;
+    align-items: center;
+  }
+  img {
+    height: 30px;
+    width: auto;
+  }
+  .status{
+    display: none;
+  }
+  .homeTeam, .awayTeam{
+    min-width: 40vw;
+  }
+  .homeTeam{
+    justify-content: end;
+  }
 }
 </style>

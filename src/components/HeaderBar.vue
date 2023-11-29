@@ -2,7 +2,7 @@
   <header>
     <h1>Quais são as chances</h1>
     <!-- <MenuIcon color="white" width="30"/> -->
-    <img src="@/assets/brasileirao-logo.png" alt="Brasileirao" title="Brasileirao" />
+    <img v-if="!mobileStore.isMobile" src="@/assets/brasileirao-logo.png" alt="Brasileirao" title="Brasileirao" />
     <AboutIcon width="30" @click="toggleAboutModel" />
     <AboutModel :show-about-model="showAboutModel" @close="closeAboutModel"/>
   </header>
@@ -12,9 +12,15 @@
 import { defineComponent } from "vue";
 import AboutIcon from "./icons/AboutIcon.vue";
 import AboutModel from "./AboutModel.vue";
+import { useIsMobileStore } from "@/stores/isMobile";
 // import MenuIcon from './MenuIcon.vue';
 
 export default defineComponent({
+  setup() {
+    const mobileStore = useIsMobileStore()
+
+    return {mobileStore}
+  },
   data() {
     return {
       showAboutModel: false,
@@ -56,7 +62,7 @@ header {
   align-items: center;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 4vw, 1.5rem);
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-weight: bold;
 }

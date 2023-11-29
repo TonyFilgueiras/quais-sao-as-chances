@@ -13,7 +13,17 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 } */
-
+:root{
+  --champion: #00ff0088;
+  --libertadores: #4444ff88;
+  --preLibertadores: #44ffff88;
+  --sulAmericana: #ffff0088;
+  --neutro: #eeeeee88;
+  --rebaixamento: #ff000088;
+  --brasileiraoBlue: #004498;
+  --brasileiraoGold: #bfa706;
+  --brasileiraoSilver: #a5a4a9;
+}
 *,
 *::before,
 *::after {
@@ -23,6 +33,8 @@
 }
 
 body {
+  overflow-x: hidden;
+  max-width: 100vw;
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
@@ -40,8 +52,34 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 1rem;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @media screen and (max-width: 500px) {
+    body {
+    font-size: 0.7rem;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--brasileiraoSilver);
+  border-radius: 4px;
+  transition: .3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brasileiraoGold)
 }

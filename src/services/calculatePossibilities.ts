@@ -35,7 +35,7 @@ export function updateTable(table: ITable[], fixtures: IFixtures[]) {
           break;
       }
     } // Sort standings by points and then by wins
-    sortStandings(standings)
+    sortStandings(standings);
 
     // Update positions
     standings.forEach((team, index) => {
@@ -65,7 +65,13 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
   }
 }
 
-export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[], store: IWinnersStore,numOutcomes: number, weighted: boolean): IPositionChances {
+export function randomizeOutcome(
+  fixtures: IFixtures[],
+  leagueStandings: ITable[],
+  store: IWinnersStore,
+  numOutcomes: number,
+  weighted: boolean
+): IPositionChances {
   const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy
@@ -113,7 +119,7 @@ export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[
     }
 
     // Sort standings by points and then by wins
-    sortStandings(standings)
+    sortStandings(standings);
 
     // Update positions
     standings.forEach((team, index) => {
@@ -139,7 +145,6 @@ export function randomizeOutcome(fixtures: IFixtures[], leagueStandings: ITable[
       }
     });
   }
-  console.log(positionCounts)
   return positionCounts;
 }
 
@@ -202,10 +207,10 @@ function sortStandings(standings: ITable[]) {
   standings.sort((a, b) => {
     if (a.points !== b.points) {
       return b.points - a.points;
-    } else if(a.wins !== b.wins) {
+    } else if (a.wins !== b.wins) {
       return b.wins - a.wins;
     } else {
       return b.goal_difference - a.goal_difference;
     }
   });
- }
+}

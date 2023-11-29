@@ -3,13 +3,13 @@
   <table class="teamTable">
     <thead>
       <tr>
-        <th>Campeão</th>
-        <th>Libertadores</th>
-        <th>Sul Americana</th>
-        <th>Rebaixamento</th>
+        <th v-if="display"><span id="champion">■</span>{{mobileStore.isMobile? '': 'Campeão'}}</th>
+        <th v-if="display"><span id="libertadores">■</span>{{mobileStore.isMobile? '': 'Libertadores'}}</th>
+        <th v-if="display"><span id="sulamericana">■</span>{{mobileStore.isMobile? '': 'Sul Americana'}}</th>
+        <th v-if="display"><span id="rebaixamento">■</span>{{mobileStore.isMobile? '': 'Rebaixamento'}}</th>
       </tr>
     </thead>
-    <td v-if="calculating" colspan="4" class="calculating">
+    <td v-if="calculating && display" colspan="4" class="calculating">
       <h1><RefreshIcon width="25" /> Calculando</h1>
     </td>
     <tbody v-if="!calculating">
@@ -36,10 +36,10 @@
             team.position > 16 && team.team_name !== winnersStore.libertadoresWinner && team.team_name !== winnersStore.copaDoBrasilWinner,
         }"
       >
-        <td v-if="chancesTable.first">{{ Math.floor((chancesTable.first[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.libertadores">{{ Math.floor((chancesTable.libertadores[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.sulAmericana">{{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.rebaixamento">{{ Math.floor((chancesTable.rebaixamento[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
+        <td v-if="chancesTable.first && display">{{ Math.floor((chancesTable.first[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
+        <td v-if="chancesTable.libertadores && display">{{ Math.floor((chancesTable.libertadores[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
+        <td v-if="chancesTable.sulAmericana && display">{{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
+        <td v-if="chancesTable.rebaixamento && display">{{ Math.floor((chancesTable.rebaixamento[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
       </tr>
     </tbody>
   </table>
@@ -51,11 +51,13 @@ import type ITable from "@/interfaces/ITable";
 import { useWinnersStore } from "@/stores/libertadoresSpot";
 import { defineComponent, type PropType } from "vue";
 import RefreshIcon from "./icons/RefreshIcon.vue";
+import { useIsMobileStore } from "@/stores/isMobile";
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
-    return { winnersStore };
+    const mobileStore = useIsMobileStore();
+    return { winnersStore, mobileStore };
   },
   props: {
     table: {
@@ -73,12 +75,27 @@ export default defineComponent({
     calculating: {
       type: Boolean,
     },
+    display: {
+      type: Boolean,
+    }
   },
   components: { RefreshIcon },
 });
 </script>
 
 <style scoped>
+#champion{
+  color: var(--champion);
+}
+#libertadores{
+  color: var(--preLibertadores);
+}
+#sulamericana{
+  color: var(--sulAmericana);
+}
+#rebaixamento{
+  color: var(--rebaixamento);
+}
 .calculating {
   background: var(--brasileiraoBlue);
   color: white;
@@ -86,7 +103,14 @@ export default defineComponent({
 .calculating h1{
   position: fixed;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(80%, -50%);
   font-family:"Playfair Display", Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1450px) {
+  .calculating h1{
+    position: absolute;
+    transform: translate(0, -50%);
+    top:50%
+  }
 }
 </style>

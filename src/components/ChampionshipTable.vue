@@ -1,8 +1,14 @@
 <template>
-  <table class="tableContainer">
-    <StandingsTableVue :table="table" />
-    <ChancesTableVue :table="table" :chances-table="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" />
-  </table>
+  <div>
+    <select v-if="mobileStore.isMobile" v-model="selectedTable" name="championship" id="championship">
+      <option value="standings">Tabela</option>
+      <option value="chances">Chances</option>
+    </select>
+    <table class="tableContainer">
+      <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
+      <ChancesTableVue :display="selectedTable === 'chances' || !mobileStore.isMobile" :table="table" :chances-table="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" />
+    </table>
+  </div>
 </template>
 
 <script lang="ts">
@@ -12,10 +18,12 @@ import { useWinnersStore } from "@/stores/libertadoresSpot";
 import StandingsTableVue from "./StandingsTable.vue";
 import ChancesTableVue from "./ChancesTable.vue";
 import type { PropType } from "vue";
+import { useIsMobileStore } from "@/stores/isMobile";
 export default {
   setup() {
     const winnersStore = useWinnersStore();
-    return { winnersStore };
+    const mobileStore = useIsMobileStore();
+    return { winnersStore, mobileStore };
   },
   props: {
     table: {
@@ -39,6 +47,7 @@ export default {
     return {
       loading: true,
       error: "",
+      selectedTable: "standings",
     };
   },
   components: { StandingsTableVue, ChancesTableVue },
@@ -46,16 +55,39 @@ export default {
 </script>
 
 <style>
+select{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .tableContainer {
   border: 1px solid var(--brasileiraoSilver);
+  overflow-x: auto;
   display: flex;
   max-width: 100vw;
+  
+}
+/* width */
+table::-webkit-scrollbar {
+  height: 4px;
+}
+
+/* Track */
+table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+table::-webkit-scrollbar-thumb {
+  background: var(--brasileiraoBlue);
+  border-radius: 8px;
+  transition: .3s;
 }
 .teamTable {
   border-collapse: collapse;
 }
 .teamTable tr {
-  /* height: 50px; */
   border-bottom: 1px solid var(--brasileiraoSilver);
   border-top: 1px solid var(--brasileiraoSilver);
 }
@@ -70,7 +102,6 @@ export default {
 
 .teamTable th {
   background-color: var(--brasileiraoSilver);
-  table-layout: fixed;
 }
 .teamName {
   display: flex;
@@ -82,8 +113,7 @@ export default {
   font-weight: bold;
 }
 .campeao {
-  background-color: var(--champion); /* Apply your champion color */
-  /* color: white;*/
+  background-color: var(--champion);
 }
 .rebaixamento {
   background-color: var(--rebaixamento);
@@ -96,5 +126,14 @@ export default {
 }
 .sulAmericana {
   background-color: var(--sulAmericana);
+}
+@media screen and (max-width: 700px) {
+  .teamTable{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .teamTable td {
+    padding: 5px;
+  }
 }
 </style>

@@ -120,4 +120,9 @@ export default {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 1450px) {
+  .mainContainer{
+    flex-direction: column;
+  }
+}
 </style>
