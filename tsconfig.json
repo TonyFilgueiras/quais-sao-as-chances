@@ -9,7 +9,18 @@
     }
   ],
   "compilerOptions": {
-   "types":["vite/client", "node", "dotenv"] ,
-  },
-  
+    "target": "esnext", // or specify your target version
+    "module": "esnext", // or specify your module version
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["dom", "esnext"],
+    "types": ["vite/client", "node", "dotenv"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
 }

@@ -37,7 +37,6 @@ export default {
   methods: {
     handleResize() {
       this.screenWidth = window.innerWidth;
-      console.log(this.screenWidth)
     },
   },
   beforeUnmount() {

@@ -1,6 +1,6 @@
 <template>
   <div class="fixturesContainer">
-    <nav class="fixturesNavigation">
+    <nav class="fixturesNavigation" v-if="fixtures.length > 0">
       <ArrowIconVue @click="handleFixturesScroll(0)" width="40" color="var(--brasileiraoSilver)" :right="false" />
       Rodada: {{ roundDisplay }}
       <ArrowIconVue @click="handleFixturesScroll(1)" width="40" color="var(--brasileiraoSilver)" :right="true" />
@@ -193,7 +193,8 @@ export default defineComponent({
   display: flex;
   justify-content: center;
 }
-.homeTeam,.awayTeam {
+.homeTeam,
+.awayTeam {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -265,7 +266,7 @@ export default defineComponent({
   --myColor2: #00ff0088;
 }
 @media screen and (max-width: 700px) {
-  .fixtureMatches div{
+  .fixtureMatches div {
     font-size: 0.7rem;
     align-items: center;
   }
@@ -273,13 +274,14 @@ export default defineComponent({
     height: 30px;
     width: auto;
   }
-  .status{
+  .status {
     display: none;
   }
-  .homeTeam, .awayTeam{
+  .homeTeam,
+  .awayTeam {
     min-width: 40vw;
   }
-  .homeTeam{
+  .homeTeam {
     justify-content: end;
   }
 }

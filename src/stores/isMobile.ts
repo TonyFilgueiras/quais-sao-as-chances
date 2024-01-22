@@ -14,7 +14,6 @@ export const useIsMobileStore = defineStore('mobile', {
       } else {
         this.isMobile = false
       }
-      console.log(this.isMobile)
     },
   }
 
