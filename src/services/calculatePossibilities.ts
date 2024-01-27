@@ -2,6 +2,7 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import type { IWinnersStore } from "@/interfaces/IWinnersStore";
+import mitt from "mitt"
 
 interface Score {
   [team: string]: number;
@@ -10,6 +11,8 @@ interface Score {
 interface Possibility {
   [key: number]: Score[];
 }
+
+const emitter = mitt()
 
 export function updateTable(table: ITable[], fixtures: IFixtures[]) {
   const standings: ITable[] = JSON.parse(JSON.stringify(table)); // Deep copy
@@ -65,14 +68,15 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
   }
 }
 
-export function randomizeOutcome(
+export function randomizeOutcome(this: any, 
   fixtures: IFixtures[],
   leagueStandings: ITable[],
-  store: IWinnersStore,
+  winnerStore: IWinnersStore,
   numOutcomes: number,
   weighted: boolean
 ): IPositionChances {
-  const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };
+  const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };  
+  let progressBar = 0
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy
     for (let j = 0; j < fixtures.length; j++) {
@@ -129,21 +133,23 @@ export function randomizeOutcome(
         positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
         positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
       } else if (
-        team.position <= store.preLibertadoresSpot ||
-        team.team_name === store.copaDoBrasilWinner ||
-        team.team_name === store.libertadoresWinner
+        team.position <= winnerStore.preLibertadoresSpot ||
+        team.team_name === winnerStore.copaDoBrasilWinner ||
+        team.team_name === winnerStore.libertadoresWinner
       ) {
         positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
       } else if (
-        team.position <= store.sulAmericanaSpot &&
-        team.team_name !== store.copaDoBrasilWinner &&
-        team.team_name !== store.libertadoresWinner
+        team.position <= winnerStore.sulAmericanaSpot &&
+        team.team_name !== winnerStore.copaDoBrasilWinner &&
+        team.team_name !== winnerStore.libertadoresWinner
       ) {
         positionCounts.sulAmericana[team.team_name] = (positionCounts.sulAmericana[team.team_name] || 0) + 1;
       } else if (team.position > 16) {
         positionCounts.rebaixamento[team.team_name] = (positionCounts.rebaixamento[team.team_name] || 0) + 1;
       }
     });
+    progressBar = Math.round((i * 100) / numOutcomes)
+    emitter.emit("progress", progressBar)
   }
   return positionCounts;
 }
