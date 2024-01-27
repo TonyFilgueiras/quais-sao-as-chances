@@ -1,6 +1,6 @@
 <template>
-  <div class="fixturesContainer">
-    <nav class="fixturesNavigation" v-if="fixtures.length > 0">
+  <div class="fixturesContainer" v-if="fixtures.length > 0">
+    <nav class="fixturesNavigation">
       <ArrowIconVue @click="handleFixturesScroll(0)" width="40" color="var(--brasileiraoSilver)" :right="false" />
       Rodada: {{ roundDisplay }}
       <ArrowIconVue @click="handleFixturesScroll(1)" width="40" color="var(--brasileiraoSilver)" :right="true" />

@@ -52,12 +52,24 @@ import { useWinnersStore } from "@/stores/libertadoresSpot";
 import { defineComponent, type PropType } from "vue";
 import RefreshIcon from "./icons/RefreshIcon.vue";
 import { useIsMobileStore } from "@/stores/isMobile";
+import mitt from "mitt"
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
     const mobileStore = useIsMobileStore();
     return { winnersStore, mobileStore };
+  },
+  data() {
+    return {
+      progressBar: 0
+    }
+  },
+  mounted () {
+    const emitter = mitt()
+    emitter.on("progress", (e) => {
+      console.log("mudou", e)
+    });
   },
   props: {
     table: {

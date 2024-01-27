@@ -110,7 +110,7 @@ export default {
       };
       const params = {
         type: "randomizeOutcome",
-        payload: [JSON.stringify(updatedFixtures), JSON.stringify(this.displayTable), JSON.stringify(winnersStore), this.numOutcomes, false],
+        payload: [JSON.stringify(updatedFixtures), JSON.stringify(this.displayTable), JSON.stringify(winnersStore),this.numOutcomes, false],
       };
       worker.postMessage(params);
     },
