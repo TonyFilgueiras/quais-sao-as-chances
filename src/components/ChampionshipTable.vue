@@ -6,7 +6,7 @@
     </select>
     <table class="tableContainer">
       <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
-      <ChancesTableVue :display="selectedTable === 'chances' || !mobileStore.isMobile" :table="table" :chances-table="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" />
+      <ChancesTableVue :display="selectedTable === 'chances' || !mobileStore.isMobile" :table="table" :chances-table="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" :progress-bar="progressBar"/>
     </table>
   </div>
 </template>
@@ -38,6 +38,9 @@ export default {
       type: Boolean,
       required: true,
     },
+    progressBar: {
+      type: Number
+    },
     numOutcomes: {
       type: Number,
       required: true,
@@ -65,8 +68,7 @@ select{
   border: 1px solid var(--brasileiraoSilver);
   overflow-x: auto;
   display: flex;
-  max-width: 100vw;
-  
+  max-width: 100vw;  
 }
 /* width */
 table::-webkit-scrollbar {

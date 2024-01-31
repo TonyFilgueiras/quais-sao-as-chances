@@ -1,5 +1,4 @@
 {
-  "files": ["env.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"

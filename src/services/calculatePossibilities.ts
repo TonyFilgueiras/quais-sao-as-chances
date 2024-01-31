@@ -2,7 +2,7 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import type { IWinnersStore } from "@/interfaces/IWinnersStore";
-import mitt from "mitt"
+import { sendProgress } from "@/worker/worker";
 
 interface Score {
   [team: string]: number;
@@ -11,8 +11,6 @@ interface Score {
 interface Possibility {
   [key: number]: Score[];
 }
-
-const emitter = mitt()
 
 export function updateTable(table: ITable[], fixtures: IFixtures[]) {
   const standings: ITable[] = JSON.parse(JSON.stringify(table)); // Deep copy
@@ -68,15 +66,16 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
   }
 }
 
-export function randomizeOutcome(this: any, 
+export function randomizeOutcome(
+  this: any,
   fixtures: IFixtures[],
   leagueStandings: ITable[],
   winnerStore: IWinnersStore,
   numOutcomes: number,
   weighted: boolean
 ): IPositionChances {
-  const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };  
-  let progressBar = 0
+  const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };
+  let progress = 0;
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy
     for (let j = 0; j < fixtures.length; j++) {
@@ -148,8 +147,8 @@ export function randomizeOutcome(this: any,
         positionCounts.rebaixamento[team.team_name] = (positionCounts.rebaixamento[team.team_name] || 0) + 1;
       }
     });
-    progressBar = Math.round((i * 100) / numOutcomes)
-    emitter.emit("progress", progressBar)
+    progress = Math.round((i * 100) / numOutcomes);
+    sendProgress(progress);
   }
   return positionCounts;
 }

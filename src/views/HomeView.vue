@@ -3,7 +3,7 @@
     <h1 v-if="error">{{ error }}</h1>
     <LoadingContainer v-if="loading" />
     <div class="mainContainer" v-else>
-      <ChampionshipTableVue :table="displayTable" :chancesTable="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" />
+      <ChampionshipTableVue :table="displayTable" :chancesTable="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" :progress-bar="progressBar" />
       <FixturesContainerVue :fixtures="fixtures" @winnerSelected="updateFixtures" />
     </div>
   </div>
@@ -44,6 +44,7 @@ export default {
       championships: [],
       loading: true,
       calculating: true,
+      progressBar: 0,
       error: "",
       chancesTable: {} as IPositionChances,
       numOutcomes: 50000,
@@ -100,9 +101,16 @@ export default {
       const winnersStore = useWinnersStore();
       this.calculating = true;
       const updatedFixtures = this.fixtures.filter((fixture) => !fixture.result);
+      this.progressBar=0
       worker.onmessage = (message) => {
-        this.chancesTable = message.data;
-        this.calculating = false;
+        if (message.data.type === "results") {
+          this.chancesTable = message.data.results;
+          // this.calculating = false;
+        } else if (message.data.type === "progress") {
+          if (message.data.progress > this.progressBar) {
+            this.progressBar=message.data.progress
+          }
+        }
       };
       worker.onerror = (error) => {
         console.log("Error in worker:", error);

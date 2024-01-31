@@ -3,14 +3,20 @@
   <table class="teamTable">
     <thead>
       <tr>
-        <th v-if="display"><span id="champion">■</span>{{mobileStore.isMobile? '': 'Campeão'}}</th>
-        <th v-if="display"><span id="libertadores">■</span>{{mobileStore.isMobile? '': 'Libertadores'}}</th>
-        <th v-if="display"><span id="sulamericana">■</span>{{mobileStore.isMobile? '': 'Sul Americana'}}</th>
-        <th v-if="display"><span id="rebaixamento">■</span>{{mobileStore.isMobile? '': 'Rebaixamento'}}</th>
+        <th v-if="display"><span id="champion">■</span>{{ mobileStore.isMobile ? "" : "Campeão" }}</th>
+        <th v-if="display"><span id="libertadores">■</span>{{ mobileStore.isMobile ? "" : "Libertadores" }}</th>
+        <th v-if="display"><span id="sulamericana">■</span>{{ mobileStore.isMobile ? "" : "Sul Americana" }}</th>
+        <th v-if="display"><span id="rebaixamento">■</span>{{ mobileStore.isMobile ? "" : "Rebaixamento" }}</th>
       </tr>
     </thead>
     <td v-if="calculating && display" colspan="4" class="calculating">
-      <h1><RefreshIcon width="25" /> Calculando</h1>
+      <div class="calculatingContainer">
+        <h1><RefreshIcon width="25" /> Calculando</h1>
+        <div class="progressBarContainer" :style="{ width: `${progressBar}%` }">
+          <div class="progressBar"></div>
+        </div>
+        <h2>{{ progressBar }} %</h2>
+      </div>
     </td>
     <tbody v-if="!calculating">
       <tr
@@ -37,9 +43,15 @@
         }"
       >
         <td v-if="chancesTable.first && display">{{ Math.floor((chancesTable.first[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.libertadores && display">{{ Math.floor((chancesTable.libertadores[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.sulAmericana && display">{{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.rebaixamento && display">{{ Math.floor((chancesTable.rebaixamento[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
+        <td v-if="chancesTable.libertadores && display">
+          {{ Math.floor((chancesTable.libertadores[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
+        <td v-if="chancesTable.sulAmericana && display">
+          {{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
+        <td v-if="chancesTable.rebaixamento && display">
+          {{ Math.floor((chancesTable.rebaixamento[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
       </tr>
     </tbody>
   </table>
@@ -52,24 +64,13 @@ import { useWinnersStore } from "@/stores/libertadoresSpot";
 import { defineComponent, type PropType } from "vue";
 import RefreshIcon from "./icons/RefreshIcon.vue";
 import { useIsMobileStore } from "@/stores/isMobile";
-import mitt from "mitt"
+// import mitt from "mitt"
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
     const mobileStore = useIsMobileStore();
     return { winnersStore, mobileStore };
-  },
-  data() {
-    return {
-      progressBar: 0
-    }
-  },
-  mounted () {
-    const emitter = mitt()
-    emitter.on("progress", (e) => {
-      console.log("mudou", e)
-    });
   },
   props: {
     table: {
@@ -89,37 +90,49 @@ export default defineComponent({
     },
     display: {
       type: Boolean,
-    }
+    },
+    progressBar: {
+      type: Number,
+    },
   },
   components: { RefreshIcon },
 });
 </script>
 
 <style scoped>
-#champion{
+#champion {
   color: var(--champion);
 }
-#libertadores{
+#libertadores {
   color: var(--preLibertadores);
 }
-#sulamericana{
+#sulamericana {
   color: var(--sulAmericana);
 }
-#rebaixamento{
+#rebaixamento {
   color: var(--rebaixamento);
 }
 .calculating {
   background: var(--brasileiraoBlue);
   color: white;
 }
-.calculating h1{
+.calculatingContainer {
   position: fixed;
   top: 50%;
   transform: translate(80%, -50%);
-  font-family:"Playfair Display", Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 1450px) {
-  .calculating h1{
+.progressBarContainer{
+  height: 20px;
+  width: 100%;
+}
+.progressBar{
+  height: 100%;
+  border-radius: 3px;
+  background-color: var(--brasileiraoGold);
+}
+@media screen and (max-width: 760px) {
+  .calculatingContainer{
     position: absolute;
     transform: translate(0, -50%);
     top:50%
