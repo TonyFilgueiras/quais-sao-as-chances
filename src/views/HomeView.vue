@@ -60,6 +60,7 @@ export default {
     await this.fetchChampionshipTable();
     this.displayTable = this.table;
     await this.fetchChampionshipFixtures();
+    if (this.error) return
     this.updateWinnersTablePositions();
 
     await this.calculateChances();
@@ -72,7 +73,7 @@ export default {
         const resp = await api.getChampionshipTable();
         this.table = resp.data;
       } catch (err: any) {
-        this.error = err.message as string;
+        this.handleErrors()
       } finally {
         this.loading = false;
       }
@@ -91,7 +92,7 @@ export default {
         const resp = await api.getChampionshipFixtures();
         this.fixtures = resp.data;
       } catch (err: any) {
-        this.error = err.message as string;
+        this.handleErrors()
       } finally {
         this.loading = false;
       }
@@ -105,15 +106,15 @@ export default {
       worker.onmessage = (message) => {
         if (message.data.type === "results") {
           this.chancesTable = message.data.results;
-          // this.calculating = false;
+          this.calculating = false;
         } else if (message.data.type === "progress") {
           if (message.data.progress > this.progressBar) {
             this.progressBar=message.data.progress
           }
         }
       };
-      worker.onerror = (error) => {
-        console.log("Error in worker:", error);
+      worker.onerror = () => {
+        this.handleErrors()
         this.calculating = false;
       };
       const params = {
@@ -122,6 +123,9 @@ export default {
       };
       worker.postMessage(params);
     },
+    handleErrors() {
+      this.$router.push("/error")
+    }
   },
   components: { ChampionshipTableVue, FixturesContainerVue, LoadingContainer },
 };

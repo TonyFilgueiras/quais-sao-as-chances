@@ -11,7 +11,7 @@
     </thead>
     <td v-if="calculating && display" colspan="4" class="calculating">
       <div class="calculatingContainer">
-        <h1><RefreshIcon width="25" /> Calculando</h1>
+        <h1><RefreshIcon :width="mobileStore.isMobile? '15':'25'" /> Calculando</h1>
         <div class="progressBarContainer" :style="{ width: `${progressBar}%` }">
           <div class="progressBar"></div>
         </div>
@@ -134,7 +134,8 @@ export default defineComponent({
 @media screen and (max-width: 760px) {
   .calculatingContainer{
     position: absolute;
-    transform: translate(0, -50%);
+    font-size: 5px;
+    transform: translate(20%, -50%);
     top:50%
   }
 }

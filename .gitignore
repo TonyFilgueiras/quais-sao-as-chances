@@ -17,7 +17,7 @@ coverage
 testes
 .env
 vite.config.ts
-
+todolist.txt
 env.d.ts
 
 /cypress/videos/

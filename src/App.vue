@@ -1,17 +1,15 @@
 <template>
   <HeaderBar />
-  <HomeView />
+  <router-view />
 </template>
 
 <script lang="ts">
 // import { RouterLink, RouterView } from 'vue-router'
-import HomeView from "./views/HomeView.vue";
 import HeaderBar from "./components/HeaderBar.vue";
 import { useIsMobileStore } from "./stores/isMobile";
 
 export default {
   components: {
-    HomeView,
     HeaderBar,
   },
   setup() {

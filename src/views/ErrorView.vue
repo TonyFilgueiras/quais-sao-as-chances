@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <img src="@/assets/work-in-progress.png" alt="Brasileirao" title="Brasileirao" />
+    <h1>Ops... Parece que estamos com problemas no nosso site</h1>
+    <h1>Estamos trabalhando o mais rapido possivel para concertar isso!</h1>
+    <StandardButton text="Refresh" @click="$router.push('/')"/>
+  </div>
+</template>
+<script lang="ts">
+import StandardButton from '@/components/StandardButton.vue';
+export default {
+  components: {
+    StandardButton,
+  },
+};
+</script>
+<style scoped>
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+button{
+  margin-top: 20px;
+}
+</style>
