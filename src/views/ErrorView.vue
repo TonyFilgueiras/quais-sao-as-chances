@@ -3,7 +3,7 @@
     <img src="@/assets/work-in-progress.png" alt="Brasileirao" title="Brasileirao" />
     <h1>Ops... Parece que estamos com problemas no nosso site</h1>
     <h1>Estamos trabalhando o mais rapido possivel para concertar isso!</h1>
-    <StandardButton text="Refresh" @click="$router.push('/')"/>
+    <StandardButton text="Refrescar" @click="$router.push('/')"/>
   </div>
 </template>
 <script lang="ts">
