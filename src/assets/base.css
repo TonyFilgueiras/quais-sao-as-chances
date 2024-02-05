@@ -32,6 +32,10 @@
   margin: 0;
   font-weight: normal;
 }
+ul{
+  list-style-type: none;
+  padding: 0;
+}
 
 body {
   overflow-x: hidden;

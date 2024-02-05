@@ -8,7 +8,20 @@
 </template>
 <script lang="ts">
 import StandardButton from '@/components/StandardButton.vue';
+import { useLeagueChosenStore } from '@/stores/leagueChosen';
+import {storeToRefs} from "pinia"
 export default {
+  setup() {
+    const leagueChosenStore = useLeagueChosenStore()
+    const {leagueChosen} = storeToRefs(leagueChosenStore)
+
+    return {leagueChosen}
+  },
+  watch: {
+    leagueChosen() {
+      this.$router.push("/")
+    }
+  },
   components: {
     StandardButton,
   },

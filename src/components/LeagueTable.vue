@@ -72,7 +72,6 @@ select{
 }
 .leagueTable{
   box-shadow: 0px 0px 2px 0px black;
-  border: 1px solid yellow;
   width: fit-content;
   margin: auto;
 }

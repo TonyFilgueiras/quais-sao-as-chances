@@ -33,14 +33,15 @@ export default {
 
 <style scoped>
 div {
-  width: auto; /* Adjust as needed */
-  height: auto;
   transition: .3s;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 50px;
 }
 div:hover{
   cursor: pointer;
   background-color: #ffffff2f;
+}
+div:active{
+  transform: scale(0.9);
 }
 </style>

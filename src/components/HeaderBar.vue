@@ -1,10 +1,10 @@
 <template>
   <header>
+    <MenuIcon :width="mobileStore.isMobile? '25':'30'" @click="toggleMenuSidebar"/>
     <h1>Quais são as chances</h1>
-    <!-- <MenuIcon color="white" width="30"/> -->
-    <img v-if="!mobileStore.isMobile" src="@/assets/brasileirao-logo.png" alt="Brasileirao" title="Brasileirao" />
-    <AboutIcon width="30" @click="toggleAboutModel" />
+    <AboutIcon :width="mobileStore.isMobile? '25':'30'" @click="toggleAboutModel" />
     <AboutModel :show-about-model="showAboutModel" @close="closeAboutModel"/>
+    <MenuSidebar :show-menu-sidebar="showMenuSidebar" @close="closeMenuSidebar"/>
   </header>
 </template>
 
@@ -13,7 +13,8 @@ import { defineComponent } from "vue";
 import AboutIcon from "./icons/AboutIcon.vue";
 import AboutModel from "./AboutModel.vue";
 import { useIsMobileStore } from "@/stores/isMobile";
-// import MenuIcon from './MenuIcon.vue';
+import MenuIcon from "./icons/MenuIcon.vue";
+import MenuSidebar from "./MenuSidebar.vue"
 
 export default defineComponent({
   setup() {
@@ -24,19 +25,31 @@ export default defineComponent({
   data() {
     return {
       showAboutModel: false,
+      showMenuSidebar: false,
     };
   },
   methods: {
     toggleAboutModel() {
       this.showAboutModel = !this.showAboutModel;
     },
+    toggleMenuSidebar() {
+      this.showMenuSidebar = !this.showMenuSidebar
+    },
     closeAboutModel() {
       this.showAboutModel = false;
     },
+    closeMenuSidebar() {
+      this.showMenuSidebar =false
+    },
     handleDocumentClick(event: MouseEvent) {
-      if (this.showAboutModel && !this.$el.contains(event.target)) {
-        this.closeAboutModel();
-      }
+      if (!this.$el.contains(event.target)) {
+        if (this.showAboutModel) {
+          this.closeAboutModel();
+        }
+        if (this.showMenuSidebar) {
+          this.closeMenuSidebar()
+        }
+      } 
     },
   },
   mounted() {
@@ -47,7 +60,7 @@ export default defineComponent({
     // Remove the click event listener when the component is destroyed
     document.removeEventListener("click", this.handleDocumentClick);
   },
-  components: { AboutIcon, AboutModel },
+  components: { AboutIcon, AboutModel, MenuIcon, MenuSidebar },
 });
 </script>
 
@@ -71,5 +84,10 @@ img {
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
+}
+@media screen and (max-width: 500px) {
+  header{
+    padding: 10px;
+  }
 }
 </style>

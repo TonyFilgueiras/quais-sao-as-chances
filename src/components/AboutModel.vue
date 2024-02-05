@@ -1,6 +1,6 @@
 <template>
   <div :class="['aboutContainer', { containerHidden: !showAboutModel }]">
-    <button @click="closeAboutModel">X</button>
+    <StandardButton text="X" @click="closeAboutModel"/>
     <h1>Sobre a simulação</h1>
     <p>
       A simulação pega os jogos restantes do brasileirão e escolhe aleatóriamente os vencedores de cada jogo restante. Considerando cada vitória sendo
@@ -22,20 +22,22 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import StandardButton from "./StandardButton.vue";
 
 export default defineComponent({
-  props: {
-    showAboutModel: {
-      type: Boolean,
-      default: false,
-      required: true,
+    props: {
+        showAboutModel: {
+            type: Boolean,
+            default: false,
+            required: true,
+        },
     },
-  },
-  methods: {
-    closeAboutModel() {
-      this.$emit("close");
+    methods: {
+        closeAboutModel() {
+            this.$emit("close");
+        },
     },
-  },
+    components: { StandardButton }
 });
 </script>
 
@@ -67,18 +69,6 @@ export default defineComponent({
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center;
   box-shadow: 0px 0px 10px 1px black;
-}
-button {
-  background-color: transparent;
-  padding: 5px 10px;
-  color: white;
-  transition: 0.3s;
-  border: 0;
-}
-button:hover {
-  background-color: var(--brasileiraoSilver);
-  color: black;
-  cursor: pointer;
 }
 @media (max-width: 768px) {
   .aboutContainer{
