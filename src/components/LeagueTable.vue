@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div :class="{leagueTable: !mobileStore.isMobile}">
     <select v-if="mobileStore.isMobile" v-model="selectedTable" name="championship" id="championship">
       <option value="standings">Tabela</option>
       <option value="chances">Chances</option>
     </select>
+    <LeagueHeader  :leagueInfo="leagueInfo" />
     <table class="tableContainer">
       <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
       <ChancesTableVue :display="selectedTable === 'chances' || !mobileStore.isMobile" :table="table" :chances-table="chancesTable" :calculating="calculating" :num-outcomes="numOutcomes" :progress-bar="progressBar"/>
@@ -19,6 +20,8 @@ import StandingsTableVue from "./StandingsTable.vue";
 import ChancesTableVue from "./ChancesTable.vue";
 import type { PropType } from "vue";
 import { useIsMobileStore } from "@/stores/isMobile";
+import LeagueHeader from "./LeagueHeader.vue";
+import ILeagueInfo from "@/interfaces/ILeagueInfo";
 export default {
   setup() {
     const winnersStore = useWinnersStore();
@@ -28,6 +31,10 @@ export default {
   props: {
     table: {
       type: Array as PropType<ITable[]>,
+      required: true,
+    },
+    leagueInfo: {
+      type: Object as PropType<ILeagueInfo>,
       required: true,
     },
     chancesTable: {
@@ -53,7 +60,7 @@ export default {
       selectedTable: "standings",
     };
   },
-  components: { StandingsTableVue, ChancesTableVue },
+  components: { StandingsTableVue, ChancesTableVue, LeagueHeader },
 };
 </script>
 
@@ -63,11 +70,18 @@ select{
   left: 50%;
   transform: translateX(-50%);
 }
-
+.leagueTable{
+  box-shadow: 0px 0px 2px 0px black;
+  border: 1px solid yellow;
+  width: fit-content;
+  margin: auto;
+}
 .tableContainer {
   border: 1px solid var(--brasileiraoSilver);
   overflow-x: auto;
   display: flex;
+  margin: auto;
+  width: fit-content;
   max-width: 100vw;  
 }
 /* width */
@@ -129,13 +143,17 @@ table::-webkit-scrollbar-thumb {
 .sulAmericana {
   background-color: var(--sulAmericana);
 }
-@media screen and (max-width: 700px) {
+.hidden{
+  display: none;
+}
+@media screen and (max-width: 760px) {
   .teamTable{
     height: 100vh;
     overflow: hidden;
+    width:100vw;
   }
   .teamTable td {
-    padding: 5px;
+    padding: 5px 10px;
   }
 }
 </style>

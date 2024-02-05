@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-use-v-if-with-v-for -->
 <template>
-  <table class="teamTable">
+  <table :class="['teamTable', {hidden: !display}]">
     <thead>
       <tr>
         <th v-if="display"><span id="champion">■</span>{{ mobileStore.isMobile ? "" : "Campeão" }}</th>

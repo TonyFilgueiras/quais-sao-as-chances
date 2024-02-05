@@ -4,11 +4,11 @@
       <tr>
         <th colspan="2">Time</th>
         <th>Pontos</th>
-        <th v-if="display">Jogos</th>
-        <th v-if="display">V</th>
-        <th v-if="display">E</th>
-        <th v-if="display">D</th>
-        <th v-if="display">SG</th>
+        <th :class="{hidden: !display}" v-if="display">Jogos</th>
+        <th :class="{hidden: !display}" v-if="display">V</th>
+        <th :class="{hidden: !display}" v-if="display">E</th>
+        <th :class="{hidden: !display}" v-if="display">D</th>
+        <th :class="{hidden: !display}" v-if="display">SG</th>
       </tr>
     </thead>
     <tbody>
@@ -38,11 +38,11 @@
         <td class="position">{{ team.position }}</td>
         <td class="teamName"><img v-if="!mobileStore.isMobile" :src="team.logo" alt="escudo" /> {{ team.team_name }}</td>
         <td class="points">{{ team.points }}</td>
-        <td v-if="display" class="matches">{{ team.matches }}</td>
-        <td v-if="display">{{ team.wins }}</td>
-        <td v-if="display">{{ team.draws }}</td>
-        <td v-if="display">{{ team.losses }}</td>
-        <td v-if="display">{{ team.goal_difference }}</td>
+        <td v-if="display" :class="['matches', {hidden: !display}]">{{ team.matches }}</td>
+        <td :class="{hidden: !display}" v-if="display">{{ team.wins }}</td>
+        <td :class="{hidden: !display}" v-if="display">{{ team.draws }}</td>
+        <td :class="{hidden: !display}" v-if="display">{{ team.losses }}</td>
+        <td :class="{hidden: !display}" v-if="display">{{ team.goal_difference }}</td>
       </tr>
     </tbody>
   </table>
