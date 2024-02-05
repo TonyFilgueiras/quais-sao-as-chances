@@ -74,6 +74,7 @@ export default {
       this.calculateChances();
     },
     leagueChosen() {
+      this.$router.push(`${this.leagueChosen}`)
       this.fetchData()
     },
   },

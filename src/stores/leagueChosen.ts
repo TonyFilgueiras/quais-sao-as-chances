@@ -1,7 +1,12 @@
 // store.ts
 import { defineStore } from 'pinia'
 
-export type Leagues = "brasileirao-a" | 'premier-a'
+export const leagueConfig = {
+  'brasileirao-a': 'brasileirao-a',
+  'premier-a': 'premier-a',
+} as const;
+
+export type Leagues = typeof leagueConfig[keyof typeof leagueConfig];
 
 export const useLeagueChosenStore = defineStore('leagueChosen', {
   state() {
