@@ -15,7 +15,7 @@
 <script lang="ts">
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "../interfaces/ITable";
-import { useWinnersStore } from "@/stores/libertadoresSpot";
+import { useWinnersStore } from "@/stores/winners";
 import StandingsTableVue from "./StandingsTable.vue";
 import ChancesTableVue from "./ChancesTable.vue";
 import type { PropType } from "vue";
@@ -136,6 +136,7 @@ table::-webkit-scrollbar-thumb {
 .preLibertadores {
   background-color: var(--preLibertadores);
 }
+.promotion,
 .libertadores {
   background-color: var(--libertadores);
 }

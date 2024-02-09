@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","env.d.ts", "src/stores/libertadoresSpot.ts", "src/worker/worker.ts", "src/workerFunction.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","env.d.ts", "src/stores/winners.ts", "src/worker/worker.ts", "src/workerFunction.ts"],
   // "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,

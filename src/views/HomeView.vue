@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import LeagueTableVue from "@/components/LeagueTable.vue";
-import { storeToRefs } from 'pinia'
+import { storeToRefs } from "pinia";
 import FixturesContainerVue from "@/components/FixturesContainer.vue";
 import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
@@ -29,8 +29,8 @@ import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import api from "@/services/api";
 import { updateTable } from "@/services/calculatePossibilities";
-import { useWinnersStore } from "@/stores/libertadoresSpot";
-import { Leagues, useLeagueChosenStore } from "@/stores/leagueChosen";
+import { useWinnersStore } from "@/stores/winners";
+import { Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
 import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 import FilterNav from "@/components/FilterNav.vue";
@@ -41,7 +41,7 @@ export default {
     const displayTable = ref<ITable[]>([]);
     const leagueInfo = ref<ILeagueInfo>();
     const leagueChosenStore = useLeagueChosenStore();
-    const {leagueChosen} = storeToRefs(leagueChosenStore)
+    const { countryChosen, divisionChosen } = storeToRefs(leagueChosenStore);
 
     function updateFixtures(updatedFixture: IFixtures) {
       fixtures.value = fixtures.value.map((fixture) => (fixture.id === updatedFixture.id ? { ...fixture, ...updatedFixture } : fixture));
@@ -54,7 +54,8 @@ export default {
       table,
       displayTable,
       leagueInfo,
-      leagueChosen,
+      countryChosen,
+      divisionChosen,
     };
   },
   data() {
@@ -73,9 +74,10 @@ export default {
       this.updateWinnersTablePositions();
       this.calculateChances();
     },
-    leagueChosen() {
-      this.$router.push(`${this.leagueChosen}`)
-      this.fetchData()
+    divisionChosen() {
+      console.log("aqui ainda");
+      this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
+      this.fetchData();
     },
   },
   async mounted() {
@@ -89,31 +91,31 @@ export default {
     async fetchData() {
       this.loading = true;
       this.error = "";
-      await this.fetchLeagueTable(this.leagueChosen);
+      await this.fetchLeagueTable(this.countryChosen, this.divisionChosen);
       this.displayTable = this.table;
-      await this.fetchLeagueFixtures(this.leagueChosen);
-      await this.fetchLeagueInfo(this.leagueChosen);
+      await this.fetchLeagueFixtures(this.countryChosen, this.divisionChosen);
+      await this.fetchLeagueInfo(this.countryChosen, this.divisionChosen);
       this.loading = false;
     },
-    async fetchLeagueTable(league: Leagues) {
+    async fetchLeagueTable(country: Countries, division: String) {
       try {
-        const resp = await api.getLeagueTable(league);
+        const resp = await api.getLeagueTable(country, division);
         this.table = resp.data;
       } catch (err: any) {
         this.handleErrors();
       }
     },
-    async fetchLeagueFixtures(league: Leagues) {
+    async fetchLeagueFixtures(country: Countries, division: String) {
       try {
-        const resp = await api.getLeagueFixtures(league);
+        const resp = await api.getLeagueFixtures(country, division);
         this.fixtures = resp.data;
       } catch (err: any) {
         this.handleErrors();
       }
     },
-    async fetchLeagueInfo(league: Leagues) {
+    async fetchLeagueInfo(country: Countries, division: String) {
       try {
-        const resp = await api.getLeagueInfo(league);
+        const resp = await api.getLeagueInfo(country, division);
         this.leagueInfo = resp.data;
       } catch (err: any) {
         this.handleErrors();
@@ -121,16 +123,29 @@ export default {
     },
     updateWinnersTablePositions() {
       const winnersStore = useWinnersStore();
-      const libertadoresSpot = this.displayTable.find((team: ITable) => team.team_name === "Fluminense");
-      const copaDoBrasilSpot = this.displayTable.find((team: ITable) => team.team_name === "Sao Paulo");
-      winnersStore.updateWinnersTablePosition(libertadoresSpot!.position, copaDoBrasilSpot!.position);
-      winnersStore.libertadoresSpots();
+      try {
+        const libertadoresSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.libertadoresWinner);
+        const copaDoBrasilSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.copaDoBrasilWinner);
+
+        let libertadoresPosition = 20;
+        let copaDoBrasilPosition = 20;
+        if (libertadoresSpot) {
+          libertadoresPosition = libertadoresSpot.position;
+        }
+        if (copaDoBrasilSpot) {
+          copaDoBrasilPosition = copaDoBrasilSpot.position;
+        }
+        winnersStore.updateWinnersTablePosition(libertadoresPosition, copaDoBrasilPosition);
+        winnersStore.libertadoresSpots();
+      } catch (err) {
+        this.handleErrors();
+      }
     },
     async calculateChances() {
       const worker = new Worker("/src/worker/worker.ts", { type: "module" });
       const winnersStore = useWinnersStore();
       this.calculating = true;
-      const updatedFixtures = this.fixtures.filter((fixture) => !fixture.result);
+      const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
       worker.onmessage = (message) => {
         if (message.data.type === "results") {
@@ -148,7 +163,15 @@ export default {
       };
       const params = {
         type: "randomizeOutcome",
-        payload: [JSON.stringify(updatedFixtures), JSON.stringify(this.displayTable), JSON.stringify(winnersStore), this.numOutcomes, false],
+        payload: [
+          JSON.stringify(updatedFixtures),
+          JSON.stringify(this.displayTable),
+          JSON.stringify(winnersStore),
+          this.countryChosen,
+          this.divisionChosen,
+          this.numOutcomes,
+          false,
+        ],
       };
       worker.postMessage(params);
     },
@@ -172,3 +195,4 @@ export default {
   }
 }
 </style>
+@/stores/winners

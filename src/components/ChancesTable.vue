@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-use-v-if-with-v-for -->
 <template>
-  <table :class="['teamTable', {hidden: !display}]">
+  <table :class="['teamTable', { hidden: !display }]">
     <thead>
       <tr>
         <th v-if="display"><span id="champion">■</span>{{ mobileStore.isMobile ? "" : "Campeão" }}</th>
@@ -11,7 +11,7 @@
     </thead>
     <td v-if="calculating && display" colspan="4" class="calculating">
       <div class="calculatingContainer">
-        <h1><RefreshIcon :width="mobileStore.isMobile? '15':'25'" /> Calculando</h1>
+        <h1><RefreshIcon :width="mobileStore.isMobile ? '15' : '25'" /> Calculando</h1>
         <div class="progressBarContainer" :style="{ width: `${progressBar}%` }">
           <div class="progressBar"></div>
         </div>
@@ -24,22 +24,11 @@
         :key="index"
         :class="{
           campeao: team.position === 1,
-          libertadores:
-            (team.position > 1 && team.position <= winnersStore.libertadoresSpot) ||
-            team.team_name === winnersStore.libertadoresWinner ||
-            team.team_name === winnersStore.copaDoBrasilWinner,
-          preLibertadores:
-            team.position > winnersStore.libertadoresSpot &&
-            team.position <= winnersStore.preLibertadoresSpot &&
-            team.team_name !== winnersStore.libertadoresWinner &&
-            team.team_name !== winnersStore.copaDoBrasilWinner,
-          sulAmericana:
-            team.position > winnersStore.preLibertadoresSpot &&
-            team.position <= winnersStore.sulAmericanaSpot &&
-            team.team_name !== winnersStore.libertadoresWinner &&
-            team.team_name !== winnersStore.copaDoBrasilWinner,
-          rebaixamento:
-            team.position > 16 && team.team_name !== winnersStore.libertadoresWinner && team.team_name !== winnersStore.copaDoBrasilWinner,
+          libertadores: competitionQualified(team) == 'libertadores',
+          promotion: competitionQualified(team) == 'promotion',
+          preLibertadores: competitionQualified(team) == 'preLibertadores',
+          sulAmericana: competitionQualified(team) == 'sulAmericana',
+          rebaixamento: competitionQualified(team) == 'relegation',
         }"
       >
         <td v-if="chancesTable.first && display">{{ Math.floor((chancesTable.first[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
@@ -60,17 +49,19 @@
 <script lang="ts">
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import { useWinnersStore } from "@/stores/libertadoresSpot";
+import { useWinnersStore } from "@/stores/winners";
 import { defineComponent, type PropType } from "vue";
 import RefreshIcon from "./icons/RefreshIcon.vue";
 import { useIsMobileStore } from "@/stores/isMobile";
-// import mitt from "mitt"
+import checkCompetitionQualified from "@/services/checkCompetitionQualified"
+import { useLeagueChosenStore } from "@/stores/leagueChosen";
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
+    const leagueChosenStore = useLeagueChosenStore()
     const mobileStore = useIsMobileStore();
-    return { winnersStore, mobileStore };
+    return { winnersStore, leagueChosenStore,mobileStore };
   },
   props: {
     table: {
@@ -95,6 +86,11 @@ export default defineComponent({
       type: Number,
     },
   },
+  computed: {
+    competitionQualified() {
+      return checkCompetitionQualified(this.leagueChosenStore, this.winnersStore, this.table)
+    },
+  },
   components: { RefreshIcon },
 });
 </script>
@@ -102,6 +98,9 @@ export default defineComponent({
 <style scoped>
 #champion {
   color: var(--champion);
+}
+#promotion {
+  color: var(--libertadores)
 }
 #libertadores {
   color: var(--preLibertadores);
@@ -122,21 +121,21 @@ export default defineComponent({
   transform: translate(80%, -50%);
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
-.progressBarContainer{
+.progressBarContainer {
   height: 20px;
   width: 100%;
 }
-.progressBar{
+.progressBar {
   height: 100%;
   border-radius: 3px;
   background-color: var(--brasileiraoGold);
 }
 @media screen and (max-width: 760px) {
-  .calculatingContainer{
+  .calculatingContainer {
     position: absolute;
     font-size: 5px;
     transform: translate(20%, -50%);
-    top:50%
+    top: 50%;
   }
 }
 </style>

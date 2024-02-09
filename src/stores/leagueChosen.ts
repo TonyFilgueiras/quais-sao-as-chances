@@ -2,21 +2,22 @@
 import { defineStore } from 'pinia'
 
 export const leagueConfig = {
-  'brasileirao-a': 'brasileirao-a',
-  'premier-a': 'premier-a',
+  'brazil': 'brazil',
 } as const;
 
-export type Leagues = typeof leagueConfig[keyof typeof leagueConfig];
+export type Countries = typeof leagueConfig[keyof typeof leagueConfig];
 
 export const useLeagueChosenStore = defineStore('leagueChosen', {
   state() {
     return {
-      leagueChosen: 'brasileirao-a' as Leagues,
+      countryChosen: 'brazil' as Countries,
+      divisionChosen: "serie-a"
     }
   },
   actions: {
-    chooseLeague(league: Leagues) {
-      this.leagueChosen = league;
+    chooseLeague(country: Countries, division: string) {
+      this.countryChosen = country;
+      this.divisionChosen = division
     }
   }
 

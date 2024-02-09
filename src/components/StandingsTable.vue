@@ -17,22 +17,11 @@
         :key="index"
         :class="{
           campeao: team.position === 1,
-          libertadores:
-            (team.position > 1 && team.position <= winnersStore.libertadoresSpot) ||
-            team.team_name === winnersStore.libertadoresWinner ||
-            team.team_name === winnersStore.copaDoBrasilWinner,
-          preLibertadores:
-            team.position > winnersStore.libertadoresSpot &&
-            team.position <= winnersStore.preLibertadoresSpot &&
-            team.team_name !== winnersStore.libertadoresWinner &&
-            team.team_name !== winnersStore.copaDoBrasilWinner,
-          sulAmericana:
-            team.position > winnersStore.preLibertadoresSpot &&
-            team.position <= winnersStore.sulAmericanaSpot &&
-            team.team_name !== winnersStore.libertadoresWinner &&
-            team.team_name !== winnersStore.copaDoBrasilWinner,
-          rebaixamento:
-            team.position > 16 && team.team_name !== winnersStore.libertadoresWinner && team.team_name !== winnersStore.copaDoBrasilWinner,
+          libertadores: competitionQualified(team) == 'libertadores',
+          promotion: competitionQualified(team) == 'promotion',
+          preLibertadores: competitionQualified(team) == 'preLibertadores',
+          sulAmericana: competitionQualified(team) == 'sulAmericana',
+          rebaixamento: competitionQualified(team) == 'relegation',
         }"
       >
         <td class="position">{{ team.position }}</td>
@@ -50,16 +39,19 @@
 
 <script lang="ts">
 import type ITable from "@/interfaces/ITable";
+import checkCompetitionQualified from "@/services/checkCompetitionQualified";
 import { useIsMobileStore } from "@/stores/isMobile";
-import { useWinnersStore } from "@/stores/libertadoresSpot";
+import { useLeagueChosenStore } from "@/stores/leagueChosen";
+import { useWinnersStore } from "@/stores/winners";
 import { defineComponent, type PropType } from "vue";
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
+    const leagueChosenStore = useLeagueChosenStore()
     const mobileStore = useIsMobileStore();
 
-    return { winnersStore, mobileStore };
+    return { winnersStore,leagueChosenStore, mobileStore };
   },
   props: {
     table: {
@@ -69,5 +61,10 @@ export default defineComponent({
       type: Boolean,
     }
   },
+  computed: {
+    competitionQualified() {
+      return checkCompetitionQualified(this.leagueChosenStore, this.winnersStore, this.table)
+    }
+  },
 });
-</script>
+</script>@/stores/winners

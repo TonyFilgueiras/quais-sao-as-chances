@@ -2,6 +2,7 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import type { IWinnersStore } from "@/interfaces/IWinnersStore";
+import type { Countries } from "@/stores/leagueChosen";
 import { sendProgress } from "@/worker/worker";
 
 interface Score {
@@ -67,10 +68,11 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
 }
 
 export function randomizeOutcome(
-  this: any,
   fixtures: IFixtures[],
   leagueStandings: ITable[],
   winnerStore: IWinnersStore,
+  countryChosen: Countries,
+  division: string,
   numOutcomes: number,
   weighted: boolean
 ): IPositionChances {
@@ -132,18 +134,19 @@ export function randomizeOutcome(
         positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
         positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
       } else if (
-        team.position <= winnerStore.preLibertadoresSpot ||
-        team.team_name === winnerStore.copaDoBrasilWinner ||
-        team.team_name === winnerStore.libertadoresWinner
+        team.position <= winnerStore[countryChosen]['serieA'].preLibertadoresSpot ||
+        team.team_name === winnerStore[countryChosen].copaDoBrasilWinner ||
+        team.team_name === winnerStore[countryChosen].libertadoresWinner
       ) {
         positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
       } else if (
-        team.position <= winnerStore.sulAmericanaSpot &&
-        team.team_name !== winnerStore.copaDoBrasilWinner &&
-        team.team_name !== winnerStore.libertadoresWinner
+        team.position <= winnerStore[countryChosen]['serieA'].sulAmericanaSpot &&
+        team.team_name !== winnerStore[countryChosen].copaDoBrasilWinner &&
+        team.team_name !== winnerStore[countryChosen].libertadoresWinner
       ) {
         positionCounts.sulAmericana[team.team_name] = (positionCounts.sulAmericana[team.team_name] || 0) + 1;
-      } else if (team.position > 16) {
+      }
+      if (team.position > leagueStandings.length - winnerStore[countryChosen]['serieA'].relegation) {
         positionCounts.rebaixamento[team.team_name] = (positionCounts.rebaixamento[team.team_name] || 0) + 1;
       }
     });

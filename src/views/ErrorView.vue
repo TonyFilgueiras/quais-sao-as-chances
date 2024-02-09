@@ -13,9 +13,9 @@ import {storeToRefs} from "pinia"
 export default {
   setup() {
     const leagueChosenStore = useLeagueChosenStore()
-    const {leagueChosen} = storeToRefs(leagueChosenStore)
+    const {countryChosen} = storeToRefs(leagueChosenStore)
 
-    return {leagueChosen}
+    return {countryChosen}
   },
   watch: {
     leagueChosen() {

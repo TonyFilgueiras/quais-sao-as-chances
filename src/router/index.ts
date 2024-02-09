@@ -1,48 +1,48 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ErrorView from '@/views/ErrorView.vue'
-import { useLeagueChosenStore, type Leagues, leagueConfig } from '@/stores/leagueChosen'
-import NotFoundView from '@/views/NotFoundView.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import ErrorView from "@/views/ErrorView.vue";
+import { useLeagueChosenStore, type Countries, leagueConfig } from "@/stores/leagueChosen";
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const validLeagueNames = Object.keys(leagueConfig);
-
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: "/",
       redirect: () => {
-        return { name: 'home', params: { leagueName: 'brasileirao-a' } };
+        return { name: "home", params: { leagueCountry: "brazil", leagueDivision: "serie-a" } };
       },
     },
     {
-      path: '/:leagueName',
-      name: 'home',
+      path: "/:leagueCountry/:leagueDivision",
+      name: "home",
       component: HomeView,
       beforeEnter: (to, from, next) => {
-        const leagueChosenStore = useLeagueChosenStore()
-        const leagueName = to.params.leagueName as Leagues
+        const leagueChosenStore = useLeagueChosenStore();
+        const leagueCountry = to.params.leagueCountry as Countries;
+        const leagueDivision = to.params.leagueDivision as Countries;
 
-        if (validLeagueNames.includes(leagueName)) {
-          leagueChosenStore.chooseLeague(leagueName)
-          next()
+        if (validLeagueNames.includes(leagueCountry)) {
+          leagueChosenStore.chooseLeague(leagueCountry, leagueDivision);
+          next();
         } else {
-          next("/league/not-found")
+          next("/league/not/found");
         }
-      }
+      },
     },
     {
-      path: '/error',
-      name: 'error',
-      component: ErrorView
+      path: "/error",
+      name: "error",
+      component: ErrorView,
     },
     {
-      path: '/:pathMatch(.*)*', // Catch any path that hasn't matched previous routes
-      name: 'not-found',
-      component: NotFoundView // Replace with your 404 component
-    }
-  ]
-})
+      path: "/:pathMatch(.*)*", // Catch any path that hasn't matched previous routes
+      name: "not-found",
+      component: NotFoundView, // Replace with your 404 component
+    },
+  ],
+});
 
-export default router
+export default router;
