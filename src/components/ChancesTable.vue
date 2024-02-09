@@ -4,8 +4,15 @@
     <thead>
       <tr>
         <th v-if="display"><span id="champion">■</span>{{ mobileStore.isMobile ? "" : "Campeão" }}</th>
-        <th v-if="display"><span id="libertadores">■</span>{{ mobileStore.isMobile ? "" : "Libertadores" }}</th>
-        <th v-if="display"><span id="sulamericana">■</span>{{ mobileStore.isMobile ? "" : "Sul Americana" }}</th>
+        <th v-if="display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
+          <span id="libertadores">■</span>{{ mobileStore.isMobile ? "" : "Libertadores" }}
+        </th>
+        <th v-if="display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-b'">
+          <span id="promotion">■</span>{{ mobileStore.isMobile ? "" : "Promoção" }}
+        </th>
+        <th v-if="display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
+          <span id="sulamericana">■</span>{{ mobileStore.isMobile ? "" : "Sul Americana" }}
+        </th>
         <th v-if="display"><span id="rebaixamento">■</span>{{ mobileStore.isMobile ? "" : "Rebaixamento" }}</th>
       </tr>
     </thead>
@@ -32,14 +39,17 @@
         }"
       >
         <td v-if="chancesTable.first && display">{{ Math.floor((chancesTable.first[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%</td>
-        <td v-if="chancesTable.libertadores && display">
+        <td v-if="chancesTable.libertadores && display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
           {{ Math.floor((chancesTable.libertadores[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
         </td>
-        <td v-if="chancesTable.sulAmericana && display">
+        <td v-if="chancesTable.promotion && display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-b'">
+          {{ Math.floor((chancesTable.promotion[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
+        <td v-if="chancesTable.sulAmericana && display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
           {{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
         </td>
-        <td v-if="chancesTable.rebaixamento && display">
-          {{ Math.floor((chancesTable.rebaixamento[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        <td v-if="chancesTable.relegation && display">
+          {{ Math.floor((chancesTable.relegation[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
         </td>
       </tr>
     </tbody>
@@ -53,15 +63,15 @@ import { useWinnersStore } from "@/stores/winners";
 import { defineComponent, type PropType } from "vue";
 import RefreshIcon from "./icons/RefreshIcon.vue";
 import { useIsMobileStore } from "@/stores/isMobile";
-import checkCompetitionQualified from "@/services/checkCompetitionQualified"
+import checkCompetitionQualified from "@/services/checkCompetitionQualified";
 import { useLeagueChosenStore } from "@/stores/leagueChosen";
 
 export default defineComponent({
   setup() {
     const winnersStore = useWinnersStore();
-    const leagueChosenStore = useLeagueChosenStore()
+    const leagueChosenStore = useLeagueChosenStore();
     const mobileStore = useIsMobileStore();
-    return { winnersStore, leagueChosenStore,mobileStore };
+    return { winnersStore, leagueChosenStore, mobileStore };
   },
   props: {
     table: {
@@ -88,7 +98,7 @@ export default defineComponent({
   },
   computed: {
     competitionQualified() {
-      return checkCompetitionQualified(this.leagueChosenStore, this.winnersStore, this.table)
+      return checkCompetitionQualified(this.leagueChosenStore, this.winnersStore, this.table);
     },
   },
   components: { RefreshIcon },
@@ -100,7 +110,7 @@ export default defineComponent({
   color: var(--champion);
 }
 #promotion {
-  color: var(--libertadores)
+  color: var(--libertadores);
 }
 #libertadores {
   color: var(--preLibertadores);
@@ -116,10 +126,8 @@ export default defineComponent({
   color: white;
 }
 .calculatingContainer {
-  position: fixed;
-  top: 50%;
-  transform: translate(80%, -50%);
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  margin: 30vh auto;
 }
 .progressBarContainer {
   height: 20px;
@@ -130,12 +138,9 @@ export default defineComponent({
   border-radius: 3px;
   background-color: var(--brasileiraoGold);
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 300px) {
   .calculatingContainer {
-    position: absolute;
     font-size: 5px;
-    transform: translate(20%, -50%);
-    top: 50%;
   }
 }
 </style>

@@ -72,11 +72,11 @@ export function randomizeOutcome(
   leagueStandings: ITable[],
   winnerStore: IWinnersStore,
   countryChosen: Countries,
-  division: string,
+  divisionChosen: string,
   numOutcomes: number,
   weighted: boolean
 ): IPositionChances {
-  const positionCounts: IPositionChances = { first: {}, libertadores: {}, sulAmericana: {}, rebaixamento: {} };
+  const positionCounts: IPositionChances = { first: {}, libertadores: {}, promotion: {},sulAmericana: {}, relegation: {} };
   let progress = 0;
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy
@@ -127,34 +127,59 @@ export function randomizeOutcome(
     sortStandings(standings);
 
     // Update positions
-    standings.forEach((team, index) => {
-      team.position = index + 1;
+    updatePositions(standings, positionCounts, winnerStore, countryChosen, divisionChosen, leagueStandings)
 
-      if (team.position === 1) {
-        positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
-        positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
-      } else if (
-        team.position <= winnerStore[countryChosen]['serieA'].preLibertadoresSpot ||
-        team.team_name === winnerStore[countryChosen].copaDoBrasilWinner ||
-        team.team_name === winnerStore[countryChosen].libertadoresWinner
-      ) {
-        positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
-      } else if (
-        team.position <= winnerStore[countryChosen]['serieA'].sulAmericanaSpot &&
-        team.team_name !== winnerStore[countryChosen].copaDoBrasilWinner &&
-        team.team_name !== winnerStore[countryChosen].libertadoresWinner
-      ) {
-        positionCounts.sulAmericana[team.team_name] = (positionCounts.sulAmericana[team.team_name] || 0) + 1;
-      }
-      if (team.position > leagueStandings.length - winnerStore[countryChosen]['serieA'].relegation) {
-        positionCounts.rebaixamento[team.team_name] = (positionCounts.rebaixamento[team.team_name] || 0) + 1;
-      }
-    });
     progress = Math.round((i * 100) / numOutcomes);
     sendProgress(progress);
   }
   return positionCounts;
 }
+
+function updatePositions(standings: ITable[], positionCounts: IPositionChances, winnerStore: IWinnersStore, countryChosen: Countries, divisionChosen: string,leagueStandings:ITable[]) {
+  standings.forEach((team, index) => {
+    team.position = index + 1;
+
+    switch (countryChosen) {
+      case "brazil":
+        switch (divisionChosen) {
+          case "serie-a":
+            if (team.position === 1) {
+              positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
+              positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
+            } else if (
+              team.position <= winnerStore[countryChosen]["serieA"].preLibertadoresSpot ||
+              team.team_name === winnerStore[countryChosen].copaDoBrasilWinner ||
+              team.team_name === winnerStore[countryChosen].libertadoresWinner
+            ) {
+              positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
+            } else if (
+              team.position <= winnerStore[countryChosen]["serieA"].sulAmericanaSpot &&
+              team.team_name !== winnerStore[countryChosen].copaDoBrasilWinner &&
+              team.team_name !== winnerStore[countryChosen].libertadoresWinner
+            ) {
+              positionCounts.sulAmericana[team.team_name] = (positionCounts.sulAmericana[team.team_name] || 0) + 1;
+            }
+            if (team.position > leagueStandings.length - winnerStore[countryChosen]["serieA"].relegation) {
+              positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
+            }
+            break;
+          case "serie-b":
+            if (team.position === 1) {
+              positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
+              positionCounts.promotion[team.team_name] = (positionCounts.promotion[team.team_name] || 0) + 1;
+            } else if (
+              team.position <= winnerStore[countryChosen]['serieB'].promotion
+            ) {
+              positionCounts.promotion[team.team_name] = (positionCounts.promotion[team.team_name] || 0) + 1;
+            } else if (team.position > leagueStandings.length - winnerStore[countryChosen]["serieB"].relegation) {
+              positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
+            }
+
+        }
+    }
+  });
+}
+
 
 export function getWeightedScores(homeWinProbability: number, drawProbability: number): string {
   // Adjust the probabilities based on homeWinProbability
