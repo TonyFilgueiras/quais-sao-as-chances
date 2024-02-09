@@ -2,8 +2,12 @@
   <div :class="['menuSidebar', { sidebarHidden: !showMenuSidebar }]">
     <StandardButton text="X" @click="closeMenuSidebar" />
     <ul>
-      <li v-for="league in leagues" :key="league.name" @click="leagueChosenStore.chooseLeague(league.country, league.division)">
-        {{ league.name }}
+      <li id="leagues">Ligas
+        <ul class="leaguesContainer" ref="leaguesContainer">
+          <li v-for="league in leagues" class="league" :key="league.name" @click="leagueChosenStore.chooseLeague(league.country, league.division)">
+            {{ league.name }}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -17,7 +21,8 @@ import type ILeaguesAvaiable from "@/interfaces/ILeaguesAvaiable"
 export default {
   setup() {
     const leagueChosenStore = useLeagueChosenStore();
-    return { leagueChosenStore };
+
+    return { leagueChosenStore, };
   },
   props: {
     showMenuSidebar: {
@@ -50,6 +55,7 @@ export default {
   components: { StandardButton },
 };
 </script>
+
 <style scoped>
 div {
   position: fixed;
@@ -65,16 +71,55 @@ div {
 button {
   margin: 10px 0 20px 10px;
 }
-
 li {
   width: 100%;
   padding: 20px 10px;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 li:hover {
   cursor: pointer;
   background-color: #ffffff88;
 }
+/* Hide dropdown by default */
+.leaguesContainer {
+  display: none;
+  margin-left: -10px;
+  margin-top: 20px;
+  transform-origin: top;
+  transform: scaleY(0.1);
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Style for the parent list item */
+#leagues {
+  position: relative;
+}
+
+/* Show dropdown when hover over parent list item */
+#leagues:hover .leaguesContainer {
+  display: block;
+  animation: showContent 0.5s ease forwards;
+}
+#leagues:hover + li{
+  margin-top: 250px;
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+    transform: scaleY(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+
 .sidebarHidden {
   transform: translateX(-150%);
 }

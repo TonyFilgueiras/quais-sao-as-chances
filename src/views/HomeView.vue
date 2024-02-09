@@ -75,7 +75,6 @@ export default {
       this.calculateChances();
     },
     divisionChosen() {
-      console.log("aqui ainda");
       this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
       this.fetchData();
     },
