@@ -21,7 +21,7 @@ import ChancesTableVue from "./ChancesTable.vue";
 import type { PropType } from "vue";
 import { useIsMobileStore } from "@/stores/isMobile";
 import LeagueHeader from "./LeagueHeader.vue";
-import ILeagueInfo from "@/interfaces/ILeagueInfo";
+import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 export default {
   setup() {
     const winnersStore = useWinnersStore();

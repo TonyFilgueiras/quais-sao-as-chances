@@ -11,7 +11,7 @@
           :calculating="calculating"
           :num-outcomes="numOutcomes"
           :progress-bar="progressBar"
-          :league-info="leagueInfo"
+          :league-info="leagueInfo!"
         />
         <FixturesContainerVue :fixtures="fixtures" @winnerSelected="updateFixtures" />
       </div>
@@ -30,7 +30,7 @@ import type ITable from "@/interfaces/ITable";
 import api from "@/services/api";
 import { updateTable } from "@/services/calculatePossibilities";
 import { useWinnersStore } from "@/stores/winners";
-import { Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
+import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
 import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 import FilterNav from "@/components/FilterNav.vue";

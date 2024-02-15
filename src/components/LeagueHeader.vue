@@ -10,8 +10,8 @@
   </header>
 </template>
 <script lang="ts">
-import ILeagueInfo from '@/interfaces/ILeagueInfo';
-import { PropType } from 'vue';
+import type ILeagueInfo from '@/interfaces/ILeagueInfo';
+import { type PropType } from 'vue';
 
 export default {
   props: {

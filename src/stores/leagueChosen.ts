@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 
 export const leagueConfig = {
   'brazil': 'brazil',
+  'league': 'league',
 } as const;
 
 export type Countries = typeof leagueConfig[keyof typeof leagueConfig];

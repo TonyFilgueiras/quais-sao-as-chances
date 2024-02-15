@@ -56,6 +56,7 @@ export default defineComponent({
   props: {
     table: {
       type: Array as PropType<ITable[]>,
+      required: true,
     },
     display: {
       type: Boolean,

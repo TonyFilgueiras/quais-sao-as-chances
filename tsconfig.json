@@ -15,6 +15,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "verbatimModuleSyntax": false,
     "lib": ["dom", "esnext"],
     "types": ["vite/client", "node", "dotenv"],
     "baseUrl": "./src",

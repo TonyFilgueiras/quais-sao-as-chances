@@ -48,7 +48,7 @@ export default {
         const resp = await api.getLeaguesAvaiable();
         this.leagues = resp.data;
       } catch (err: any) {
-        this.handleErrors();
+        this.$router.push("/error");
       }
     }
   },
