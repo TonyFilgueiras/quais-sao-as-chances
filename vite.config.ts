@@ -1,7 +1,10 @@
-import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { fileURLToPath, URL } from 'node:url';
+import dotenv from 'dotenv';
 
+// Load environment variables from .env file
+dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,10 +19,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:5000',
+        target: process.env.VITE_API_IP,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
-
       },
     }
   },
