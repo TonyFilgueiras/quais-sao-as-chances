@@ -1,7 +1,6 @@
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import type { IWinnersStore } from "@/interfaces/IWinnersStore";
 import type { Countries } from "@/stores/leagueChosen";
 import { sendProgress } from "@/worker/worker";
 
@@ -70,7 +69,10 @@ export function updateStandings(standings: ITable[], team: string, scored: numbe
 export function randomizeOutcome(
   fixtures: IFixtures[],
   leagueStandings: ITable[],
-  winnerStore: IWinnersStore,
+  copaDoBrasilWinner: string,
+  libertadoresWinner: string,
+  preLibertadoresSpot: number,
+  sulAmericanaSpot: number,
   countryChosen: Countries,
   divisionChosen: string,
   numOutcomes: number,
@@ -127,7 +129,7 @@ export function randomizeOutcome(
     sortStandings(standings);
 
     // Update positions
-    updatePositions(standings, positionCounts, winnerStore, countryChosen, divisionChosen, leagueStandings)
+    updatePositions(standings, positionCounts, copaDoBrasilWinner, libertadoresWinner, preLibertadoresSpot, sulAmericanaSpot,countryChosen, divisionChosen, leagueStandings)
 
     progress = Math.round((i * 100) / numOutcomes);
     sendProgress(progress);
@@ -135,7 +137,7 @@ export function randomizeOutcome(
   return positionCounts;
 }
 
-function updatePositions(standings: ITable[], positionCounts: IPositionChances, winnerStore: IWinnersStore, countryChosen: Countries, divisionChosen: string,leagueStandings:ITable[]) {
+function updatePositions(standings: ITable[], positionCounts: IPositionChances,  copaDoBrasilWinner: string, libertadoresWinner: string,preLibertadoresSpot: number, sulAmericanaSpot:number,countryChosen: Countries, divisionChosen: string,leagueStandings:ITable[]) {
   standings.forEach((team, index) => {
     team.position = index + 1;
 
@@ -147,19 +149,19 @@ function updatePositions(standings: ITable[], positionCounts: IPositionChances, 
               positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
               positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
             } else if (
-              team.position <= winnerStore[countryChosen]["serieA"].preLibertadoresSpot ||
-              team.team_name === winnerStore[countryChosen].copaDoBrasilWinner ||
-              team.team_name === winnerStore[countryChosen].libertadoresWinner
+              team.position <= preLibertadoresSpot ||
+              team.team_name === copaDoBrasilWinner ||
+              team.team_name === libertadoresWinner
             ) {
               positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
             } else if (
-              team.position <= winnerStore[countryChosen]["serieA"].sulAmericanaSpot &&
-              team.team_name !== winnerStore[countryChosen].copaDoBrasilWinner &&
-              team.team_name !== winnerStore[countryChosen].libertadoresWinner
+              team.position <= sulAmericanaSpot &&
+              team.team_name !== copaDoBrasilWinner &&
+              team.team_name !== libertadoresWinner
             ) {
               positionCounts.sulAmericana[team.team_name] = (positionCounts.sulAmericana[team.team_name] || 0) + 1;
             }
-            if (team.position > leagueStandings.length - winnerStore[countryChosen]["serieA"].relegation) {
+            if (team.position > leagueStandings.length - 4) {
               positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
             }
             break;
@@ -168,10 +170,10 @@ function updatePositions(standings: ITable[], positionCounts: IPositionChances, 
               positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
               positionCounts.promotion[team.team_name] = (positionCounts.promotion[team.team_name] || 0) + 1;
             } else if (
-              team.position <= winnerStore[countryChosen]['serieB'].promotion
+              team.position <= 4
             ) {
               positionCounts.promotion[team.team_name] = (positionCounts.promotion[team.team_name] || 0) + 1;
-            } else if (team.position > leagueStandings.length - winnerStore[countryChosen]["serieB"].relegation) {
+            } else if (team.position > leagueStandings.length - 4) {
               positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
             }
 

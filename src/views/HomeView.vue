@@ -143,6 +143,10 @@ export default {
     async calculateChances() {
       const worker = new Worker("/src/worker/worker.ts", { type: "module" });
       const winnersStore = useWinnersStore();
+      const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner
+      const libertadoresWinner = winnersStore.brazil.libertadoresWinner
+      const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot
+      const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot
       this.calculating = true;
       const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
@@ -165,7 +169,10 @@ export default {
         payload: [
           JSON.stringify(updatedFixtures),
           JSON.stringify(this.displayTable),
-          JSON.stringify(winnersStore),
+          copaDoBrasilWinner,
+          libertadoresWinner,
+          preLibertadoresSpot,
+          sulAmericanaSpot,
           this.countryChosen,
           this.divisionChosen,
           this.numOutcomes,
