@@ -72,7 +72,7 @@ export default {
   watch: {
     displayTable() {
       this.updateWinnersTablePositions();
-      this.calculateChances();
+      // this.calculateChances();
     },
     divisionChosen() {
       this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
@@ -84,7 +84,7 @@ export default {
     if (this.error) return;
     this.updateWinnersTablePositions();
 
-    await this.calculateChances();
+    // await this.calculateChances();
   },
   methods: {
     async fetchData() {
