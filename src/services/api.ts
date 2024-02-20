@@ -6,11 +6,12 @@ import type { Countries } from '@/stores/leagueChosen'
 import type ILeaguesAvaiable from '@/interfaces/ILeaguesAvaiable'
 
 const http = axios.create({
-    baseURL: '/api',
+    //@ts-ignore
+    baseURL: import.meta.env.VITE_API_IP,
 })
-
 export default {
     getLeagueTable(country: Countries, division: String) : Promise<AxiosResponse<ITable[]>>{
+        console.log('Request URL:', '/api/leagues');
         return http.get(`/${country}/${division}/standings`)
     },
     getLeagueFixtures(country: Countries, division: String) :Promise<AxiosResponse<IFixtures[]>>{
