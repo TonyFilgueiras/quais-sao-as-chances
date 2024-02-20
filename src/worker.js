@@ -12,6 +12,6 @@ self.onmessage = (event) => {
   }
 };
 
-export function sendProgress(progress: number) {
+export function sendProgress(progress) {
   postMessage({ type: "progress", progress });
 }

@@ -141,12 +141,12 @@ export default {
       }
     },
     async calculateChances() {
-      const worker = new Worker("/src/worker/worker.ts", { type: "module" });
+      const worker = new Worker(new URL("../worker", import.meta.url), { type: "module" });
       const winnersStore = useWinnersStore();
-      const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner
-      const libertadoresWinner = winnersStore.brazil.libertadoresWinner
-      const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot
-      const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot
+      const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner;
+      const libertadoresWinner = winnersStore.brazil.libertadoresWinner;
+      const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot;
+      const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot;
       this.calculating = true;
       const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
@@ -161,6 +161,7 @@ export default {
         }
       };
       worker.onerror = () => {
+        console.log("error no worker")
         this.handleErrors();
         this.calculating = false;
       };

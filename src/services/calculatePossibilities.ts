@@ -2,7 +2,7 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
 import type { Countries } from "@/stores/leagueChosen";
-import { sendProgress } from "@/worker/worker";
+import { sendProgress } from "@/worker";
 
 interface Score {
   [team: string]: number;

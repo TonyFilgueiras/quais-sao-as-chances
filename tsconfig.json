@@ -17,12 +17,14 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": false,
     "outDir": "dist",
-    "rootDir": "src",
-    "lib": ["dom", "esnext"],
+    "lib": ["WebWorker","dom", "esnext"],
     "types": ["vite/client", "node", "dotenv"],
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
     }
   },
+  "include": [
+    "src/**/*"
+  ],
 }
