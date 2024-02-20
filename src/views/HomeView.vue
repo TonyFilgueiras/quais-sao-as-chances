@@ -3,7 +3,8 @@
     <h1 v-if="error">{{ error }}</h1>
     <LoadingContainer v-if="loading" />
     <div v-else>
-      <FilterNav v-if="fixtures.length > 0" />
+      <!-- <FilterNav v-if="fixtures.length > 0" /> -->
+        <WarningBox v-if="fixtures.length == 0" warning-text="Campeonato encerrado"/>
       <div class="mainContainer">
         <LeagueTableVue
           :table="displayTable"
@@ -33,7 +34,8 @@ import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
 import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
-import FilterNav from "@/components/FilterNav.vue";
+// import FilterNav from "@/components/FilterNav.vue";
+import WarningBox from "@/components/WarningBox.vue";
 export default {
   setup() {
     const fixtures = ref<IFixtures[]>([]);
@@ -186,7 +188,7 @@ export default {
       this.$router.push("/error");
     },
   },
-  components: { LeagueTableVue, FixturesContainerVue, LoadingContainer, FilterNav },
+  components: { LeagueTableVue, FixturesContainerVue, LoadingContainer,  WarningBox },
 };
 </script>
 

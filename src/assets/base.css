@@ -14,6 +14,8 @@
   }
 } */
 :root{
+  --warning: #8f7e00;
+
   --champion: #00ff0088;
   --libertadores: #4444ff88;
   --preLibertadores: #44ffff88;
