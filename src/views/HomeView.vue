@@ -150,6 +150,11 @@ export default {
       const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot;
       const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot;
       this.calculating = true;
+
+      if (this.fixtures.length > 300) {
+        this.numOutcomes = 10000
+      }
+
       const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
       worker.onmessage = (message) => {
