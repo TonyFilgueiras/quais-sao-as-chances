@@ -13,6 +13,12 @@
         <th v-if="display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
           <span id="sulamericana">■</span>{{ mobileStore.isMobile ? "" : "Sul Americana" }}
         </th>
+        <th v-if="display && leagueChosenStore.countryChosen == 'england' && leagueChosenStore.divisionChosen == 'premier-league'">
+          <span id="promotion">■</span>{{ mobileStore.isMobile ? "" : "Champions" }}
+        </th>
+        <th v-if="display && leagueChosenStore.countryChosen == 'england' && leagueChosenStore.divisionChosen == 'premier-league'">
+          <span id="sulamericana">■</span>{{ mobileStore.isMobile ? "" : "Europa League" }}
+        </th>
         <th v-if="display"><span id="rebaixamento">■</span>{{ mobileStore.isMobile ? "" : "Rebaixamento" }}</th>
       </tr>
     </thead>
@@ -47,6 +53,12 @@
         </td>
         <td v-if="chancesTable.sulAmericana && display && leagueChosenStore.countryChosen == 'brazil' && leagueChosenStore.divisionChosen == 'serie-a'">
           {{ Math.floor((chancesTable.sulAmericana[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
+        <td v-if="chancesTable.championsLeague && display && leagueChosenStore.countryChosen == 'england' && leagueChosenStore.divisionChosen == 'premier-league'">
+          {{ Math.floor((chancesTable.championsLeague[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
+        </td>
+        <td v-if="chancesTable.europaLeague && display && leagueChosenStore.countryChosen == 'england' && leagueChosenStore.divisionChosen == 'premier-league'">
+          {{ Math.floor((chancesTable.europaLeague[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%
         </td>
         <td v-if="chancesTable.relegation && display">
           {{ Math.floor((chancesTable.relegation[team.team_name] / numOutcomes) * 10000) / 100 || 0 }}%

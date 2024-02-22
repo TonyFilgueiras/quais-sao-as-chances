@@ -6,11 +6,11 @@ export const useWinnersStore = defineStore('winners', {
       brazil: {
         libertadoresWinner: 'Fluminense',
         copaDoBrasilWinner: 'Sao Paulo',
-        serieA:{
+        serieA: {
           libertadoresWinnerTableSpot: 20,
           copaDoBrasilWinnerTableSpot: 20,
-          libertadoresSpot : 4,
-          preLibertadoresSpot : 6,
+          libertadoresSpot: 4,
+          preLibertadoresSpot: 6,
           sulAmericanaSpot: 12,
           relegation: 4,
         },
@@ -18,13 +18,23 @@ export const useWinnersStore = defineStore('winners', {
           promotion: 4,
           relegation: 4,
         }
+      },
+      england: {
+        FACupWinner: "",
+        premierLeague: {
+          FACupWinnerTableSpot: 20,
+          championsSpot: 4,
+          europaSpot: 5,
+          relegation: 3,
+        }
       }
     }
   },
   actions: {
-    updateWinnersTablePosition(libertadoresTableSpot: number, copaDoBrasilWinnerTableSpot: number ){
+    updateWinnersTablePosition(libertadoresTableSpot: number, copaDoBrasilWinnerTableSpot: number, FACupWinnerTableSpot: number ){
       this.brazil.serieA.copaDoBrasilWinnerTableSpot = copaDoBrasilWinnerTableSpot
       this.brazil.serieA.libertadoresWinnerTableSpot = libertadoresTableSpot
+      this.england.premierLeague.FACupWinnerTableSpot = FACupWinnerTableSpot
     },
     libertadoresSpots() {
       this.brazil.serieA.libertadoresSpot = 4
@@ -54,6 +64,13 @@ export const useWinnersStore = defineStore('winners', {
     setWinners(libertadores: string, copaDoBrasil: string) {
       this.brazil.libertadoresWinner = libertadores
       this.brazil.copaDoBrasilWinner = copaDoBrasil
-    }
+    },
+    championsSpots() {
+      this.england.premierLeague.championsSpot = 4
+      this.england.premierLeague.europaSpot = 5
+      if (this.england.premierLeague.FACupWinnerTableSpot <= 5) {
+        this.england.premierLeague.europaSpot += 1
+      }
+    },
   }
 })

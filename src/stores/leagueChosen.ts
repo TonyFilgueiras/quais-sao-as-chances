@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 
 export const leagueConfig = {
   'brazil': 'brazil',
+  "england": "england",
   'league': 'league',
 } as const;
 

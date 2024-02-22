@@ -15,9 +15,19 @@ export interface IWinnersStore {
       relegation: number
     }
   
+  },
+  england: {
+    FACupWinner: string
+    premierLeague: {
+      FACupWinnerTableSpot: number
+      championsSpot: number
+      europaSpot: number
+      relegation: number
+    }
   }
 
-  updateWinnersTablePosition(libertadoresTableSpot: number, copaDoBrasilWinnerTableSpot: number): void;
+  updateWinnersTablePosition(libertadoresTableSpot: number, copaDoBrasilWinnerTableSpot: number, FACupWinnerTableSpot: number): void;
   libertadoresSpots(): void;
+  championsSpots(): void
 }
 

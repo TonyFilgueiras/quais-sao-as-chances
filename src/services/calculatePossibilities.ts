@@ -71,14 +71,17 @@ export function randomizeOutcome(
   leagueStandings: ITable[],
   copaDoBrasilWinner: string,
   libertadoresWinner: string,
+  FACupWinner: string,
   preLibertadoresSpot: number,
   sulAmericanaSpot: number,
+  championsSpot: number,
+  europaSpot: number,
   countryChosen: Countries,
   divisionChosen: string,
   numOutcomes: number,
   weighted: boolean
 ): IPositionChances {
-  const positionCounts: IPositionChances = { first: {}, libertadores: {}, promotion: {},sulAmericana: {}, relegation: {} };
+  const positionCounts: IPositionChances = { first: {}, libertadores: {}, promotion: {},sulAmericana: {}, relegation: {},championsLeague:{},europaLeague:{}, };
   let progress = 0;
   for (let i = 0; i < numOutcomes; i++) {
     const standings: ITable[] = JSON.parse(JSON.stringify(leagueStandings)); // Deep copy
@@ -129,7 +132,7 @@ export function randomizeOutcome(
     sortStandings(standings);
 
     // Update positions
-    updatePositions(standings, positionCounts, copaDoBrasilWinner, libertadoresWinner, preLibertadoresSpot, sulAmericanaSpot,countryChosen, divisionChosen, leagueStandings)
+    updatePositions(standings, positionCounts, copaDoBrasilWinner, libertadoresWinner,FACupWinner, preLibertadoresSpot, sulAmericanaSpot,championsSpot,europaSpot,countryChosen, divisionChosen, leagueStandings)
 
     progress = Math.round((i * 100) / numOutcomes);
     sendProgress(progress);
@@ -137,7 +140,7 @@ export function randomizeOutcome(
   return positionCounts;
 }
 
-function updatePositions(standings: ITable[], positionCounts: IPositionChances,  copaDoBrasilWinner: string, libertadoresWinner: string,preLibertadoresSpot: number, sulAmericanaSpot:number,countryChosen: Countries, divisionChosen: string,leagueStandings:ITable[]) {
+function updatePositions(standings: ITable[], positionCounts: IPositionChances,  copaDoBrasilWinner: string, libertadoresWinner: string,FACupWinner: string,preLibertadoresSpot: number, sulAmericanaSpot:number, championsSpot:number, europaSpot:number,countryChosen: Countries, divisionChosen: string,leagueStandings:ITable[]) {
   standings.forEach((team, index) => {
     team.position = index + 1;
 
@@ -178,6 +181,28 @@ function updatePositions(standings: ITable[], positionCounts: IPositionChances, 
             }
 
         }
+        break
+      case "england":
+        switch (divisionChosen) { 
+          case "premier-league":
+            if (team.position === 1) {
+              positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
+              positionCounts.championsLeague[team.team_name] = (positionCounts.championsLeague[team.team_name] || 0) + 1;
+            } else if (
+              team.position <= championsSpot
+            ) {
+              positionCounts.championsLeague[team.team_name] = (positionCounts.championsLeague[team.team_name] || 0) + 1;
+            } else if (
+              team.position <= europaSpot || team.team_name === FACupWinner
+            ) {
+              positionCounts.europaLeague[team.team_name] = (positionCounts.europaLeague[team.team_name] || 0) + 1;
+            }
+            if (team.position > leagueStandings.length - 4) {
+              positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
+            }
+            break;
+        }
+        
     }
   });
 }

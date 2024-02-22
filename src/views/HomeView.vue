@@ -76,9 +76,10 @@ export default {
       this.updateWinnersTablePositions();
       this.calculateChances();
     },
-    divisionChosen() {
+    async divisionChosen() {
       this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
-      this.fetchData();
+      await this.fetchData();
+      this.calculateChances()
     },
   },
   async mounted() {
@@ -127,16 +128,21 @@ export default {
       try {
         const libertadoresSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.libertadoresWinner);
         const copaDoBrasilSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.copaDoBrasilWinner);
+        const FACupSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.england.FACupWinner);
 
         let libertadoresPosition = 20;
         let copaDoBrasilPosition = 20;
+        let FACupPosition = 20;
         if (libertadoresSpot) {
           libertadoresPosition = libertadoresSpot.position;
         }
         if (copaDoBrasilSpot) {
           copaDoBrasilPosition = copaDoBrasilSpot.position;
         }
-        winnersStore.updateWinnersTablePosition(libertadoresPosition, copaDoBrasilPosition);
+        if (FACupSpot) {
+          FACupPosition = FACupSpot.position;
+        }
+        winnersStore.updateWinnersTablePosition(libertadoresPosition, copaDoBrasilPosition, FACupPosition);
         winnersStore.libertadoresSpots();
       } catch (err) {
         this.handleErrors();
@@ -147,14 +153,19 @@ export default {
       const winnersStore = useWinnersStore();
       const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner;
       const libertadoresWinner = winnersStore.brazil.libertadoresWinner;
+      const FACupWinner = winnersStore.england.FACupWinner
+      
       const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot;
       const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot;
+      const championsSpot = winnersStore.england.premierLeague.championsSpot
+      const europaSpot = winnersStore.england.premierLeague.europaSpot
+
       this.calculating = true;
 
       if (this.fixtures.length > 300) {
         this.numOutcomes = 10000
       }
-
+      console.log(this.fixtures)
       const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
       worker.onmessage = (message) => {
@@ -179,8 +190,11 @@ export default {
           JSON.stringify(this.displayTable),
           copaDoBrasilWinner,
           libertadoresWinner,
+          FACupWinner,
           preLibertadoresSpot,
           sulAmericanaSpot,
+          championsSpot,
+          europaSpot,
           this.countryChosen,
           this.divisionChosen,
           this.numOutcomes,
@@ -209,4 +223,3 @@ export default {
   }
 }
 </style>
-@/stores/winners

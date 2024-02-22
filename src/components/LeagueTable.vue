@@ -73,7 +73,6 @@ select{
 .leagueTable{
   box-shadow: 0px 0px 2px 0px black;
   width: fit-content;
-  margin: auto;
 }
 .tableContainer {
   border: 1px solid var(--brasileiraoSilver);
@@ -145,6 +144,11 @@ table::-webkit-scrollbar-thumb {
 }
 .hidden{
   display: none;
+}
+@media screen and (max-width: 1450px) {
+  .leagueTable{
+    margin: auto;
+  }
 }
 @media screen and (max-width: 760px) {
   .teamTable{
