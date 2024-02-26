@@ -7,7 +7,7 @@ import type ILeaguesAvaiable from '@/interfaces/ILeaguesAvaiable'
 
 const http = axios.create({
     //@ts-ignore
-    baseURL: import.meta.env.VITE_API_IP,
+    baseURL: "/api",
 })
 export default {
     getLeagueTable(country: Countries, division: String) : Promise<AxiosResponse<ITable[]>>{
