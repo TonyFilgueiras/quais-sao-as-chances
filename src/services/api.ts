@@ -11,7 +11,6 @@ const http = axios.create({
 })
 export default {
     getLeagueTable(country: Countries, division: String) : Promise<AxiosResponse<ITable[]>>{
-        console.log('Request URL:', '/api/leagues');
         return http.get(`/${country}/${division}/standings`)
     },
     getLeagueFixtures(country: Countries, division: String) :Promise<AxiosResponse<IFixtures[]>>{

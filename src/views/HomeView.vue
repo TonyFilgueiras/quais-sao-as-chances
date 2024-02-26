@@ -104,7 +104,7 @@ export default {
         const resp = await api.getLeagueTable(country, division);
         this.table = resp.data;
       } catch (err: any) {
-        this.handleErrors();
+        this.handleErrors(err);
       }
     },
     async fetchLeagueFixtures(country: Countries, division: String) {
@@ -112,7 +112,7 @@ export default {
         const resp = await api.getLeagueFixtures(country, division);
         this.fixtures = resp.data;
       } catch (err: any) {
-        this.handleErrors();
+        this.handleErrors(err);
       }
     },
     async fetchLeagueInfo(country: Countries, division: String) {
@@ -120,7 +120,7 @@ export default {
         const resp = await api.getLeagueInfo(country, division);
         this.leagueInfo = resp.data;
       } catch (err: any) {
-        this.handleErrors();
+        this.handleErrors(err);
       }
     },
     updateWinnersTablePositions() {
@@ -145,7 +145,7 @@ export default {
         winnersStore.updateWinnersTablePosition(libertadoresPosition, copaDoBrasilPosition, FACupPosition);
         winnersStore.libertadoresSpots();
       } catch (err) {
-        this.handleErrors();
+        this.handleErrors(err);
       }
     },
     async calculateChances() {
@@ -165,7 +165,6 @@ export default {
       if (this.fixtures.length > 300) {
         this.numOutcomes = 10000
       }
-      console.log(this.fixtures)
       const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       this.progressBar = 0;
       worker.onmessage = (message) => {
@@ -179,8 +178,7 @@ export default {
         }
       };
       worker.onerror = () => {
-        console.log("error no worker")
-        this.handleErrors();
+        this.handleErrors("error no worker");
         this.calculating = false;
       };
       const params = {
@@ -203,7 +201,8 @@ export default {
       };
       worker.postMessage(params);
     },
-    handleErrors() {
+    handleErrors(err: any) {
+      console.log(err)
       this.$router.push("/error");
     },
   },
