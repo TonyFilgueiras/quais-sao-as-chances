@@ -103,6 +103,7 @@ export default {
       try {
         const resp = await api.getLeagueTable(country, division);
         this.table = resp.data;
+        console.log(this.table)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -111,6 +112,7 @@ export default {
       try {
         const resp = await api.getLeagueFixtures(country, division);
         this.fixtures = resp.data;
+        console.log(this.fixtures)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -119,6 +121,7 @@ export default {
       try {
         const resp = await api.getLeagueInfo(country, division);
         this.leagueInfo = resp.data;
+        console.log(this.leagueInfo)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -165,7 +168,10 @@ export default {
       if (this.fixtures.length > 300) {
         this.numOutcomes = 10000
       }
-      const updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
+      let updatedFixtures = []
+      if (this.fixtures.length > 0) {
+        updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
+      }
       this.progressBar = 0;
       worker.onmessage = (message) => {
         if (message.data.type === "results") {
