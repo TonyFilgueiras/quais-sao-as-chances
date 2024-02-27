@@ -8,6 +8,7 @@ dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/quais-sao-as-chances-front/",
   plugins: [
     vue(),
   ],
