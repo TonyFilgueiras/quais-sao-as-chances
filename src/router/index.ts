@@ -7,7 +7,7 @@ import NotFoundView from "@/views/NotFoundView.vue";
 const validLeagueNames = Object.keys(leagueConfig);
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/quais-sao-as-chances/"),
   routes: [
     {
       path: "/",
