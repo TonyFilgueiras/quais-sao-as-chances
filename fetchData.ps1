@@ -4,12 +4,14 @@ git pull
 
 cd backend
 
-# Run your Python script
+pip install -r requirements.txt
 python get_info.py
 
 cd ../
 
-# Git commands
+npm install
+npm run deploy
+
 git add .
 git commit -m "data update"
 git push

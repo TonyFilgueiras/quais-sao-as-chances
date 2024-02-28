@@ -77,10 +77,10 @@ class WebDriverWrapper:
                 }
 
                 table_data.append(new_team_data)
-            load.dotenv()
-            relative_path = os.environ.get("PATH")
-            print(relative_path)
-            self.write_json(f"{relative_path}/public/data/{country}/{division}/table_data.json", table_data)
+            #load.dotenv()
+            #relative_path = os.environ.get("PATH")
+            #print(relative_path)
+            self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
             self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
         except TimeoutException:
