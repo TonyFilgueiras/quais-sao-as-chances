@@ -77,8 +77,10 @@ class WebDriverWrapper:
                 }
 
                 table_data.append(new_team_data)
-
-            self.write_json(f"public/data/{country}/{division}/table_data.json", table_data)
+            load.dotenv()
+            relative_path = os.environ.get("PATH")
+            print(relative_path)
+            self.write_json(f"{relative_path}/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
             self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
         except TimeoutException:
@@ -104,7 +106,7 @@ class WebDriverWrapper:
             'year': year,
         }
 
-        self.write_json(f"public/data/{country}/{division}/league_info.json", league_info)
+        self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/league_info.json", league_info)
         print("League info updated")
 
     def get_league_fixtures(self, country: str, division: str):
@@ -159,7 +161,7 @@ class WebDriverWrapper:
             self.send_email(f"Error on updating fixtures",  f"Fixture from {country.capitalize()} {division} was not updated successfully")
         except TimeoutException:
             print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
-        self.write_json(f"public/data/{country}/{division}/fixtures_data.json", fixtures_data)
+        self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
         print("League fixtures updated")
         self.send_email(f"Fixture Updated: quais-sao-as-chances-back",  f"Fixture from {country.capitalize()} {division} updated successfully")
 
