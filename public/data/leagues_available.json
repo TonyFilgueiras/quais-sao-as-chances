@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Brasileirão Série A",
+    "country": "brazil",
+    "division": "serie-a"
+  },
+  {
+    "name": "Brasileirão Série B",
+    "country": "brazil",
+    "division": "serie-b"
+  },
+  {
+    "name": "English Premier League",
+    "country": "england",
+    "division": "premier-league"
+  }
+]

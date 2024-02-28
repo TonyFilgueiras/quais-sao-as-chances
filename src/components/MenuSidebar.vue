@@ -13,10 +13,10 @@
   </div>
 </template>
 <script lang="ts">
-import api from "@/services/api";
+import api from "@/services/fetchData";
 import StandardButton from "./StandardButton.vue";
 import { useLeagueChosenStore } from "@/stores/leagueChosen";
-import type ILeaguesAvaiable from "@/interfaces/ILeaguesAvaiable"
+import type ILeaguesAvailable from "@/interfaces/ILeaguesAvailable"
 
 export default {
   setup() {
@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      leagues: [] as ILeaguesAvaiable[]
+      leagues: [] as ILeaguesAvailable[]
     }
   },
   mounted () {
@@ -45,8 +45,8 @@ export default {
     },
     async fetchLeagues() {
       try {
-        const resp = await api.getLeaguesAvaiable();
-        this.leagues = resp.data;
+        const resp = await api.getLeaguesAvailable();
+        this.leagues = resp;
       } catch (err: any) {
         this.$router.push("/error");
       }
@@ -130,3 +130,4 @@ li:hover {
   }
 }
 </style>
+@/services/fetchData

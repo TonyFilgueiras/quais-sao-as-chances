@@ -28,7 +28,7 @@ import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import api from "@/services/api";
+import api from "@/services/fetchData";
 import { updateTable } from "@/services/calculatePossibilities";
 import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
@@ -102,7 +102,7 @@ export default {
     async fetchLeagueTable(country: Countries, division: String) {
       try {
         const resp = await api.getLeagueTable(country, division);
-        this.table = resp.data;
+        this.table = resp;
         console.log("this.table")
         console.log(this.table)
       } catch (err: any) {
@@ -112,7 +112,7 @@ export default {
     async fetchLeagueFixtures(country: Countries, division: String) {
       try {
         const resp = await api.getLeagueFixtures(country, division);
-        this.fixtures = resp.data;
+        this.fixtures = resp;
         console.log("this.fixtures")
         console.log(this.fixtures)
       } catch (err: any) {
@@ -122,7 +122,7 @@ export default {
     async fetchLeagueInfo(country: Countries, division: String) {
       try {
         const resp = await api.getLeagueInfo(country, division);
-        this.leagueInfo = resp.data;
+        this.leagueInfo = resp;
         console.log("this.leagueInfo")
         console.log(this.leagueInfo)
       } catch (err: any) {
@@ -231,3 +231,4 @@ export default {
   }
 }
 </style>
+@/services/fetchData
