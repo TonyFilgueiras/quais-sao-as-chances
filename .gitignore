@@ -20,6 +20,8 @@ vite.config.ts
 todolist.txt
 env.d.ts
 
+/backend/venv/
+
 /cypress/videos/
 /cypress/screenshots/
 
