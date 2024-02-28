@@ -1,0 +1,222 @@
+[
+  {
+    "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "team_name": "Vitoria",
+    "matches": 38,
+    "wins": 22,
+    "draws": 6,
+    "losses": 10,
+    "goal_difference": 19,
+    "points": 72
+  },
+  {
+    "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "team_name": "Juventude",
+    "matches": 38,
+    "wins": 18,
+    "draws": 11,
+    "losses": 9,
+    "goal_difference": 11,
+    "points": 65
+  },
+  {
+    "position": 3,
+    "logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "team_name": "Criciuma",
+    "matches": 38,
+    "wins": 19,
+    "draws": 7,
+    "losses": 12,
+    "goal_difference": 12,
+    "points": 64
+  },
+  {
+    "position": 4,
+    "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "team_name": "Atletico GO",
+    "matches": 38,
+    "wins": 17,
+    "draws": 13,
+    "losses": 8,
+    "goal_difference": 11,
+    "points": 64
+  },
+  {
+    "position": 5,
+    "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "team_name": "Novorizontino",
+    "matches": 38,
+    "wins": 19,
+    "draws": 6,
+    "losses": 13,
+    "goal_difference": 18,
+    "points": 63
+  },
+  {
+    "position": 6,
+    "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "team_name": "Mirassol",
+    "matches": 38,
+    "wins": 18,
+    "draws": 9,
+    "losses": 11,
+    "goal_difference": 11,
+    "points": 63
+  },
+  {
+    "position": 7,
+    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "team_name": "Sport Recife",
+    "matches": 38,
+    "wins": 17,
+    "draws": 12,
+    "losses": 9,
+    "goal_difference": 19,
+    "points": 63
+  },
+  {
+    "position": 8,
+    "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "team_name": "Vila Nova FC",
+    "matches": 38,
+    "wins": 17,
+    "draws": 10,
+    "losses": 11,
+    "goal_difference": 19,
+    "points": 61
+  },
+  {
+    "position": 9,
+    "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "team_name": "CRB",
+    "matches": 38,
+    "wins": 16,
+    "draws": 9,
+    "losses": 13,
+    "goal_difference": 6,
+    "points": 57
+  },
+  {
+    "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "team_name": "Guarani",
+    "matches": 38,
+    "wins": 15,
+    "draws": 12,
+    "losses": 11,
+    "goal_difference": 9,
+    "points": 57
+  },
+  {
+    "position": 11,
+    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "team_name": "Ceara",
+    "matches": 38,
+    "wins": 13,
+    "draws": 11,
+    "losses": 14,
+    "goal_difference": -5,
+    "points": 50
+  },
+  {
+    "position": 12,
+    "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "team_name": "Botafogo SP",
+    "matches": 38,
+    "wins": 12,
+    "draws": 11,
+    "losses": 15,
+    "goal_difference": -17,
+    "points": 47
+  },
+  {
+    "position": 13,
+    "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "team_name": "Avai",
+    "matches": 38,
+    "wins": 10,
+    "draws": 14,
+    "losses": 14,
+    "goal_difference": -17,
+    "points": 44
+  },
+  {
+    "position": 14,
+    "logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "team_name": "Ituano",
+    "matches": 38,
+    "wins": 9,
+    "draws": 15,
+    "losses": 14,
+    "goal_difference": -5,
+    "points": 42
+  },
+  {
+    "position": 15,
+    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "team_name": "Ponte Preta",
+    "matches": 38,
+    "wins": 9,
+    "draws": 15,
+    "losses": 14,
+    "goal_difference": -11,
+    "points": 42
+  },
+  {
+    "position": 16,
+    "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "team_name": "Chapecoense-SC",
+    "matches": 38,
+    "wins": 9,
+    "draws": 13,
+    "losses": 16,
+    "goal_difference": -5,
+    "points": 40
+  },
+  {
+    "position": 17,
+    "logo": "https://static.flashscore.com/res/image/data/x0emgxT0-6NoYJwvQ.png",
+    "team_name": "Sampaio Correa",
+    "matches": 38,
+    "wins": 8,
+    "draws": 15,
+    "losses": 15,
+    "goal_difference": -12,
+    "points": 39
+  },
+  {
+    "position": 18,
+    "logo": "https://static.flashscore.com/res/image/data/A9l3Zbme-Uk2dj2zB.png",
+    "team_name": "Tombense",
+    "matches": 38,
+    "wins": 9,
+    "draws": 10,
+    "losses": 19,
+    "goal_difference": -13,
+    "points": 37
+  },
+  {
+    "position": 19,
+    "logo": "https://static.flashscore.com/res/image/data/hWxFjziC-dAibSIqE.png",
+    "team_name": "Londrina",
+    "matches": 38,
+    "wins": 7,
+    "draws": 10,
+    "losses": 21,
+    "goal_difference": -27,
+    "points": 31
+  },
+  {
+    "position": 20,
+    "logo": "https://static.flashscore.com/res/image/data/hhyupboe-no5LkQQ6.png",
+    "team_name": "ABC",
+    "matches": 38,
+    "wins": 5,
+    "draws": 13,
+    "losses": 20,
+    "goal_difference": -23,
+    "points": 28
+  }
+]
