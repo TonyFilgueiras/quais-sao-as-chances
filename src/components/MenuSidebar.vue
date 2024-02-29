@@ -1,15 +1,15 @@
 <template>
   <div :class="['menuSidebar', { sidebarHidden: !showMenuSidebar }]">
     <StandardButton text="X" @click="closeMenuSidebar" />
-    <ul>
-      <li id="leagues">Ligas
+    <!-- <ul> -->
+      <!-- <li id="leagues">Ligas -->
         <ul class="leaguesContainer" ref="leaguesContainer">
           <li v-for="league in leagues" class="league" :key="league.name" @click="leagueChosenStore.chooseLeague(league.country, league.division)">
             {{ league.name }}
           </li>
         </ul>
-      </li>
-    </ul>
+      <!-- </li> -->
+    <!-- </ul> -->
   </div>
 </template>
 <script lang="ts">
@@ -80,8 +80,7 @@ li:hover {
   cursor: pointer;
   background-color: #ffffff88;
 }
-/* Hide dropdown by default */
-.leaguesContainer {
+/* .leaguesContainer {
   display: none;
   margin-left: -10px;
   margin-top: 20px;
@@ -92,7 +91,7 @@ li:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
   opacity: 0;
-}
+} */
 
 /* Style for the parent list item */
 #leagues {
