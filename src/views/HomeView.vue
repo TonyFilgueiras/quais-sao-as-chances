@@ -69,6 +69,7 @@ export default {
       error: "",
       chancesTable: {} as IPositionChances,
       numOutcomes: 50000,
+      worker: null as Worker | null,
     };
   },
   watch: {
@@ -103,8 +104,6 @@ export default {
       try {
         const resp = await api.getLeagueTable(country, division);
         this.table = resp;
-        console.log("this.table")
-        console.log(this.table)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -113,8 +112,6 @@ export default {
       try {
         const resp = await api.getLeagueFixtures(country, division);
         this.fixtures = resp;
-        console.log("this.fixtures")
-        console.log(this.fixtures)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -123,8 +120,6 @@ export default {
       try {
         const resp = await api.getLeagueInfo(country, division);
         this.leagueInfo = resp;
-        console.log("this.leagueInfo")
-        console.log(this.leagueInfo)
       } catch (err: any) {
         this.handleErrors(err);
       }
@@ -155,7 +150,15 @@ export default {
       }
     },
     async calculateChances() {
-      const worker = new Worker(new URL("../worker", import.meta.url), { type: "module" });
+      if (this.worker) {
+        this.worker.terminate()
+        this.worker = null
+      }
+      if (!this.worker) {
+        console.log("undefined")
+        this.worker = new Worker(new URL("../worker", import.meta.url), { type: "module" });
+      }
+
       const winnersStore = useWinnersStore();
       const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner;
       const libertadoresWinner = winnersStore.brazil.libertadoresWinner;
@@ -176,7 +179,7 @@ export default {
         updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       }
       this.progressBar = 0;
-      worker.onmessage = (message) => {
+      this.worker!.onmessage = (message: MessageEvent<any>) => {
         if (message.data.type === "results") {
           this.chancesTable = message.data.results;
           this.calculating = false;
@@ -186,7 +189,7 @@ export default {
           }
         }
       };
-      worker.onerror = () => {
+      this.worker!.onerror = () => {
         this.handleErrors("error no worker");
         this.calculating = false;
       };
@@ -208,7 +211,7 @@ export default {
           false,
         ],
       };
-      worker.postMessage(params);
+      this.worker!.postMessage(params);
     },
     handleErrors(err: any) {
       console.log(err)
