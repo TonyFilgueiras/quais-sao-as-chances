@@ -54,7 +54,7 @@ export default defineComponent({
   box-shadow: 0px 0px 1000px 100px black;
   transition: 0.3s;
   opacity: 1;
-  z-index: 1;
+  z-index: 99;
 }
 .aboutContainer h1 {
   text-align: center;
@@ -68,7 +68,6 @@ export default defineComponent({
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center;
-  box-shadow: 0px 0px 10px 1px black;
 }
 @media (max-width: 768px) {
   .aboutContainer{

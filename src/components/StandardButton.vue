@@ -38,10 +38,10 @@ button:after {
   border-width: 0 2px 4px 0;
   bottom: -4px;
   content: "";
-  left: 0px;
+  left: -1px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1px;
   z-index: -1;
 }
 

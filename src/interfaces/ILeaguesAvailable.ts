@@ -4,4 +4,5 @@ export default interface ILeaguesAvailable{
   name: string,
   country: Countries,
   division: string,
+  img: string,
 }

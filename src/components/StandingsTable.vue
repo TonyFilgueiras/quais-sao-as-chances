@@ -68,4 +68,4 @@ export default defineComponent({
     }
   },
 });
-</script>@/stores/winners
+</script>

@@ -23,6 +23,7 @@
   --neutro: #eeeeee88;
   --rebaixamento: #ff000088;
   --brasileiraoBlue: #004498;
+  --brasileiraoDarkBlue: #003c86;
   --brasileiraoLightBlue:#005ac9;
   --brasileiraoGold: #bfa706;
   --brasileiraoSilver: #a5a4a9;
@@ -70,6 +71,17 @@ body {
     font-size: 0.7rem;
   }
 }
+@keyframes showContent {
+  from {
+    opacity: 0;
+    transform: scaleY(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

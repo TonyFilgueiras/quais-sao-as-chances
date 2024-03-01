@@ -4,6 +4,7 @@
       <option value="standings">Tabela</option>
       <option value="chances">Chances</option>
     </select>
+    <CustomSelect  v-if="mobileStore.isMobile" selected-option="Tabela" :table="[{label: 'Tabela', value: 'standings'}, {label: 'Chances', value: 'chances'}]" />
     <LeagueHeader  :leagueInfo="leagueInfo" />
     <table class="tableContainer">
       <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
@@ -22,6 +23,8 @@ import type { PropType } from "vue";
 import { useIsMobileStore } from "@/stores/isMobile";
 import LeagueHeader from "./LeagueHeader.vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
+import CustomSelect from "./CustomSelect.vue";
+
 export default {
   setup() {
     const winnersStore = useWinnersStore();
@@ -60,7 +63,7 @@ export default {
       selectedTable: "standings",
     };
   },
-  components: { StandingsTableVue, ChancesTableVue, LeagueHeader },
+  components: { StandingsTableVue, ChancesTableVue, LeagueHeader, CustomSelect },
 };
 </script>
 

@@ -3,8 +3,8 @@
     <h1 v-if="error">{{ error }}</h1>
     <LoadingContainer v-if="loading" />
     <div v-else>
-      <!-- <FilterNav v-if="fixtures.length > 0" /> -->
-        <WarningBox v-if="fixtures.length == 0" warning-text="Campeonato encerrado"/>
+      <FiltersDiv v-if="fixtures.length > 0" :table="displayTable" @filterApplied="updateTeamFixtures" />
+      <WarningBox v-if="fixtures.length == 0" warning-text="Campeonato encerrado" />
       <div class="mainContainer">
         <LeagueTableVue
           :table="displayTable"
@@ -34,8 +34,9 @@ import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
 import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
-// import FilterNav from "@/components/FilterNav.vue";
+import FiltersDiv from "@/components/FiltersDiv.vue";
 import WarningBox from "@/components/WarningBox.vue";
+
 export default {
   setup() {
     const fixtures = ref<IFixtures[]>([]);
@@ -49,10 +50,68 @@ export default {
       fixtures.value = fixtures.value.map((fixture) => (fixture.id === updatedFixture.id ? { ...fixture, ...updatedFixture } : fixture));
       displayTable.value = updateTable(table.value, fixtures.value);
     }
+    function updateTeamFixtures(team: ITable, option: string) {
+      fixtures.value = fixtures.value.map((fixture) => {
+        switch (option) {
+          case "homeWins":
+            if (fixture.home_team === team.team_name) {
+              fixture.result = "home";
+            }
+            break;
+          case "homeTies":
+            if (fixture.home_team == team.team_name) {
+              fixture.result = "draw";
+            }
+            break;
+          case "homeLoses":
+            if (fixture.home_team == team.team_name) {
+              fixture.result = "away";
+            }
+            break;
+          case "awayWins":
+            if (fixture.away_team === team.team_name) {
+              fixture.result = "away";
+            }
+            break;
+          case "awayTies":
+            if (fixture.away_team === team.team_name) {
+              fixture.result = "draw";
+            }
+            break;
+          case "awayLoses":
+            if (fixture.away_team === team.team_name) {
+              fixture.result = "home";
+            }
+            break;
+          case "allWins":
+            if (fixture.home_team === team.team_name) {
+              fixture.result = "home";
+            } else if (fixture.away_team == team.team_name) {
+              fixture.result = "away";
+            }
+            break;
+          case "allTies":
+            if (fixture.home_team === team.team_name || fixture.away_team == team.team_name) {
+              fixture.result = "draw";
+            }
+            break;
+          case "allLoses":
+            if (fixture.home_team === team.team_name) {
+              fixture.result = "away";
+            } else if (fixture.away_team == team.team_name) {
+              fixture.result = "home";
+            }
+            break;
+        }
+        return fixture;
+      });
+      displayTable.value = updateTable(table.value, fixtures.value);
+    }
 
     return {
       fixtures,
       updateFixtures,
+      updateTeamFixtures,
       table,
       displayTable,
       leagueInfo,
@@ -80,7 +139,7 @@ export default {
     async divisionChosen() {
       this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
       await this.fetchData();
-      this.calculateChances()
+      this.calculateChances();
     },
   },
   async mounted() {
@@ -151,30 +210,29 @@ export default {
     },
     async calculateChances() {
       if (this.worker) {
-        this.worker.terminate()
-        this.worker = null
+        this.worker.terminate();
+        this.worker = null;
       }
       if (!this.worker) {
-        console.log("undefined")
         this.worker = new Worker(new URL("../worker", import.meta.url), { type: "module" });
       }
 
       const winnersStore = useWinnersStore();
       const copaDoBrasilWinner = winnersStore.brazil.copaDoBrasilWinner;
       const libertadoresWinner = winnersStore.brazil.libertadoresWinner;
-      const FACupWinner = winnersStore.england.FACupWinner
-      
+      const FACupWinner = winnersStore.england.FACupWinner;
+
       const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot;
       const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot;
-      const championsSpot = winnersStore.england.premierLeague.championsSpot
-      const europaSpot = winnersStore.england.premierLeague.europaSpot
+      const championsSpot = winnersStore.england.premierLeague.championsSpot;
+      const europaSpot = winnersStore.england.premierLeague.europaSpot;
 
       this.calculating = true;
 
       if (this.fixtures.length > 300) {
-        this.numOutcomes = 10000
+        this.numOutcomes = 10000;
       }
-      let updatedFixtures: IFixtures[] = []
+      let updatedFixtures: IFixtures[] = [];
       if (this.fixtures.length > 0) {
         updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
       }
@@ -214,11 +272,11 @@ export default {
       this.worker!.postMessage(params);
     },
     handleErrors(err: any) {
-      console.log(err)
+      console.log(err);
       this.$router.push("/error");
     },
   },
-  components: { LeagueTableVue, FixturesContainerVue, LoadingContainer,  WarningBox },
+  components: { LeagueTableVue, FixturesContainerVue, LoadingContainer, WarningBox, FiltersDiv },
 };
 </script>
 

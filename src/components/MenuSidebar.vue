@@ -5,6 +5,7 @@
       <!-- <li id="leagues">Ligas -->
         <ul class="leaguesContainer" ref="leaguesContainer">
           <li v-for="league in leagues" class="league" :key="league.name" @click="leagueChosenStore.chooseLeague(league.country, league.division)">
+            <img :src="league.img">
             {{ league.name }}
           </li>
         </ul>
@@ -80,6 +81,17 @@ li:hover {
   cursor: pointer;
   background-color: #ffffff88;
 }
+
+img{
+  height: 25px;
+  margin: 10px;
+}
+
+.league{
+  display: flex;
+  align-items: center;
+}
+
 /* .leaguesContainer {
   display: none;
   margin-left: -10px;
@@ -107,16 +119,6 @@ li:hover {
   margin-top: 250px;
 }
 
-@keyframes showContent {
-  from {
-    opacity: 0;
-    transform: scaleY(0.1);
-  }
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-}
 
 
 .sidebarHidden {
