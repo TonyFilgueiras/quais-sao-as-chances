@@ -133,7 +133,7 @@ class WebDriverWrapper:
                     if "event__round--static" in element_class:
                         round_text = element.text
                         round = int(round_text[-2:])
-                    if "event__match--scheduled" in element_class:
+                    if "event__match" in element_class:
                         date_text = element.find_element(By.CLASS_NAME, "event__time").text
                         date = date_text.replace('.', '/', 1).replace('.', '')
                         home_team = element.find_element(By.CLASS_NAME, "event__participant--home").text

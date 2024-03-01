@@ -21,6 +21,7 @@ todolist.txt
 env.d.ts
 
 /backend/venv/
+__pycache__
 
 /cypress/videos/
 /cypress/screenshots/
