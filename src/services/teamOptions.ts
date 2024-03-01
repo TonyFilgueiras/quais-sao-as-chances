@@ -1,7 +1,9 @@
+import type ITable from "@/interfaces/ITable";
+
 export interface ITeamOptions {
   logo?: string,
   label: string,
-  value: string,
+  value: string | ITable,
 }
 
 export const teamOptions: ITeamOptions[] = [

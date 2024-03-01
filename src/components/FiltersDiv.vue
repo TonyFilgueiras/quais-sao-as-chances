@@ -6,11 +6,11 @@
   </div>
 </template>
 <script lang="ts">
-import ITable from "@/interfaces/ITable";
+import type ITable from "@/interfaces/ITable";
 import { type PropType } from "vue";
 import StandardButton from "./StandardButton.vue";
 import CustomSelect from "./CustomSelect.vue";
-import { ITeamOptions, teamOptions } from "@/services/teamOptions";
+import {type ITeamOptions, teamOptions } from "@/services/teamOptions";
 import { useIsMobileStore } from "@/stores/isMobile";
 
 export default {
@@ -22,8 +22,8 @@ export default {
   },
   data() {
     return {
-      teamSelected: '',
-      optionSelected: '',
+      teamSelected: {},
+      optionSelected: {},
       selectOpen: false,
       teamOptions: teamOptions
     };

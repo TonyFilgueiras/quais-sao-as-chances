@@ -1,9 +1,9 @@
 <template>
   <div class="customSelect">
     <div class="optionSelected" @click="handleSelectToggle">
-      <img v-if="isTeamOption && optionSelected" :src="optionSelected.logo" />
+      <img v-if="isTeamOption && optionSelected.label" :src="optionSelected.logo" />
       <span>{{
-        optionSelected ? (isTeamOption && mobileStore.isScreenSmall ? "" : `${optionSelected.label}`) : label ? label : teamOptions[0].label
+        optionSelected.label ? (isTeamOption && mobileStore.isScreenSmall ? "" : `${optionSelected.label}`) : label ? label : teamOptions[0].label
       }}</span>
     </div>
     <div :class="['optionsContainer', { optionsShown: selectOpen }]">
@@ -16,8 +16,8 @@
 </template>
 
 <script lang="ts">
-import ITable from "@/interfaces/ITable";
-import { ITeamOptions } from "@/services/teamOptions";
+import type ITable from "@/interfaces/ITable";
+import { type ITeamOptions } from "@/services/teamOptions";
 import { useIsMobileStore } from "@/stores/isMobile";
 import { type PropType } from "vue";
 
@@ -40,13 +40,13 @@ export default {
   },
   data() {
     return {
-      optionSelected: null,
+      optionSelected: { label: "", value: "", logo: "" } as ITeamOptions,
       selectOpen: false,
     };
   },
   computed: {
-    sortedTable() {
-      return this.table.slice().sort((a: ITable, b: ITable) => a.team_name.localeCompare(b.team_name));
+    sortedTable(): ITable[] {
+      return this.table.slice().sort((a: any, b: any) => a.team_name.localeCompare(b.team_name)) as ITable[];
     },
     teamOptions(): ITeamOptions[] {
       if (Array.isArray(this.table) && this.table.length > 0 && this.hasITableProperties(this.table[0])) {
@@ -56,7 +56,7 @@ export default {
           value: team,
         }));
       } else {
-        return this.table;
+        return this.table as ITeamOptions[];
       }
     },
     isTeamOption() {

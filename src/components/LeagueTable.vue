@@ -1,6 +1,6 @@
 <template>
   <div :class="{leagueTable: !mobileStore.isMobile}">
-    <CustomSelect  v-if="mobileStore.isMobile" class="tableSelect" selected-option="Tabela" @selectedOption="updateTableSelected" :table="[{label: 'Tabela', value: 'standings'}, {label: 'Chances', value: 'chances'}]" />
+    <CustomSelect  v-if="mobileStore.isMobile" class="tableSelect" @selectedOption="updateTableSelected" :table="[{label: 'Tabela', value: 'standings'}, {label: 'Chances', value: 'chances'}]" />
     <LeagueHeader  :leagueInfo="leagueInfo" />
     <table class="tableContainer">
       <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
