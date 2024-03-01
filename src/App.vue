@@ -14,7 +14,8 @@ export default {
   },
   setup() {
     const mobileStore = useIsMobileStore();
-    mobileStore.checkIfIsMolile();
+    mobileStore.checkIfIsMobile();
+    mobileStore.checkIfScreenIsSmall();
 
     return{ mobileStore}
   },
@@ -29,7 +30,8 @@ export default {
   },
   watch: {
     screenWidth() {
-      this.mobileStore.checkIfIsMolile();
+      this.mobileStore.checkIfIsMobile();
+      this.mobileStore.checkIfScreenIsSmall();
     },
   },
   methods: {

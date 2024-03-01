@@ -2,12 +2,14 @@
   <div class="customSelect">
     <div class="optionSelected" @click="handleSelectToggle">
       <img v-if="isTeamOption && optionSelected" :src="optionSelected.logo" />
-      {{ optionSelected ? `${optionSelected.label}` : label? label: teamOptions[0].label }}
+      <span>{{
+        optionSelected ? (isTeamOption && mobileStore.isScreenSmall ? "" : `${optionSelected.label}`) : label ? label : teamOptions[0].label
+      }}</span>
     </div>
     <div :class="['optionsContainer', { optionsShown: selectOpen }]">
       <div v-for="(option, index) in teamOptions" :key="index" class="option" @click="selectOption(option)">
-        <img v-if="isTeamOption" :src="option.logo">
-        {{ option.label }}
+        <img v-if="isTeamOption" :src="option.logo" />
+        <span :class="{ hidden: isTeamOption && mobileStore.isScreenSmall }">{{ option.label }}</span>
       </div>
     </div>
   </div>
@@ -16,9 +18,16 @@
 <script lang="ts">
 import ITable from "@/interfaces/ITable";
 import { ITeamOptions } from "@/services/teamOptions";
+import { useIsMobileStore } from "@/stores/isMobile";
 import { type PropType } from "vue";
 
 export default {
+  setup() {
+    const mobileStore = useIsMobileStore();
+    mobileStore.checkIfIsMobile();
+
+    return { mobileStore };
+  },
   props: {
     table: {
       type: Array as PropType<ITable[] | ITeamOptions[]>,
@@ -28,10 +37,6 @@ export default {
       type: String,
       required: false,
     },
-    selectedOption: {
-      type: String,
-      required: true
-    }
   },
   data() {
     return {
@@ -51,34 +56,34 @@ export default {
           value: team,
         }));
       } else {
-        return this.table
+        return this.table;
       }
     },
     isTeamOption() {
-      return this.hasITableProperties(this.table[0])
+      return this.hasITableProperties(this.table[0]);
     },
   },
   methods: {
     selectOption(option: ITeamOptions) {
-      this.selectOpen = false
+      this.selectOpen = false;
       this.optionSelected = option;
-      this.$emit("selectedOption", option.value)
+      this.$emit("selectedOption", option.value);
     },
     handleSelectToggle() {
       this.selectOpen = !this.selectOpen;
     },
     hasITableProperties(obj: any): obj is ITable {
-      return 'logo' in obj && 'team_name' in obj;
+      return "logo" in obj && "team_name" in obj;
     },
     handleDocumentClick(event: MouseEvent) {
       if (!this.$el.contains(event.target)) {
         if (this.selectOpen) {
-          this.selectOpen = false
+          this.selectOpen = false;
         }
-      } 
+      }
     },
   },
-  mounted () {
+  mounted() {
     document.addEventListener("click", this.handleDocumentClick);
   },
 };
@@ -86,7 +91,8 @@ export default {
 
 <style scoped>
 .customSelect {
-  width: 300px;
+  width: 25vw;
+  max-width: 300px;
 }
 
 .optionSelected {
@@ -97,33 +103,37 @@ export default {
   border-radius: 4px;
   cursor: pointer;
   background-color: var(--brasileiraoLightBlue);
-  transition: .2s;
+  transition: 0.2s;
+  color: white;
 }
-.optionSelected:hover{
+.optionSelected:hover {
   filter: brightness(110%);
 }
-.optionSelected:active{
+.optionSelected:active {
   transform: scale(0.99);
 }
-.optionSelected img {
+
+img {
   margin-right: 5px;
   width: 30px;
 }
 
 .optionsContainer {
   display: none;
+  color: white;
   position: absolute;
   background-color: var(--brasileiraoBlue);
-  width: 300px;
+  width: 25vw;
+  max-width: 300px;
   transform-origin: top;
   transform: scaleY(0.1);
   border: 1px solid var(--brasileiraoSilver);
   border-top: none;
   border-radius: 0 0 4px 4px;
   z-index: 1;
-  transition: .2s;
+  transition: 0.2s;
 }
-.optionsShown{
+.optionsShown {
   display: block;
   animation: showContent 0.5s ease forwards;
 }
@@ -134,13 +144,17 @@ export default {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.option img {
-  margin-right: 5px;
-  width: 30px; /* Adjust image size as needed */
-}
-
 .option:hover {
   background-color: #ffffff88;
+}
+
+@media screen and (max-width: 400px) {
+  .customSelect {
+    font-size: 0.5rem;
+  }
+  img {
+    margin: 0px auto;
+    width: 30px;
+  }
 }
 </style>

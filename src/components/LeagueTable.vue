@@ -1,10 +1,6 @@
 <template>
   <div :class="{leagueTable: !mobileStore.isMobile}">
-    <select v-if="mobileStore.isMobile" v-model="selectedTable" name="championship" id="championship">
-      <option value="standings">Tabela</option>
-      <option value="chances">Chances</option>
-    </select>
-    <CustomSelect  v-if="mobileStore.isMobile" selected-option="Tabela" :table="[{label: 'Tabela', value: 'standings'}, {label: 'Chances', value: 'chances'}]" />
+    <CustomSelect  v-if="mobileStore.isMobile" class="tableSelect" selected-option="Tabela" @selectedOption="updateTableSelected" :table="[{label: 'Tabela', value: 'standings'}, {label: 'Chances', value: 'chances'}]" />
     <LeagueHeader  :leagueInfo="leagueInfo" />
     <table class="tableContainer">
       <StandingsTableVue :display="selectedTable === 'standings' || !mobileStore.isMobile" :table="table" />
@@ -63,15 +59,18 @@ export default {
       selectedTable: "standings",
     };
   },
+  methods: {
+    updateTableSelected(table: string) {
+      this.selectedTable = table
+    }
+  },
   components: { StandingsTableVue, ChancesTableVue, LeagueHeader, CustomSelect },
 };
 </script>
 
 <style>
-select{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.tableSelect{
+  margin: auto;
 }
 .leagueTable{
   box-shadow: 0px 0px 2px 0px black;
@@ -144,9 +143,6 @@ table::-webkit-scrollbar-thumb {
 }
 .sulAmericana {
   background-color: var(--sulAmericana);
-}
-.hidden{
-  display: none;
 }
 @media screen and (max-width: 1450px) {
   .leagueTable{

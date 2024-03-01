@@ -1,8 +1,8 @@
 <template>
   <div class="filtersContainer">
-    <CustomSelect :table="table" label="Time" :selectedOption="teamSelected" @selectedOption="updateSelectedTeam"/>
-    <CustomSelect :table="teamOptions" label="Opção" :selectedOption="optionSelected" @selectedOption="updateSelectedTeamOption"/>
-    <StandardButton text="Aplicar" @click="applyFilter"/>
+    <CustomSelect :table="table" label="Time" @selectedOption="updateSelectedTeam"/>
+    <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption"/>
+    <StandardButton :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter"/>
   </div>
 </template>
 <script lang="ts">
@@ -11,8 +11,15 @@ import { type PropType } from "vue";
 import StandardButton from "./StandardButton.vue";
 import CustomSelect from "./CustomSelect.vue";
 import { ITeamOptions, teamOptions } from "@/services/teamOptions";
+import { useIsMobileStore } from "@/stores/isMobile";
 
 export default {
+  setup() {
+    const mobileStore = useIsMobileStore();
+    mobileStore.checkIfIsMobile();
+
+    return{ mobileStore}
+  },
   data() {
     return {
       teamSelected: '',
@@ -44,8 +51,6 @@ export default {
     },
     applyFilter() {
       this.$emit("filterApplied", this.teamSelected, this.optionSelected)
-      this.teamSelected = '';
-      this.optionSelected = '';
     },
   },
   components: { StandardButton, CustomSelect },

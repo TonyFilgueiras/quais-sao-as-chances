@@ -36,6 +36,7 @@ import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 import FiltersDiv from "@/components/FiltersDiv.vue";
 import WarningBox from "@/components/WarningBox.vue";
+import updateTeamFixturesService from "@/services/updateTeamFixtures"
 
 export default {
   setup() {
@@ -51,60 +52,8 @@ export default {
       displayTable.value = updateTable(table.value, fixtures.value);
     }
     function updateTeamFixtures(team: ITable, option: string) {
-      fixtures.value = fixtures.value.map((fixture) => {
-        switch (option) {
-          case "homeWins":
-            if (fixture.home_team === team.team_name) {
-              fixture.result = "home";
-            }
-            break;
-          case "homeTies":
-            if (fixture.home_team == team.team_name) {
-              fixture.result = "draw";
-            }
-            break;
-          case "homeLoses":
-            if (fixture.home_team == team.team_name) {
-              fixture.result = "away";
-            }
-            break;
-          case "awayWins":
-            if (fixture.away_team === team.team_name) {
-              fixture.result = "away";
-            }
-            break;
-          case "awayTies":
-            if (fixture.away_team === team.team_name) {
-              fixture.result = "draw";
-            }
-            break;
-          case "awayLoses":
-            if (fixture.away_team === team.team_name) {
-              fixture.result = "home";
-            }
-            break;
-          case "allWins":
-            if (fixture.home_team === team.team_name) {
-              fixture.result = "home";
-            } else if (fixture.away_team == team.team_name) {
-              fixture.result = "away";
-            }
-            break;
-          case "allTies":
-            if (fixture.home_team === team.team_name || fixture.away_team == team.team_name) {
-              fixture.result = "draw";
-            }
-            break;
-          case "allLoses":
-            if (fixture.home_team === team.team_name) {
-              fixture.result = "away";
-            } else if (fixture.away_team == team.team_name) {
-              fixture.result = "home";
-            }
-            break;
-        }
-        return fixture;
-      });
+      fixtures.value = updateTeamFixturesService(team, option, fixtures.value)
+      
       displayTable.value = updateTable(table.value, fixtures.value);
     }
 
