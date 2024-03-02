@@ -46,7 +46,7 @@ class WebDriverWrapper:
         print(f"Getting league standings | país = {country} | divisão = {division}")
         self.navigate(f"https://www.flashscore.com/football/{country}/{division}/standings")
         try:
-            table = WebDriverWait(self.driver, 120).until(EC.presence_of_element_located((By.XPATH, '//*[@id="tournament-table-tabs-and-content"]/div[3]/div[1]/div/div/div[2]'))) 
+            table = WebDriverWait(self.driver, self.local_wait_time*2).until(EC.presence_of_element_located((By.XPATH, '//*[@id="tournament-table-tabs-and-content"]/div[3]/div[1]/div/div/div[2]'))) 
             rows = table.find_elements(By.CLASS_NAME, "ui-table__row")
             
             self.get_league_info(country, division)
@@ -82,10 +82,12 @@ class WebDriverWrapper:
 
             self.write_json(f"{self.relative_path}/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
-            self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
+            if self.alert_tony == "True":
+                self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
         except:
             self.log_error("Timed out waiting for standings")
-            self.send_email(f"Error on updating standings: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} was not updated successfully")
+            if self.alert_tony == "True":
+                self.send_email(f"Error on updating standings: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} was not updated successfully")
 
 
     def get_league_info(self, country:str, division:str):
@@ -93,9 +95,9 @@ class WebDriverWrapper:
         print(f"Getting league info | país = {country} | divisão = {division}")
         league_info = {}
 
-        logo = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__logo'))).get_attribute("src")
-        name = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[1]/div[1]'))).text
-        year = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[2]'))).text
+        logo = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__logo'))).get_attribute("src")
+        name = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[1]/div[1]'))).text
+        year = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[2]'))).text
 
         if country == "brazil":
             country_name = "Brasileirão "
@@ -120,17 +122,17 @@ class WebDriverWrapper:
         try:
             while True:
                 try:
-                    more_matches_button = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div/a')))
+                    more_matches_button = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div/a')))
                     if more_matches_button:
                         self.execute_script("arguments[0].scrollIntoView();", more_matches_button)
                         print("scrolled")
                         more_matches_button.click()
                         print("clicked")
-                except TimeoutException:
+                except:
                     print("No more matches button found. Exiting loop.")
                     break 
 
-            fixtures = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
+            fixtures = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
             fixtures_elements = fixtures.find_elements(By.XPATH, ".//*")
 
             for element in fixtures_elements:
@@ -163,14 +165,18 @@ class WebDriverWrapper:
 
                         fixtures_data.append(new_fixture_data)
                         id+=1
-        except StaleElementReferenceException:
+        except StaleElementReferenceException as e:
             self.log_error("Erro de StaleElement")
-            self.send_email(f"Error on updating fixtures",  f"Fixture from {country.capitalize()} {division} was not updated successfully")
+            print("-" *50)
+            self.log_error(e)
+            if self.alert_tony == "True":
+                self.send_email(f"Error on updating fixtures",  f"Fixture from {country.capitalize()} {division} was not updated successfully")
         except TimeoutException:
             print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
         self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
         print("League fixtures updated")
-        self.send_email(f"Fixture Updated: quais-sao-as-chances-back",  f"Fixture from {country.capitalize()} {division} updated successfully")
+        if self.alert_tony == "True":
+            self.send_email(f"Fixture Updated: quais-sao-as-chances-back",  f"Fixture from {country.capitalize()} {division} updated successfully")
 
     def write_json(self, name: str, data: list):
         with open(name, 'w') as json_file:
@@ -217,13 +223,14 @@ class WebDriverWrapper:
             adjusted_formatted = adjusted_datetime.strftime("%d/%m %H:%M")
             return adjusted_formatted
         except:
-            self.send_email("Erro ao conveter hora do jogo", "Erro ao conveter hora do jogo")
+            if self.alert_tony == "True":
+                self.send_email("Erro ao conveter hora do jogo", "Erro ao conveter hora do jogo")
             self.log_error("Erro ao conveter hora do jogo")
             return date 
 
 
     def log_error(self, error: str):
-        print(f"\033[91m {error}\033[00m")
+        print(f"\033[91m{error}\033[00m")
 
     @property
     def options(self):
@@ -248,6 +255,17 @@ class WebDriverWrapper:
         local_time = int(os.environ.get("LOCAL_TIME_ADJUSTMENT"))
         return local_time
 
+    @property
+    def local_wait_time(self):
+        load_dotenv()
+        local_wait_time = int(os.environ.get("LOCAL_WAIT_TIME"))
+        return local_wait_time
+
+    @property
+    def alert_tony(self):
+        load_dotenv()
+        send_email = os.environ.get("SEND_EMAIL")
+        return send_email
 
     @property
     def actions(self):
