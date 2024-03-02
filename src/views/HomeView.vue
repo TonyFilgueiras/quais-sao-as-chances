@@ -81,13 +81,13 @@ export default {
     };
   },
   watch: {
-    displayTable() {
-      this.updateWinnersTablePositions();
-      this.calculateChances();
-    },
     async divisionChosen() {
       this.$router.push(`/${this.countryChosen}/${this.divisionChosen}`);
       await this.fetchData();
+      this.calculateChances();
+    },
+    displayTable() {
+      this.updateWinnersTablePositions();
       this.calculateChances();
     },
   },
@@ -180,6 +180,8 @@ export default {
 
       if (this.fixtures.length > 300) {
         this.numOutcomes = 10000;
+      } else {
+        this.numOutcomes = 50000;
       }
       let updatedFixtures: IFixtures[] = [];
       if (this.fixtures.length > 0) {
@@ -240,5 +242,4 @@ export default {
     flex-direction: column;
   }
 }
-</style>
-@/services/fetchData
+</style>import { log } from "console";
