@@ -9,6 +9,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.remote.webelement import WebElement
 
+from datetime import datetime, timedelta
+
 import os
 import ssl
 import smtplib
@@ -41,7 +43,7 @@ class WebDriverWrapper:
         self.driver.close()
 
     def get_league_standings(self, country: str, division: str ):
-        print("Getting league standings")
+        print(f"Getting league standings | país = {country} | divisão = {division}")
         self.navigate(f"https://www.flashscore.com/football/{country}/{division}/standings")
         try:
             table = WebDriverWait(self.driver, 120).until(EC.presence_of_element_located((By.XPATH, '//*[@id="tournament-table-tabs-and-content"]/div[3]/div[1]/div/div/div[2]'))) 
@@ -77,18 +79,18 @@ class WebDriverWrapper:
                 }
 
                 table_data.append(new_team_data)
-            #load.dotenv()
-            #relative_path = os.environ.get("PATH")
-            #print(relative_path)
-            self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/table_data.json", table_data)
+
+            self.write_json(f"{self.relative_path}/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
             self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
-        except TimeoutException:
+        except:
             self.log_error("Timed out waiting for standings")
             self.send_email(f"Error on updating standings: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} was not updated successfully")
 
+
     def get_league_info(self, country:str, division:str):
-        print("Getting league info")
+        print(f" path = {self.relative_path}")
+        print(f"Getting league info | país = {country} | divisão = {division}")
         league_info = {}
 
         logo = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__logo'))).get_attribute("src")
@@ -106,25 +108,29 @@ class WebDriverWrapper:
             'year': year,
         }
 
-        self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/league_info.json", league_info)
+        self.write_json(f"{self.relative_path}/public/data/{country}/{division}/league_info.json", league_info)
         print("League info updated")
 
     def get_league_fixtures(self, country: str, division: str):
-        print("Getting league fixtures")
+        print(f"Getting league fixtures | país = {country} | divisão = {division}")
         self.navigate(f"https://www.flashscore.com/football/{country}/{division}/fixtures/")
 
         fixtures_data = []
         id = 0
         try:
-            more_matches_button = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div/a')))
-            if more_matches_button:
-                self.execute_script("arguments[0].scrollIntoView();", more_matches_button)
-                print("scrolled")
-                more_matches_button.click()
-                print("clicked")
-            print("finding fixtures")
-            fixtures = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
+            while True:
+                try:
+                    more_matches_button = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div/a')))
+                    if more_matches_button:
+                        self.execute_script("arguments[0].scrollIntoView();", more_matches_button)
+                        print("scrolled")
+                        more_matches_button.click()
+                        print("clicked")
+                except TimeoutException:
+                    print("No more matches button found. Exiting loop.")
+                    break 
 
+            fixtures = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
             fixtures_elements = fixtures.find_elements(By.XPATH, ".//*")
 
             for element in fixtures_elements:
@@ -136,6 +142,7 @@ class WebDriverWrapper:
                     if "event__match" in element_class:
                         date_text = element.find_element(By.CLASS_NAME, "event__time").text
                         date = date_text.replace('.', '/', 1).replace('.', '')
+                        date = self.adjust_date_time(date)
                         home_team = element.find_element(By.CLASS_NAME, "event__participant--home").text
                         home_logo = element.find_element(By.CLASS_NAME, "event__logo--home").get_attribute("src")
                         away_team = element.find_element(By.CLASS_NAME, "event__participant--away").text
@@ -157,11 +164,11 @@ class WebDriverWrapper:
                         fixtures_data.append(new_fixture_data)
                         id+=1
         except StaleElementReferenceException:
-            self.log_error("Ero de StaleElement")
+            self.log_error("Erro de StaleElement")
             self.send_email(f"Error on updating fixtures",  f"Fixture from {country.capitalize()} {division} was not updated successfully")
         except TimeoutException:
             print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
-        self.write_json(f"C:/Users/Administrator/Desktop/quais-sao-as-chances/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
+        self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
         print("League fixtures updated")
         self.send_email(f"Fixture Updated: quais-sao-as-chances-back",  f"Fixture from {country.capitalize()} {division} updated successfully")
 
@@ -191,6 +198,30 @@ class WebDriverWrapper:
             except Exception as e:
                 self.log_error(f"Error sending mail: {e}")
 
+    def adjust_date_time(self, date: str) -> str:
+        try:
+            date_parts = date.split(" ")[:2]
+
+            date_text = " ".join(date_parts)
+
+            original_datetime = datetime.strptime(date_text, "%d/%m %H:%M")
+
+            time_difference_hours = self.local_time_adjustment
+
+            # Create a timedelta object with the time difference
+            time_difference = timedelta(hours=time_difference_hours)
+            # Adjust the original datetime by adding the time difference
+            adjusted_datetime = original_datetime + time_difference
+
+            # Format the datetime objects to exclude the year
+            adjusted_formatted = adjusted_datetime.strftime("%d/%m %H:%M")
+            return adjusted_formatted
+        except:
+            self.send_email("Erro ao conveter hora do jogo", "Erro ao conveter hora do jogo")
+            self.log_error("Erro ao conveter hora do jogo")
+            return date 
+
+
     def log_error(self, error: str):
         print(f"\033[91m {error}\033[00m")
 
@@ -204,6 +235,19 @@ class WebDriverWrapper:
     @property
     def driver(self):
         return self._driver
+    
+    @property
+    def relative_path(self):
+        load_dotenv()
+        relative_path = os.environ.get("RELATIVE_PATH")
+        return relative_path
+
+    @property
+    def local_time_adjustment(self):
+        load_dotenv()
+        local_time = int(os.environ.get("LOCAL_TIME_ADJUSTMENT"))
+        return local_time
+
 
     @property
     def actions(self):
