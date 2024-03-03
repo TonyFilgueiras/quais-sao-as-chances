@@ -14,25 +14,23 @@
   <body>
     <div id="app"></div>
     <script>
-      // Fetch the correct hashed filename
-      fetch('/quais-sao-as-chances/site.webmanifest')
-        .then(response => {
-          console.log(response.json())
-          return response.json()})
-        .then(manifest => {
+      // Fetch the correct hashed filenames from the assets folder
+      fetch('/quais-sao-as-chances/assets')
+        .then(response => response.json()) // Assuming the server returns JSON
+        .then(files => {
           const script = document.createElement('script');
-          const cssFileName = manifest['index.css'];
-          const fileName = manifest['index.js']; // Replace 'index.js' with the correct entry point in your manifest
+          const jsFileName = files.find(file => file.includes('index') && file.endsWith('.js'));
           script.type = 'module';
-          script.src = `/quais-sao-as-chances/assets/${fileName}`;
+          script.src = `/quais-sao-as-chances/assets/${jsFileName}`;
           document.body.appendChild(script);
 
+          const cssFileName = files.find(file => file.includes('index') && file.endsWith('.css'));
           const link = document.createElement('link');
           link.rel = 'stylesheet';
           link.href = `/quais-sao-as-chances/assets/${cssFileName}`;
           document.head.appendChild(link);
         })
-        .catch(error => console.error('Error fetching manifest:', error));
+        .catch(error => console.error('Error fetching filenames:', error));
     </script>
   </body>
 </html>
