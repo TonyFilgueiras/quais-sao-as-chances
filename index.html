@@ -14,7 +14,29 @@
     <link rel="stylesheet" href="/quais-sao-as-chances/assets/index-1e421065.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <script>
+        // Fetch the correct hashed filenames from the assets folder
+        fetch('/quais-sao-as-chances/assets')
+          .then(response => {
+            console.log(response)
+            return response.json()}) // Assuming the server returns JSON
+          .then(files => {
+            const script = document.createElement('script');
+            const jsFileName = files.find(file => file.includes('index') && file.endsWith('.js'));
+            script.type = 'module';
+            script.src = `/quais-sao-as-chances/assets/${jsFileName}`;
+            document.body.appendChild(script);
+  
+            const cssFileName = files.find(file => file.includes('index') && file.endsWith('.css'));
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = `/quais-sao-as-chances/assets/${cssFileName}`;
+            document.head.appendChild(link);
+          })
+          .catch(error => console.error('Error fetching filenames:', error));
+      </script>
+    </div>
     
   </body>
 </html>
