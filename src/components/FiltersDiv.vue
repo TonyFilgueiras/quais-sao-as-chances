@@ -10,7 +10,7 @@ import type ITable from "@/interfaces/ITable";
 import { type PropType } from "vue";
 import StandardButton from "./StandardButton.vue";
 import CustomSelect from "./CustomSelect.vue";
-import {type ITeamOptions, teamOptions } from "@/services/teamOptions";
+import { teamOptions } from "@/services/teamOptions";
 import { useIsMobileStore } from "@/stores/isMobile";
 
 export default {
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      teamSelected: {},
+      teamSelected: {} as ITable,
       optionSelected: '',
       selectOpen: false,
       teamOptions: teamOptions
@@ -47,7 +47,7 @@ export default {
       this.teamSelected = team;
       console.log(this.teamSelected);
     },
-    updateSelectedTeamOption(option: ITeamOptions) {
+    updateSelectedTeamOption(option: string) {
       this.optionSelected = option;
       console.log(this.optionSelected);
     },
