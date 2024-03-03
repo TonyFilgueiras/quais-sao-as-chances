@@ -21,14 +21,18 @@
           return response.json()})
         .then(manifest => {
           const script = document.createElement('script');
+          const cssFileName = manifest['index.css'];
           const fileName = manifest['index.js']; // Replace 'index.js' with the correct entry point in your manifest
           script.type = 'module';
           script.src = `/quais-sao-as-chances/assets/${fileName}`;
           document.body.appendChild(script);
+
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = `/quais-sao-as-chances/assets/${cssFileName}`;
+          document.head.appendChild(link);
         })
         .catch(error => console.error('Error fetching manifest:', error));
     </script>
-    <!-- Include stylesheet -->
-    <link rel="stylesheet" href="/quais-sao-as-chances/assets/index-*.css">
   </body>
 </html>
