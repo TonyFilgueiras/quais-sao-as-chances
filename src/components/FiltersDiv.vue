@@ -39,7 +39,8 @@ export default {
       required: true,
     },
     fixtures: {
-      type: Array as PropType<IFixtures[]>
+      type: Array as PropType<IFixtures[]>,
+      required: true,
     }
   },
   computed: {
@@ -50,7 +51,7 @@ export default {
       return !this.teamSelected.team_name || !this.optionSelected;
     },
     isFilterApplied() {
-      return this.fixtures.some((fixture: IFIxture) => fixture.result );
+      return this.fixtures.some((fixture: IFixtures) => fixture.result );
     },
   },
   methods: {

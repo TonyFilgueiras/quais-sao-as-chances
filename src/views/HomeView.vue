@@ -64,7 +64,9 @@ export default {
     }
     function clearFixturesFilters() {
       fixtures.value.forEach((fixture) => {
-        delete fixture.result;
+        if (fixture !== null && fixture !== undefined) {
+          delete fixture.result;
+        }
       });
 
       displayTable.value = updateTable(table.value, fixtures.value);

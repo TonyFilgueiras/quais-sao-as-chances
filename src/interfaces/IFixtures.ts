@@ -13,5 +13,5 @@ export default interface IFixtures {
     awayTeamWinning: boolean
     awayTeamLosing: boolean
     drawing: boolean
-    result: "home" | "draw" | "away" | null
+    result?: "home" | "draw" | "away"
 }
