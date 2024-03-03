@@ -22,6 +22,7 @@ import { useIsMobileStore } from "@/stores/isMobile";
 import { type PropType } from "vue";
 
 export default {
+  emits: ['selectedOption'],
   setup() {
     const mobileStore = useIsMobileStore();
     mobileStore.checkIfIsMobile();

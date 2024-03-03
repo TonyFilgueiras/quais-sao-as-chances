@@ -76,7 +76,7 @@ header {
 }
 h1 {
   font-size: clamp(0.9rem, 4vw, 1.5rem);
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-family: var(--mainFontFamily);
   font-weight: bold;
 }
 img {

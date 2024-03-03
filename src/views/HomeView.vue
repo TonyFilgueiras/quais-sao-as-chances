@@ -3,7 +3,13 @@
     <h1 v-if="error">{{ error }}</h1>
     <LoadingContainer v-if="loading" />
     <div v-else>
-      <FiltersDiv v-if="fixtures.length > 0" :table="displayTable" @filterApplied="updateTeamFixtures" />
+      <FiltersDiv
+        v-if="fixtures.length > 0"
+        :table="displayTable"
+        :fixtures="fixtures"
+        @filterApplied="updateTeamFixtures"
+        @filterCleared="clearFixturesFilters"
+      />
       <WarningBox v-if="fixtures.length == 0" warning-text="Campeonato encerrado" />
       <div class="mainContainer">
         <LeagueTableVue
@@ -36,7 +42,7 @@ import { ref } from "vue";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 import FiltersDiv from "@/components/FiltersDiv.vue";
 import WarningBox from "@/components/WarningBox.vue";
-import updateTeamFixturesService from "@/services/updateTeamFixtures"
+import updateTeamFixturesService from "@/services/updateTeamFixtures";
 
 export default {
   setup() {
@@ -52,8 +58,15 @@ export default {
       displayTable.value = updateTable(table.value, fixtures.value);
     }
     function updateTeamFixtures(team: ITable, option: string) {
-      fixtures.value = updateTeamFixturesService(team, option, fixtures.value)
-      
+      fixtures.value = updateTeamFixturesService(team, option, fixtures.value);
+
+      displayTable.value = updateTable(table.value, fixtures.value);
+    }
+    function clearFixturesFilters() {
+      fixtures.value.forEach((fixture) => {
+        delete fixture.result;
+      });
+
       displayTable.value = updateTable(table.value, fixtures.value);
     }
 
@@ -61,6 +74,7 @@ export default {
       fixtures,
       updateFixtures,
       updateTeamFixtures,
+      clearFixturesFilters,
       table,
       displayTable,
       leagueInfo,
@@ -180,6 +194,8 @@ export default {
 
       if (this.fixtures.length > 300) {
         this.numOutcomes = 10000;
+      } else if (this.fixtures.length > 200) {
+        this.numOutcomes = 25000;
       } else {
         this.numOutcomes = 50000;
       }

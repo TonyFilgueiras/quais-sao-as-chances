@@ -4,9 +4,13 @@
     <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption"/>
     <StandardButton :class="{opacityZero : isButtonDisabled}" :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter" :disabled="isButtonDisabled"/>
   </div>
+  <div :class="['resetFiltersContainer',{ showFiltersContainer: isFilterApplied}]">
+    <StandardButton text="Limpar filtros" :redButton="true" @click="clearFilters" /> 
+  </div>
 </template>
 <script lang="ts">
 import type ITable from "@/interfaces/ITable";
+import type IFixtures from "@/interfaces/IFixtures";
 import { type PropType } from "vue";
 import StandardButton from "./StandardButton.vue";
 import CustomSelect from "./CustomSelect.vue";
@@ -14,6 +18,7 @@ import { teamOptions } from "@/services/teamOptions";
 import { useIsMobileStore } from "@/stores/isMobile";
 
 export default {
+  emits: ['filterApplied', 'filterCleared'],
   setup() {
     const mobileStore = useIsMobileStore();
     mobileStore.checkIfIsMobile();
@@ -33,6 +38,9 @@ export default {
       type: Array as PropType<ITable[]>,
       required: true,
     },
+    fixtures: {
+      type: Array as PropType<IFixtures[]>
+    }
   },
   computed: {
     sortedTable() {
@@ -41,21 +49,25 @@ export default {
     isButtonDisabled() {
       return !this.teamSelected.team_name || !this.optionSelected;
     },
+    isFilterApplied() {
+      return this.fixtures.some((fixture: IFIxture) => fixture.result );
+    },
   },
   methods: {
     updateSelectedTeam(team: ITable) {
       this.teamSelected = team;
-      console.log(this.teamSelected);
     },
     updateSelectedTeamOption(option: string) {
       this.optionSelected = option;
-      console.log(this.optionSelected);
     },
     handleSelectToggle() {
       this.selectOpen = !this.selectOpen;
     },
     applyFilter() {
       this.$emit("filterApplied", this.teamSelected, this.optionSelected)
+    },
+    clearFilters() {
+      this.$emit("filterCleared")
     },
   },
   components: { StandardButton, CustomSelect },
@@ -68,14 +80,33 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   width: 90vw;
   color: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   box-shadow: 0px 0px 2px 0px black;
   background-color: var(--brasileiraoBlue);
 }
+.resetFiltersContainer{
+  display: none;
+  height: 80px;
+  width: 90vw;
+  padding: 15px;
+  background-color: var(--brasileiraoDarkBlue);
+  transform: scaleY(0.1);
+  transform-origin: top;
+  opacity: 0;
+  animation: hideContent 0.5s ease forwards;
+}
+
+.showFiltersContainer{
+  animation: showContent 0.5s ease forwards;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 .customTeamSelect {
   width: 200px;
 }

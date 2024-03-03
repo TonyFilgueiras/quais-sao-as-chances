@@ -1,5 +1,5 @@
 <template>
-  <button>{{ text }}</button>
+  <button :class="{redButton: redButton}">{{ text }}</button>
 </template>
 <script lang="ts">
 export default {
@@ -7,6 +7,10 @@ export default {
     text: {
       type: String,
     },
+    redButton: {
+      type: Boolean,
+      default: false,
+    }
   },
 }
 </script>
@@ -43,6 +47,12 @@ button:after {
   right: 0;
   top: -1px;
   z-index: -1;
+}
+.redButton{
+  background-color: darkred;
+}
+.redButton:after{
+  background-color: red;
 }
 
 button:hover {

@@ -158,5 +158,8 @@ table::-webkit-scrollbar-thumb {
   .teamTable td {
     padding: 5px 10px;
   }
+  .teamTable th{
+    height: 30px;
+  }
 }
 </style>

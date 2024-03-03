@@ -22,11 +22,15 @@
   --sulAmericana: #ffff0088;
   --neutro: #eeeeee88;
   --rebaixamento: #ff000088;
+
+  
   --brasileiraoBlue: #004498;
-  --brasileiraoDarkBlue: #003c86;
+  --brasileiraoDarkBlue: #00326e;
   --brasileiraoLightBlue:#005ac9;
   --brasileiraoGold: #bfa706;
   --brasileiraoSilver: #a5a4a9;
+
+  --mainFontFamily: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 *,
 *::before,
@@ -79,6 +83,16 @@ body {
   to {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+@keyframes hideContent {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0.1);
   }
 }
 .hidden{
