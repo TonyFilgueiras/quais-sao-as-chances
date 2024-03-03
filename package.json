@@ -7,9 +7,10 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "npm run build & vite preview",
     "build-only": "vite build",
+    "copy404": "cp dist/index.html dist/404.html",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build &&  npm run copy404",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
