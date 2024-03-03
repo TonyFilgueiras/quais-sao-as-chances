@@ -242,4 +242,4 @@ export default {
     flex-direction: column;
   }
 }
-</style>import { log } from "console";
+</style>

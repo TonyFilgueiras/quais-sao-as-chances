@@ -2,7 +2,7 @@
   <div class="filtersContainer">
     <CustomSelect :table="table" label="Time" @selectedOption="updateSelectedTeam"/>
     <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption"/>
-    <StandardButton :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter"/>
+    <StandardButton :class="{opacityZero : isButtonDisabled}" :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter" :disabled="isButtonDisabled"/>
   </div>
 </template>
 <script lang="ts">
@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       teamSelected: {},
-      optionSelected: {},
+      optionSelected: '',
       selectOpen: false,
       teamOptions: teamOptions
     };
@@ -38,13 +38,18 @@ export default {
     sortedTable() {
       return this.table.slice().sort((a: ITable, b: ITable) => a.team_name.localeCompare(b.team_name));
     },
+    isButtonDisabled() {
+      return !this.teamSelected.team_name || !this.optionSelected;
+    },
   },
   methods: {
     updateSelectedTeam(team: ITable) {
       this.teamSelected = team;
+      console.log(this.teamSelected);
     },
     updateSelectedTeamOption(option: ITeamOptions) {
       this.optionSelected = option;
+      console.log(this.optionSelected);
     },
     handleSelectToggle() {
       this.selectOpen = !this.selectOpen;
@@ -121,5 +126,13 @@ export default {
 
 .option:hover {
   background-color: #ffffff88;
+}
+
+.opacityZero{
+  opacity: 0;
+}
+
+.opacityZero:hover{
+  cursor: default;
 }
 </style>
