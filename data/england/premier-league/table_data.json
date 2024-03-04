@@ -14,12 +14,12 @@
     "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
     "team_name": "Manchester City",
-    "matches": 26,
-    "wins": 18,
+    "matches": 27,
+    "wins": 19,
     "draws": 5,
     "losses": 3,
-    "goal_difference": 33,
-    "points": 59
+    "goal_difference": 35,
+    "points": 62
   },
   {
     "position": 3,
@@ -58,11 +58,11 @@
     "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/GhGV3qjT-UPrTWfIe.png",
     "team_name": "Manchester Utd",
-    "matches": 26,
+    "matches": 27,
     "wins": 14,
     "draws": 2,
-    "losses": 10,
-    "goal_difference": 0,
+    "losses": 11,
+    "goal_difference": -2,
     "points": 44
   },
   {
@@ -135,12 +135,12 @@
     "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/C60HMWTH-tCGtX12c.png",
     "team_name": "Bournemouth",
-    "matches": 25,
-    "wins": 7,
+    "matches": 26,
+    "wins": 8,
     "draws": 7,
     "losses": 11,
-    "goal_difference": -14,
-    "points": 28
+    "goal_difference": -12,
+    "points": 31
   },
   {
     "position": 14,
@@ -201,11 +201,11 @@
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/xO3nES96-6PhTI7J6.png",
     "team_name": "Burnley",
-    "matches": 26,
+    "matches": 27,
     "wins": 3,
     "draws": 4,
-    "losses": 19,
-    "goal_difference": -33,
+    "losses": 20,
+    "goal_difference": -35,
     "points": 13
   },
   {
