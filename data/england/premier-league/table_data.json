@@ -25,12 +25,12 @@
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
     "team_name": "Arsenal",
-    "matches": 26,
-    "wins": 18,
+    "matches": 27,
+    "wins": 19,
     "draws": 4,
     "losses": 4,
-    "goal_difference": 39,
-    "points": 58
+    "goal_difference": 45,
+    "points": 61
   },
   {
     "position": 4,
@@ -212,11 +212,11 @@
     "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/8nXNvlA6-bgElVuX9.png",
     "team_name": "Sheffield Utd",
-    "matches": 26,
+    "matches": 27,
     "wins": 3,
     "draws": 4,
-    "losses": 19,
-    "goal_difference": -44,
+    "losses": 20,
+    "goal_difference": -50,
     "points": 13
   }
 ]
