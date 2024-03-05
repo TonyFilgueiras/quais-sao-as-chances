@@ -101,6 +101,8 @@ class WebDriverWrapper:
 
         if country == "brazil":
             country_name = "Brasileirão "
+        elif country == "england":
+            country_name = ""
         else:
             country_name = country.capitalize() + " "
 
