@@ -1,46 +1,21 @@
-# quais-sao-as-chances
+# Quais são as chances
 
-This template should help get you started developing with Vue 3 in Vite.
+## Link do website
 
-## Recommended IDE Setup
+https://tonyfilgueiras.github.io/quais-sao-as-chances/
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Tecnologias utilizadas
 
-## Type Support for `.vue` Imports in TS
+- Vue3 
+- Vite
+- Typescript
+- WebWorkers 
+- Python
+- Selenium chromedriver
+- AWS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Sobre o projeto
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- Site feito para calcular as chances dos times, baseando somente pela classificação na tabela e jogos restantes
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+![pagina](https://github.com/TonyFilgueiras/quais-sao-as-chances/assets/101405712/dc6e365a-47d6-4949-b3b4-0b2fa6b40d68)
