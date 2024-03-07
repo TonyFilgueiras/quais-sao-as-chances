@@ -3,19 +3,14 @@
     <StandardButton text="X" @click="closeAboutModel"/>
     <h1>Sobre a simulação</h1>
     <p>
-      A simulação pega os jogos restantes do brasileirão e escolhe aleatóriamente os vencedores de cada jogo restante. Considerando cada vitória sendo
+      A simulação pega os jogos restantes no campeonato e escolhe aleatóriamente os vencedores de cada jogo restante. Considerando cada vitória sendo
       apenas por 1x0 e empate como 0x0.
     </p>
     <p>Após cada simulação, ela atualiza a tabela e verifica a posição em que cada time finalizou na simulação.</p>
-    <p>O processo é repetido 50.000 vezes, e no final conta quantas vezes cada time acabou na situação indicada na tabela ao lado.</p>
+    <p>O processo é repetido por até 50.000 vezes, e no final conta quantas vezes cada time acabou na situação indicada na tabela ao lado.</p>
     <p>
       O usuário tem a opção também de escolher os vencedores dos confrontos, assim fazendo com que a simulação leve em conta aquele resultado indicado
       pelo usuário
-    </p>
-    <br />
-    <p>
-      Site ainda está sobre desenvolvimento. Tendo como objetivo no futuro, implementar a opção do usuário escolher para simular os jogos levando em
-      conta a força do time, e tambem disponibilizar outros campeonatos
     </p>
   </div>
 </template>
