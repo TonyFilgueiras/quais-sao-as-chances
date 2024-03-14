@@ -135,12 +135,12 @@
     "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/C60HMWTH-tCGtX12c.png",
     "team_name": "Bournemouth",
-    "matches": 27,
-    "wins": 8,
+    "matches": 28,
+    "wins": 9,
     "draws": 8,
     "losses": 11,
-    "goal_difference": -12,
-    "points": 32
+    "goal_difference": -11,
+    "points": 35
   },
   {
     "position": 14,
@@ -190,11 +190,11 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/GQSSQahT-dATKxRKP.png",
     "team_name": "Luton",
-    "matches": 27,
+    "matches": 28,
     "wins": 5,
     "draws": 6,
-    "losses": 16,
-    "goal_difference": -17,
+    "losses": 17,
+    "goal_difference": -18,
     "points": 21
   },
   {
