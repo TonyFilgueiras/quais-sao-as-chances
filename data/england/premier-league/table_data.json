@@ -47,11 +47,11 @@
     "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/v3SzDxVH-SOY3p1Si.png",
     "team_name": "Tottenham",
-    "matches": 27,
+    "matches": 28,
     "wins": 16,
     "draws": 5,
-    "losses": 6,
-    "goal_difference": 20,
+    "losses": 7,
+    "goal_difference": 17,
     "points": 53
   },
   {
@@ -124,12 +124,12 @@
     "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/fkbYUWme-ImMEe0UF.png",
     "team_name": "Fulham",
-    "matches": 28,
-    "wins": 10,
+    "matches": 29,
+    "wins": 11,
     "draws": 5,
     "losses": 13,
-    "goal_difference": -4,
-    "points": 35
+    "goal_difference": -1,
+    "points": 38
   },
   {
     "position": 13,
@@ -157,11 +157,11 @@
     "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/SjSCLv86-r9Mudk7j.png",
     "team_name": "Brentford",
-    "matches": 28,
+    "matches": 29,
     "wins": 7,
     "draws": 5,
-    "losses": 16,
-    "goal_difference": -12,
+    "losses": 17,
+    "goal_difference": -13,
     "points": 26
   },
   {
@@ -179,34 +179,34 @@
     "position": 17,
     "logo": "https://static.flashscore.com/res/image/data/86ODdyle-ImKwLTtA.png",
     "team_name": "Nottingham",
-    "matches": 28,
+    "matches": 29,
     "wins": 6,
-    "draws": 6,
+    "draws": 7,
     "losses": 16,
     "goal_difference": -16,
-    "points": 24
+    "points": 25
   },
   {
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/GQSSQahT-dATKxRKP.png",
     "team_name": "Luton",
-    "matches": 28,
+    "matches": 29,
     "wins": 5,
-    "draws": 6,
+    "draws": 7,
     "losses": 17,
     "goal_difference": -18,
-    "points": 21
+    "points": 22
   },
   {
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/xO3nES96-6PhTI7J6.png",
     "team_name": "Burnley",
-    "matches": 28,
-    "wins": 3,
+    "matches": 29,
+    "wins": 4,
     "draws": 5,
     "losses": 20,
-    "goal_difference": -35,
-    "points": 14
+    "goal_difference": -34,
+    "points": 17
   },
   {
     "position": 20,
