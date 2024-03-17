@@ -159,7 +159,7 @@ table::-webkit-scrollbar-thumb {
     padding: 5px 10px;
   }
   .teamTable th{
-    height: 30px;
+    height: 40px;
   }
 }
 </style>
