@@ -36,12 +36,12 @@
     "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/UHchCEVH-dC4qHhKr.png",
     "team_name": "Aston Villa",
-    "matches": 28,
+    "matches": 29,
     "wins": 17,
-    "draws": 4,
+    "draws": 5,
     "losses": 7,
     "goal_difference": 18,
-    "points": 55
+    "points": 56
   },
   {
     "position": 5,
@@ -69,12 +69,12 @@
     "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/YeSfKGlC-ARW4wdCc.png",
     "team_name": "West Ham",
-    "matches": 28,
+    "matches": 29,
     "wins": 12,
-    "draws": 7,
+    "draws": 8,
     "losses": 9,
     "goal_difference": -4,
-    "points": 43
+    "points": 44
   },
   {
     "position": 8,

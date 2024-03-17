@@ -23,6 +23,7 @@ from config import REMOTE_DEBUGGING_PORT
 class WebDriverWrapper:
     def __init__(self):
         self._driver = webdriver.Chrome()
+        self._email_body = ""
 
     def __enter__(self):
         return self
@@ -82,12 +83,10 @@ class WebDriverWrapper:
 
             self.write_json(f"{self.relative_path}/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
-            if self.alert_tony == "True":
-                self.send_email(f"Standings Updated: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} updated successfully")
+            self.write_email_body(f"Standings Updated: Standings from {country.capitalize()} {division} updated successfully")
         except:
             self.log_error("Timed out waiting for standings")
-            if self.alert_tony == "True":
-                self.send_email(f"Error on updating standings: quais-sao-as-chances-back",  f"Standings from {country.capitalize()} {division} was not updated successfully")
+            self.write_email_body(f"Error on updating standings: Standings from {country.capitalize()} {division} was not updated successfully")
 
 
     def get_league_info(self, country:str, division:str):
@@ -171,14 +170,12 @@ class WebDriverWrapper:
             self.log_error("Erro de StaleElement")
             print("-" *50)
             self.log_error(e)
-            if self.alert_tony == "True":
-                self.send_email(f"Error on updating fixtures",  f"Fixture from {country.capitalize()} {division} was not updated successfully")
+            self.write_email_body(f"Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully")
         except TimeoutException:
             print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
         self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
         print("League fixtures updated")
-        if self.alert_tony == "True":
-            self.send_email(f"Fixture Updated: quais-sao-as-chances-back",  f"Fixture from {country.capitalize()} {division} updated successfully")
+        self.write_email_body(f"Fixture Updated: Fixture from {country.capitalize()} {division} updated successfully")
 
     def write_json(self, name: str, data: list):
         with open(name, 'w') as json_file:
@@ -206,6 +203,12 @@ class WebDriverWrapper:
             except Exception as e:
                 self.log_error(f"Error sending mail: {e}")
 
+    def write_email_body(self, text: str):
+        current_body = self.get_email_body
+        new_body = current_body + "\n" + text
+        self.set_email_body(new_body)
+
+
     def adjust_date_time(self, date: str) -> str:
         try:
             date_parts = date.split(" ")[:2]
@@ -225,14 +228,20 @@ class WebDriverWrapper:
             adjusted_formatted = adjusted_datetime.strftime("%d/%m %H:%M")
             return adjusted_formatted
         except:
-            if self.alert_tony == "True":
-                self.send_email("Erro ao conveter hora do jogo", "Erro ao conveter hora do jogo")
+            self.write_email_body(f"Erro ao conveter hora do jogo: {date}")
             self.log_error("Erro ao conveter hora do jogo")
             return date 
 
 
     def log_error(self, error: str):
         print(f"\033[91m{error}\033[00m")
+
+    def set_email_body(self, text):
+        self._email_body = text
+
+    @property    
+    def get_email_body(self):
+        return self._email_body
 
     @property
     def options(self):
