@@ -177,17 +177,6 @@
   },
   {
     "position": 17,
-    "logo": "https://static.flashscore.com/res/image/data/86ODdyle-ImKwLTtA.png",
-    "team_name": "Nottingham",
-    "matches": 29,
-    "wins": 6,
-    "draws": 7,
-    "losses": 16,
-    "goal_difference": -16,
-    "points": 25
-  },
-  {
-    "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/GQSSQahT-dATKxRKP.png",
     "team_name": "Luton",
     "matches": 29,
@@ -196,6 +185,17 @@
     "losses": 17,
     "goal_difference": -18,
     "points": 22
+  },
+  {
+    "position": 18,
+    "logo": "https://static.flashscore.com/res/image/data/86ODdyle-ImKwLTtA.png",
+    "team_name": "Nottingham",
+    "matches": 29,
+    "wins": 6,
+    "draws": 7,
+    "losses": 16,
+    "goal_difference": -16,
+    "points": 21
   },
   {
     "position": 19,
