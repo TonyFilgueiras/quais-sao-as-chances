@@ -3,13 +3,13 @@
     <div class="optionSelected" @click="handleSelectToggle">
       <img v-if="isTeamOption && optionSelected.label" :src="optionSelected.logo" />
       <span>{{
-        optionSelected.label ? (isTeamOption && mobileStore.isScreenSmall ? "" : `${optionSelected.label}`) : label ? label : teamOptions[0].label
+        optionSelected.label ? `${optionSelected.label}` : label ? label : teamOptions[0].label
       }}</span>
     </div>
     <div :class="['optionsContainer', { optionsShown: selectOpen }]">
       <div v-for="(option, index) in teamOptions" :key="index" class="option" @click="selectOption(option)">
         <img v-if="isTeamOption" :src="option.logo" />
-        <span :class="{ hidden: isTeamOption && mobileStore.isScreenSmall }">{{ option.label }}</span>
+        <span>{{ option.label }}</span>
       </div>
     </div>
   </div>
@@ -154,8 +154,7 @@ img {
     font-size: 0.5rem;
   }
   img {
-    margin: 0px auto;
-    width: 30px;
+    width: 25px;
   }
 }
 </style>

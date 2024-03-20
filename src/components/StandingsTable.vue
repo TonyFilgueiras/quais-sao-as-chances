@@ -25,7 +25,7 @@
         }"
       >
         <td class="position">{{ team.position }}</td>
-        <td class="teamName"><img v-if="!mobileStore.isMobile" :src="team.logo" alt="escudo" /> {{ team.team_name }}</td>
+        <td class="teamName"><img :src="team.logo" alt="escudo" /> {{ team.team_name }}</td>
         <td class="points">{{ team.points }}</td>
         <td v-if="display" :class="['matches', {hidden: !display}]">{{ team.matches }}</td>
         <td :class="{hidden: !display}" v-if="display">{{ team.wins }}</td>

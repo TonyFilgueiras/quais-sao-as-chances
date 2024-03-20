@@ -155,6 +155,9 @@ table::-webkit-scrollbar-thumb {
     overflow: hidden;
     width:100vw;
   }
+  .teamTable tr {
+    height: 50px;
+  }
   .teamTable td {
     padding: 5px 10px;
   }
