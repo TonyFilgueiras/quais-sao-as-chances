@@ -83,10 +83,10 @@ class WebDriverWrapper:
 
             self.write_json(f"{self.relative_path}/public/data/{country}/{division}/table_data.json", table_data)
             print("League standings updated")
-            self.write_email_body(f"Standings Updated: Standings from {country.capitalize()} {division} updated successfully")
+            self.write_email_body(f"✅ Standings Updated: Standings from {country.capitalize()} {division} updated successfully")
         except:
             self.log_error("Timed out waiting for standings")
-            self.write_email_body(f"Error on updating standings: Standings from {country.capitalize()} {division} was not updated successfully")
+            self.write_email_body(f"❌ Error on updating standings: Standings from {country.capitalize()} {division} was not updated successfully")
 
 
     def get_league_info(self, country:str, division:str):
@@ -170,12 +170,12 @@ class WebDriverWrapper:
             self.log_error("Erro de StaleElement")
             print("-" *50)
             self.log_error(e)
-            self.write_email_body(f"Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully")
+            self.write_email_body(f"❌ Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully")
         except TimeoutException:
             print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
         self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
         print("League fixtures updated")
-        self.write_email_body(f"Fixture Updated: Fixture from {country.capitalize()} {division} updated successfully")
+        self.write_email_body(f"✅ Fixture Updated: Fixture from {country.capitalize()} {division} updated successfully")
 
     def write_json(self, name: str, data: list):
         with open(name, 'w') as json_file:
