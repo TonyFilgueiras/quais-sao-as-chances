@@ -1,36 +1,36 @@
 [
   {
     "position": 1,
-    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
-    "team_name": "Arsenal",
-    "matches": 28,
+    "logo": "https://static.flashscore.com/res/image/data/x82JgBjC-Imx2oQd8.png",
+    "team_name": "Liverpool",
+    "matches": 29,
     "wins": 20,
-    "draws": 4,
-    "losses": 4,
-    "goal_difference": 46,
-    "points": 64
+    "draws": 7,
+    "losses": 2,
+    "goal_difference": 40,
+    "points": 67
   },
   {
     "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/x82JgBjC-Imx2oQd8.png",
-    "team_name": "Liverpool",
-    "matches": 28,
-    "wins": 19,
-    "draws": 7,
-    "losses": 2,
-    "goal_difference": 39,
-    "points": 64
+    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
+    "team_name": "Arsenal",
+    "matches": 29,
+    "wins": 20,
+    "draws": 5,
+    "losses": 4,
+    "goal_difference": 46,
+    "points": 65
   },
   {
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
     "team_name": "Manchester City",
-    "matches": 28,
+    "matches": 29,
     "wins": 19,
-    "draws": 6,
+    "draws": 7,
     "losses": 3,
     "goal_difference": 35,
-    "points": 63
+    "points": 64
   },
   {
     "position": 4,
@@ -91,11 +91,11 @@
     "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/G0q9xjRq-b92lfEJC.png",
     "team_name": "Brighton",
-    "matches": 28,
+    "matches": 29,
     "wins": 11,
     "draws": 9,
-    "losses": 8,
-    "goal_difference": 6,
+    "losses": 9,
+    "goal_difference": 5,
     "points": 42
   },
   {
