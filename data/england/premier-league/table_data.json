@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
+    "team_name": "Arsenal",
+    "matches": 30,
+    "wins": 21,
+    "draws": 5,
+    "losses": 4,
+    "goal_difference": 48,
+    "points": 68
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/x82JgBjC-Imx2oQd8.png",
     "team_name": "Liverpool",
     "matches": 29,
@@ -11,36 +22,25 @@
     "points": 67
   },
   {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
-    "team_name": "Arsenal",
-    "matches": 29,
-    "wins": 20,
-    "draws": 5,
-    "losses": 4,
-    "goal_difference": 46,
-    "points": 65
-  },
-  {
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
     "team_name": "Manchester City",
-    "matches": 29,
-    "wins": 19,
+    "matches": 30,
+    "wins": 20,
     "draws": 7,
     "losses": 3,
-    "goal_difference": 35,
-    "points": 64
+    "goal_difference": 38,
+    "points": 67
   },
   {
     "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/UHchCEVH-dC4qHhKr.png",
     "team_name": "Aston Villa",
-    "matches": 30,
+    "matches": 31,
     "wins": 18,
     "draws": 5,
-    "losses": 7,
-    "goal_difference": 20,
+    "losses": 8,
+    "goal_difference": 17,
     "points": 59
   },
   {
@@ -91,12 +91,12 @@
     "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/G0q9xjRq-b92lfEJC.png",
     "team_name": "Brighton",
-    "matches": 29,
+    "matches": 30,
     "wins": 11,
-    "draws": 9,
+    "draws": 10,
     "losses": 9,
     "goal_difference": 5,
-    "points": 42
+    "points": 43
   },
   {
     "position": 10,
@@ -157,12 +157,12 @@
     "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/SjSCLv86-r9Mudk7j.png",
     "team_name": "Brentford",
-    "matches": 30,
+    "matches": 31,
     "wins": 7,
-    "draws": 6,
+    "draws": 7,
     "losses": 17,
     "goal_difference": -13,
-    "points": 27
+    "points": 28
   },
   {
     "position": 16,
@@ -190,11 +190,11 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/GQSSQahT-dATKxRKP.png",
     "team_name": "Luton",
-    "matches": 30,
+    "matches": 31,
     "wins": 5,
     "draws": 7,
-    "losses": 18,
-    "goal_difference": -19,
+    "losses": 19,
+    "goal_difference": -21,
     "points": 22
   },
   {
