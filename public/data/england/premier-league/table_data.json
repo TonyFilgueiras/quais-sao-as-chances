@@ -155,17 +155,6 @@
   },
   {
     "position": 15,
-    "logo": "https://static.flashscore.com/res/image/data/EBfZuwme-bRmKmISE.png",
-    "team_name": "Everton",
-    "matches": 31,
-    "wins": 9,
-    "draws": 8,
-    "losses": 14,
-    "goal_difference": -10,
-    "points": 29
-  },
-  {
-    "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/SjSCLv86-r9Mudk7j.png",
     "team_name": "Brentford",
     "matches": 32,
@@ -174,6 +163,17 @@
     "losses": 17,
     "goal_difference": -13,
     "points": 29
+  },
+  {
+    "position": 16,
+    "logo": "https://static.flashscore.com/res/image/data/EBfZuwme-bRmKmISE.png",
+    "team_name": "Everton",
+    "matches": 31,
+    "wins": 9,
+    "draws": 8,
+    "losses": 14,
+    "goal_difference": -10,
+    "points": 27
   },
   {
     "position": 17,
