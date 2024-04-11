@@ -135,17 +135,6 @@
     "id": 12,
     "round": 2,
     "date": "17/04 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
-    "home_team": "Atletico-MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
-    "away_team": "Criciuma",
-    "away_score": null
-  },
-  {
-    "id": 13,
-    "round": 2,
-    "date": "17/04 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
     "home_score": null,
@@ -154,7 +143,7 @@
     "away_score": null
   },
   {
-    "id": 14,
+    "id": 13,
     "round": 2,
     "date": "17/04 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
@@ -162,6 +151,17 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "away_team": "Athletico-PR",
+    "away_score": null
+  },
+  {
+    "id": 14,
+    "round": 2,
+    "date": "17/04 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
+    "home_team": "Atletico-MG",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "away_team": "Criciuma",
     "away_score": null
   },
   {
@@ -189,23 +189,23 @@
   {
     "id": 17,
     "round": 2,
-    "date": "17/04 21:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
-    "home_team": "Flamengo RJ",
+    "date": "17/04 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "home_team": "Palmeiras",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
-    "away_team": "Sao Paulo",
+    "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "away_team": "Internacional",
     "away_score": null
   },
   {
     "id": 18,
     "round": 2,
     "date": "17/04 21:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
-    "home_team": "Palmeiras",
+    "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
+    "home_team": "Flamengo RJ",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
-    "away_team": "Internacional",
+    "away_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
+    "away_team": "Sao Paulo",
     "away_score": null
   },
   {
