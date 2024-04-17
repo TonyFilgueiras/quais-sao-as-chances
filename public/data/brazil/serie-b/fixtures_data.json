@@ -24,17 +24,6 @@
   {
     "id": 2,
     "round": 1,
-    "date": "19/04 20:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 3,
-    "round": 1,
     "date": "19/04 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "home_team": "Operario",
@@ -44,7 +33,7 @@
     "away_score": null
   },
   {
-    "id": 4,
+    "id": 3,
     "round": 1,
     "date": "20/04 15:30",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -52,6 +41,17 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "away_team": "Ituano",
+    "away_score": null
+  },
+  {
+    "id": 4,
+    "round": 1,
+    "date": "20/04 16:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "home_team": "Santos",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
     "away_score": null
   },
   {
