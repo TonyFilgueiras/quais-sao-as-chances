@@ -78,6 +78,28 @@
   },
   {
     "position": 8,
+    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "team_name": "Coritiba",
+    "matches": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "goal_difference": 0,
+    "points": 1
+  },
+  {
+    "position": 9,
+    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "team_name": "Ponte Preta",
+    "matches": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "goal_difference": 0,
+    "points": 1
+  },
+  {
+    "position": 10,
     "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "team_name": "America MG",
     "matches": 1,
@@ -88,7 +110,7 @@
     "points": 1
   },
   {
-    "position": 9,
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
     "team_name": "Botafogo SP",
     "matches": 1,
@@ -99,31 +121,9 @@
     "points": 1
   },
   {
-    "position": 10,
-    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "team_name": "Coritiba",
-    "matches": 0,
-    "wins": 0,
-    "draws": 0,
-    "losses": 0,
-    "goal_difference": 0,
-    "points": 0
-  },
-  {
-    "position": 11,
+    "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
-    "matches": 0,
-    "wins": 0,
-    "draws": 0,
-    "losses": 0,
-    "goal_difference": 0,
-    "points": 0
-  },
-  {
-    "position": 12,
-    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "team_name": "Ponte Preta",
     "matches": 0,
     "wins": 0,
     "draws": 0,
