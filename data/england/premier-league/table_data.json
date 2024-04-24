@@ -3,12 +3,12 @@
     "position": 1,
     "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
     "team_name": "Arsenal",
-    "matches": 33,
-    "wins": 23,
+    "matches": 34,
+    "wins": 24,
     "draws": 5,
     "losses": 5,
-    "goal_difference": 51,
-    "points": 74
+    "goal_difference": 56,
+    "points": 77
   },
   {
     "position": 2,
@@ -91,11 +91,11 @@
     "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/lMxEQ8me-IROrZEJb.png",
     "team_name": "Chelsea",
-    "matches": 31,
+    "matches": 32,
     "wins": 13,
     "draws": 8,
-    "losses": 10,
-    "goal_difference": 9,
+    "losses": 11,
+    "goal_difference": 4,
     "points": 47
   },
   {
