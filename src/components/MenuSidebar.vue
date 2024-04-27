@@ -4,7 +4,7 @@
     <!-- <ul> -->
       <!-- <li id="leagues">Ligas -->
         <ul class="leaguesContainer" ref="leaguesContainer">
-          <li v-for="league in leagues" class="league" :key="league.name" @click="leagueChosenStore.chooseLeague(league.country, league.division)">
+          <li v-for="league in leagues" class="league" :key="league.name" @click="changeLeague(league)">
             <img :src="league.img">
             {{ league.name }}
           </li>
@@ -43,6 +43,10 @@ export default {
   methods: {
     closeMenuSidebar() {
       this.$emit("close");
+    },
+    changeLeague(league: ILeaguesAvailable) {
+      this.leagueChosenStore.chooseLeague(league.country, league.division)
+      this.closeMenuSidebar()
     },
     async fetchLeagues() {
       try {
