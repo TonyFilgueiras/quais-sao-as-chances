@@ -90,13 +90,12 @@ class WebDriverWrapper:
 
 
     def get_league_info(self, country:str, division:str):
-        print(f" path = {self.relative_path}")
         print(f"Getting league info | país = {country} | divisão = {division}")
         league_info = {}
 
         logo = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__logo'))).get_attribute("src")
-        name = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[1]/div[1]'))).text
-        year = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mc"]/div[4]/div[1]/div[2]/div[2]'))).text
+        name = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__name'))).text
+        year = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.CLASS_NAME, 'heading__info'))).text
 
         if country == "brazil":
             country_name = "Brasileirão "
@@ -144,7 +143,7 @@ class WebDriverWrapper:
                         round = int(round_text[-2:])
                     if "event__match" in element_class:
                         date_text = element.find_element(By.CLASS_NAME, "event__time").text
-                        date = date_text.replace('.', '/', 1).replace('.', '')
+                        date = date_text.replace('.', '/', 1).replace('.', '').replace("Postp", "")
                         date = self.adjust_date_time(date)
                         home_team = element.find_element(By.CLASS_NAME, "event__participant--home").text
                         home_logo = element.find_element(By.CLASS_NAME, "event__logo--home").get_attribute("src")
@@ -213,7 +212,7 @@ class WebDriverWrapper:
         try:
             date_parts = date.split(" ")[:2]
 
-            date_text = " ".join(date_parts)
+            date_text = " ".join(date_parts).strip()
 
             original_datetime = datetime.strptime(date_text, "%d/%m %H:%M")
 
@@ -227,7 +226,9 @@ class WebDriverWrapper:
             # Format the datetime objects to exclude the year
             adjusted_formatted = adjusted_datetime.strftime("%d/%m %H:%M")
             return adjusted_formatted
-        except:
+        except Exception as e:
+            print(e)
+            print(date)
             self.write_email_body(f"Erro ao conveter hora do jogo: {date}")
             self.log_error("Erro ao conveter hora do jogo")
             return date 
