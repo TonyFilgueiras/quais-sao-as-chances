@@ -3,23 +3,23 @@
     "position": 1,
     "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
     "team_name": "Arsenal",
-    "matches": 34,
-    "wins": 24,
+    "matches": 35,
+    "wins": 25,
     "draws": 5,
     "losses": 5,
-    "goal_difference": 56,
-    "points": 77
+    "goal_difference": 57,
+    "points": 80
   },
   {
     "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
     "team_name": "Manchester City",
-    "matches": 33,
-    "wins": 23,
+    "matches": 34,
+    "wins": 24,
     "draws": 7,
     "losses": 3,
-    "goal_difference": 48,
-    "points": 76
+    "goal_difference": 50,
+    "points": 79
   },
   {
     "position": 3,
@@ -47,11 +47,11 @@
     "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/v3SzDxVH-SOY3p1Si.png",
     "team_name": "Tottenham",
-    "matches": 32,
+    "matches": 33,
     "wins": 18,
     "draws": 6,
-    "losses": 8,
-    "goal_difference": 16,
+    "losses": 9,
+    "goal_difference": 15,
     "points": 60
   },
   {
@@ -100,6 +100,17 @@
   },
   {
     "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/C60HMWTH-tCGtX12c.png",
+    "team_name": "Bournemouth",
+    "matches": 35,
+    "wins": 13,
+    "draws": 9,
+    "losses": 13,
+    "goal_difference": -8,
+    "points": 48
+  },
+  {
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/OMUzjDkC-CjV6Eptm.png",
     "team_name": "Wolves",
     "matches": 35,
@@ -110,25 +121,14 @@
     "points": 46
   },
   {
-    "position": 11,
-    "logo": "https://static.flashscore.com/res/image/data/C60HMWTH-tCGtX12c.png",
-    "team_name": "Bournemouth",
-    "matches": 34,
-    "wins": 12,
-    "draws": 9,
-    "losses": 13,
-    "goal_difference": -11,
-    "points": 45
-  },
-  {
     "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/G0q9xjRq-b92lfEJC.png",
     "team_name": "Brighton",
-    "matches": 33,
+    "matches": 34,
     "wins": 11,
     "draws": 11,
-    "losses": 11,
-    "goal_difference": -2,
+    "losses": 12,
+    "goal_difference": -5,
     "points": 44
   },
   {
@@ -179,11 +179,11 @@
     "position": 17,
     "logo": "https://static.flashscore.com/res/image/data/86ODdyle-ImKwLTtA.png",
     "team_name": "Nottingham",
-    "matches": 34,
+    "matches": 35,
     "wins": 7,
     "draws": 9,
-    "losses": 18,
-    "goal_difference": -18,
+    "losses": 19,
+    "goal_difference": -20,
     "points": 26
   },
   {
