@@ -100,6 +100,17 @@
   },
   {
     "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "team_name": "Mirassol",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goal_difference": -1,
+    "points": 3
+  },
+  {
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
     "matches": 2,
@@ -110,7 +121,7 @@
     "points": 3
   },
   {
-    "position": 11,
+    "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
     "team_name": "Botafogo SP",
     "matches": 2,
@@ -121,18 +132,18 @@
     "points": 2
   },
   {
-    "position": 12,
+    "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
     "team_name": "Ceara",
-    "matches": 1,
+    "matches": 2,
     "wins": 0,
     "draws": 1,
-    "losses": 0,
-    "goal_difference": 0,
+    "losses": 1,
+    "goal_difference": -1,
     "points": 1
   },
   {
-    "position": 13,
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "team_name": "Amazonas",
     "matches": 2,
@@ -143,7 +154,7 @@
     "points": 1
   },
   {
-    "position": 14,
+    "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "team_name": "CRB",
     "matches": 2,
@@ -154,7 +165,7 @@
     "points": 1
   },
   {
-    "position": 15,
+    "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "team_name": "Paysandu PA",
     "matches": 2,
@@ -165,7 +176,7 @@
     "points": 1
   },
   {
-    "position": 16,
+    "position": 17,
     "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "team_name": "Ponte Preta",
     "matches": 2,
@@ -174,17 +185,6 @@
     "losses": 1,
     "goal_difference": -3,
     "points": 1
-  },
-  {
-    "position": 17,
-    "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "team_name": "Mirassol",
-    "matches": 1,
-    "wins": 0,
-    "draws": 0,
-    "losses": 1,
-    "goal_difference": -2,
-    "points": 0
   },
   {
     "position": 18,
