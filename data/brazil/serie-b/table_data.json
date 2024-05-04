@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "team_name": "Sport Recife",
+    "matches": 3,
+    "wins": 3,
+    "draws": 0,
+    "losses": 0,
+    "goal_difference": 4,
+    "points": 9
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
     "matches": 2,
@@ -8,17 +19,6 @@
     "draws": 0,
     "losses": 0,
     "goal_difference": 4,
-    "points": 6
-  },
-  {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "team_name": "Sport Recife",
-    "matches": 2,
-    "wins": 2,
-    "draws": 0,
-    "losses": 0,
-    "goal_difference": 3,
     "points": 6
   },
   {
@@ -69,11 +69,11 @@
     "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "team_name": "Coritiba",
-    "matches": 2,
+    "matches": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 0,
-    "goal_difference": 1,
+    "losses": 1,
+    "goal_difference": 0,
     "points": 4
   },
   {
@@ -133,6 +133,17 @@
   },
   {
     "position": 13,
+    "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "team_name": "Paysandu PA",
+    "matches": 3,
+    "wins": 0,
+    "draws": 2,
+    "losses": 1,
+    "goal_difference": -2,
+    "points": 2
+  },
+  {
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
     "team_name": "Ceara",
     "matches": 2,
@@ -143,7 +154,7 @@
     "points": 1
   },
   {
-    "position": 14,
+    "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "team_name": "Amazonas",
     "matches": 2,
@@ -154,7 +165,7 @@
     "points": 1
   },
   {
-    "position": 15,
+    "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "team_name": "CRB",
     "matches": 2,
@@ -162,17 +173,6 @@
     "draws": 1,
     "losses": 1,
     "goal_difference": -1,
-    "points": 1
-  },
-  {
-    "position": 16,
-    "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "team_name": "Paysandu PA",
-    "matches": 2,
-    "wins": 0,
-    "draws": 1,
-    "losses": 1,
-    "goal_difference": -2,
     "points": 1
   },
   {
@@ -190,12 +190,12 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
     "team_name": "Avai",
-    "matches": 2,
+    "matches": 3,
     "wins": 0,
-    "draws": 0,
+    "draws": 1,
     "losses": 2,
     "goal_difference": -3,
-    "points": 0
+    "points": 1
   },
   {
     "position": 19,

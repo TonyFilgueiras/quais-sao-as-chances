@@ -157,12 +157,12 @@
     "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/EBfZuwme-bRmKmISE.png",
     "team_name": "Everton",
-    "matches": 35,
+    "matches": 36,
     "wins": 12,
-    "draws": 8,
+    "draws": 9,
     "losses": 15,
     "goal_difference": -11,
-    "points": 36
+    "points": 37
   },
   {
     "position": 16,
@@ -190,12 +190,12 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/GQSSQahT-dATKxRKP.png",
     "team_name": "Luton",
-    "matches": 35,
+    "matches": 36,
     "wins": 6,
-    "draws": 7,
+    "draws": 8,
     "losses": 22,
     "goal_difference": -29,
-    "points": 25
+    "points": 26
   },
   {
     "position": 19,
