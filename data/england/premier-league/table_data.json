@@ -25,33 +25,33 @@
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/x82JgBjC-Imx2oQd8.png",
     "team_name": "Liverpool",
-    "matches": 35,
-    "wins": 22,
+    "matches": 36,
+    "wins": 23,
     "draws": 9,
     "losses": 4,
-    "goal_difference": 41,
-    "points": 75
+    "goal_difference": 43,
+    "points": 78
   },
   {
     "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/UHchCEVH-dC4qHhKr.png",
     "team_name": "Aston Villa",
-    "matches": 35,
+    "matches": 36,
     "wins": 20,
     "draws": 7,
-    "losses": 8,
-    "goal_difference": 21,
+    "losses": 9,
+    "goal_difference": 20,
     "points": 67
   },
   {
     "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/v3SzDxVH-SOY3p1Si.png",
     "team_name": "Tottenham",
-    "matches": 34,
+    "matches": 35,
     "wins": 18,
     "draws": 6,
-    "losses": 10,
-    "goal_difference": 13,
+    "losses": 11,
+    "goal_difference": 11,
     "points": 60
   },
   {
@@ -67,6 +67,17 @@
   },
   {
     "position": 7,
+    "logo": "https://static.flashscore.com/res/image/data/lMxEQ8me-IROrZEJb.png",
+    "team_name": "Chelsea",
+    "matches": 35,
+    "wins": 15,
+    "draws": 9,
+    "losses": 11,
+    "goal_difference": 11,
+    "points": 54
+  },
+  {
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/GhGV3qjT-UPrTWfIe.png",
     "team_name": "Manchester Utd",
     "matches": 34,
@@ -77,25 +88,14 @@
     "points": 54
   },
   {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/lMxEQ8me-IROrZEJb.png",
-    "team_name": "Chelsea",
-    "matches": 34,
-    "wins": 14,
-    "draws": 9,
-    "losses": 11,
-    "goal_difference": 6,
-    "points": 51
-  },
-  {
     "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/YeSfKGlC-ARW4wdCc.png",
     "team_name": "West Ham",
-    "matches": 35,
+    "matches": 36,
     "wins": 13,
     "draws": 10,
-    "losses": 12,
-    "goal_difference": -9,
+    "losses": 13,
+    "goal_difference": -14,
     "points": 49
   },
   {
@@ -111,6 +111,17 @@
   },
   {
     "position": 11,
+    "logo": "https://static.flashscore.com/res/image/data/G0q9xjRq-b92lfEJC.png",
+    "team_name": "Brighton",
+    "matches": 35,
+    "wins": 12,
+    "draws": 11,
+    "losses": 12,
+    "goal_difference": -4,
+    "points": 47
+  },
+  {
+    "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/OMUzjDkC-CjV6Eptm.png",
     "team_name": "Wolves",
     "matches": 36,
@@ -121,7 +132,7 @@
     "points": 46
   },
   {
-    "position": 12,
+    "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/fkbYUWme-ImMEe0UF.png",
     "team_name": "Fulham",
     "matches": 36,
@@ -129,17 +140,6 @@
     "draws": 8,
     "losses": 16,
     "goal_difference": -4,
-    "points": 44
-  },
-  {
-    "position": 13,
-    "logo": "https://static.flashscore.com/res/image/data/G0q9xjRq-b92lfEJC.png",
-    "team_name": "Brighton",
-    "matches": 34,
-    "wins": 11,
-    "draws": 11,
-    "losses": 12,
-    "goal_difference": -5,
     "points": 44
   },
   {
