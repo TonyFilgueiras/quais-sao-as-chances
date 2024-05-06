@@ -12,6 +12,17 @@
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "team_name": "Goias",
+    "matches": 3,
+    "wins": 2,
+    "draws": 1,
+    "losses": 0,
+    "goal_difference": 5,
+    "points": 7
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "team_name": "Chapecoense-SC",
     "matches": 3,
@@ -22,7 +33,7 @@
     "points": 7
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
     "matches": 2,
@@ -33,7 +44,7 @@
     "points": 6
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
     "matches": 3,
@@ -44,7 +55,7 @@
     "points": 6
   },
   {
-    "position": 5,
+    "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
     "matches": 3,
@@ -55,7 +66,7 @@
     "points": 6
   },
   {
-    "position": 6,
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
     "matches": 3,
@@ -66,7 +77,7 @@
     "points": 6
   },
   {
-    "position": 7,
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "team_name": "America MG",
     "matches": 3,
@@ -75,17 +86,6 @@
     "losses": 0,
     "goal_difference": 2,
     "points": 5
-  },
-  {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "team_name": "Goias",
-    "matches": 2,
-    "wins": 1,
-    "draws": 1,
-    "losses": 0,
-    "goal_difference": 3,
-    "points": 4
   },
   {
     "position": 9,
@@ -100,23 +100,23 @@
   },
   {
     "position": 10,
-    "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "team_name": "Brusque",
-    "matches": 2,
-    "wins": 1,
-    "draws": 0,
-    "losses": 1,
-    "goal_difference": 1,
-    "points": 3
-  },
-  {
-    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
     "matches": 2,
     "wins": 1,
     "draws": 0,
     "losses": 1,
+    "goal_difference": -1,
+    "points": 3
+  },
+  {
+    "position": 11,
+    "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "team_name": "Brusque",
+    "matches": 3,
+    "wins": 1,
+    "draws": 0,
+    "losses": 2,
     "goal_difference": -1,
     "points": 3
   },
