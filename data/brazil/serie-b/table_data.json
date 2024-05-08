@@ -113,12 +113,12 @@
     "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
-    "matches": 2,
+    "matches": 3,
     "wins": 1,
-    "draws": 0,
+    "draws": 1,
     "losses": 1,
     "goal_difference": -1,
-    "points": 3
+    "points": 4
   },
   {
     "position": 12,
@@ -135,12 +135,12 @@
     "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
     "team_name": "Botafogo SP",
-    "matches": 2,
+    "matches": 3,
     "wins": 0,
-    "draws": 2,
+    "draws": 3,
     "losses": 0,
     "goal_difference": 0,
-    "points": 2
+    "points": 3
   },
   {
     "position": 14,
