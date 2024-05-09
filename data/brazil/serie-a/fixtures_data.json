@@ -35,17 +35,6 @@
   {
     "id": 3,
     "round": 6,
-    "date": "12/05 11:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
-    "home_team": "Vasco",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
-    "away_team": "Vitoria",
-    "away_score": null
-  },
-  {
-    "id": 4,
-    "round": 6,
     "date": "12/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -55,7 +44,7 @@
     "away_score": null
   },
   {
-    "id": 5,
+    "id": 4,
     "round": 6,
     "date": "12/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
@@ -66,7 +55,7 @@
     "away_score": null
   },
   {
-    "id": 6,
+    "id": 5,
     "round": 6,
     "date": "12/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
@@ -77,7 +66,7 @@
     "away_score": null
   },
   {
-    "id": 7,
+    "id": 6,
     "round": 6,
     "date": "12/05 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
@@ -88,9 +77,20 @@
     "away_score": null
   },
   {
+    "id": 7,
+    "round": 6,
+    "date": "12/05 18:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "home_team": "Vasco",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "away_team": "Vitoria",
+    "away_score": null
+  },
+  {
     "id": 8,
     "round": 6,
-    "date": "13/05 19:00",
+    "date": "13/05 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
     "home_score": null,

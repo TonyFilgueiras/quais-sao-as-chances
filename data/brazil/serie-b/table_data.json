@@ -23,6 +23,17 @@
   },
   {
     "position": 3,
+    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "team_name": "America MG",
+    "matches": 4,
+    "wins": 2,
+    "draws": 2,
+    "losses": 0,
+    "goal_difference": 4,
+    "points": 8
+  },
+  {
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
     "matches": 3,
@@ -33,7 +44,7 @@
     "points": 7
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "team_name": "Chapecoense-SC",
     "matches": 3,
@@ -44,7 +55,7 @@
     "points": 7
   },
   {
-    "position": 5,
+    "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
     "matches": 3,
@@ -55,7 +66,7 @@
     "points": 6
   },
   {
-    "position": 6,
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
     "matches": 3,
@@ -66,26 +77,15 @@
     "points": 6
   },
   {
-    "position": 7,
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
-    "matches": 3,
+    "matches": 4,
     "wins": 2,
     "draws": 0,
-    "losses": 1,
-    "goal_difference": 1,
+    "losses": 2,
+    "goal_difference": -1,
     "points": 6
-  },
-  {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "team_name": "America MG",
-    "matches": 3,
-    "wins": 1,
-    "draws": 2,
-    "losses": 0,
-    "goal_difference": 2,
-    "points": 5
   },
   {
     "position": 9,
