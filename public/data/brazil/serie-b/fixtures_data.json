@@ -387,23 +387,23 @@
   {
     "id": 35,
     "round": 7,
-    "date": "27/05 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 36,
-    "round": 7,
     "date": "27/05 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
     "home_team": "Botafogo SP",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "away_team": "Novorizontino",
+    "away_score": null
+  },
+  {
+    "id": 36,
+    "round": 7,
+    "date": "27/05 21:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
     "away_score": null
   },
   {
