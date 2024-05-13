@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
+    "team_name": "Arsenal",
+    "matches": 37,
+    "wins": 27,
+    "draws": 5,
+    "losses": 5,
+    "goal_difference": 61,
+    "points": 86
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
     "team_name": "Manchester City",
     "matches": 36,
@@ -9,17 +20,6 @@
     "losses": 3,
     "goal_difference": 58,
     "points": 85
-  },
-  {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
-    "team_name": "Arsenal",
-    "matches": 36,
-    "wins": 26,
-    "draws": 5,
-    "losses": 5,
-    "goal_difference": 60,
-    "points": 83
   },
   {
     "position": 3,
@@ -80,11 +80,11 @@
     "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/GhGV3qjT-UPrTWfIe.png",
     "team_name": "Manchester Utd",
-    "matches": 35,
+    "matches": 36,
     "wins": 16,
     "draws": 6,
-    "losses": 13,
-    "goal_difference": -3,
+    "losses": 14,
+    "goal_difference": -4,
     "points": 54
   },
   {
