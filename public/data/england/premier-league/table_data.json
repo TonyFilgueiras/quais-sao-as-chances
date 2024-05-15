@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
+    "team_name": "Manchester City",
+    "matches": 37,
+    "wins": 27,
+    "draws": 7,
+    "losses": 3,
+    "goal_difference": 60,
+    "points": 88
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/0n1ffK6k-vcNAdtF9.png",
     "team_name": "Arsenal",
     "matches": 37,
@@ -9,17 +20,6 @@
     "losses": 5,
     "goal_difference": 61,
     "points": 86
-  },
-  {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/0vgscFU0-lQuhqN8N.png",
-    "team_name": "Manchester City",
-    "matches": 36,
-    "wins": 26,
-    "draws": 7,
-    "losses": 3,
-    "goal_difference": 58,
-    "points": 85
   },
   {
     "position": 3,
@@ -47,11 +47,11 @@
     "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/v3SzDxVH-SOY3p1Si.png",
     "team_name": "Tottenham",
-    "matches": 36,
+    "matches": 37,
     "wins": 19,
     "draws": 6,
-    "losses": 11,
-    "goal_difference": 12,
+    "losses": 12,
+    "goal_difference": 10,
     "points": 63
   },
   {
