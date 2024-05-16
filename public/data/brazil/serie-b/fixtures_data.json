@@ -1,72 +1,6 @@
 [
   {
     "id": 0,
-    "round": 5,
-    "date": "15/05 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 1,
-    "round": 5,
-    "date": "15/05 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 2,
-    "round": 5,
-    "date": "15/05 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 3,
-    "round": 5,
-    "date": "15/05 21:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
-    "away_score": null
-  },
-  {
-    "id": 4,
-    "round": 5,
-    "date": "15/05 21:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 5,
-    "round": 5,
-    "date": "15/05 21:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
-    "away_score": null
-  },
-  {
-    "id": 6,
     "round": 6,
     "date": "17/05 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -77,7 +11,7 @@
     "away_score": null
   },
   {
-    "id": 7,
+    "id": 1,
     "round": 6,
     "date": "17/05 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -88,7 +22,7 @@
     "away_score": null
   },
   {
-    "id": 8,
+    "id": 2,
     "round": 6,
     "date": "18/05 15:30",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -99,7 +33,7 @@
     "away_score": null
   },
   {
-    "id": 9,
+    "id": 3,
     "round": 6,
     "date": "18/05 17:30",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -110,7 +44,7 @@
     "away_score": null
   },
   {
-    "id": 10,
+    "id": 4,
     "round": 6,
     "date": "18/05 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -121,7 +55,7 @@
     "away_score": null
   },
   {
-    "id": 11,
+    "id": 5,
     "round": 6,
     "date": "19/05 11:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -132,7 +66,7 @@
     "away_score": null
   },
   {
-    "id": 12,
+    "id": 6,
     "round": 6,
     "date": "19/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -143,7 +77,7 @@
     "away_score": null
   },
   {
-    "id": 13,
+    "id": 7,
     "round": 6,
     "date": "19/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -154,7 +88,7 @@
     "away_score": null
   },
   {
-    "id": 14,
+    "id": 8,
     "round": 6,
     "date": "19/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -165,7 +99,7 @@
     "away_score": null
   },
   {
-    "id": 15,
+    "id": 9,
     "round": 6,
     "date": "20/05 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -176,7 +110,7 @@
     "away_score": null
   },
   {
-    "id": 16,
+    "id": 10,
     "round": 7,
     "date": "24/05 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -187,7 +121,7 @@
     "away_score": null
   },
   {
-    "id": 17,
+    "id": 11,
     "round": 7,
     "date": "24/05 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -198,7 +132,7 @@
     "away_score": null
   },
   {
-    "id": 18,
+    "id": 12,
     "round": 7,
     "date": "25/05 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -209,7 +143,7 @@
     "away_score": null
   },
   {
-    "id": 19,
+    "id": 13,
     "round": 7,
     "date": "26/05 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -220,7 +154,7 @@
     "away_score": null
   },
   {
-    "id": 20,
+    "id": 14,
     "round": 7,
     "date": "26/05 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -231,7 +165,7 @@
     "away_score": null
   },
   {
-    "id": 21,
+    "id": 15,
     "round": 7,
     "date": "26/05 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -242,7 +176,7 @@
     "away_score": null
   },
   {
-    "id": 22,
+    "id": 16,
     "round": 7,
     "date": "27/05 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -253,7 +187,7 @@
     "away_score": null
   },
   {
-    "id": 23,
+    "id": 17,
     "round": 7,
     "date": "27/05 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -264,7 +198,7 @@
     "away_score": null
   },
   {
-    "id": 24,
+    "id": 18,
     "round": 7,
     "date": "27/05 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -275,7 +209,7 @@
     "away_score": null
   },
   {
-    "id": 25,
+    "id": 19,
     "round": 7,
     "date": "28/05 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -286,7 +220,7 @@
     "away_score": null
   },
   {
-    "id": 26,
+    "id": 20,
     "round": 8,
     "date": "31/05 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -297,7 +231,7 @@
     "away_score": null
   },
   {
-    "id": 27,
+    "id": 21,
     "round": 8,
     "date": "31/05 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -308,7 +242,7 @@
     "away_score": null
   },
   {
-    "id": 28,
+    "id": 22,
     "round": 8,
     "date": "31/05 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -319,7 +253,7 @@
     "away_score": null
   },
   {
-    "id": 29,
+    "id": 23,
     "round": 8,
     "date": "01/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -330,7 +264,7 @@
     "away_score": null
   },
   {
-    "id": 30,
+    "id": 24,
     "round": 8,
     "date": "02/06 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -341,7 +275,7 @@
     "away_score": null
   },
   {
-    "id": 31,
+    "id": 25,
     "round": 8,
     "date": "02/06 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -352,7 +286,7 @@
     "away_score": null
   },
   {
-    "id": 32,
+    "id": 26,
     "round": 8,
     "date": "03/06 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -363,7 +297,7 @@
     "away_score": null
   },
   {
-    "id": 33,
+    "id": 27,
     "round": 8,
     "date": "03/06 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -374,7 +308,7 @@
     "away_score": null
   },
   {
-    "id": 34,
+    "id": 28,
     "round": 8,
     "date": "04/06 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -385,7 +319,7 @@
     "away_score": null
   },
   {
-    "id": 35,
+    "id": 29,
     "round": 8,
     "date": "04/06 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -396,7 +330,7 @@
     "away_score": null
   },
   {
-    "id": 36,
+    "id": 30,
     "round": 9,
     "date": "07/06 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -407,7 +341,7 @@
     "away_score": null
   },
   {
-    "id": 37,
+    "id": 31,
     "round": 9,
     "date": "07/06 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -418,7 +352,7 @@
     "away_score": null
   },
   {
-    "id": 38,
+    "id": 32,
     "round": 9,
     "date": "08/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -429,7 +363,7 @@
     "away_score": null
   },
   {
-    "id": 39,
+    "id": 33,
     "round": 9,
     "date": "08/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -440,7 +374,7 @@
     "away_score": null
   },
   {
-    "id": 40,
+    "id": 34,
     "round": 9,
     "date": "08/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -451,7 +385,7 @@
     "away_score": null
   },
   {
-    "id": 41,
+    "id": 35,
     "round": 9,
     "date": "09/06 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -462,7 +396,7 @@
     "away_score": null
   },
   {
-    "id": 42,
+    "id": 36,
     "round": 9,
     "date": "09/06 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -473,7 +407,7 @@
     "away_score": null
   },
   {
-    "id": 43,
+    "id": 37,
     "round": 9,
     "date": "10/06 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -484,7 +418,7 @@
     "away_score": null
   },
   {
-    "id": 44,
+    "id": 38,
     "round": 9,
     "date": "11/06 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -495,7 +429,7 @@
     "away_score": null
   },
   {
-    "id": 45,
+    "id": 39,
     "round": 9,
     "date": "11/06 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -506,7 +440,7 @@
     "away_score": null
   },
   {
-    "id": 46,
+    "id": 40,
     "round": 10,
     "date": "15/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -514,177 +448,177 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "away_team": "Chapecoense-SC",
+    "away_score": null
+  },
+  {
+    "id": 41,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "home_team": "America MG",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
+    "away_score": null
+  },
+  {
+    "id": 42,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "away_team": "Guarani",
+    "away_score": null
+  },
+  {
+    "id": 43,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "away_team": "Vila Nova FC",
+    "away_score": null
+  },
+  {
+    "id": 44,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
+    "away_score": null
+  },
+  {
+    "id": 45,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
+    "away_score": null
+  },
+  {
+    "id": 46,
+    "round": 10,
+    "date": "15/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "home_team": "Ituano",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
     "away_score": null
   },
   {
     "id": 47,
     "round": 10,
     "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
+    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "away_team": "Santos",
     "away_score": null
   },
   {
     "id": 48,
     "round": 10,
     "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
+    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "away_team": "Novorizontino",
     "away_score": null
   },
   {
     "id": 49,
     "round": 10,
     "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 50,
-    "round": 10,
-    "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
-    "away_score": null
-  },
-  {
-    "id": 51,
-    "round": 10,
-    "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
-    "away_score": null
-  },
-  {
-    "id": 52,
-    "round": 10,
-    "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 53,
-    "round": 10,
-    "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
-    "away_score": null
-  },
-  {
-    "id": 54,
-    "round": 10,
-    "date": "15/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
-    "away_score": null
-  },
-  {
-    "id": 55,
-    "round": 10,
-    "date": "15/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "home_team": "Sport Recife",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "away_team": "Mirassol",
+    "away_score": null
+  },
+  {
+    "id": 50,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "away_team": "Ponte Preta",
+    "away_score": null
+  },
+  {
+    "id": 51,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 52,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "home_team": "Ceara",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "away_team": "Sport Recife",
+    "away_score": null
+  },
+  {
+    "id": 53,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "away_team": "Operario",
+    "away_score": null
+  },
+  {
+    "id": 54,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "home_team": "Coritiba",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 55,
+    "round": 11,
+    "date": "19/06 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "home_team": "Guarani",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "away_team": "Ituano",
     "away_score": null
   },
   {
     "id": 56,
     "round": 11,
     "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
-    "away_score": null
-  },
-  {
-    "id": 57,
-    "round": 11,
-    "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 58,
-    "round": 11,
-    "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 59,
-    "round": 11,
-    "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 60,
-    "round": 11,
-    "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
-    "id": 61,
-    "round": 11,
-    "date": "19/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 62,
-    "round": 11,
-    "date": "19/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "home_team": "Novorizontino",
     "home_score": null,
@@ -693,7 +627,7 @@
     "away_score": null
   },
   {
-    "id": 63,
+    "id": 57,
     "round": 11,
     "date": "19/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -704,7 +638,7 @@
     "away_score": null
   },
   {
-    "id": 64,
+    "id": 58,
     "round": 11,
     "date": "19/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -715,7 +649,7 @@
     "away_score": null
   },
   {
-    "id": 65,
+    "id": 59,
     "round": 11,
     "date": "19/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -726,7 +660,7 @@
     "away_score": null
   },
   {
-    "id": 66,
+    "id": 60,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -737,7 +671,7 @@
     "away_score": null
   },
   {
-    "id": 67,
+    "id": 61,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -748,7 +682,7 @@
     "away_score": null
   },
   {
-    "id": 68,
+    "id": 62,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -759,7 +693,7 @@
     "away_score": null
   },
   {
-    "id": 69,
+    "id": 63,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -770,7 +704,7 @@
     "away_score": null
   },
   {
-    "id": 70,
+    "id": 64,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -781,7 +715,7 @@
     "away_score": null
   },
   {
-    "id": 71,
+    "id": 65,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -792,7 +726,7 @@
     "away_score": null
   },
   {
-    "id": 72,
+    "id": 66,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -803,7 +737,7 @@
     "away_score": null
   },
   {
-    "id": 73,
+    "id": 67,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -814,7 +748,7 @@
     "away_score": null
   },
   {
-    "id": 74,
+    "id": 68,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -825,7 +759,7 @@
     "away_score": null
   },
   {
-    "id": 75,
+    "id": 69,
     "round": 12,
     "date": "22/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -836,7 +770,7 @@
     "away_score": null
   },
   {
-    "id": 76,
+    "id": 70,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -847,7 +781,7 @@
     "away_score": null
   },
   {
-    "id": 77,
+    "id": 71,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -858,7 +792,7 @@
     "away_score": null
   },
   {
-    "id": 78,
+    "id": 72,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -869,7 +803,7 @@
     "away_score": null
   },
   {
-    "id": 79,
+    "id": 73,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -880,7 +814,7 @@
     "away_score": null
   },
   {
-    "id": 80,
+    "id": 74,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -891,7 +825,7 @@
     "away_score": null
   },
   {
-    "id": 81,
+    "id": 75,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -902,7 +836,7 @@
     "away_score": null
   },
   {
-    "id": 82,
+    "id": 76,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -913,7 +847,7 @@
     "away_score": null
   },
   {
-    "id": 83,
+    "id": 77,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -924,7 +858,7 @@
     "away_score": null
   },
   {
-    "id": 84,
+    "id": 78,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -935,7 +869,7 @@
     "away_score": null
   },
   {
-    "id": 85,
+    "id": 79,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -946,7 +880,7 @@
     "away_score": null
   },
   {
-    "id": 86,
+    "id": 80,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -957,7 +891,7 @@
     "away_score": null
   },
   {
-    "id": 87,
+    "id": 81,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -968,7 +902,7 @@
     "away_score": null
   },
   {
-    "id": 88,
+    "id": 82,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -979,7 +913,7 @@
     "away_score": null
   },
   {
-    "id": 89,
+    "id": 83,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -990,7 +924,7 @@
     "away_score": null
   },
   {
-    "id": 90,
+    "id": 84,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -1001,7 +935,7 @@
     "away_score": null
   },
   {
-    "id": 91,
+    "id": 85,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -1012,7 +946,7 @@
     "away_score": null
   },
   {
-    "id": 92,
+    "id": 86,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -1023,7 +957,7 @@
     "away_score": null
   },
   {
-    "id": 93,
+    "id": 87,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -1034,7 +968,7 @@
     "away_score": null
   },
   {
-    "id": 94,
+    "id": 88,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -1045,7 +979,7 @@
     "away_score": null
   },
   {
-    "id": 95,
+    "id": 89,
     "round": 14,
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -1056,7 +990,7 @@
     "away_score": null
   },
   {
-    "id": 96,
+    "id": 90,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -1067,7 +1001,7 @@
     "away_score": null
   },
   {
-    "id": 97,
+    "id": 91,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -1078,7 +1012,7 @@
     "away_score": null
   },
   {
-    "id": 98,
+    "id": 92,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -1089,7 +1023,7 @@
     "away_score": null
   },
   {
-    "id": 99,
+    "id": 93,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -1100,7 +1034,7 @@
     "away_score": null
   },
   {
-    "id": 100,
+    "id": 94,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -1111,11 +1045,77 @@
     "away_score": null
   },
   {
-    "id": 101,
+    "id": 95,
     "round": 15,
     "date": "13/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "home_team": "Paysandu PA",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
+    "away_score": null
+  },
+  {
+    "id": 96,
+    "round": 15,
+    "date": "13/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "away_team": "Mirassol",
+    "away_score": null
+  },
+  {
+    "id": 97,
+    "round": 15,
+    "date": "13/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "home_team": "Santos",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "away_team": "Ituano",
+    "away_score": null
+  },
+  {
+    "id": 98,
+    "round": 15,
+    "date": "13/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "home_team": "Sport Recife",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 99,
+    "round": 15,
+    "date": "13/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "home_team": "Vila Nova FC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 100,
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "home_team": "America MG",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "away_team": "Amazonas",
+    "away_score": null
+  },
+  {
+    "id": 101,
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
     "away_team": "Ceara",
@@ -1123,481 +1123,415 @@
   },
   {
     "id": 102,
-    "round": 15,
-    "date": "13/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "away_team": "Brusque",
+    "away_score": null
+  },
+  {
+    "id": 103,
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "home_team": "Coritiba",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "away_team": "Mirassol",
     "away_score": null
   },
   {
-    "id": 103,
-    "round": 15,
-    "date": "13/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
+    "id": 104,
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "home_team": "CRB",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "away_team": "Ituano",
     "away_score": null
   },
   {
-    "id": 104,
-    "round": 15,
-    "date": "13/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
     "id": 105,
-    "round": 15,
-    "date": "13/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "home_team": "Vila Nova FC",
+    "round": 16,
+    "date": "20/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "home_team": "Guarani",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
     "away_score": null
   },
   {
     "id": 106,
     "round": 16,
     "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
+    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "home_team": "Novorizontino",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
+    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "away_team": "Chapecoense-SC",
     "away_score": null
   },
   {
     "id": 107,
     "round": 16,
     "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
+    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "home_team": "Paysandu PA",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
+    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "away_team": "Ponte Preta",
     "away_score": null
   },
   {
     "id": 108,
     "round": 16,
     "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
+    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "home_team": "Sport Recife",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "away_team": "Brusque",
+    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "away_team": "Operario",
     "away_score": null
   },
   {
     "id": 109,
     "round": 16,
     "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 110,
-    "round": 16,
-    "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 111,
-    "round": 16,
-    "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 112,
-    "round": 16,
-    "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
-    "away_score": null
-  },
-  {
-    "id": 113,
-    "round": 16,
-    "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
-    "away_score": null
-  },
-  {
-    "id": 114,
-    "round": 16,
-    "date": "20/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 115,
-    "round": 16,
-    "date": "20/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "home_team": "Vila Nova FC",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "away_team": "Santos",
+    "away_score": null
+  },
+  {
+    "id": 110,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "away_team": "Guarani",
+    "away_score": null
+  },
+  {
+    "id": 111,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
+    "away_score": null
+  },
+  {
+    "id": 112,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "home_team": "Ceara",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "away_team": "Botafogo SP",
+    "away_score": null
+  },
+  {
+    "id": 113,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "away_team": "Sport Recife",
+    "away_score": null
+  },
+  {
+    "id": 114,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
+    "away_score": null
+  },
+  {
+    "id": 115,
+    "round": 17,
+    "date": "24/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "home_team": "Ituano",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
     "away_score": null
   },
   {
     "id": 116,
     "round": 17,
     "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
     "away_score": null
   },
   {
     "id": 117,
     "round": 17,
     "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
+    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "away_team": "Novorizontino",
     "away_score": null
   },
   {
     "id": 118,
     "round": 17,
     "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
+    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "away_team": "Vila Nova FC",
     "away_score": null
   },
   {
     "id": 119,
     "round": 17,
     "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 120,
-    "round": 17,
-    "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
-    "away_score": null
-  },
-  {
-    "id": 121,
-    "round": 17,
-    "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
-    "id": 122,
-    "round": 17,
-    "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 123,
-    "round": 17,
-    "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
-    "away_score": null
-  },
-  {
-    "id": 124,
-    "round": 17,
-    "date": "24/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 125,
-    "round": 17,
-    "date": "24/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "home_team": "Santos",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "away_team": "Coritiba",
+    "away_score": null
+  },
+  {
+    "id": 120,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "home_team": "America MG",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
+    "away_score": null
+  },
+  {
+    "id": 121,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "away_team": "Botafogo SP",
+    "away_score": null
+  },
+  {
+    "id": 122,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "home_team": "Coritiba",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "away_team": "Chapecoense-SC",
+    "away_score": null
+  },
+  {
+    "id": 123,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "home_team": "CRB",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "away_team": "Santos",
+    "away_score": null
+  },
+  {
+    "id": 124,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "away_team": "Amazonas",
+    "away_score": null
+  },
+  {
+    "id": 125,
+    "round": 18,
+    "date": "27/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "home_team": "Guarani",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "away_team": "Brusque",
     "away_score": null
   },
   {
     "id": 126,
     "round": 18,
     "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "home_team": "Ituano",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
+    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "away_team": "Vila Nova FC",
     "away_score": null
   },
   {
     "id": 127,
     "round": 18,
     "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
+    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "away_team": "Operario",
     "away_score": null
   },
   {
     "id": 128,
     "round": 18,
     "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
+    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "home_team": "Paysandu PA",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
+    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "away_team": "Novorizontino",
     "away_score": null
   },
   {
     "id": 129,
     "round": 18,
     "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
-    "away_score": null
-  },
-  {
-    "id": 130,
-    "round": 18,
-    "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
-    "away_score": null
-  },
-  {
-    "id": 131,
-    "round": 18,
-    "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "away_team": "Brusque",
-    "away_score": null
-  },
-  {
-    "id": 132,
-    "round": 18,
-    "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 133,
-    "round": 18,
-    "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 134,
-    "round": 18,
-    "date": "27/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
-    "away_score": null
-  },
-  {
-    "id": 135,
-    "round": 18,
-    "date": "27/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "home_team": "Sport Recife",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "away_team": "Ponte Preta",
+    "away_score": null
+  },
+  {
+    "id": 130,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "away_team": "Ituano",
+    "away_score": null
+  },
+  {
+    "id": 131,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
+    "away_score": null
+  },
+  {
+    "id": 132,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 133,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "home_team": "Ceara",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "away_team": "Guarani",
+    "away_score": null
+  },
+  {
+    "id": 134,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "away_team": "Mirassol",
+    "away_score": null
+  },
+  {
+    "id": 135,
+    "round": 19,
+    "date": "03/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "home_team": "Novorizontino",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
     "away_score": null
   },
   {
     "id": 136,
     "round": 19,
     "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
     "away_score": null
   },
   {
     "id": 137,
     "round": 19,
     "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
     "away_score": null
   },
   {
     "id": 138,
     "round": 19,
     "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
+    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "home_team": "Santos",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
+    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "away_team": "Sport Recife",
     "away_score": null
   },
   {
     "id": 139,
     "round": 19,
     "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
-    "away_score": null
-  },
-  {
-    "id": 140,
-    "round": 19,
-    "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 141,
-    "round": 19,
-    "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 142,
-    "round": 19,
-    "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
-    "away_score": null
-  },
-  {
-    "id": 143,
-    "round": 19,
-    "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 144,
-    "round": 19,
-    "date": "03/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 145,
-    "round": 19,
-    "date": "03/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "home_team": "Vila Nova FC",
     "home_score": null,
@@ -1606,7 +1540,7 @@
     "away_score": null
   },
   {
-    "id": 146,
+    "id": 140,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -1617,7 +1551,7 @@
     "away_score": null
   },
   {
-    "id": 147,
+    "id": 141,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -1628,7 +1562,7 @@
     "away_score": null
   },
   {
-    "id": 148,
+    "id": 142,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -1639,7 +1573,7 @@
     "away_score": null
   },
   {
-    "id": 149,
+    "id": 143,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -1650,7 +1584,7 @@
     "away_score": null
   },
   {
-    "id": 150,
+    "id": 144,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -1661,7 +1595,7 @@
     "away_score": null
   },
   {
-    "id": 151,
+    "id": 145,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -1672,7 +1606,7 @@
     "away_score": null
   },
   {
-    "id": 152,
+    "id": 146,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -1683,7 +1617,7 @@
     "away_score": null
   },
   {
-    "id": 153,
+    "id": 147,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -1694,7 +1628,7 @@
     "away_score": null
   },
   {
-    "id": 154,
+    "id": 148,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -1705,7 +1639,7 @@
     "away_score": null
   },
   {
-    "id": 155,
+    "id": 149,
     "round": 20,
     "date": "10/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -1716,7 +1650,7 @@
     "away_score": null
   },
   {
-    "id": 156,
+    "id": 150,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -1727,7 +1661,7 @@
     "away_score": null
   },
   {
-    "id": 157,
+    "id": 151,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -1738,7 +1672,7 @@
     "away_score": null
   },
   {
-    "id": 158,
+    "id": 152,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -1749,7 +1683,7 @@
     "away_score": null
   },
   {
-    "id": 159,
+    "id": 153,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -1760,7 +1694,7 @@
     "away_score": null
   },
   {
-    "id": 160,
+    "id": 154,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -1771,7 +1705,7 @@
     "away_score": null
   },
   {
-    "id": 161,
+    "id": 155,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -1782,7 +1716,7 @@
     "away_score": null
   },
   {
-    "id": 162,
+    "id": 156,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -1793,7 +1727,7 @@
     "away_score": null
   },
   {
-    "id": 163,
+    "id": 157,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -1804,7 +1738,7 @@
     "away_score": null
   },
   {
-    "id": 164,
+    "id": 158,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -1815,7 +1749,7 @@
     "away_score": null
   },
   {
-    "id": 165,
+    "id": 159,
     "round": 21,
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -1826,7 +1760,7 @@
     "away_score": null
   },
   {
-    "id": 166,
+    "id": 160,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -1837,7 +1771,7 @@
     "away_score": null
   },
   {
-    "id": 167,
+    "id": 161,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -1848,7 +1782,7 @@
     "away_score": null
   },
   {
-    "id": 168,
+    "id": 162,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -1859,7 +1793,7 @@
     "away_score": null
   },
   {
-    "id": 169,
+    "id": 163,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -1870,7 +1804,7 @@
     "away_score": null
   },
   {
-    "id": 170,
+    "id": 164,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -1881,7 +1815,7 @@
     "away_score": null
   },
   {
-    "id": 171,
+    "id": 165,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -1892,7 +1826,7 @@
     "away_score": null
   },
   {
-    "id": 172,
+    "id": 166,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -1903,7 +1837,7 @@
     "away_score": null
   },
   {
-    "id": 173,
+    "id": 167,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -1914,7 +1848,7 @@
     "away_score": null
   },
   {
-    "id": 174,
+    "id": 168,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -1925,7 +1859,7 @@
     "away_score": null
   },
   {
-    "id": 175,
+    "id": 169,
     "round": 22,
     "date": "21/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -1936,7 +1870,7 @@
     "away_score": null
   },
   {
-    "id": 176,
+    "id": 170,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -1947,7 +1881,7 @@
     "away_score": null
   },
   {
-    "id": 177,
+    "id": 171,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -1958,7 +1892,7 @@
     "away_score": null
   },
   {
-    "id": 178,
+    "id": 172,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -1969,7 +1903,7 @@
     "away_score": null
   },
   {
-    "id": 179,
+    "id": 173,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -1980,7 +1914,7 @@
     "away_score": null
   },
   {
-    "id": 180,
+    "id": 174,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -1991,7 +1925,7 @@
     "away_score": null
   },
   {
-    "id": 181,
+    "id": 175,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -2002,7 +1936,7 @@
     "away_score": null
   },
   {
-    "id": 182,
+    "id": 176,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -2013,7 +1947,7 @@
     "away_score": null
   },
   {
-    "id": 183,
+    "id": 177,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -2024,7 +1958,7 @@
     "away_score": null
   },
   {
-    "id": 184,
+    "id": 178,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -2035,11 +1969,77 @@
     "away_score": null
   },
   {
-    "id": 185,
+    "id": 179,
     "round": 23,
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "home_team": "Vila Nova FC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 180,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
+    "away_score": null
+  },
+  {
+    "id": 181,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "away_team": "Botafogo SP",
+    "away_score": null
+  },
+  {
+    "id": 182,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "home_team": "CRB",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 183,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
+    "away_score": null
+  },
+  {
+    "id": 184,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "home_team": "Guarani",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
+    "away_score": null
+  },
+  {
+    "id": 185,
+    "round": 24,
+    "date": "31/08 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "away_team": "America MG",
@@ -2049,72 +2049,6 @@
     "id": 186,
     "round": 24,
     "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
-    "away_score": null
-  },
-  {
-    "id": 187,
-    "round": 24,
-    "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
-    "away_score": null
-  },
-  {
-    "id": 188,
-    "round": 24,
-    "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 189,
-    "round": 24,
-    "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 190,
-    "round": 24,
-    "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
-    "away_score": null
-  },
-  {
-    "id": 191,
-    "round": 24,
-    "date": "31/08 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
-    "id": 192,
-    "round": 24,
-    "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "home_team": "Novorizontino",
     "home_score": null,
@@ -2123,7 +2057,7 @@
     "away_score": null
   },
   {
-    "id": 193,
+    "id": 187,
     "round": 24,
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -2134,7 +2068,7 @@
     "away_score": null
   },
   {
-    "id": 194,
+    "id": 188,
     "round": 24,
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -2145,7 +2079,7 @@
     "away_score": null
   },
   {
-    "id": 195,
+    "id": 189,
     "round": 24,
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -2156,7 +2090,7 @@
     "away_score": null
   },
   {
-    "id": 196,
+    "id": 190,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -2167,7 +2101,7 @@
     "away_score": null
   },
   {
-    "id": 197,
+    "id": 191,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -2178,7 +2112,7 @@
     "away_score": null
   },
   {
-    "id": 198,
+    "id": 192,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -2189,7 +2123,7 @@
     "away_score": null
   },
   {
-    "id": 199,
+    "id": 193,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -2200,7 +2134,7 @@
     "away_score": null
   },
   {
-    "id": 200,
+    "id": 194,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -2211,7 +2145,7 @@
     "away_score": null
   },
   {
-    "id": 201,
+    "id": 195,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -2222,7 +2156,7 @@
     "away_score": null
   },
   {
-    "id": 202,
+    "id": 196,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -2233,11 +2167,77 @@
     "away_score": null
   },
   {
-    "id": 203,
+    "id": 197,
     "round": 25,
     "date": "07/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "home_team": "Paysandu PA",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "away_team": "Amazonas",
+    "away_score": null
+  },
+  {
+    "id": 198,
+    "round": 25,
+    "date": "07/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "away_team": "Chapecoense-SC",
+    "away_score": null
+  },
+  {
+    "id": 199,
+    "round": 25,
+    "date": "07/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "home_team": "Vila Nova FC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
+    "away_score": null
+  },
+  {
+    "id": 200,
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "away_team": "Vila Nova FC",
+    "away_score": null
+  },
+  {
+    "id": 201,
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
+    "away_score": null
+  },
+  {
+    "id": 202,
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 203,
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "away_team": "Amazonas",
@@ -2245,206 +2245,140 @@
   },
   {
     "id": 204,
-    "round": 25,
-    "date": "07/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "home_team": "Novorizontino",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
+    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "away_team": "Botafogo SP",
     "away_score": null
   },
   {
     "id": 205,
-    "round": 25,
-    "date": "07/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "home_team": "Vila Nova FC",
+    "round": 26,
+    "date": "14/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
     "away_score": null
   },
   {
     "id": 206,
     "round": 26,
     "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
+    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "home_team": "Paysandu PA",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "away_team": "Vila Nova FC",
+    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "away_team": "Guarani",
     "away_score": null
   },
   {
     "id": 207,
     "round": 26,
     "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
+    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "away_team": "Ituano",
     "away_score": null
   },
   {
     "id": 208,
     "round": 26,
     "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
+    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "home_team": "Santos",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
     "away_score": null
   },
   {
     "id": 209,
     "round": 26,
     "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
+    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "home_team": "Sport Recife",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
     "away_score": null
   },
   {
     "id": 210,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
+    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "away_team": "Operario",
     "away_score": null
   },
   {
     "id": 211,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "home_team": "America MG",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
     "away_score": null
   },
   {
     "id": 212,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
-    "away_score": null
-  },
-  {
-    "id": 213,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "away_team": "Ituano",
     "away_score": null
   },
   {
-    "id": 214,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
+    "id": 213,
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
+    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "away_team": "Santos",
+    "away_score": null
+  },
+  {
+    "id": 214,
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "home_team": "Coritiba",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "away_team": "Ceara",
     "away_score": null
   },
   {
     "id": 215,
-    "round": 26,
-    "date": "14/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
+    "round": 27,
+    "date": "18/09 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "home_team": "CRB",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
+    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "away_team": "Ponte Preta",
     "away_score": null
   },
   {
     "id": 216,
     "round": 27,
     "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 217,
-    "round": 27,
-    "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 218,
-    "round": 27,
-    "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 219,
-    "round": 27,
-    "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
-    "away_score": null
-  },
-  {
-    "id": 220,
-    "round": 27,
-    "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
-    "away_score": null
-  },
-  {
-    "id": 221,
-    "round": 27,
-    "date": "18/09 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
-    "away_score": null
-  },
-  {
-    "id": 222,
-    "round": 27,
-    "date": "18/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "home_team": "Guarani",
     "home_score": null,
@@ -2453,7 +2387,7 @@
     "away_score": null
   },
   {
-    "id": 223,
+    "id": 217,
     "round": 27,
     "date": "18/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -2464,7 +2398,7 @@
     "away_score": null
   },
   {
-    "id": 224,
+    "id": 218,
     "round": 27,
     "date": "18/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -2475,7 +2409,7 @@
     "away_score": null
   },
   {
-    "id": 225,
+    "id": 219,
     "round": 27,
     "date": "18/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -2486,7 +2420,7 @@
     "away_score": null
   },
   {
-    "id": 226,
+    "id": 220,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -2497,7 +2431,7 @@
     "away_score": null
   },
   {
-    "id": 227,
+    "id": 221,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -2508,7 +2442,7 @@
     "away_score": null
   },
   {
-    "id": 228,
+    "id": 222,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -2519,7 +2453,7 @@
     "away_score": null
   },
   {
-    "id": 229,
+    "id": 223,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -2530,7 +2464,7 @@
     "away_score": null
   },
   {
-    "id": 230,
+    "id": 224,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -2541,7 +2475,7 @@
     "away_score": null
   },
   {
-    "id": 231,
+    "id": 225,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -2552,7 +2486,7 @@
     "away_score": null
   },
   {
-    "id": 232,
+    "id": 226,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -2563,7 +2497,7 @@
     "away_score": null
   },
   {
-    "id": 233,
+    "id": 227,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -2574,7 +2508,7 @@
     "away_score": null
   },
   {
-    "id": 234,
+    "id": 228,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -2585,7 +2519,7 @@
     "away_score": null
   },
   {
-    "id": 235,
+    "id": 229,
     "round": 28,
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -2596,7 +2530,7 @@
     "away_score": null
   },
   {
-    "id": 236,
+    "id": 230,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -2607,7 +2541,7 @@
     "away_score": null
   },
   {
-    "id": 237,
+    "id": 231,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -2618,7 +2552,7 @@
     "away_score": null
   },
   {
-    "id": 238,
+    "id": 232,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -2629,7 +2563,7 @@
     "away_score": null
   },
   {
-    "id": 239,
+    "id": 233,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -2640,7 +2574,7 @@
     "away_score": null
   },
   {
-    "id": 240,
+    "id": 234,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
@@ -2651,7 +2585,7 @@
     "away_score": null
   },
   {
-    "id": 241,
+    "id": 235,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -2662,7 +2596,7 @@
     "away_score": null
   },
   {
-    "id": 242,
+    "id": 236,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
@@ -2673,7 +2607,7 @@
     "away_score": null
   },
   {
-    "id": 243,
+    "id": 237,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
@@ -2684,7 +2618,7 @@
     "away_score": null
   },
   {
-    "id": 244,
+    "id": 238,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -2695,7 +2629,7 @@
     "away_score": null
   },
   {
-    "id": 245,
+    "id": 239,
     "round": 29,
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -2706,7 +2640,7 @@
     "away_score": null
   },
   {
-    "id": 246,
+    "id": 240,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -2717,7 +2651,7 @@
     "away_score": null
   },
   {
-    "id": 247,
+    "id": 241,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -2728,7 +2662,7 @@
     "away_score": null
   },
   {
-    "id": 248,
+    "id": 242,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -2739,7 +2673,7 @@
     "away_score": null
   },
   {
-    "id": 249,
+    "id": 243,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
@@ -2750,7 +2684,7 @@
     "away_score": null
   },
   {
-    "id": 250,
+    "id": 244,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -2761,7 +2695,7 @@
     "away_score": null
   },
   {
-    "id": 251,
+    "id": 245,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -2772,7 +2706,7 @@
     "away_score": null
   },
   {
-    "id": 252,
+    "id": 246,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -2783,7 +2717,7 @@
     "away_score": null
   },
   {
-    "id": 253,
+    "id": 247,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -2794,7 +2728,7 @@
     "away_score": null
   },
   {
-    "id": 254,
+    "id": 248,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -2805,7 +2739,7 @@
     "away_score": null
   },
   {
-    "id": 255,
+    "id": 249,
     "round": 30,
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -2816,7 +2750,7 @@
     "away_score": null
   },
   {
-    "id": 256,
+    "id": 250,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -2827,7 +2761,7 @@
     "away_score": null
   },
   {
-    "id": 257,
+    "id": 251,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -2838,7 +2772,7 @@
     "away_score": null
   },
   {
-    "id": 258,
+    "id": 252,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -2849,7 +2783,7 @@
     "away_score": null
   },
   {
-    "id": 259,
+    "id": 253,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -2860,7 +2794,7 @@
     "away_score": null
   },
   {
-    "id": 260,
+    "id": 254,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -2871,7 +2805,7 @@
     "away_score": null
   },
   {
-    "id": 261,
+    "id": 255,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -2882,11 +2816,77 @@
     "away_score": null
   },
   {
-    "id": 262,
+    "id": 256,
     "round": 31,
     "date": "12/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "home_team": "Guarani",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
+    "away_score": null
+  },
+  {
+    "id": 257,
+    "round": 31,
+    "date": "12/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "home_team": "Novorizontino",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "away_team": "Sport Recife",
+    "away_score": null
+  },
+  {
+    "id": 258,
+    "round": 31,
+    "date": "12/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "home_team": "Paysandu PA",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "away_team": "Chapecoense-SC",
+    "away_score": null
+  },
+  {
+    "id": 259,
+    "round": 31,
+    "date": "12/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "home_team": "Santos",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "away_team": "Mirassol",
+    "away_score": null
+  },
+  {
+    "id": 260,
+    "round": 32,
+    "date": "19/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 261,
+    "round": 32,
+    "date": "19/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "home_team": "America MG",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
+    "away_score": null
+  },
+  {
+    "id": 262,
+    "round": 32,
+    "date": "19/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "away_team": "CRB",
@@ -2894,72 +2894,6 @@
   },
   {
     "id": 263,
-    "round": 31,
-    "date": "12/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 264,
-    "round": 31,
-    "date": "12/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
-    "away_score": null
-  },
-  {
-    "id": 265,
-    "round": 31,
-    "date": "12/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 266,
-    "round": 32,
-    "date": "19/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 267,
-    "round": 32,
-    "date": "19/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 268,
-    "round": 32,
-    "date": "19/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
-    "away_score": null
-  },
-  {
-    "id": 269,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
@@ -2970,7 +2904,7 @@
     "away_score": null
   },
   {
-    "id": 270,
+    "id": 264,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
@@ -2981,7 +2915,7 @@
     "away_score": null
   },
   {
-    "id": 271,
+    "id": 265,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
@@ -2992,7 +2926,7 @@
     "away_score": null
   },
   {
-    "id": 272,
+    "id": 266,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
@@ -3003,7 +2937,7 @@
     "away_score": null
   },
   {
-    "id": 273,
+    "id": 267,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
@@ -3014,7 +2948,7 @@
     "away_score": null
   },
   {
-    "id": 274,
+    "id": 268,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -3025,11 +2959,77 @@
     "away_score": null
   },
   {
-    "id": 275,
+    "id": 269,
     "round": 32,
     "date": "19/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "home_team": "Vila Nova FC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
+    "away_score": null
+  },
+  {
+    "id": 270,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "home_team": "Botafogo SP",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "away_team": "Ituano",
+    "away_score": null
+  },
+  {
+    "id": 271,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
+    "away_score": null
+  },
+  {
+    "id": 272,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "home_team": "CRB",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "away_team": "Mirassol",
+    "away_score": null
+  },
+  {
+    "id": 273,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "home_team": "Novorizontino",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 274,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 275,
+    "round": 33,
+    "date": "23/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "home_team": "Paysandu PA",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "away_team": "Coritiba",
@@ -3039,72 +3039,6 @@
     "id": 276,
     "round": 33,
     "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 277,
-    "round": 33,
-    "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 278,
-    "round": 33,
-    "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 279,
-    "round": 33,
-    "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 280,
-    "round": 33,
-    "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
-    "id": 281,
-    "round": 33,
-    "date": "23/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
-    "away_score": null
-  },
-  {
-    "id": 282,
-    "round": 33,
-    "date": "23/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "home_team": "Ponte Preta",
     "home_score": null,
@@ -3113,7 +3047,7 @@
     "away_score": null
   },
   {
-    "id": 283,
+    "id": 277,
     "round": 33,
     "date": "23/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
@@ -3124,7 +3058,7 @@
     "away_score": null
   },
   {
-    "id": 284,
+    "id": 278,
     "round": 33,
     "date": "23/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
@@ -3135,7 +3069,7 @@
     "away_score": null
   },
   {
-    "id": 285,
+    "id": 279,
     "round": 33,
     "date": "23/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
@@ -3146,7 +3080,7 @@
     "away_score": null
   },
   {
-    "id": 286,
+    "id": 280,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
@@ -3157,7 +3091,7 @@
     "away_score": null
   },
   {
-    "id": 287,
+    "id": 281,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
@@ -3168,7 +3102,7 @@
     "away_score": null
   },
   {
-    "id": 288,
+    "id": 282,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
@@ -3179,7 +3113,7 @@
     "away_score": null
   },
   {
-    "id": 289,
+    "id": 283,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
@@ -3190,7 +3124,7 @@
     "away_score": null
   },
   {
-    "id": 290,
+    "id": 284,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -3201,7 +3135,7 @@
     "away_score": null
   },
   {
-    "id": 291,
+    "id": 285,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
@@ -3212,7 +3146,7 @@
     "away_score": null
   },
   {
-    "id": 292,
+    "id": 286,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
@@ -3223,11 +3157,77 @@
     "away_score": null
   },
   {
-    "id": 293,
+    "id": 287,
     "round": 34,
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "home_team": "Guarani",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "away_team": "Novorizontino",
+    "away_score": null
+  },
+  {
+    "id": 288,
+    "round": 34,
+    "date": "26/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "home_team": "Ituano",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "away_team": "Santos",
+    "away_score": null
+  },
+  {
+    "id": 289,
+    "round": 34,
+    "date": "26/10 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "away_team": "Ponte Preta",
+    "away_score": null
+  },
+  {
+    "id": 290,
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "home_team": "Amazonas",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
+    "away_score": null
+  },
+  {
+    "id": 291,
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "home_team": "Brusque",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "away_team": "Botafogo SP",
+    "away_score": null
+  },
+  {
+    "id": 292,
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "home_team": "Ceara",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "away_team": "Avai",
+    "away_score": null
+  },
+  {
+    "id": 293,
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "away_team": "Novorizontino",
@@ -3235,464 +3235,68 @@
   },
   {
     "id": 294,
-    "round": 34,
-    "date": "26/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "home_team": "Goias",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
+    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
+    "away_team": "Guarani",
     "away_score": null
   },
   {
     "id": 295,
-    "round": 34,
-    "date": "26/10 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
+    "round": 35,
+    "date": "06/11 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
+    "home_team": "Ituano",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
+    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "away_team": "CRB",
     "away_score": null
   },
   {
     "id": 296,
     "round": 35,
     "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
+    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "home_team": "Mirassol",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
+    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "away_team": "Coritiba",
     "away_score": null
   },
   {
     "id": 297,
     "round": 35,
     "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
+    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "away_team": "Sport Recife",
     "away_score": null
   },
   {
     "id": 298,
     "round": 35,
     "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
+    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "home_team": "Ponte Preta",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
+    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "away_team": "Paysandu PA",
     "away_score": null
   },
   {
     "id": 299,
     "round": 35,
     "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
-    "away_score": null
-  },
-  {
-    "id": 300,
-    "round": 35,
-    "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
-    "away_score": null
-  },
-  {
-    "id": 301,
-    "round": 35,
-    "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
-    "away_score": null
-  },
-  {
-    "id": 302,
-    "round": 35,
-    "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
-    "away_score": null
-  },
-  {
-    "id": 303,
-    "round": 35,
-    "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 304,
-    "round": 35,
-    "date": "06/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 305,
-    "round": 35,
-    "date": "06/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "home_team": "Santos",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 306,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 307,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 308,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
-    "away_score": null
-  },
-  {
-    "id": 309,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
-    "away_score": null
-  },
-  {
-    "id": 310,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 311,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
-    "away_score": null
-  },
-  {
-    "id": 312,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 313,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "away_team": "Brusque",
-    "away_score": null
-  },
-  {
-    "id": 314,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
-    "away_score": null
-  },
-  {
-    "id": 315,
-    "round": 36,
-    "date": "16/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "home_team": "Vila Nova FC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
-    "away_score": null
-  },
-  {
-    "id": 316,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "home_team": "Amazonas",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
-    "away_score": null
-  },
-  {
-    "id": 317,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "home_team": "Botafogo SP",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "away_team": "Avai",
-    "away_score": null
-  },
-  {
-    "id": 318,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "home_team": "Brusque",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "away_team": "Guarani",
-    "away_score": null
-  },
-  {
-    "id": 319,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "home_team": "Ceara",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
-    "away_score": null
-  },
-  {
-    "id": 320,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "away_team": "Coritiba",
-    "away_score": null
-  },
-  {
-    "id": 321,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "home_team": "Novorizontino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "away_team": "Paysandu PA",
-    "away_score": null
-  },
-  {
-    "id": 322,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "away_team": "Mirassol",
-    "away_score": null
-  },
-  {
-    "id": 323,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "home_team": "Ponte Preta",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "away_team": "Sport Recife",
-    "away_score": null
-  },
-  {
-    "id": 324,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "home_team": "Santos",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "away_team": "CRB",
-    "away_score": null
-  },
-  {
-    "id": 325,
-    "round": 37,
-    "date": "23/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "home_team": "Vila Nova FC",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "away_team": "Ituano",
-    "away_score": null
-  },
-  {
-    "id": 326,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "home_team": "America MG",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "away_team": "Brusque",
-    "away_score": null
-  },
-  {
-    "id": 327,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "away_team": "Ponte Preta",
-    "away_score": null
-  },
-  {
-    "id": 328,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "home_team": "Coritiba",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "away_team": "Botafogo SP",
-    "away_score": null
-  },
-  {
-    "id": 329,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "home_team": "CRB",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "away_team": "Operario",
-    "away_score": null
-  },
-  {
-    "id": 330,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "home_team": "Goias",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
-    "away_score": null
-  },
-  {
-    "id": 331,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
-    "home_team": "Guarani",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "away_team": "Ceara",
-    "away_score": null
-  },
-  {
-    "id": 332,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
-    "home_team": "Ituano",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
-    "away_score": null
-  },
-  {
-    "id": 333,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "home_team": "Mirassol",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "away_team": "Chapecoense-SC",
-    "away_score": null
-  },
-  {
-    "id": 334,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "home_team": "Paysandu PA",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 335,
-    "round": 38,
-    "date": "26/11 18:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "away_team": "Santos",
     "away_score": null
   }
 ]
