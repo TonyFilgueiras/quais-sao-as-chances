@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "team_name": "Santos",
+    "matches": 6,
+    "wins": 5,
+    "draws": 0,
+    "losses": 1,
+    "goal_difference": 11,
+    "points": 15
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
     "matches": 6,
@@ -9,17 +20,6 @@
     "losses": 0,
     "goal_difference": 11,
     "points": 14
-  },
-  {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "team_name": "Santos",
-    "matches": 5,
-    "wins": 4,
-    "draws": 0,
-    "losses": 1,
-    "goal_difference": 7,
-    "points": 12
   },
   {
     "position": 3,
@@ -34,6 +34,28 @@
   },
   {
     "position": 4,
+    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "team_name": "America MG",
+    "matches": 6,
+    "wins": 3,
+    "draws": 3,
+    "losses": 0,
+    "goal_difference": 5,
+    "points": 12
+  },
+  {
+    "position": 5,
+    "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
+    "team_name": "Mirassol",
+    "matches": 6,
+    "wins": 3,
+    "draws": 2,
+    "losses": 1,
+    "goal_difference": 2,
+    "points": 11
+  },
+  {
+    "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
     "team_name": "Avai",
     "matches": 6,
@@ -44,7 +66,7 @@
     "points": 10
   },
   {
-    "position": 5,
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
     "matches": 6,
@@ -55,40 +77,40 @@
     "points": 9
   },
   {
-    "position": 6,
-    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "team_name": "America MG",
-    "matches": 5,
+    "position": 8,
+    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "team_name": "Ceara",
+    "matches": 6,
     "wins": 2,
     "draws": 3,
-    "losses": 0,
-    "goal_difference": 4,
+    "losses": 1,
+    "goal_difference": 3,
     "points": 9
   },
   {
-    "position": 7,
-    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "team_name": "Ceara",
-    "matches": 5,
-    "wins": 2,
-    "draws": 2,
-    "losses": 1,
-    "goal_difference": 3,
-    "points": 8
-  },
-  {
-    "position": 8,
+    "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
-    "matches": 5,
+    "matches": 6,
     "wins": 2,
-    "draws": 2,
+    "draws": 3,
     "losses": 1,
     "goal_difference": 2,
-    "points": 8
+    "points": 9
   },
   {
-    "position": 9,
+    "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "team_name": "Chapecoense-SC",
+    "matches": 6,
+    "wins": 2,
+    "draws": 3,
+    "losses": 1,
+    "goal_difference": 1,
+    "points": 9
+  },
+  {
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "team_name": "CRB",
     "matches": 6,
@@ -96,28 +118,6 @@
     "draws": 2,
     "losses": 2,
     "goal_difference": 1,
-    "points": 8
-  },
-  {
-    "position": 10,
-    "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "team_name": "Chapecoense-SC",
-    "matches": 5,
-    "wins": 2,
-    "draws": 2,
-    "losses": 1,
-    "goal_difference": 1,
-    "points": 8
-  },
-  {
-    "position": 11,
-    "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
-    "team_name": "Mirassol",
-    "matches": 5,
-    "wins": 2,
-    "draws": 2,
-    "losses": 1,
-    "goal_difference": 0,
     "points": 8
   },
   {
@@ -146,12 +146,12 @@
     "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "team_name": "Ponte Preta",
-    "matches": 5,
+    "matches": 6,
     "wins": 1,
-    "draws": 2,
+    "draws": 3,
     "losses": 2,
     "goal_difference": -1,
-    "points": 5
+    "points": 6
   },
   {
     "position": 15,
@@ -168,11 +168,11 @@
     "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
     "team_name": "Brusque",
-    "matches": 5,
+    "matches": 6,
     "wins": 1,
     "draws": 1,
-    "losses": 3,
-    "goal_difference": -4,
+    "losses": 4,
+    "goal_difference": -8,
     "points": 4
   },
   {
@@ -201,22 +201,22 @@
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "team_name": "Guarani",
-    "matches": 5,
+    "matches": 6,
     "wins": 1,
     "draws": 0,
-    "losses": 4,
-    "goal_difference": -5,
+    "losses": 5,
+    "goal_difference": -6,
     "points": 3
   },
   {
     "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "team_name": "Ituano",
-    "matches": 5,
+    "matches": 6,
     "wins": 1,
     "draws": 0,
-    "losses": 4,
-    "goal_difference": -7,
+    "losses": 5,
+    "goal_difference": -9,
     "points": 3
   }
 ]
