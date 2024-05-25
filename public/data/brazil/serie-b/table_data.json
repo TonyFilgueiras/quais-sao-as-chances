@@ -3,15 +3,26 @@
     "position": 1,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
-    "matches": 6,
+    "matches": 7,
     "wins": 5,
     "draws": 0,
-    "losses": 1,
-    "goal_difference": 11,
+    "losses": 2,
+    "goal_difference": 10,
     "points": 15
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "team_name": "America MG",
+    "matches": 7,
+    "wins": 4,
+    "draws": 3,
+    "losses": 0,
+    "goal_difference": 6,
+    "points": 15
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
     "matches": 6,
@@ -22,24 +33,13 @@
     "points": 14
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "team_name": "Sport Recife",
     "matches": 6,
     "wins": 4,
     "draws": 0,
     "losses": 2,
-    "goal_difference": 5,
-    "points": 12
-  },
-  {
-    "position": 4,
-    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "team_name": "America MG",
-    "matches": 6,
-    "wins": 3,
-    "draws": 3,
-    "losses": 0,
     "goal_difference": 5,
     "points": 12
   },
