@@ -112,7 +112,7 @@
   {
     "id": 10,
     "round": 8,
-    "date": "12/06 17:00",
+    "date": "11/06 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
     "home_score": null,
@@ -123,7 +123,18 @@
   {
     "id": 11,
     "round": 8,
-    "date": "12/06 17:00",
+    "date": "11/06 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "home_team": "Juventude",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "away_team": "Vitoria",
+    "away_score": null
+  },
+  {
+    "id": 12,
+    "round": 8,
+    "date": "11/06 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
     "home_score": null,
@@ -132,25 +143,14 @@
     "away_score": null
   },
   {
-    "id": 12,
+    "id": 13,
     "round": 8,
-    "date": "12/06 17:00",
+    "date": "11/06 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "away_team": "Atletico-MG",
-    "away_score": null
-  },
-  {
-    "id": 13,
-    "round": 8,
-    "date": "12/06 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
-    "home_team": "Juventude",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
-    "away_team": "Vitoria",
     "away_score": null
   },
   {
