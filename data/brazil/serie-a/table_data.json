@@ -122,6 +122,17 @@
   },
   {
     "position": 12,
+    "logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "team_name": "Juventude",
+    "matches": 6,
+    "wins": 2,
+    "draws": 3,
+    "losses": 1,
+    "goal_difference": -1,
+    "points": 9
+  },
+  {
+    "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "team_name": "Gremio",
     "matches": 5,
@@ -132,7 +143,7 @@
     "points": 6
   },
   {
-    "position": 13,
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "team_name": "Vasco",
     "matches": 7,
@@ -140,17 +151,6 @@
     "draws": 0,
     "losses": 5,
     "goal_difference": -10,
-    "points": 6
-  },
-  {
-    "position": 14,
-    "logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
-    "team_name": "Juventude",
-    "matches": 5,
-    "wins": 1,
-    "draws": 3,
-    "losses": 1,
-    "goal_difference": -2,
     "points": 6
   },
   {
@@ -190,33 +190,33 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "team_name": "Atletico GO",
-    "matches": 6,
+    "matches": 7,
     "wins": 1,
     "draws": 1,
-    "losses": 4,
-    "goal_difference": -4,
+    "losses": 5,
+    "goal_difference": -5,
     "points": 4
   },
   {
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "team_name": "Vitoria",
-    "matches": 6,
+    "matches": 7,
     "wins": 0,
-    "draws": 1,
+    "draws": 2,
     "losses": 5,
     "goal_difference": -8,
-    "points": 1
+    "points": 2
   },
   {
     "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "team_name": "Cuiaba",
-    "matches": 5,
+    "matches": 6,
     "wins": 0,
-    "draws": 0,
+    "draws": 1,
     "losses": 5,
     "goal_difference": -11,
-    "points": 0
+    "points": 1
   }
 ]
