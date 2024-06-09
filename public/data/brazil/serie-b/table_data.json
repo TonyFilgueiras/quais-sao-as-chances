@@ -25,11 +25,11 @@
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
-    "matches": 8,
+    "matches": 9,
     "wins": 5,
     "draws": 0,
-    "losses": 3,
-    "goal_difference": 9,
+    "losses": 4,
+    "goal_difference": 7,
     "points": 15
   },
   {
@@ -56,6 +56,17 @@
   },
   {
     "position": 6,
+    "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "team_name": "Operario",
+    "matches": 9,
+    "wins": 4,
+    "draws": 3,
+    "losses": 2,
+    "goal_difference": 1,
+    "points": 15
+  },
+  {
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
     "matches": 8,
@@ -66,7 +77,29 @@
     "points": 14
   },
   {
-    "position": 7,
+    "position": 8,
+    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "team_name": "Coritiba",
+    "matches": 9,
+    "wins": 4,
+    "draws": 2,
+    "losses": 3,
+    "goal_difference": 4,
+    "points": 14
+  },
+  {
+    "position": 9,
+    "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "team_name": "Novorizontino",
+    "matches": 9,
+    "wins": 4,
+    "draws": 2,
+    "losses": 3,
+    "goal_difference": 0,
+    "points": 14
+  },
+  {
+    "position": 10,
     "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "team_name": "Sport Recife",
     "matches": 7,
@@ -77,29 +110,7 @@
     "points": 12
   },
   {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "team_name": "Operario",
-    "matches": 8,
-    "wins": 3,
-    "draws": 3,
-    "losses": 2,
-    "goal_difference": 0,
-    "points": 12
-  },
-  {
-    "position": 9,
-    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "team_name": "Coritiba",
-    "matches": 8,
-    "wins": 3,
-    "draws": 2,
-    "losses": 3,
-    "goal_difference": 2,
-    "points": 11
-  },
-  {
-    "position": 10,
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
     "matches": 8,
@@ -110,18 +121,18 @@
     "points": 11
   },
   {
-    "position": 11,
-    "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "team_name": "Novorizontino",
-    "matches": 8,
+    "position": 12,
+    "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "team_name": "Amazonas",
+    "matches": 9,
     "wins": 3,
     "draws": 2,
-    "losses": 3,
-    "goal_difference": -2,
+    "losses": 4,
+    "goal_difference": -3,
     "points": 11
   },
   {
-    "position": 12,
+    "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "team_name": "Chapecoense-SC",
     "matches": 8,
@@ -132,7 +143,7 @@
     "points": 10
   },
   {
-    "position": 13,
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "team_name": "Ponte Preta",
     "matches": 8,
@@ -143,7 +154,7 @@
     "points": 9
   },
   {
-    "position": 14,
+    "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "team_name": "CRB",
     "matches": 7,
@@ -151,17 +162,6 @@
     "draws": 2,
     "losses": 3,
     "goal_difference": -1,
-    "points": 8
-  },
-  {
-    "position": 15,
-    "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "team_name": "Amazonas",
-    "matches": 8,
-    "wins": 2,
-    "draws": 2,
-    "losses": 4,
-    "goal_difference": -4,
     "points": 8
   },
   {
@@ -190,33 +190,33 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "team_name": "Ituano",
-    "matches": 8,
+    "matches": 9,
     "wins": 2,
     "draws": 0,
-    "losses": 6,
-    "goal_difference": -8,
+    "losses": 7,
+    "goal_difference": -10,
     "points": 6
   },
   {
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
     "team_name": "Brusque",
-    "matches": 8,
+    "matches": 9,
     "wins": 1,
     "draws": 3,
-    "losses": 4,
-    "goal_difference": -8,
+    "losses": 5,
+    "goal_difference": -9,
     "points": 6
   },
   {
     "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "team_name": "Guarani",
-    "matches": 8,
+    "matches": 9,
     "wins": 1,
     "draws": 1,
-    "losses": 6,
-    "goal_difference": -9,
+    "losses": 7,
+    "goal_difference": -10,
     "points": 4
   }
 ]
