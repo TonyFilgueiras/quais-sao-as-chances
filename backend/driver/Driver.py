@@ -132,49 +132,69 @@ class WebDriverWrapper:
                     print("No more matches button found. Exiting loop.")
                     break 
 
-            fixtures = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
-            fixtures_elements = fixtures.find_elements(By.XPATH, ".//*")
+            try:
+                fixtures = WebDriverWait(self.driver, self.local_wait_time).until(EC.presence_of_element_located((By.XPATH, '//*[@id="live-table"]/div[1]/div/div')))
+                fixtures_elements = fixtures.find_elements(By.XPATH, ".//*")
 
-            for element in fixtures_elements:
-                element_class = element.get_attribute("class")
-                if element_class is not None:
-                    if "event__round--static" in element_class:
-                        round_text = element.text
-                        round = int(round_text[-2:])
-                    if "event__match" in element_class:
-                        date_text = element.find_element(By.CLASS_NAME, "event__time").text
-                        date = date_text.replace('.', '/', 1).replace('.', '').replace("Postp", "")
-                        date = self.adjust_date_time(date)
-                        home_team = element.find_element(By.CLASS_NAME, "event__participant--home").text
-                        home_logo = element.find_element(By.CLASS_NAME, "event__logo--home").get_attribute("src")
-                        away_team = element.find_element(By.CLASS_NAME, "event__participant--away").text
-                        away_logo = element.find_element(By.CLASS_NAME, "event__logo--away").get_attribute("src")
+                for element in fixtures_elements:
+                    element_class = element.get_attribute("class")
+                    if element_class is not None:
+                        if "event__round--static" in element_class:
+                            round_text = element.text
+                            round = int(round_text[-2:])
+                        if "event__match" in element_class:
+                            date_text = element.find_element(By.CLASS_NAME, "event__time").text
+                            date = date_text.replace('.', '/', 1).replace('.', '').replace("Postp", "")
+                            date = self.adjust_date_time(date)
 
+                            home_team_div = element.find_element(By.CLASS_NAME, "event__homeParticipant")
+                            home_team = home_team_div.text
+                            home_logo = home_team_div.find_element(By.TAG_NAME, "img").get_attribute("src")
 
-                        new_fixture_data = {
-                            'id': id,
-                            "round": round,
-                            "date": date,
-                            'home_logo': home_logo,
-                            'home_team': home_team,
-                            'home_score': None,
-                            'away_logo': away_logo,
-                            'away_team': away_team,
-                            'away_score': None,
-                        }
+                            away_team_div = element.find_element(By.CLASS_NAME, "event__awayParticipant")
+                            away_team = away_team_div.text
+                            away_logo = away_team_div.find_element(By.TAG_NAME, "img").get_attribute("src")
 
-                        fixtures_data.append(new_fixture_data)
-                        id+=1
-        except StaleElementReferenceException as e:
-            self.log_error("Erro de StaleElement")
-            print("-" *50)
+                            new_fixture_data = {
+                                'id': id,
+                                "round": round,
+                                "date": date,
+                                'home_logo': home_logo,
+                                'home_team': home_team,
+                                'home_score': None,
+                                'away_logo': away_logo,
+                                'away_team': away_team,
+                                'away_score': None,
+                            }
+
+                            fixtures_data.append(new_fixture_data)
+                            id += 1
+
+            except StaleElementReferenceException as e:
+                self.log_error("Erro de StaleElement")
+                print("-" * 50)
+                self.log_error(e)
+                self.write_email_body(f"❌ Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully")
+            except TimeoutException:
+                print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
+            except Exception as e:
+                print("-" * 50)
+                self.log_error(e)
+                self.write_email_body(f"❌ Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully: {e}")
+
+        except Exception as e:
+            # Catch any unexpected exception during the process
+            print("-" * 50)
             self.log_error(e)
-            self.write_email_body(f"❌ Error on updating fixtures: Fixture from {country.capitalize()} {division} was not updated successfully")
-        except TimeoutException:
-            print("Timed out waiting for fixtures to load. It's possible that all games have been played.")
-        self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
-        print("League fixtures updated")
-        self.write_email_body(f"✅ Fixture Updated: Fixture from {country.capitalize()} {division} updated successfully")
+            self.write_email_body(f"❌ Unexpected error on updating fixtures: Fixture from {country.capitalize()} {division}: {e}")
+
+        # Only write fixtures_data to JSON if no unexpected exceptions occurred
+        if fixtures_data:
+            self.write_json(f"{self.relative_path}/public/data/{country}/{division}/fixtures_data.json", fixtures_data)
+            print("League fixtures updated")
+            self.write_email_body(f"✅ Fixture Updated: Fixture from {country.capitalize()} {division} updated successfully")
+
+
 
     def write_json(self, name: str, data: list):
         with open(name, 'w') as json_file:
