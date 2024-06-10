@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "team_name": "America MG",
+    "matches": 9,
+    "wins": 5,
+    "draws": 3,
+    "losses": 1,
+    "goal_difference": 6,
+    "points": 18
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
     "matches": 8,
@@ -11,18 +22,18 @@
     "points": 17
   },
   {
-    "position": 2,
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
     "team_name": "Avai",
-    "matches": 8,
+    "matches": 9,
     "wins": 5,
-    "draws": 1,
+    "draws": 2,
     "losses": 2,
     "goal_difference": 3,
-    "points": 16
+    "points": 17
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
     "matches": 9,
@@ -33,7 +44,7 @@
     "points": 15
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
     "team_name": "Ceara",
     "matches": 8,
@@ -41,17 +52,6 @@
     "draws": 3,
     "losses": 1,
     "goal_difference": 5,
-    "points": 15
-  },
-  {
-    "position": 5,
-    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "team_name": "America MG",
-    "matches": 8,
-    "wins": 4,
-    "draws": 3,
-    "losses": 1,
-    "goal_difference": 4,
     "points": 15
   },
   {
@@ -135,22 +135,22 @@
     "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "team_name": "Chapecoense-SC",
-    "matches": 8,
+    "matches": 9,
     "wins": 2,
-    "draws": 4,
+    "draws": 5,
     "losses": 2,
     "goal_difference": 0,
-    "points": 10
+    "points": 11
   },
   {
     "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "team_name": "Ponte Preta",
-    "matches": 8,
+    "matches": 9,
     "wins": 2,
     "draws": 3,
-    "losses": 3,
-    "goal_difference": -1,
+    "losses": 4,
+    "goal_difference": -3,
     "points": 9
   },
   {
