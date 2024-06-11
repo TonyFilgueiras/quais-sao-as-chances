@@ -45,17 +45,28 @@
   },
   {
     "position": 5,
-    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "team_name": "Ceara",
+    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "team_name": "Sport Recife",
     "matches": 8,
-    "wins": 4,
-    "draws": 3,
-    "losses": 1,
-    "goal_difference": 5,
+    "wins": 5,
+    "draws": 0,
+    "losses": 3,
+    "goal_difference": 3,
     "points": 15
   },
   {
     "position": 6,
+    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "team_name": "Ceara",
+    "matches": 9,
+    "wins": 4,
+    "draws": 3,
+    "losses": 2,
+    "goal_difference": 4,
+    "points": 15
+  },
+  {
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
     "matches": 9,
@@ -66,7 +77,7 @@
     "points": 15
   },
   {
-    "position": 7,
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
     "matches": 8,
@@ -77,7 +88,7 @@
     "points": 14
   },
   {
-    "position": 8,
+    "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "team_name": "Coritiba",
     "matches": 9,
@@ -88,9 +99,9 @@
     "points": 14
   },
   {
-    "position": 9,
-    "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "team_name": "Novorizontino",
+    "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "team_name": "Vila Nova FC",
     "matches": 9,
     "wins": 4,
     "draws": 2,
@@ -99,26 +110,15 @@
     "points": 14
   },
   {
-    "position": 10,
-    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "team_name": "Sport Recife",
-    "matches": 7,
-    "wins": 4,
-    "draws": 0,
-    "losses": 3,
-    "goal_difference": 2,
-    "points": 12
-  },
-  {
     "position": 11,
-    "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "team_name": "Vila Nova FC",
-    "matches": 8,
-    "wins": 3,
+    "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "team_name": "Novorizontino",
+    "matches": 9,
+    "wins": 4,
     "draws": 2,
     "losses": 3,
-    "goal_difference": -1,
-    "points": 11
+    "goal_difference": 0,
+    "points": 14
   },
   {
     "position": 12,
@@ -168,11 +168,11 @@
     "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "team_name": "Paysandu PA",
-    "matches": 8,
+    "matches": 9,
     "wins": 1,
     "draws": 5,
-    "losses": 2,
-    "goal_difference": -1,
+    "losses": 3,
+    "goal_difference": -2,
     "points": 8
   },
   {
