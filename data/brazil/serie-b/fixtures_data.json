@@ -332,17 +332,6 @@
   {
     "id": 30,
     "round": 13,
-    "date": "28/06 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "away_team": "Amazonas",
-    "away_score": null
-  },
-  {
-    "id": 31,
-    "round": 13,
     "date": "29/06 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "home_team": "Coritiba",
@@ -352,7 +341,7 @@
     "away_score": null
   },
   {
-    "id": 32,
+    "id": 31,
     "round": 13,
     "date": "29/06 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
@@ -363,7 +352,7 @@
     "away_score": null
   },
   {
-    "id": 33,
+    "id": 32,
     "round": 13,
     "date": "29/06 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
@@ -371,6 +360,17 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "away_team": "Ituano",
+    "away_score": null
+  },
+  {
+    "id": 33,
+    "round": 13,
+    "date": "30/06 11:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "away_team": "Amazonas",
     "away_score": null
   },
   {
