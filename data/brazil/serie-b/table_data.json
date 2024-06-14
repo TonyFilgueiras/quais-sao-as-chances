@@ -122,24 +122,24 @@
   },
   {
     "position": 12,
-    "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
-    "team_name": "Amazonas",
-    "matches": 9,
+    "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "team_name": "Chapecoense-SC",
+    "matches": 10,
     "wins": 3,
-    "draws": 2,
-    "losses": 4,
-    "goal_difference": -3,
-    "points": 11
+    "draws": 5,
+    "losses": 2,
+    "goal_difference": 1,
+    "points": 14
   },
   {
     "position": 13,
-    "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "team_name": "Chapecoense-SC",
-    "matches": 9,
-    "wins": 2,
-    "draws": 5,
-    "losses": 2,
-    "goal_difference": 0,
+    "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
+    "team_name": "Amazonas",
+    "matches": 10,
+    "wins": 3,
+    "draws": 2,
+    "losses": 5,
+    "goal_difference": -4,
     "points": 11
   },
   {
