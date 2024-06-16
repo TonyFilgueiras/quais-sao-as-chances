@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "team_name": "America MG",
+    "matches": 10,
+    "wins": 6,
+    "draws": 3,
+    "losses": 1,
+    "goal_difference": 7,
+    "points": 21
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
     "team_name": "Avai",
     "matches": 10,
@@ -9,17 +20,6 @@
     "losses": 2,
     "goal_difference": 4,
     "points": 20
-  },
-  {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "team_name": "America MG",
-    "matches": 9,
-    "wins": 5,
-    "draws": 3,
-    "losses": 1,
-    "goal_difference": 6,
-    "points": 18
   },
   {
     "position": 3,
@@ -113,11 +113,11 @@
     "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
-    "matches": 9,
+    "matches": 10,
     "wins": 4,
     "draws": 2,
-    "losses": 3,
-    "goal_difference": 0,
+    "losses": 4,
+    "goal_difference": -1,
     "points": 14
   },
   {
@@ -133,6 +133,17 @@
   },
   {
     "position": 13,
+    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "team_name": "Ponte Preta",
+    "matches": 10,
+    "wins": 3,
+    "draws": 3,
+    "losses": 4,
+    "goal_difference": -2,
+    "points": 12
+  },
+  {
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "team_name": "Amazonas",
     "matches": 10,
@@ -143,35 +154,24 @@
     "points": 11
   },
   {
-    "position": 14,
-    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "team_name": "Ponte Preta",
-    "matches": 9,
-    "wins": 2,
-    "draws": 3,
-    "losses": 4,
-    "goal_difference": -3,
-    "points": 9
-  },
-  {
     "position": 15,
-    "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
-    "team_name": "CRB",
-    "matches": 7,
+    "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
+    "team_name": "Paysandu PA",
+    "matches": 10,
     "wins": 2,
-    "draws": 2,
+    "draws": 5,
     "losses": 3,
-    "goal_difference": -1,
-    "points": 8
+    "goal_difference": 0,
+    "points": 11
   },
   {
     "position": 16,
-    "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
-    "team_name": "Paysandu PA",
-    "matches": 9,
-    "wins": 1,
-    "draws": 5,
-    "losses": 3,
+    "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
+    "team_name": "CRB",
+    "matches": 8,
+    "wins": 2,
+    "draws": 2,
+    "losses": 4,
     "goal_difference": -2,
     "points": 8
   },
@@ -190,11 +190,11 @@
     "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/h8OB5xAN-GKJk5gu7.png",
     "team_name": "Ituano",
-    "matches": 9,
+    "matches": 10,
     "wins": 2,
     "draws": 0,
-    "losses": 7,
-    "goal_difference": -10,
+    "losses": 8,
+    "goal_difference": -12,
     "points": 6
   },
   {
