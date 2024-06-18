@@ -12,6 +12,17 @@
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "team_name": "Operario",
+    "matches": 11,
+    "wins": 6,
+    "draws": 3,
+    "losses": 2,
+    "goal_difference": 3,
+    "points": 21
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
     "team_name": "Avai",
     "matches": 10,
@@ -22,7 +33,7 @@
     "points": 20
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "team_name": "Sport Recife",
     "matches": 9,
@@ -33,7 +44,7 @@
     "points": 18
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
     "matches": 10,
@@ -41,17 +52,6 @@
     "draws": 3,
     "losses": 2,
     "goal_difference": 11,
-    "points": 18
-  },
-  {
-    "position": 5,
-    "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "team_name": "Operario",
-    "matches": 10,
-    "wins": 5,
-    "draws": 3,
-    "losses": 2,
-    "goal_difference": 2,
     "points": 18
   },
   {
@@ -124,11 +124,11 @@
     "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
     "team_name": "Chapecoense-SC",
-    "matches": 10,
+    "matches": 11,
     "wins": 3,
     "draws": 5,
-    "losses": 2,
-    "goal_difference": 1,
+    "losses": 3,
+    "goal_difference": 0,
     "points": 14
   },
   {
