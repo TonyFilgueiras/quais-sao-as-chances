@@ -3,12 +3,12 @@
     "position": 1,
     "logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJoM0owi.png",
     "team_name": "Botafogo RJ",
-    "matches": 9,
+    "matches": 10,
     "wins": 6,
-    "draws": 1,
+    "draws": 2,
     "losses": 2,
     "goal_difference": 8,
-    "points": 19
+    "points": 20
   },
   {
     "position": 2,
@@ -23,6 +23,17 @@
   },
   {
     "position": 3,
+    "logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
+    "team_name": "Athletico-PR",
+    "matches": 10,
+    "wins": 5,
+    "draws": 3,
+    "losses": 2,
+    "goal_difference": 7,
+    "points": 18
+  },
+  {
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "team_name": "Bahia",
     "matches": 9,
@@ -31,17 +42,6 @@
     "losses": 1,
     "goal_difference": 4,
     "points": 18
-  },
-  {
-    "position": 4,
-    "logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
-    "team_name": "Athletico-PR",
-    "matches": 9,
-    "wins": 5,
-    "draws": 2,
-    "losses": 2,
-    "goal_difference": 7,
-    "points": 17
   },
   {
     "position": 5,
@@ -56,17 +56,28 @@
   },
   {
     "position": 6,
-    "logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
-    "team_name": "Sao Paulo",
+    "logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "team_name": "Cruzeiro",
     "matches": 9,
-    "wins": 4,
-    "draws": 3,
+    "wins": 5,
+    "draws": 2,
     "losses": 2,
-    "goal_difference": 6,
-    "points": 15
+    "goal_difference": 2,
+    "points": 17
   },
   {
     "position": 7,
+    "logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
+    "team_name": "Sao Paulo",
+    "matches": 10,
+    "wins": 4,
+    "draws": 3,
+    "losses": 3,
+    "goal_difference": 5,
+    "points": 15
+  },
+  {
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "team_name": "Bragantino",
     "matches": 9,
@@ -77,18 +88,18 @@
     "points": 15
   },
   {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
-    "team_name": "Cruzeiro",
+    "position": 9,
+    "logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "team_name": "Internacional",
     "matches": 8,
     "wins": 4,
     "draws": 2,
     "losses": 2,
-    "goal_difference": 0,
+    "goal_difference": 2,
     "points": 14
   },
   {
-    "position": 9,
+    "position": 10,
     "logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "team_name": "Atletico-MG",
     "matches": 8,
@@ -99,117 +110,95 @@
     "points": 13
   },
   {
-    "position": 10,
-    "logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
-    "team_name": "Internacional",
-    "matches": 7,
-    "wins": 3,
-    "draws": 2,
-    "losses": 2,
-    "goal_difference": 1,
-    "points": 11
-  },
-  {
     "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "team_name": "Juventude",
-    "matches": 8,
-    "wins": 2,
+    "matches": 9,
+    "wins": 3,
     "draws": 4,
     "losses": 2,
-    "goal_difference": -2,
-    "points": 10
+    "goal_difference": 0,
+    "points": 13
   },
   {
     "position": 12,
     "logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "team_name": "Fortaleza",
-    "matches": 8,
-    "wins": 2,
+    "matches": 9,
+    "wins": 3,
     "draws": 4,
     "losses": 2,
-    "goal_difference": -4,
-    "points": 10
+    "goal_difference": -3,
+    "points": 13
   },
   {
     "position": 13,
-    "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
-    "team_name": "Atletico GO",
-    "matches": 9,
-    "wins": 2,
-    "draws": 2,
-    "losses": 5,
-    "goal_difference": -4,
-    "points": 8
+    "logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "team_name": "Cuiaba",
+    "matches": 10,
+    "wins": 3,
+    "draws": 1,
+    "losses": 6,
+    "goal_difference": -3,
+    "points": 10
   },
   {
     "position": 14,
-    "logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
-    "team_name": "Cuiaba",
-    "matches": 9,
+    "logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "team_name": "Criciuma",
+    "matches": 8,
     "wins": 2,
-    "draws": 1,
-    "losses": 6,
-    "goal_difference": -4,
-    "points": 7
+    "draws": 3,
+    "losses": 3,
+    "goal_difference": -1,
+    "points": 9
   },
   {
     "position": 15,
-    "logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
-    "team_name": "Vasco",
-    "matches": 9,
+    "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "team_name": "Atletico GO",
+    "matches": 10,
     "wins": 2,
-    "draws": 1,
+    "draws": 2,
     "losses": 6,
-    "goal_difference": -12,
-    "points": 7
+    "goal_difference": -5,
+    "points": 8
   },
   {
     "position": 16,
-    "logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
-    "team_name": "Corinthians",
-    "matches": 9,
-    "wins": 1,
-    "draws": 4,
-    "losses": 4,
-    "goal_difference": -3,
+    "logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "team_name": "Vasco",
+    "matches": 10,
+    "wins": 2,
+    "draws": 1,
+    "losses": 7,
+    "goal_difference": -14,
     "points": 7
   },
   {
     "position": 17,
-    "logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
-    "team_name": "Gremio",
-    "matches": 7,
-    "wins": 2,
-    "draws": 0,
+    "logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
+    "team_name": "Corinthians",
+    "matches": 10,
+    "wins": 1,
+    "draws": 4,
     "losses": 5,
-    "goal_difference": -3,
-    "points": 6
+    "goal_difference": -4,
+    "points": 7
   },
   {
     "position": 18,
-    "logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
-    "team_name": "Criciuma",
-    "matches": 7,
-    "wins": 1,
-    "draws": 3,
-    "losses": 3,
-    "goal_difference": -2,
+    "logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "team_name": "Gremio",
+    "matches": 8,
+    "wins": 2,
+    "draws": 0,
+    "losses": 6,
+    "goal_difference": -4,
     "points": 6
   },
   {
     "position": 19,
-    "logo": "https://static.flashscore.com/res/image/data/SII56zA6-ALgHCh57.png",
-    "team_name": "Fluminense",
-    "matches": 9,
-    "wins": 1,
-    "draws": 3,
-    "losses": 5,
-    "goal_difference": -6,
-    "points": 6
-  },
-  {
-    "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "team_name": "Vitoria",
     "matches": 9,
@@ -217,6 +206,17 @@
     "draws": 3,
     "losses": 5,
     "goal_difference": -7,
+    "points": 6
+  },
+  {
+    "position": 20,
+    "logo": "https://static.flashscore.com/res/image/data/SII56zA6-ALgHCh57.png",
+    "team_name": "Fluminense",
+    "matches": 10,
+    "wins": 1,
+    "draws": 3,
+    "losses": 6,
+    "goal_difference": -8,
     "points": 6
   }
 ]

@@ -3,15 +3,26 @@
     "position": 1,
     "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "team_name": "America MG",
-    "matches": 10,
+    "matches": 11,
     "wins": 6,
     "draws": 3,
-    "losses": 1,
-    "goal_difference": 7,
+    "losses": 2,
+    "goal_difference": 6,
     "points": 21
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "team_name": "Avai",
+    "matches": 11,
+    "wins": 6,
+    "draws": 3,
+    "losses": 2,
+    "goal_difference": 4,
+    "points": 21
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
     "matches": 11,
@@ -22,18 +33,18 @@
     "points": 21
   },
   {
-    "position": 3,
-    "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "team_name": "Avai",
-    "matches": 10,
+    "position": 4,
+    "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
+    "team_name": "Santos",
+    "matches": 11,
     "wins": 6,
-    "draws": 2,
-    "losses": 2,
-    "goal_difference": 4,
-    "points": 20
+    "draws": 0,
+    "losses": 5,
+    "goal_difference": 8,
+    "points": 18
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "team_name": "Sport Recife",
     "matches": 9,
@@ -44,18 +55,29 @@
     "points": 18
   },
   {
-    "position": 5,
+    "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
     "team_name": "Goias",
-    "matches": 10,
+    "matches": 11,
     "wins": 5,
     "draws": 3,
-    "losses": 2,
-    "goal_difference": 11,
+    "losses": 3,
+    "goal_difference": 9,
     "points": 18
   },
   {
-    "position": 6,
+    "position": 7,
+    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
+    "team_name": "Coritiba",
+    "matches": 11,
+    "wins": 5,
+    "draws": 3,
+    "losses": 3,
+    "goal_difference": 5,
+    "points": 18
+  },
+  {
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
     "matches": 10,
@@ -64,28 +86,6 @@
     "losses": 3,
     "goal_difference": 4,
     "points": 17
-  },
-  {
-    "position": 7,
-    "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
-    "team_name": "Santos",
-    "matches": 10,
-    "wins": 5,
-    "draws": 0,
-    "losses": 5,
-    "goal_difference": 6,
-    "points": 15
-  },
-  {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
-    "team_name": "Coritiba",
-    "matches": 10,
-    "wins": 4,
-    "draws": 3,
-    "losses": 3,
-    "goal_difference": 4,
-    "points": 15
   },
   {
     "position": 9,
@@ -133,17 +133,28 @@
   },
   {
     "position": 13,
-    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
-    "team_name": "Ponte Preta",
+    "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
+    "team_name": "Botafogo SP",
     "matches": 10,
     "wins": 3,
-    "draws": 3,
-    "losses": 4,
-    "goal_difference": -2,
-    "points": 12
+    "draws": 4,
+    "losses": 3,
+    "goal_difference": -3,
+    "points": 13
   },
   {
     "position": 14,
+    "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
+    "team_name": "Ponte Preta",
+    "matches": 11,
+    "wins": 3,
+    "draws": 3,
+    "losses": 5,
+    "goal_difference": -4,
+    "points": 12
+  },
+  {
+    "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "team_name": "Amazonas",
     "matches": 11,
@@ -154,7 +165,7 @@
     "points": 12
   },
   {
-    "position": 15,
+    "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "team_name": "Paysandu PA",
     "matches": 11,
@@ -165,18 +176,18 @@
     "points": 12
   },
   {
-    "position": 16,
-    "logo": "https://static.flashscore.com/res/image/data/fy7q1GPq-jF5yTdXD.png",
-    "team_name": "Botafogo SP",
-    "matches": 9,
+    "position": 17,
+    "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "team_name": "Brusque",
+    "matches": 11,
     "wins": 2,
     "draws": 4,
-    "losses": 3,
-    "goal_difference": -5,
+    "losses": 5,
+    "goal_difference": -8,
     "points": 10
   },
   {
-    "position": 17,
+    "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/8biwxljT-8z8OC8Ik.png",
     "team_name": "CRB",
     "matches": 9,
@@ -184,17 +195,6 @@
     "draws": 3,
     "losses": 4,
     "goal_difference": -2,
-    "points": 9
-  },
-  {
-    "position": 18,
-    "logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "team_name": "Brusque",
-    "matches": 10,
-    "wins": 2,
-    "draws": 3,
-    "losses": 5,
-    "goal_difference": -8,
     "points": 9
   },
   {
