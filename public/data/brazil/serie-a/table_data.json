@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
+    "team_name": "Flamengo RJ",
+    "matches": 10,
+    "wins": 6,
+    "draws": 3,
+    "losses": 1,
+    "goal_difference": 9,
+    "points": 21
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJoM0owi.png",
     "team_name": "Botafogo RJ",
     "matches": 10,
@@ -11,18 +22,18 @@
     "points": 20
   },
   {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
-    "team_name": "Flamengo RJ",
-    "matches": 9,
-    "wins": 5,
-    "draws": 3,
-    "losses": 1,
+    "position": 3,
+    "logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "team_name": "Palmeiras",
+    "matches": 10,
+    "wins": 6,
+    "draws": 2,
+    "losses": 2,
     "goal_difference": 8,
-    "points": 18
+    "points": 20
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "team_name": "Athletico-PR",
     "matches": 10,
@@ -33,26 +44,15 @@
     "points": 18
   },
   {
-    "position": 4,
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "team_name": "Bahia",
-    "matches": 9,
+    "matches": 10,
     "wins": 5,
     "draws": 3,
-    "losses": 1,
-    "goal_difference": 4,
-    "points": 18
-  },
-  {
-    "position": 5,
-    "logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
-    "team_name": "Palmeiras",
-    "matches": 9,
-    "wins": 5,
-    "draws": 2,
     "losses": 2,
-    "goal_difference": 7,
-    "points": 17
+    "goal_difference": 3,
+    "points": 18
   },
   {
     "position": 6,
@@ -80,11 +80,11 @@
     "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "team_name": "Bragantino",
-    "matches": 9,
+    "matches": 10,
     "wins": 4,
     "draws": 3,
-    "losses": 2,
-    "goal_difference": 3,
+    "losses": 3,
+    "goal_difference": 2,
     "points": 15
   },
   {
@@ -102,11 +102,11 @@
     "position": 10,
     "logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "team_name": "Atletico-MG",
-    "matches": 8,
+    "matches": 9,
     "wins": 3,
     "draws": 4,
-    "losses": 1,
-    "goal_difference": 3,
+    "losses": 2,
+    "goal_difference": 1,
     "points": 13
   },
   {
@@ -155,6 +155,17 @@
   },
   {
     "position": 15,
+    "logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "team_name": "Vitoria",
+    "matches": 10,
+    "wins": 2,
+    "draws": 3,
+    "losses": 5,
+    "goal_difference": -5,
+    "points": 9
+  },
+  {
+    "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "team_name": "Atletico GO",
     "matches": 10,
@@ -165,7 +176,7 @@
     "points": 8
   },
   {
-    "position": 16,
+    "position": 17,
     "logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "team_name": "Vasco",
     "matches": 10,
@@ -176,7 +187,7 @@
     "points": 7
   },
   {
-    "position": 17,
+    "position": 18,
     "logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "team_name": "Corinthians",
     "matches": 10,
@@ -187,7 +198,7 @@
     "points": 7
   },
   {
-    "position": 18,
+    "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "team_name": "Gremio",
     "matches": 8,
@@ -195,17 +206,6 @@
     "draws": 0,
     "losses": 6,
     "goal_difference": -4,
-    "points": 6
-  },
-  {
-    "position": 19,
-    "logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
-    "team_name": "Vitoria",
-    "matches": 9,
-    "wins": 1,
-    "draws": 3,
-    "losses": 5,
-    "goal_difference": -7,
     "points": 6
   },
   {
