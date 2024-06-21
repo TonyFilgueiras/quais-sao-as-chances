@@ -34,6 +34,17 @@
   },
   {
     "position": 4,
+    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "team_name": "Sport Recife",
+    "matches": 10,
+    "wins": 6,
+    "draws": 1,
+    "losses": 3,
+    "goal_difference": 4,
+    "points": 19
+  },
+  {
+    "position": 5,
     "logo": "https://static.flashscore.com/res/image/data/hzibzPjC-ALgHCh57.png",
     "team_name": "Santos",
     "matches": 11,
@@ -41,17 +52,6 @@
     "draws": 0,
     "losses": 5,
     "goal_difference": 8,
-    "points": 18
-  },
-  {
-    "position": 5,
-    "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "team_name": "Sport Recife",
-    "matches": 9,
-    "wins": 6,
-    "draws": 0,
-    "losses": 3,
-    "goal_difference": 4,
     "points": 18
   },
   {
@@ -80,26 +80,37 @@
     "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
-    "matches": 10,
+    "matches": 11,
     "wins": 5,
     "draws": 2,
-    "losses": 3,
-    "goal_difference": 4,
+    "losses": 4,
+    "goal_difference": 3,
     "points": 17
   },
   {
     "position": 9,
-    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
-    "team_name": "Ceara",
-    "matches": 10,
-    "wins": 4,
-    "draws": 3,
-    "losses": 3,
-    "goal_difference": 3,
-    "points": 15
+    "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
+    "team_name": "Vila Nova FC",
+    "matches": 11,
+    "wins": 5,
+    "draws": 2,
+    "losses": 4,
+    "goal_difference": 0,
+    "points": 17
   },
   {
     "position": 10,
+    "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
+    "team_name": "Ceara",
+    "matches": 11,
+    "wins": 4,
+    "draws": 4,
+    "losses": 3,
+    "goal_difference": 3,
+    "points": 16
+  },
+  {
+    "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
     "matches": 11,
@@ -108,17 +119,6 @@
     "losses": 4,
     "goal_difference": -1,
     "points": 15
-  },
-  {
-    "position": 11,
-    "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
-    "team_name": "Vila Nova FC",
-    "matches": 10,
-    "wins": 4,
-    "draws": 2,
-    "losses": 4,
-    "goal_difference": -1,
-    "points": 14
   },
   {
     "position": 12,
