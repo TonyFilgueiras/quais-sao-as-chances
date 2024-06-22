@@ -299,23 +299,23 @@
   {
     "id": 27,
     "round": 14,
+    "date": "08/07 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "home_team": "Avai",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
+    "away_team": "Novorizontino",
+    "away_score": null
+  },
+  {
+    "id": 28,
+    "round": 14,
     "date": "08/07 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "home_team": "Amazonas",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "away_team": "Vila Nova FC",
-    "away_score": null
-  },
-  {
-    "id": 28,
-    "round": 14,
-    "date": "09/07 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "home_team": "Avai",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
-    "away_team": "Novorizontino",
     "away_score": null
   },
   {
@@ -377,11 +377,11 @@
     "id": 34,
     "round": 15,
     "date": "13/07 17:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
-    "home_team": "Operario",
+    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
+    "home_team": "Sport Recife",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "away_team": "Goias",
+    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+    "away_team": "America MG",
     "away_score": null
   },
   {
@@ -410,11 +410,11 @@
     "id": 37,
     "round": 15,
     "date": "14/07 18:30",
-    "home_logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
-    "home_team": "Sport Recife",
+    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
+    "home_team": "Chapecoense-SC",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
-    "away_team": "America MG",
+    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
+    "away_team": "Brusque",
     "away_score": null
   },
   {
@@ -431,12 +431,12 @@
   {
     "id": 39,
     "round": 15,
-    "date": "15/07 21:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/WtA85One-ALatFnbP.png",
-    "home_team": "Chapecoense-SC",
+    "date": "16/07 21:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
+    "home_team": "Operario",
     "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/6c2shiBN-Gjdd0gEp.png",
-    "away_team": "Brusque",
+    "away_logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "away_team": "Goias",
     "away_score": null
   },
   {

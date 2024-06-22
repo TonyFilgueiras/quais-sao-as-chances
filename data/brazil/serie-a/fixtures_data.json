@@ -443,17 +443,6 @@
     "id": 40,
     "round": 14,
     "date": "03/07 19:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
-    "home_team": "Bragantino",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
-    "away_team": "Atletico GO",
-    "away_score": null
-  },
-  {
-    "id": 41,
-    "round": 14,
-    "date": "03/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
     "home_score": null,
@@ -462,7 +451,7 @@
     "away_score": null
   },
   {
-    "id": 42,
+    "id": 41,
     "round": 14,
     "date": "03/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
@@ -473,7 +462,7 @@
     "away_score": null
   },
   {
-    "id": 43,
+    "id": 42,
     "round": 14,
     "date": "03/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
@@ -484,7 +473,7 @@
     "away_score": null
   },
   {
-    "id": 44,
+    "id": 43,
     "round": 14,
     "date": "03/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
@@ -495,7 +484,7 @@
     "away_score": null
   },
   {
-    "id": 45,
+    "id": 44,
     "round": 14,
     "date": "03/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
@@ -503,6 +492,17 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "away_team": "Flamengo RJ",
+    "away_score": null
+  },
+  {
+    "id": 45,
+    "round": 14,
+    "date": "03/07 21:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
+    "home_team": "Bragantino",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "away_team": "Atletico GO",
     "away_score": null
   },
   {
