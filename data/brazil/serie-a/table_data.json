@@ -12,6 +12,17 @@
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJoM0owi.png",
+    "team_name": "Botafogo RJ",
+    "matches": 13,
+    "wins": 7,
+    "draws": 3,
+    "losses": 3,
+    "goal_difference": 8,
+    "points": 24
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "team_name": "Bahia",
     "matches": 12,
@@ -20,17 +31,6 @@
     "losses": 2,
     "goal_difference": 7,
     "points": 24
-  },
-  {
-    "position": 3,
-    "logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJoM0owi.png",
-    "team_name": "Botafogo RJ",
-    "matches": 12,
-    "wins": 7,
-    "draws": 2,
-    "losses": 3,
-    "goal_difference": 8,
-    "points": 23
   },
   {
     "position": 4,
@@ -67,6 +67,17 @@
   },
   {
     "position": 7,
+    "logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
+    "team_name": "Bragantino",
+    "matches": 13,
+    "wins": 5,
+    "draws": 4,
+    "losses": 4,
+    "goal_difference": 2,
+    "points": 19
+  },
+  {
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "team_name": "Sao Paulo",
     "matches": 12,
@@ -74,17 +85,6 @@
     "draws": 3,
     "losses": 4,
     "goal_difference": 3,
-    "points": 18
-  },
-  {
-    "position": 8,
-    "logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
-    "team_name": "Bragantino",
-    "matches": 12,
-    "wins": 5,
-    "draws": 3,
-    "losses": 4,
-    "goal_difference": 2,
     "points": 18
   },
   {
@@ -133,6 +133,17 @@
   },
   {
     "position": 13,
+    "logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "team_name": "Cuiaba",
+    "matches": 13,
+    "wins": 3,
+    "draws": 4,
+    "losses": 6,
+    "goal_difference": -3,
+    "points": 13
+  },
+  {
+    "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "team_name": "Criciuma",
     "matches": 10,
@@ -140,17 +151,6 @@
     "draws": 3,
     "losses": 4,
     "goal_difference": -1,
-    "points": 12
-  },
-  {
-    "position": 14,
-    "logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
-    "team_name": "Cuiaba",
-    "matches": 12,
-    "wins": 3,
-    "draws": 3,
-    "losses": 6,
-    "goal_difference": -3,
     "points": 12
   },
   {
@@ -168,12 +168,12 @@
     "position": 16,
     "logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "team_name": "Vasco",
-    "matches": 12,
+    "matches": 13,
     "wins": 3,
-    "draws": 1,
+    "draws": 2,
     "losses": 8,
     "goal_difference": -12,
-    "points": 10
+    "points": 11
   },
   {
     "position": 17,
