@@ -1,6 +1,17 @@
 [
   {
     "position": 1,
+    "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
+    "team_name": "Avai",
+    "matches": 13,
+    "wins": 6,
+    "draws": 5,
+    "losses": 2,
+    "goal_difference": 4,
+    "points": 23
+  },
+  {
+    "position": 2,
     "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "team_name": "America MG",
     "matches": 12,
@@ -11,26 +22,15 @@
     "points": 22
   },
   {
-    "position": 2,
-    "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-2LNvhL4k.png",
-    "team_name": "Avai",
-    "matches": 12,
-    "wins": 6,
-    "draws": 4,
-    "losses": 2,
-    "goal_difference": 4,
-    "points": 22
-  },
-  {
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-j1A6VkgC.png",
     "team_name": "Operario",
-    "matches": 12,
+    "matches": 13,
     "wins": 6,
-    "draws": 3,
+    "draws": 4,
     "losses": 3,
     "goal_difference": 2,
-    "points": 21
+    "points": 22
   },
   {
     "position": 4,
@@ -135,34 +135,34 @@
     "position": 13,
     "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-4S2Tm4eJ.png",
     "team_name": "Ponte Preta",
-    "matches": 12,
+    "matches": 13,
     "wins": 4,
-    "draws": 3,
+    "draws": 4,
     "losses": 5,
     "goal_difference": -2,
-    "points": 15
+    "points": 16
   },
   {
     "position": 14,
     "logo": "https://static.flashscore.com/res/image/data/2XuXLMoe-S2JgYHKO.png",
     "team_name": "Amazonas",
-    "matches": 12,
+    "matches": 13,
     "wins": 4,
-    "draws": 3,
+    "draws": 4,
     "losses": 5,
     "goal_difference": -3,
-    "points": 15
+    "points": 16
   },
   {
     "position": 15,
     "logo": "https://static.flashscore.com/res/image/data/jNz79S7k-Ui9AU98I.png",
     "team_name": "Paysandu PA",
-    "matches": 12,
+    "matches": 13,
     "wins": 3,
-    "draws": 6,
+    "draws": 7,
     "losses": 3,
     "goal_difference": 1,
-    "points": 15
+    "points": 16
   },
   {
     "position": 16,
@@ -212,11 +212,11 @@
     "position": 20,
     "logo": "https://static.flashscore.com/res/image/data/tjBW2U76-bXbOazea.png",
     "team_name": "Guarani",
-    "matches": 12,
+    "matches": 13,
     "wins": 1,
-    "draws": 2,
+    "draws": 3,
     "losses": 9,
     "goal_difference": -12,
-    "points": 5
+    "points": 6
   }
 ]
