@@ -12,6 +12,17 @@
   },
   {
     "position": 2,
+    "logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "team_name": "Palmeiras",
+    "matches": 13,
+    "wins": 8,
+    "draws": 2,
+    "losses": 3,
+    "goal_difference": 9,
+    "points": 26
+  },
+  {
+    "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJoM0owi.png",
     "team_name": "Botafogo RJ",
     "matches": 13,
@@ -22,7 +33,7 @@
     "points": 24
   },
   {
-    "position": 3,
+    "position": 4,
     "logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "team_name": "Bahia",
     "matches": 13,
@@ -31,17 +42,6 @@
     "losses": 3,
     "goal_difference": 5,
     "points": 24
-  },
-  {
-    "position": 4,
-    "logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
-    "team_name": "Palmeiras",
-    "matches": 12,
-    "wins": 7,
-    "draws": 2,
-    "losses": 3,
-    "goal_difference": 7,
-    "points": 23
   },
   {
     "position": 5,
@@ -201,11 +201,11 @@
     "position": 19,
     "logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "team_name": "Corinthians",
-    "matches": 12,
+    "matches": 13,
     "wins": 1,
     "draws": 6,
-    "losses": 5,
-    "goal_difference": -4,
+    "losses": 6,
+    "goal_difference": -6,
     "points": 9
   },
   {
