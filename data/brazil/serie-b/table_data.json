@@ -25,11 +25,11 @@
     "position": 3,
     "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
     "team_name": "America MG",
-    "matches": 12,
+    "matches": 13,
     "wins": 6,
     "draws": 4,
-    "losses": 2,
-    "goal_difference": 6,
+    "losses": 3,
+    "goal_difference": 5,
     "points": 22
   },
   {
@@ -45,6 +45,17 @@
   },
   {
     "position": 5,
+    "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+    "team_name": "Goias",
+    "matches": 13,
+    "wins": 6,
+    "draws": 3,
+    "losses": 4,
+    "goal_difference": 9,
+    "points": 21
+  },
+  {
+    "position": 6,
     "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-nRWjgPsO.png",
     "team_name": "Vila Nova FC",
     "matches": 13,
@@ -55,7 +66,7 @@
     "points": 21
   },
   {
-    "position": 6,
+    "position": 7,
     "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-G2OQQubE.png",
     "team_name": "Sport Recife",
     "matches": 12,
@@ -66,7 +77,7 @@
     "points": 20
   },
   {
-    "position": 7,
+    "position": 8,
     "logo": "https://static.flashscore.com/res/image/data/zZF6CogT-8f6Hj6B0.png",
     "team_name": "Coritiba",
     "matches": 13,
@@ -77,7 +88,7 @@
     "points": 19
   },
   {
-    "position": 8,
+    "position": 9,
     "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-d29WsioJ.png",
     "team_name": "Ceara",
     "matches": 13,
@@ -88,37 +99,26 @@
     "points": 19
   },
   {
-    "position": 9,
-    "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
-    "team_name": "Goias",
-    "matches": 12,
-    "wins": 5,
-    "draws": 3,
-    "losses": 4,
-    "goal_difference": 8,
-    "points": 18
-  },
-  {
     "position": 10,
     "logo": "https://static.flashscore.com/res/image/data/d632vpUH-xxPxlUp4.png",
     "team_name": "Mirassol",
-    "matches": 12,
+    "matches": 13,
     "wins": 5,
-    "draws": 3,
+    "draws": 4,
     "losses": 4,
     "goal_difference": 3,
-    "points": 18
+    "points": 19
   },
   {
     "position": 11,
     "logo": "https://static.flashscore.com/res/image/data/40q3okVH-vFrLaFel.png",
     "team_name": "Novorizontino",
-    "matches": 12,
+    "matches": 13,
     "wins": 5,
-    "draws": 3,
+    "draws": 4,
     "losses": 4,
     "goal_difference": 0,
-    "points": 18
+    "points": 19
   },
   {
     "position": 12,
