@@ -5,7 +5,13 @@
     "date": "04/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
+    "round": 14,
+    "date": "04/07 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
+    "home_team": "Bahia",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "away_team": "Juventude",
     "away_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "away_team": "Juventude",
     "away_score": null
@@ -16,7 +22,13 @@
     "date": "04/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
+    "round": 14,
+    "date": "04/07 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "home_team": "Gremio",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "away_team": "Palmeiras",
     "away_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "away_team": "Palmeiras",
     "away_score": null
@@ -27,7 +39,13 @@
     "date": "04/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
+    "round": 14,
+    "date": "04/07 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
+    "home_team": "Corinthians",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "away_team": "Vitoria",
     "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "away_team": "Vitoria",
     "away_score": null
@@ -38,7 +56,13 @@
     "date": "04/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
+    "round": 14,
+    "date": "04/07 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
+    "home_team": "Fluminense",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "away_team": "Internacional",
     "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "away_team": "Internacional",
     "away_score": null
@@ -49,7 +73,13 @@
     "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
+    "round": 17,
+    "date": "06/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
+    "home_team": "Fluminense",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
+    "away_team": "Athletico-PR",
     "away_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "away_team": "Athletico-PR",
     "away_score": null
@@ -58,9 +88,13 @@
     "id": 5,
     "round": 17,
     "date": "06/07 17:00",
+    "round": 17,
+    "date": "06/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
+    "away_team": "Flamengo RJ",
     "away_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "away_team": "Flamengo RJ",
     "away_score": null
@@ -69,9 +103,14 @@
     "id": 6,
     "round": 15,
     "date": "06/07 20:00",
+    "id": 6,
+    "round": 15,
+    "date": "06/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "away_team": "Cuiaba",
     "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "away_team": "Cuiaba",
     "away_score": null
@@ -93,6 +132,11 @@
     "date": "07/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
+    "id": 8,
+    "round": 15,
+    "date": "07/07 16:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "home_team": "Cruzeiro",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "away_team": "Corinthians",
@@ -104,7 +148,14 @@
     "date": "07/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
+    "id": 9,
+    "round": 15,
+    "date": "07/07 16:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
+    "home_team": "Fortaleza",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
+    "away_team": "Fluminense",
     "away_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "away_team": "Fluminense",
     "away_score": null
@@ -115,7 +166,14 @@
     "date": "07/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
+    "id": 10,
+    "round": 15,
+    "date": "07/07 16:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "home_team": "Juventude",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "away_team": "Gremio",
     "away_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "away_team": "Gremio",
     "away_score": null
@@ -126,7 +184,14 @@
     "date": "07/07 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
+    "id": 11,
+    "round": 15,
+    "date": "07/07 18:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "home_team": "Internacional",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "away_team": "Vasco",
     "away_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "away_team": "Vasco",
     "away_score": null
@@ -137,7 +202,14 @@
     "date": "07/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
+    "id": 12,
+    "round": 15,
+    "date": "07/07 18:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "home_team": "Atletico GO",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
+    "away_team": "Athletico-PR",
     "away_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "away_team": "Athletico-PR",
     "away_score": null
@@ -146,9 +218,14 @@
     "id": 13,
     "round": 15,
     "date": "07/07 18:30",
+    "id": 13,
+    "round": 15,
+    "date": "07/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
+    "away_team": "Bahia",
     "away_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "away_team": "Bahia",
     "away_score": null
@@ -159,12 +236,22 @@
     "date": "07/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
+    "id": 14,
+    "round": 15,
+    "date": "07/07 18:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "home_team": "Vitoria",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "away_team": "Criciuma",
     "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "away_team": "Criciuma",
     "away_score": null
   },
   {
+    "id": 15,
+    "round": 15,
+    "date": "07/07 20:30",
     "id": 15,
     "round": 15,
     "date": "07/07 20:30",
@@ -179,6 +266,9 @@
     "id": 16,
     "round": 16,
     "date": "10/07 18:30",
+    "id": 16,
+    "round": 16,
+    "date": "10/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
     "home_score": null,
@@ -188,7 +278,9 @@
   },
   {
     "id": 17,
+    "id": 17,
     "round": 16,
+    "date": "10/07 19:00",
     "date": "10/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -199,29 +291,43 @@
   },
   {
     "id": 18,
+    "id": 18,
     "round": 16,
+    "date": "10/07 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "home_team": "Vasco",
     "date": "10/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "away_team": "Corinthians",
+    "away_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
+    "away_team": "Corinthians",
     "away_score": null
   },
   {
     "id": 19,
+    "id": 19,
     "round": 16,
+    "date": "11/07 19:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "home_team": "Palmeiras",
     "date": "11/07 19:30",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "away_team": "Atletico GO",
+    "away_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "away_team": "Atletico GO",
     "away_score": null
   },
   {
     "id": 20,
+    "id": 20,
     "round": 16,
+    "date": "11/07 20:00",
     "date": "11/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -232,7 +338,9 @@
   },
   {
     "id": 21,
+    "id": 21,
     "round": 16,
+    "date": "11/07 20:00",
     "date": "11/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -243,18 +351,26 @@
   },
   {
     "id": 22,
+    "id": 22,
     "round": 16,
+    "date": "11/07 21:30",
+    "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
+    "home_team": "Atletico-MG",
     "date": "11/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "away_team": "Sao Paulo",
+    "away_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
+    "away_team": "Sao Paulo",
     "away_score": null
   },
   {
     "id": 23,
+    "id": 23,
     "round": 16,
+    "date": "11/07 21:30",
     "date": "11/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -269,7 +385,14 @@
     "date": "13/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
+    "id": 24,
+    "round": 17,
+    "date": "13/07 16:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
+    "home_team": "Bahia",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "away_team": "Cuiaba",
     "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "away_team": "Cuiaba",
     "away_score": null
@@ -280,7 +403,14 @@
     "date": "13/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
+    "id": 25,
+    "round": 17,
+    "date": "13/07 16:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "home_team": "Cruzeiro",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
+    "away_team": "Bragantino",
     "away_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "away_team": "Bragantino",
     "away_score": null
@@ -291,7 +421,14 @@
     "date": "16/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
+    "id": 26,
+    "round": 17,
+    "date": "16/07 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "home_team": "Juventude",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
+    "away_team": "Atletico-MG",
     "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "away_team": "Atletico-MG",
     "away_score": null
@@ -302,7 +439,14 @@
     "date": "16/07 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
+    "id": 27,
+    "round": 17,
+    "date": "16/07 21:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
+    "home_team": "Corinthians",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "away_team": "Criciuma",
     "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "away_team": "Criciuma",
     "away_score": null
@@ -311,9 +455,14 @@
     "id": 28,
     "round": 19,
     "date": "17/07 17:00",
+    "id": 28,
+    "round": 19,
+    "date": "17/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
+    "away_team": "Atletico-MG",
     "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "away_team": "Atletico-MG",
     "away_score": null
@@ -324,7 +473,14 @@
     "date": "17/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
+    "id": 29,
+    "round": 19,
+    "date": "17/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "home_team": "Criciuma",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
+    "away_team": "Bragantino",
     "away_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "away_team": "Bragantino",
     "away_score": null
@@ -335,7 +491,14 @@
     "date": "17/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
+    "id": 30,
+    "round": 19,
+    "date": "17/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "home_team": "Internacional",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
+    "away_team": "Fortaleza",
     "away_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "away_team": "Fortaleza",
     "away_score": null
@@ -346,14 +509,23 @@
     "date": "17/07 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
+    "id": 31,
+    "round": 19,
+    "date": "17/07 17:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "home_team": "Vasco",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "away_team": "Cuiaba",
     "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "away_team": "Cuiaba",
     "away_score": null
   },
   {
     "id": 32,
+    "id": 32,
     "round": 17,
+    "date": "17/07 19:00",
     "date": "17/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -364,18 +536,26 @@
   },
   {
     "id": 33,
+    "id": 33,
     "round": 17,
+    "date": "17/07 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
+    "home_team": "Sao Paulo",
     "date": "17/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "away_team": "Gremio",
+    "away_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "away_team": "Gremio",
     "away_score": null
   },
   {
     "id": 34,
+    "id": 34,
     "round": 17,
+    "date": "17/07 21:30",
     "date": "17/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -386,7 +566,9 @@
   },
   {
     "id": 35,
+    "id": 35,
     "round": 17,
+    "date": "17/07 21:30",
     "date": "17/07 21:30",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -399,9 +581,14 @@
     "id": 36,
     "round": 18,
     "date": "20/07 16:00",
+    "id": 36,
+    "round": 18,
+    "date": "20/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "away_team": "Criciuma",
     "away_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "away_team": "Criciuma",
     "away_score": null
@@ -410,9 +597,14 @@
     "id": 37,
     "round": 18,
     "date": "20/07 18:30",
+    "id": 37,
+    "round": 18,
+    "date": "20/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "away_team": "Internacional",
     "away_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "away_team": "Internacional",
     "away_score": null
@@ -421,9 +613,14 @@
     "id": 38,
     "round": 18,
     "date": "20/07 21:00",
+    "id": 38,
+    "round": 18,
+    "date": "20/07 21:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "away_team": "Cruzeiro",
     "away_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "away_team": "Cruzeiro",
     "away_score": null
@@ -434,14 +631,23 @@
     "date": "21/07 11:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
+    "id": 39,
+    "round": 18,
+    "date": "21/07 11:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "home_team": "Gremio",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "away_team": "Vitoria",
     "away_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "away_team": "Vitoria",
     "away_score": null
   },
   {
     "id": 40,
+    "id": 40,
     "round": 18,
+    "date": "21/07 16:00",
     "date": "21/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -452,7 +658,9 @@
   },
   {
     "id": 41,
+    "id": 41,
     "round": 18,
+    "date": "21/07 16:00",
     "date": "21/07 16:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -463,7 +671,9 @@
   },
   {
     "id": 42,
+    "id": 42,
     "round": 18,
+    "date": "21/07 18:30",
     "date": "21/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -474,7 +684,9 @@
   },
   {
     "id": 43,
+    "id": 43,
     "round": 18,
+    "date": "21/07 18:30",
     "date": "21/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -485,7 +697,9 @@
   },
   {
     "id": 44,
+    "id": 44,
     "round": 18,
+    "date": "21/07 18:30",
     "date": "21/07 18:30",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -496,11 +710,17 @@
   },
   {
     "id": 45,
+    "id": 45,
     "round": 18,
     "date": "21/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
+    "date": "21/07 20:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "home_team": "Cuiaba",
     "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
+    "away_team": "Fluminense",
     "away_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "away_team": "Fluminense",
     "away_score": null
@@ -597,6 +817,7 @@
     "id": 54,
     "round": 20,
     "date": "27/07 19:00",
+    "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
     "home_score": null,
@@ -606,7 +827,9 @@
   },
   {
     "id": 55,
+    "id": 55,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -617,7 +840,9 @@
   },
   {
     "id": 56,
+    "id": 56,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -628,7 +853,9 @@
   },
   {
     "id": 57,
+    "id": 57,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -639,7 +866,9 @@
   },
   {
     "id": 58,
+    "id": 58,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
@@ -650,7 +879,9 @@
   },
   {
     "id": 59,
+    "id": 59,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -661,7 +892,9 @@
   },
   {
     "id": 60,
+    "id": 60,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -672,7 +905,9 @@
   },
   {
     "id": 61,
+    "id": 61,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -683,7 +918,9 @@
   },
   {
     "id": 62,
+    "id": 62,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -694,7 +931,9 @@
   },
   {
     "id": 63,
+    "id": 63,
     "round": 20,
+    "date": "27/07 19:00",
     "date": "27/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -704,6 +943,7 @@
     "away_score": null
   },
   {
+    "id": 64,
     "id": 64,
     "round": 22,
     "date": "03/08 17:00",
@@ -716,6 +956,7 @@
   },
   {
     "id": 65,
+    "id": 65,
     "round": 22,
     "date": "03/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
@@ -726,6 +967,7 @@
     "away_score": null
   },
   {
+    "id": 66,
     "id": 66,
     "round": 22,
     "date": "03/08 17:00",
@@ -738,6 +980,7 @@
   },
   {
     "id": 67,
+    "id": 67,
     "round": 22,
     "date": "03/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
@@ -748,6 +991,7 @@
     "away_score": null
   },
   {
+    "id": 68,
     "id": 68,
     "round": 22,
     "date": "03/08 17:00",
@@ -760,6 +1004,7 @@
   },
   {
     "id": 69,
+    "id": 69,
     "round": 22,
     "date": "03/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
@@ -770,6 +1015,7 @@
     "away_score": null
   },
   {
+    "id": 70,
     "id": 70,
     "round": 22,
     "date": "03/08 17:00",
@@ -782,6 +1028,7 @@
   },
   {
     "id": 71,
+    "id": 71,
     "round": 22,
     "date": "03/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
@@ -792,6 +1039,7 @@
     "away_score": null
   },
   {
+    "id": 72,
     "id": 72,
     "round": 22,
     "date": "03/08 17:00",
@@ -914,7 +1162,119 @@
   },
   {
     "id": 83,
+    "id": 73,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
+    "home_team": "Athletico-PR",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
+    "away_team": "Gremio",
+    "away_score": null
+  },
+  {
+    "id": 74,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
+    "home_team": "Atletico GO",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
+    "away_team": "Botafogo RJ",
+    "away_score": null
+  },
+  {
+    "id": 75,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
+    "home_team": "Corinthians",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "away_team": "Juventude",
+    "away_score": null
+  },
+  {
+    "id": 76,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
+    "home_team": "Criciuma",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
+    "away_team": "Atletico-MG",
+    "away_score": null
+  },
+  {
+    "id": 77,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "home_team": "Cruzeiro",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
+    "away_team": "Fortaleza",
+    "away_score": null
+  },
+  {
+    "id": 78,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
+    "home_team": "Fluminense",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
+    "away_team": "Bahia",
+    "away_score": null
+  },
+  {
+    "id": 79,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
+    "home_team": "Internacional",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
+    "away_team": "Palmeiras",
+    "away_score": null
+  },
+  {
+    "id": 80,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
+    "home_team": "Sao Paulo",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
+    "away_team": "Flamengo RJ",
+    "away_score": null
+  },
+  {
+    "id": 81,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
+    "home_team": "Vasco",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
+    "away_team": "Bragantino",
+    "away_score": null
+  },
+  {
+    "id": 82,
+    "round": 21,
+    "date": "03/08 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
+    "home_team": "Vitoria",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
+    "away_team": "Cuiaba",
+    "away_score": null
+  },
+  {
+    "id": 83,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -925,7 +1285,9 @@
   },
   {
     "id": 84,
+    "id": 84,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -936,7 +1298,9 @@
   },
   {
     "id": 85,
+    "id": 85,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -947,7 +1311,9 @@
   },
   {
     "id": 86,
+    "id": 86,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -958,7 +1324,9 @@
   },
   {
     "id": 87,
+    "id": 87,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -969,7 +1337,9 @@
   },
   {
     "id": 88,
+    "id": 88,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -980,7 +1350,9 @@
   },
   {
     "id": 89,
+    "id": 89,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
@@ -991,7 +1363,9 @@
   },
   {
     "id": 90,
+    "id": 90,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -1002,7 +1376,9 @@
   },
   {
     "id": 91,
+    "id": 91,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -1013,7 +1389,9 @@
   },
   {
     "id": 92,
+    "id": 92,
     "round": 23,
+    "date": "17/08 17:00",
     "date": "17/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -1024,7 +1402,9 @@
   },
   {
     "id": 93,
+    "id": 93,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -1035,7 +1415,9 @@
   },
   {
     "id": 94,
+    "id": 94,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -1046,7 +1428,9 @@
   },
   {
     "id": 95,
+    "id": 95,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -1057,7 +1441,9 @@
   },
   {
     "id": 96,
+    "id": 96,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -1068,7 +1454,9 @@
   },
   {
     "id": 97,
+    "id": 97,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -1079,7 +1467,9 @@
   },
   {
     "id": 98,
+    "id": 98,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -1090,7 +1480,9 @@
   },
   {
     "id": 99,
+    "id": 99,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -1101,7 +1493,9 @@
   },
   {
     "id": 100,
+    "id": 100,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -1112,7 +1506,9 @@
   },
   {
     "id": 101,
+    "id": 101,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
@@ -1123,7 +1519,9 @@
   },
   {
     "id": 102,
+    "id": 102,
     "round": 24,
+    "date": "24/08 17:00",
     "date": "24/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
@@ -1134,7 +1532,9 @@
   },
   {
     "id": 103,
+    "id": 103,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -1145,7 +1545,9 @@
   },
   {
     "id": 104,
+    "id": 104,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -1156,7 +1558,9 @@
   },
   {
     "id": 105,
+    "id": 105,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -1167,7 +1571,9 @@
   },
   {
     "id": 106,
+    "id": 106,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
@@ -1178,7 +1584,9 @@
   },
   {
     "id": 107,
+    "id": 107,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -1189,7 +1597,9 @@
   },
   {
     "id": 108,
+    "id": 108,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
@@ -1200,7 +1610,9 @@
   },
   {
     "id": 109,
+    "id": 109,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
@@ -1211,7 +1623,9 @@
   },
   {
     "id": 110,
+    "id": 110,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -1222,7 +1636,9 @@
   },
   {
     "id": 111,
+    "id": 111,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -1233,7 +1649,9 @@
   },
   {
     "id": 112,
+    "id": 112,
     "round": 25,
+    "date": "31/08 17:00",
     "date": "31/08 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -1244,7 +1662,9 @@
   },
   {
     "id": 113,
+    "id": 113,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -1255,7 +1675,9 @@
   },
   {
     "id": 114,
+    "id": 114,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -1266,7 +1688,9 @@
   },
   {
     "id": 115,
+    "id": 115,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -1277,7 +1701,9 @@
   },
   {
     "id": 116,
+    "id": 116,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -1288,7 +1714,9 @@
   },
   {
     "id": 117,
+    "id": 117,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -1299,7 +1727,9 @@
   },
   {
     "id": 118,
+    "id": 118,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -1310,7 +1740,9 @@
   },
   {
     "id": 119,
+    "id": 119,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -1321,7 +1753,9 @@
   },
   {
     "id": 120,
+    "id": 120,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -1332,7 +1766,9 @@
   },
   {
     "id": 121,
+    "id": 121,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -1343,7 +1779,9 @@
   },
   {
     "id": 122,
+    "id": 122,
     "round": 26,
+    "date": "14/09 17:00",
     "date": "14/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -1354,7 +1792,9 @@
   },
   {
     "id": 123,
+    "id": 123,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -1365,7 +1805,9 @@
   },
   {
     "id": 124,
+    "id": 124,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
@@ -1376,7 +1818,9 @@
   },
   {
     "id": 125,
+    "id": 125,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -1387,7 +1831,9 @@
   },
   {
     "id": 126,
+    "id": 126,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
@@ -1398,7 +1844,9 @@
   },
   {
     "id": 127,
+    "id": 127,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
@@ -1409,7 +1857,9 @@
   },
   {
     "id": 128,
+    "id": 128,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -1420,7 +1870,9 @@
   },
   {
     "id": 129,
+    "id": 129,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -1431,7 +1883,9 @@
   },
   {
     "id": 130,
+    "id": 130,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
@@ -1442,7 +1896,9 @@
   },
   {
     "id": 131,
+    "id": 131,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
@@ -1453,7 +1909,9 @@
   },
   {
     "id": 132,
+    "id": 132,
     "round": 27,
+    "date": "21/09 17:00",
     "date": "21/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -1464,7 +1922,9 @@
   },
   {
     "id": 133,
+    "id": 133,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -1475,7 +1935,9 @@
   },
   {
     "id": 134,
+    "id": 134,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -1486,7 +1948,9 @@
   },
   {
     "id": 135,
+    "id": 135,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -1497,7 +1961,9 @@
   },
   {
     "id": 136,
+    "id": 136,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -1508,7 +1974,9 @@
   },
   {
     "id": 137,
+    "id": 137,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -1519,7 +1987,9 @@
   },
   {
     "id": 138,
+    "id": 138,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -1530,7 +2000,9 @@
   },
   {
     "id": 139,
+    "id": 139,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -1541,7 +2013,9 @@
   },
   {
     "id": 140,
+    "id": 140,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -1552,7 +2026,9 @@
   },
   {
     "id": 141,
+    "id": 141,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -1563,7 +2039,9 @@
   },
   {
     "id": 142,
+    "id": 142,
     "round": 28,
+    "date": "28/09 17:00",
     "date": "28/09 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
@@ -1574,7 +2052,9 @@
   },
   {
     "id": 143,
+    "id": 143,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -1585,7 +2065,9 @@
   },
   {
     "id": 144,
+    "id": 144,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -1596,7 +2078,9 @@
   },
   {
     "id": 145,
+    "id": 145,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -1607,7 +2091,9 @@
   },
   {
     "id": 146,
+    "id": 146,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -1618,7 +2104,9 @@
   },
   {
     "id": 147,
+    "id": 147,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
@@ -1629,7 +2117,9 @@
   },
   {
     "id": 148,
+    "id": 148,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -1640,7 +2130,9 @@
   },
   {
     "id": 149,
+    "id": 149,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
@@ -1651,7 +2143,9 @@
   },
   {
     "id": 150,
+    "id": 150,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
@@ -1662,7 +2156,9 @@
   },
   {
     "id": 151,
+    "id": 151,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -1673,7 +2169,9 @@
   },
   {
     "id": 152,
+    "id": 152,
     "round": 29,
+    "date": "05/10 17:00",
     "date": "05/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
@@ -1684,7 +2182,9 @@
   },
   {
     "id": 153,
+    "id": 153,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -1695,7 +2195,9 @@
   },
   {
     "id": 154,
+    "id": 154,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -1706,7 +2208,9 @@
   },
   {
     "id": 155,
+    "id": 155,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
@@ -1717,7 +2221,9 @@
   },
   {
     "id": 156,
+    "id": 156,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -1728,7 +2234,9 @@
   },
   {
     "id": 157,
+    "id": 157,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -1739,7 +2247,9 @@
   },
   {
     "id": 158,
+    "id": 158,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -1750,7 +2260,9 @@
   },
   {
     "id": 159,
+    "id": 159,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -1761,7 +2273,9 @@
   },
   {
     "id": 160,
+    "id": 160,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -1772,7 +2286,9 @@
   },
   {
     "id": 161,
+    "id": 161,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
@@ -1783,7 +2299,9 @@
   },
   {
     "id": 162,
+    "id": 162,
     "round": 30,
+    "date": "11/10 17:00",
     "date": "11/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -1794,7 +2312,9 @@
   },
   {
     "id": 163,
+    "id": 163,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -1805,7 +2325,9 @@
   },
   {
     "id": 164,
+    "id": 164,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
     "home_team": "Atletico-MG",
@@ -1816,7 +2338,9 @@
   },
   {
     "id": 165,
+    "id": 165,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -1827,7 +2351,9 @@
   },
   {
     "id": 166,
+    "id": 166,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
     "home_team": "Criciuma",
@@ -1838,7 +2364,9 @@
   },
   {
     "id": 167,
+    "id": 167,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/UudlC76k-6FedhD0P.png",
     "home_team": "Cuiaba",
@@ -1849,7 +2377,9 @@
   },
   {
     "id": 168,
+    "id": 168,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -1860,7 +2390,9 @@
   },
   {
     "id": 169,
+    "id": 169,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
     "home_team": "Gremio",
@@ -1871,7 +2403,9 @@
   },
   {
     "id": 170,
+    "id": 170,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -1882,7 +2416,9 @@
   },
   {
     "id": 171,
+    "id": 171,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
     "home_team": "Vasco",
@@ -1893,7 +2429,9 @@
   },
   {
     "id": 172,
+    "id": 172,
     "round": 31,
+    "date": "26/10 17:00",
     "date": "26/10 17:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -1904,7 +2442,9 @@
   },
   {
     "id": 173,
+    "id": 173,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/INluPVA6-QaMaOfUh.png",
     "home_team": "Athletico-PR",
@@ -1915,7 +2455,9 @@
   },
   {
     "id": 174,
+    "id": 174,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -1926,7 +2468,9 @@
   },
   {
     "id": 175,
+    "id": 175,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
     "home_team": "Bahia",
@@ -1937,7 +2481,9 @@
   },
   {
     "id": 176,
+    "id": 176,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -1948,7 +2494,9 @@
   },
   {
     "id": 177,
+    "id": 177,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
     "home_team": "Bragantino",
@@ -1959,7 +2507,9 @@
   },
   {
     "id": 178,
+    "id": 178,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
     "home_team": "Corinthians",
@@ -1970,7 +2520,9 @@
   },
   {
     "id": 179,
+    "id": 179,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -1981,7 +2533,9 @@
   },
   {
     "id": 180,
+    "id": 180,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
     "home_team": "Fluminense",
@@ -1992,7 +2546,9 @@
   },
   {
     "id": 181,
+    "id": 181,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -2003,7 +2559,9 @@
   },
   {
     "id": 182,
+    "id": 182,
     "round": 32,
+    "date": "05/11 18:00",
     "date": "05/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -2014,7 +2572,9 @@
   },
   {
     "id": 183,
+    "id": 183,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
     "home_team": "Atletico GO",
@@ -2025,7 +2585,9 @@
   },
   {
     "id": 184,
+    "id": 184,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "home_team": "Botafogo RJ",
@@ -2036,7 +2598,9 @@
   },
   {
     "id": 185,
+    "id": 185,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
     "home_team": "Cruzeiro",
@@ -2047,7 +2611,9 @@
   },
   {
     "id": 186,
+    "id": 186,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
     "home_team": "Flamengo RJ",
@@ -2058,7 +2624,9 @@
   },
   {
     "id": 187,
+    "id": 187,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
     "home_team": "Fortaleza",
@@ -2069,7 +2637,9 @@
   },
   {
     "id": 188,
+    "id": 188,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
     "home_team": "Internacional",
@@ -2080,7 +2650,9 @@
   },
   {
     "id": 189,
+    "id": 189,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
     "home_team": "Juventude",
@@ -2091,7 +2663,9 @@
   },
   {
     "id": 190,
+    "id": 190,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
     "home_team": "Palmeiras",
@@ -2102,7 +2676,9 @@
   },
   {
     "id": 191,
+    "id": 191,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
@@ -2113,7 +2689,9 @@
   },
   {
     "id": 192,
+    "id": 192,
     "round": 33,
+    "date": "12/11 18:00",
     "date": "12/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
     "home_team": "Vitoria",
@@ -2123,6 +2701,7 @@
     "away_score": null
   },
   {
+    "id": 193,
     "id": 193,
     "round": 34,
     "date": "20/11 18:00",
@@ -2135,6 +2714,7 @@
   },
   {
     "id": 194,
+    "id": 194,
     "round": 34,
     "date": "20/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
@@ -2145,6 +2725,7 @@
     "away_score": null
   },
   {
+    "id": 195,
     "id": 195,
     "round": 34,
     "date": "20/11 18:00",
@@ -2157,6 +2738,7 @@
   },
   {
     "id": 196,
+    "id": 196,
     "round": 34,
     "date": "20/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
@@ -2167,6 +2749,7 @@
     "away_score": null
   },
   {
+    "id": 197,
     "id": 197,
     "round": 34,
     "date": "20/11 18:00",
@@ -2179,6 +2762,7 @@
   },
   {
     "id": 198,
+    "id": 198,
     "round": 34,
     "date": "20/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
@@ -2189,6 +2773,7 @@
     "away_score": null
   },
   {
+    "id": 199,
     "id": 199,
     "round": 34,
     "date": "20/11 18:00",
@@ -2201,6 +2786,7 @@
   },
   {
     "id": 200,
+    "id": 200,
     "round": 34,
     "date": "20/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
@@ -2211,6 +2797,7 @@
     "away_score": null
   },
   {
+    "id": 201,
     "id": 201,
     "round": 34,
     "date": "20/11 18:00",
@@ -2223,6 +2810,7 @@
   },
   {
     "id": 202,
+    "id": 202,
     "round": 34,
     "date": "20/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/Qw7CsWAN-bam8o1Nj.png",
@@ -2233,6 +2821,7 @@
     "away_score": null
   },
   {
+    "id": 203,
     "id": 203,
     "round": 35,
     "date": "23/11 18:00",
@@ -2245,6 +2834,7 @@
   },
   {
     "id": 204,
+    "id": 204,
     "round": 35,
     "date": "23/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
@@ -2255,6 +2845,7 @@
     "away_score": null
   },
   {
+    "id": 205,
     "id": 205,
     "round": 35,
     "date": "23/11 18:00",
@@ -2267,6 +2858,7 @@
   },
   {
     "id": 206,
+    "id": 206,
     "round": 35,
     "date": "23/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/WCPVtuUH-Sv3m8l2G.png",
@@ -2277,6 +2869,7 @@
     "away_score": null
   },
   {
+    "id": 207,
     "id": 207,
     "round": 35,
     "date": "23/11 18:00",
@@ -2289,6 +2882,7 @@
   },
   {
     "id": 208,
+    "id": 208,
     "round": 35,
     "date": "23/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
@@ -2299,6 +2893,7 @@
     "away_score": null
   },
   {
+    "id": 209,
     "id": 209,
     "round": 35,
     "date": "23/11 18:00",
@@ -2311,6 +2906,7 @@
   },
   {
     "id": 210,
+    "id": 210,
     "round": 35,
     "date": "23/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/p2TzSgBN-ALgHCh57.png",
@@ -2321,6 +2917,7 @@
     "away_score": null
   },
   {
+    "id": 211,
     "id": 211,
     "round": 35,
     "date": "23/11 18:00",
@@ -2333,6 +2930,7 @@
   },
   {
     "id": 212,
+    "id": 212,
     "round": 35,
     "date": "23/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
@@ -2343,6 +2941,7 @@
     "away_score": null
   },
   {
+    "id": 213,
     "id": 213,
     "round": 36,
     "date": "30/11 18:00",
@@ -2355,6 +2954,7 @@
   },
   {
     "id": 214,
+    "id": 214,
     "round": 36,
     "date": "30/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/h8ZzOL5k-pCk2vaSD.png",
@@ -2365,6 +2965,7 @@
     "away_score": null
   },
   {
+    "id": 215,
     "id": 215,
     "round": 36,
     "date": "30/11 18:00",
@@ -2377,6 +2978,7 @@
   },
   {
     "id": 216,
+    "id": 216,
     "round": 36,
     "date": "30/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
@@ -2387,6 +2989,7 @@
     "away_score": null
   },
   {
+    "id": 217,
     "id": 217,
     "round": 36,
     "date": "30/11 18:00",
@@ -2399,6 +3002,7 @@
   },
   {
     "id": 218,
+    "id": 218,
     "round": 36,
     "date": "30/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
@@ -2409,6 +3013,7 @@
     "away_score": null
   },
   {
+    "id": 219,
     "id": 219,
     "round": 36,
     "date": "30/11 18:00",
@@ -2421,6 +3026,7 @@
   },
   {
     "id": 220,
+    "id": 220,
     "round": 36,
     "date": "30/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/6yCLyXU0-ALgHCh57.png",
@@ -2431,6 +3037,7 @@
     "away_score": null
   },
   {
+    "id": 221,
     "id": 221,
     "round": 36,
     "date": "30/11 18:00",
@@ -2443,6 +3050,7 @@
   },
   {
     "id": 222,
+    "id": 222,
     "round": 36,
     "date": "30/11 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
@@ -2453,6 +3061,7 @@
     "away_score": null
   },
   {
+    "id": 223,
     "id": 223,
     "round": 37,
     "date": "04/12 18:00",
@@ -2465,6 +3074,7 @@
   },
   {
     "id": 224,
+    "id": 224,
     "round": 37,
     "date": "04/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-8f6Hj6B0.png",
@@ -2475,6 +3085,7 @@
     "away_score": null
   },
   {
+    "id": 225,
     "id": 225,
     "round": 37,
     "date": "04/12 18:00",
@@ -2487,6 +3098,7 @@
   },
   {
     "id": 226,
+    "id": 226,
     "round": 37,
     "date": "04/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/423QLf6k-no5LkQQ6.png",
@@ -2497,6 +3109,7 @@
     "away_score": null
   },
   {
+    "id": 227,
     "id": 227,
     "round": 37,
     "date": "04/12 18:00",
@@ -2509,6 +3122,7 @@
   },
   {
     "id": 228,
+    "id": 228,
     "round": 37,
     "date": "04/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/SII56zA6-WUfDDYk1.png",
@@ -2519,6 +3133,7 @@
     "away_score": null
   },
   {
+    "id": 229,
     "id": 229,
     "round": 37,
     "date": "04/12 18:00",
@@ -2531,6 +3146,7 @@
   },
   {
     "id": 230,
+    "id": 230,
     "round": 37,
     "date": "04/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
@@ -2541,6 +3157,7 @@
     "away_score": null
   },
   {
+    "id": 231,
     "id": 231,
     "round": 37,
     "date": "04/12 18:00",
@@ -2553,6 +3170,7 @@
   },
   {
     "id": 232,
+    "id": 232,
     "round": 37,
     "date": "04/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/dhfeJlkC-4S2Tm4eJ.png",
@@ -2563,6 +3181,7 @@
     "away_score": null
   },
   {
+    "id": 233,
     "id": 233,
     "round": 38,
     "date": "08/12 18:00",
@@ -2575,6 +3194,7 @@
   },
   {
     "id": 234,
+    "id": 234,
     "round": 38,
     "date": "08/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/IL73beA6-dKUmd286.png",
@@ -2585,6 +3205,7 @@
     "away_score": null
   },
   {
+    "id": 235,
     "id": 235,
     "round": 38,
     "date": "08/12 18:00",
@@ -2597,6 +3218,7 @@
   },
   {
     "id": 236,
+    "id": 236,
     "round": 38,
     "date": "08/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/fXZwgsRq-UkMF8Udb.png",
@@ -2607,6 +3229,7 @@
     "away_score": null
   },
   {
+    "id": 237,
     "id": 237,
     "round": 38,
     "date": "08/12 18:00",
@@ -2619,6 +3242,7 @@
   },
   {
     "id": 238,
+    "id": 238,
     "round": 38,
     "date": "08/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/8URbBane-2R2JjDQC.png",
@@ -2629,6 +3253,7 @@
     "away_score": null
   },
   {
+    "id": 239,
     "id": 239,
     "round": 38,
     "date": "08/12 18:00",
@@ -2641,6 +3266,7 @@
   },
   {
     "id": 240,
+    "id": 240,
     "round": 38,
     "date": "08/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/lnrkBi86-tQsU6dGl.png",
@@ -2652,6 +3278,7 @@
   },
   {
     "id": 241,
+    "id": 241,
     "round": 38,
     "date": "08/12 18:00",
     "home_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
@@ -2662,6 +3289,7 @@
     "away_score": null
   },
   {
+    "id": 242,
     "id": 242,
     "round": 38,
     "date": "08/12 18:00",
