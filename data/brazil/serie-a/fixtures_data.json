@@ -79,7 +79,7 @@
   {
     "id": 7,
     "round": 15,
-    "date": "06/07 21:00",
+    "date": "06/07 20:00",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
     "home_team": "Sao Paulo",
     "home_score": null,
@@ -518,6 +518,17 @@
   },
   {
     "id": 47,
+    "round": 19,
+    "date": "24/07 19:00",
+    "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
+    "home_team": "Cruzeiro",
+    "home_score": null,
+    "away_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
+    "away_team": "Juventude",
+    "away_score": null
+  },
+  {
+    "id": 48,
     "round": 22,
     "date": "24/07 19:00",
     "home_logo": "https://static.flashscore.com/res/image/data/4jCqyBoe-8r8ETTNO.png",
@@ -528,7 +539,7 @@
     "away_score": null
   },
   {
-    "id": 48,
+    "id": 49,
     "round": 19,
     "date": "24/07 19:30",
     "home_logo": "https://static.flashscore.com/res/image/data/jBU0jVPq-UPn7aGHL.png",
@@ -536,17 +547,6 @@
     "home_score": null,
     "away_logo": "https://static.flashscore.com/res/image/data/YyEcuJVH-rJBthgZj.png",
     "away_team": "Botafogo RJ",
-    "away_score": null
-  },
-  {
-    "id": 49,
-    "round": 19,
-    "date": "24/07 20:00",
-    "home_logo": "https://static.flashscore.com/res/image/data/dzBBasiT-SjJmyx86.png",
-    "home_team": "Cruzeiro",
-    "home_score": null,
-    "away_logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-8r8ETTNO.png",
-    "away_team": "Juventude",
     "away_score": null
   },
   {
