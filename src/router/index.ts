@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import ErrorView from "@/views/ErrorView.vue";
 import { useLeagueChosenStore, type Countries, leagueConfig } from "@/stores/leagueChosen";
 import NotFoundView from "@/views/NotFoundView.vue";
+import TestViewVue from "@/views/TestView.vue";
 
 const validLeagueNames = Object.keys(leagueConfig);
 
@@ -32,6 +33,11 @@ const router = createRouter({
         }
       },
     },
+    // {
+    //   path: "/test",
+    //   name: "test",
+    //   component: TestViewVue
+    // },
     {
       path: "/error",
       name: "error",
