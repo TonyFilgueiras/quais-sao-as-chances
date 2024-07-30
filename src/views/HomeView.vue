@@ -11,7 +11,7 @@
         @filterCleared="clearFixturesFilters"
       />
       <WarningBox v-if="fixtures.length == 0" warning-text="Campeonato encerrado" />
-      <WarningBox warning-text="Site não sendo mais atualizado!! 04/07" />
+      <!-- <WarningBox warning-text="Site não sendo mais atualizado!! 04/07" /> -->
       <div class="mainContainer">
         <LeagueTableVue
           :table="displayTable"
