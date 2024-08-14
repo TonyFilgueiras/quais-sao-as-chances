@@ -40,7 +40,7 @@ export const fetchChampionships = async (): Promise<Championships[]> => {
 };
 
 export const fetchChampionshipStandings = async (
-  country: keyof Championships,
+  country: keyof Countries,
   division: keyof typeof availableChampionships['brazil'],
   season: number
 ): Promise<{ leagueInfo: ILeagueInfo; standingsTable: ITable[] }> => {
@@ -86,7 +86,7 @@ export const fetchChampionshipStandings = async (
   }
 };
 
-export const fetchChampionshipFixtures = async (country: keyof Championships, division: keyof Division, season: number): Promise<IFixtures[]> => {
+export const fetchChampionshipFixtures = async (country: keyof Countries, division: keyof Division, season: number): Promise<IFixtures[]> => {
   try {
     const championshipId = availableChampionships[country][division];
     const response = await axios.get<Response>(`${API_URL}/fixtures`, {
