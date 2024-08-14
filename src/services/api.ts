@@ -5,17 +5,17 @@ import type IFixtures from "@/interfaces/IFixtures";
 import type ILeagueInfo from "@/interfaces/ILeagueInfo";
 
 const API_URL = "https://v3.football.api-sports.io";
-const API_TOKEN = import.meta.env.VITE_NEW_API_KEY;
+const API_TOKEN = import.meta.env.VITE_API_KEY;
 
 type Division = {
   [key: string]: number;
 };
 
-type Championships = {
+type Countries = {
   [key: string]: Division;
 };
 
-const availableChampionships: Championships = {
+const availableChampionships: Countries = {
   brazil: {
     serieA: 71,
     serieB: 72,
@@ -105,23 +105,27 @@ export const fetchChampionshipFixtures = async (country: keyof Championships, di
     // Helper function to format the date and adjust time zone by -3 hours
     const formatDate = (dateString: string): string => {
       const date = new Date(dateString);
-
+    
       let hours = date.getUTCHours() - 3;
       let day = date.getUTCDate();
-
-      // Adjust if hours are negative (i.e., wrap to previous day)
+    
+      // Adjust if hours are negative (i.e., wrap to the previous day)
       if (hours < 0) {
         hours += 24;
         day -= 1;
       }
-
+    
       const adjustedDay = String(day).padStart(2, "0");
       const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // getUTCMonth() is zero-based
       const adjustedHours = String(hours).padStart(2, "0");
       const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-
-      return `${adjustedDay}/${month} ${adjustedHours}:${minutes}`;
+    
+      // Extract the last two digits of the year
+      const year = String(date.getUTCFullYear()).slice(-2);
+    
+      return `${adjustedDay}/${month}/${year} ${adjustedHours}:${minutes}`;
     };
+    
 
     // Transform API data into IFixtures format
     const fixturesTable: IFixtures[] = data

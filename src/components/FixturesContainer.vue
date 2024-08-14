@@ -6,7 +6,9 @@
       <ArrowIconVue @click="handleFixturesScroll(1)" width="40" color="var(--brasileiraoSilver)" :right="true" />
     </nav>
     <div class="fixture" v-for="fixture in filteredFixtures" :key="fixture.id">
-      <h2>{{ fixture.date }}</h2>
+      <h2 :class="{ strikethrough: isPastFixture(fixture.date) }">
+        {{ formattedFixtureDate(fixture.date) }}
+      </h2>
       <div class="fixtureMatches">
         <div
           :class="[
@@ -75,6 +77,7 @@
 import { defineComponent, type PropType } from "vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import ArrowIconVue from "./icons/ArrowIcon.vue";
+
 export default defineComponent({
   data() {
     return {
@@ -122,7 +125,6 @@ export default defineComponent({
     },
     selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
       fixture.result = winner;
-      // this.$emit("winnerSelected", [this.fixtures])
       this.$emit("winnerSelected", fixture);
     },
     hoverHomeTeam(fixture: IFixtures) {
@@ -146,6 +148,29 @@ export default defineComponent({
       fixture.homeTeamLosing = false;
       fixture.awayTeamWinning = false;
       fixture.awayTeamLosing = false;
+    },
+    isPastFixture(date: string): boolean {
+      // Split the date string into its components
+      const [dayMonthYear, time] = date.split(" ");
+      const [day, month, year] = dayMonthYear.split("/").map(Number);
+      const [hours, minutes] = time.split(":").map(Number);
+
+      // Handle two-digit years by converting to four digits
+      const fullYear = year < 100 ? 2000 + year : year;
+
+      // Create a new Date object with the parsed values
+      const fixtureDate = new Date(fullYear, month - 1, day, hours, minutes);
+
+      const today = new Date();
+
+      // Compare the fixture date with today's date
+      return fixtureDate < today;
+    },
+    formattedFixtureDate(date: string): string {
+      if (this.isPastFixture(date)) {
+        return `${date} (adiado)`;
+      }
+      return date;
     },
   },
   computed: {
@@ -193,7 +218,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
 }
-img{
+img {
   height: 30px;
   width: auto;
 }
@@ -268,6 +293,10 @@ img{
 .homeLosing {
   --myColor1: #ff000088;
   --myColor2: #00ff0088;
+}
+.strikethrough {
+  color: gray;
+  text-decoration: line-through;
 }
 @media screen and (max-width: 700px) {
   .fixtureMatches div {
