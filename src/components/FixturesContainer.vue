@@ -193,6 +193,10 @@ export default defineComponent({
   display: flex;
   justify-content: center;
 }
+img{
+  height: 30px;
+  width: auto;
+}
 .homeTeam,
 .awayTeam {
   display: flex;

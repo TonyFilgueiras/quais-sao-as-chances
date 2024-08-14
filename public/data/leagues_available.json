@@ -2,19 +2,13 @@
   {
     "name": "Brasileirão Série A",
     "country": "brazil",
-    "division": "serie-a",
+    "division": "serieA",
     "img": "/quais-sao-as-chances/img/brasil.png"
   },
   {
     "name": "Brasileirão Série B",
     "country": "brazil",
-    "division": "serie-b",
+    "division": "serieB",
     "img": "/quais-sao-as-chances/img/brasil.png"
-  },
-  {
-    "name": "English Premier League",
-    "country": "england",
-    "division": "premier-league",
-    "img": "/quais-sao-as-chances/img/england.png"
   }
 ]

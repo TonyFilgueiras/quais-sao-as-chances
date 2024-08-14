@@ -13,7 +13,7 @@ export const useLeagueChosenStore = defineStore('leagueChosen', {
   state() {
     return {
       countryChosen: 'brazil' as Countries,
-      divisionChosen: "serie-a"
+      divisionChosen: "serieA"
     }
   },
   actions: {

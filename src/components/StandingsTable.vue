@@ -69,3 +69,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+  img{
+    height: 30px;
+    width: auto;
+  }
+</style>

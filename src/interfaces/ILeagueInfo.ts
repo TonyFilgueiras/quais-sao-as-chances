@@ -1,5 +1,6 @@
 export default interface ILeagueInfo{
   logo: string,
   name: string,
-  year: string,
+  flag: string,
+  year: number,
 }

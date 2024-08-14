@@ -13,7 +13,7 @@ const router = createRouter({
     {
       path: "/",
       redirect: () => {
-        return { name: "home", params: { leagueCountry: "brazil", leagueDivision: "serie-a" } };
+        return { name: "home", params: { leagueCountry: "brazil", leagueDivision: "serieA" } };
       },
     },
     {
@@ -33,11 +33,11 @@ const router = createRouter({
         }
       },
     },
-    // {
-    //   path: "/test",
-    //   name: "test",
-    //   component: TestViewVue
-    // },
+    {
+      path: "/test",
+      name: "test",
+      component: TestViewVue
+    },
     {
       path: "/error",
       name: "error",

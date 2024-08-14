@@ -35,7 +35,7 @@ import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import api from "@/services/fetchData";
+import {fetchChampionshipFixtures, fetchChampionshipStandings} from "@/services/api";
 import { updateTable } from "@/services/calculatePossibilities";
 import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
@@ -122,29 +122,22 @@ export default {
       await this.fetchLeagueTable(this.countryChosen, this.divisionChosen);
       this.displayTable = this.table;
       await this.fetchLeagueFixtures(this.countryChosen, this.divisionChosen);
-      await this.fetchLeagueInfo(this.countryChosen, this.divisionChosen);
       this.loading = false;
     },
-    async fetchLeagueTable(country: Countries, division: String) {
+    async fetchLeagueTable(country: Countries, division: string) {
       try {
-        const resp = await api.getLeagueTable(country, division);
-        this.table = resp;
+        // const resp = await api.getLeagueTable(country, division);
+        const {leagueInfo,standingsTable} = await fetchChampionshipStandings(country,division, 2024)
+        this.table = standingsTable;
+        this.leagueInfo = leagueInfo;
       } catch (err: any) {
         this.handleErrors(err);
       }
     },
-    async fetchLeagueFixtures(country: Countries, division: String) {
+    async fetchLeagueFixtures(country: Countries, division: string) {
       try {
-        const resp = await api.getLeagueFixtures(country, division);
+        const resp = await fetchChampionshipFixtures(country, division, 2024);
         this.fixtures = resp;
-      } catch (err: any) {
-        this.handleErrors(err);
-      }
-    },
-    async fetchLeagueInfo(country: Countries, division: String) {
-      try {
-        const resp = await api.getLeagueInfo(country, division);
-        this.leagueInfo = resp;
       } catch (err: any) {
         this.handleErrors(err);
       }

@@ -147,7 +147,7 @@ function updatePositions(standings: ITable[], positionCounts: IPositionChances, 
     switch (countryChosen) {
       case "brazil":
         switch (divisionChosen) {
-          case "serie-a":
+          case "serieA":
             if (team.position === 1) {
               positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
               positionCounts.libertadores[team.team_name] = (positionCounts.libertadores[team.team_name] || 0) + 1;
@@ -168,7 +168,7 @@ function updatePositions(standings: ITable[], positionCounts: IPositionChances, 
               positionCounts.relegation[team.team_name] = (positionCounts.relegation[team.team_name] || 0) + 1;
             }
             break;
-          case "serie-b":
+          case "serieB":
             if (team.position === 1) {
               positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
               positionCounts.promotion[team.team_name] = (positionCounts.promotion[team.team_name] || 0) + 1;

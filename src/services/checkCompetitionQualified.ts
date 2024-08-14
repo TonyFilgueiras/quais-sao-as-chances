@@ -11,7 +11,7 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
     switch (league.countryChosen) {
       case "brazil":
         switch (league.divisionChosen) {
-          case "serie-a":
+          case "serieA":
             if (
               (position > 1 && position <= serieA.libertadoresSpot) ||
               team_name === brazil.libertadoresWinner ||
@@ -40,7 +40,7 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
               return "relegation";
             }
             break;
-          case "serie-b":
+          case "serieB":
             if (
               (position > 1 && position <= serieB.promotion) ||
               team_name === brazil.libertadoresWinner ||

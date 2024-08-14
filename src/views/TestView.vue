@@ -1,27 +1,27 @@
-<!-- <template>
+<template>
   <div>
-    <button @click="fetchChampionship">champioship</button>
     <button @click="fetchStandings">Standings</button>
+    <button @click="fetchFixtures">Fixtures</button>
   </div>
 </template>
 
 <script lang="ts">
-import { fetchChampionship, fetchChampionshipStandings } from "../services/api";
+import { fetchChampionshipStandings, fetchChampionshipFixtures } from "../services/api";
 
 export default {
   methods: {
-    async fetchChampionship() {
+    async fetchStandings() {
       try {
-        const campeonatos = await fetchChampionship(10);
+        const campeonatos = await fetchChampionshipStandings(71, 2024);
         console.log(campeonatos);
       } catch (error) {
         console.error(error);
       }
     },
-    async fetchStandings() {
+    async fetchFixtures() {
       try {
-        const campeonatos = await fetchChampionshipStandings(10);
-        console.log(campeonatos);
+        const fixtures = await fetchChampionshipFixtures(71, 2024);
+        console.log(fixtures);
       } catch (error) {
         console.error(error);
       }
@@ -30,4 +30,4 @@ export default {
 };
 </script>
 
-<style scoped></style> -->
+<style scoped></style>
