@@ -1,13 +1,25 @@
 <template>
   <div class="fixturesContainer" v-if="fixtures.length > 0">
     <nav class="fixturesNavigation">
-      <ArrowIconVue @click="handleFixturesScroll(0)" width="40" color="var(--brasileiraoSilver)" :right="false" />
+      <ArrowIconVue
+        :class="{ disabledArrow: isRoundMinimumBeingShown() }"
+        @click="handleFixturesScroll(0)"
+        width="40"
+        color="var(--brasileiraoSilver)"
+        :right="false"
+      />
       Rodada: {{ roundDisplay }}
-      <ArrowIconVue @click="handleFixturesScroll(1)" width="40" color="var(--brasileiraoSilver)" :right="true" />
+      <ArrowIconVue
+        :class="{ disabledArrow: isRoundMaximumBeingShown() }"
+        @click="handleFixturesScroll(1)"
+        width="40"
+        color="var(--brasileiraoSilver)"
+        :right="true"
+      />
     </nav>
     <div class="fixture" v-for="fixture in filteredFixtures" :key="fixture.id">
-      <h2 :class="{ strikethrough: isPastFixture(fixture.date) }">
-        {{ formattedFixtureDate(fixture.date) }}
+      <h2 :class="{ strikethrough: isPastFixture(fixture), liveGame: isGameLive(fixture) }">
+        {{ formattedFixtureDate(fixture) }}
       </h2>
       <div class="fixtureMatches">
         <div
@@ -19,7 +31,7 @@
             { loser: fixture.result === 'away' },
             { drawing: fixture.drawing || fixture.result === 'draw' },
           ]"
-          @mouseover="hoverHomeTeam(fixture)"
+          @mouseover="hoverTeam(fixture, true, false)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'home')"
         >
@@ -28,7 +40,7 @@
           </p>
           <div>
             <h2>{{ fixture.home_team }}</h2>
-            <img :src="fixture.home_logo" :alt="fixture.home_team" />
+            <img class="team_logo" :src="fixture.home_logo" :alt="fixture.home_team" />
           </div>
         </div>
         <h2
@@ -40,7 +52,7 @@
             { homeLost: fixture.result === 'away' },
             { drew: fixture.result === 'draw' },
           ]"
-          @mouseover="hoverDraw(fixture)"
+          @mouseover="hoverTeam(fixture, false, true)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'draw')"
         >
@@ -55,12 +67,12 @@
             { loser: fixture.result === 'home' },
             { drawing: fixture.drawing || fixture.result === 'draw' },
           ]"
-          @mouseover="hoverAwayTeam(fixture)"
+          @mouseover="hoverTeam(fixture, false, false)"
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'away')"
         >
           <div>
-            <img :src="fixture.away_logo" :alt="fixture.away_team" />
+            <img class="team_logo" :src="fixture.away_logo" :alt="fixture.away_team" />
             <h2>{{ fixture.away_team }}</h2>
           </div>
           <p :class="['status', { statusHiddenAway: !fixture.result }]">
@@ -77,6 +89,7 @@
 import { defineComponent, type PropType } from "vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import ArrowIconVue from "./icons/ArrowIcon.vue";
+import parseDate from "@/services/parseDate";
 
 export default defineComponent({
   data() {
@@ -95,82 +108,61 @@ export default defineComponent({
     },
   },
   async mounted() {
-    this.settingGroundRound();
+    this.initializeRoundSettings();
   },
   methods: {
-    settingGroundRound() {
+    initializeRoundSettings() {
       this.minRound = Math.min(...this.fixtures.map((fixture) => fixture.round));
       this.maxRound = Math.max(...this.fixtures.map((fixture) => fixture.round));
-      this.roundDisplay = this.minRound;
+
+      const nextFixture = this.fixtures
+        .filter((fixture) => fixture.status.includes("NS") || fixture.status.includes("H"))
+        .sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime())[0];
+
+      this.roundDisplay = nextFixture ? nextFixture.round : this.minRound;
     },
     handleFixturesScroll(direction: 0 | 1) {
-      switch (direction) {
-        case 0:
-          if (this.roundDisplay > this.minRound) {
-            do {
-              this.roundDisplay--;
-            } while (this.filteredFixtures.length === 0);
-          }
-          break;
-        case 1:
-          if (this.roundDisplay < this.maxRound) {
-            do {
-              this.roundDisplay++;
-            } while (this.filteredFixtures.length === 0);
-          }
-          break;
-        default:
-          break;
+      if (direction === 0 && this.roundDisplay > this.minRound) {
+        do {
+          this.roundDisplay--;
+        } while (this.filteredFixtures.length === 0);
+      } else if (direction === 1 && this.roundDisplay < this.maxRound) {
+        do {
+          this.roundDisplay++;
+        } while (this.filteredFixtures.length === 0);
       }
     },
     selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
       fixture.result = winner;
       this.$emit("winnerSelected", fixture);
     },
-    hoverHomeTeam(fixture: IFixtures) {
-      fixture.homeTeamWinning = true;
-      fixture.awayTeamLosing = true;
-    },
-    hoverAwayTeam(fixture: IFixtures) {
-      fixture.awayTeamWinning = true;
-      fixture.homeTeamLosing = true;
-    },
-    hoverDraw(fixture: IFixtures) {
-      fixture.drawing = true;
-      fixture.homeTeamWinning = false;
-      fixture.homeTeamLosing = false;
-      fixture.awayTeamWinning = false;
-      fixture.awayTeamLosing = false;
+    hoverTeam(fixture: IFixtures, home: boolean, draw: boolean) {
+      fixture.homeTeamWinning = home && !draw;
+      fixture.awayTeamLosing = home && !draw;
+      fixture.awayTeamWinning = !home && !draw;
+      fixture.homeTeamLosing = !home && !draw;
+      fixture.drawing = draw;
     },
     resetStyles(fixture: IFixtures) {
-      fixture.drawing = false;
-      fixture.homeTeamWinning = false;
-      fixture.homeTeamLosing = false;
-      fixture.awayTeamWinning = false;
-      fixture.awayTeamLosing = false;
+      fixture.homeTeamWinning = fixture.homeTeamLosing = fixture.awayTeamWinning = fixture.awayTeamLosing = fixture.drawing = false;
     },
-    isPastFixture(date: string): boolean {
-      // Split the date string into its components
-      const [dayMonthYear, time] = date.split(" ");
-      const [day, month, year] = dayMonthYear.split("/").map(Number);
-      const [hours, minutes] = time.split(":").map(Number);
-
-      // Handle two-digit years by converting to four digits
-      const fullYear = year < 100 ? 2000 + year : year;
-
-      // Create a new Date object with the parsed values
-      const fixtureDate = new Date(fullYear, month - 1, day, hours, minutes);
-
-      const today = new Date();
-
-      // Compare the fixture date with today's date
-      return fixtureDate < today;
+    isRoundMinimumBeingShown() {
+      return this.roundDisplay <= this.minRound;
     },
-    formattedFixtureDate(date: string): string {
-      if (this.isPastFixture(date)) {
-        return `${date} (adiado)`;
+    isRoundMaximumBeingShown() {
+      return this.roundDisplay >= this.maxRound;
+    },
+    isPastFixture(fixture: IFixtures): boolean {
+      return parseDate(fixture.date) < new Date() && fixture.status === "PST";
+    },
+    isGameLive(fixture: IFixtures) {
+      return fixture.status.includes("LIVE") || fixture.status.includes("H");
+    },
+    formattedFixtureDate(fixture: IFixtures): string {
+      if (this.isPastFixture(fixture)) {
+        return `${fixture.date} (adiado)`;
       }
-      return date;
+      return fixture.date;
     },
   },
   computed: {
@@ -209,7 +201,7 @@ export default defineComponent({
   border: 1px solid #ddd;
 }
 .fixtureMatches div {
-  font-size: 1rem;
+  font-size: 0.7rem;
   display: flex;
   transition: 0.5s;
   align-items: center;
@@ -218,9 +210,12 @@ export default defineComponent({
   display: flex;
   justify-content: center;
 }
-img {
+.team_logo {
+  /* border: 1px solid lime; */
+  margin: 0px 5px;
   height: 30px;
-  width: auto;
+  width: 30px;
+  object-fit: contain;
 }
 .homeTeam,
 .awayTeam {
@@ -297,6 +292,45 @@ img {
 .strikethrough {
   color: gray;
   text-decoration: line-through;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+}
+.liveGame {
+  position: relative;
+}
+
+.liveGame:after {
+  border-radius: 5px;
+  padding: 3px 6px;
+  content: "ao vivo";
+  margin-left: 5px;
+  background: #ff0000;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation: glow 1.5s infinite;
+}
+.disabledArrow {
+  opacity: 0;
+  &:hover {
+    cursor: default;
+  }
 }
 @media screen and (max-width: 700px) {
   .fixtureMatches div {

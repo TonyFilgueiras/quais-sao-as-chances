@@ -114,6 +114,7 @@ export default {
     this.updateWinnersTablePositions();
 
     await this.calculateChances();
+    this.displayTable = updateTable(this.table, this.fixtures);
   },
   methods: {
     async fetchData() {

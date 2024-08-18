@@ -51,7 +51,9 @@ export default {
       return !this.teamSelected.team_name || !this.optionSelected;
     },
     isFilterApplied() {
-      return this.fixtures.some((fixture: IFixtures) => fixture.result );
+      return this.fixtures.some((fixture: IFixtures) => {
+        fixture.result && (!fixture.status.includes("H") || !fixture.status.includes("LIVE"))
+      });
     },
   },
   methods: {
@@ -163,7 +165,7 @@ export default {
 }
 
 .opacityZero{
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .opacityZero:hover{
