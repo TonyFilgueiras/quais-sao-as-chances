@@ -117,6 +117,8 @@ export default {
 img {
   margin-right: 5px;
   width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .optionsContainer {

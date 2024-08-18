@@ -2,7 +2,7 @@
   <div class="filtersContainer">
     <CustomSelect :table="table" label="Time" @selectedOption="updateSelectedTeam"/>
     <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption"/>
-    <StandardButton :class="{opacityZero : isButtonDisabled}" :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter" :disabled="isButtonDisabled"/>
+    <StandardButton :class="[{opacityZero : isButtonDisabled}, 'applyButton']" :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter" :disabled="isButtonDisabled"/>
   </div>
   <div :class="['resetFiltersContainer',{ showFiltersContainer: isFilterApplied}]">
     <StandardButton text="Limpar filtros" :redButton="true" @click="clearFilters" /> 
@@ -131,6 +131,8 @@ export default {
 .teamSelected img {
   margin-right: 5px;
   width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .optionsContainer {
@@ -161,10 +163,14 @@ export default {
 }
 
 .opacityZero{
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .opacityZero:hover{
   cursor: default;
+}
+.applyButton{
+  width: 25vw;
+  max-width: 300px;
 }
 </style>

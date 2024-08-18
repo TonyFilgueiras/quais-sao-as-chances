@@ -73,6 +73,7 @@ export default defineComponent({
 <style scoped>
   img{
     height: 30px;
-    width: auto;
+    width: 30px;
+    object-fit: contain;
   }
 </style>
