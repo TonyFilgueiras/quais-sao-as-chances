@@ -1,11 +1,16 @@
 <template>
   <div class="filtersContainer">
-    <CustomSelect :table="table" label="Time" @selectedOption="updateSelectedTeam"/>
-    <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption"/>
-    <StandardButton :class="[{opacityZero : isButtonDisabled}, 'applyButton']" :text="mobileStore.isScreenSmall ? '✔':'Aplicar'" @click="applyFilter" :disabled="isButtonDisabled"/>
+    <CustomSelect :table="table" label="Time" @selectedOption="updateSelectedTeam" />
+    <CustomSelect :table="teamOptions" label="Opção" @selectedOption="updateSelectedTeamOption" />
+    <StandardButton
+      :class="[{ opacityZero: isButtonDisabled }, 'applyButton']"
+      :text="mobileStore.isScreenSmall ? '✔' : 'Aplicar'"
+      @click="applyFilter"
+      :disabled="isButtonDisabled"
+    />
   </div>
-  <div :class="['resetFiltersContainer',{ showFiltersContainer: isFilterApplied}]">
-    <StandardButton text="Limpar filtros" :redButton="true" @click="clearFilters" /> 
+  <div :class="['resetFiltersContainer', { showFiltersContainer: isFilterApplied }]">
+    <StandardButton text="Limpar filtros" :redButton="true" @click="clearFilters" />
   </div>
 </template>
 <script lang="ts">
@@ -18,19 +23,19 @@ import { teamOptions } from "@/services/teamOptions";
 import { useIsMobileStore } from "@/stores/isMobile";
 
 export default {
-  emits: ['filterApplied', 'filterCleared'],
+  emits: ["filterApplied", "filterCleared"],
   setup() {
     const mobileStore = useIsMobileStore();
     mobileStore.checkIfIsMobile();
 
-    return{ mobileStore}
+    return { mobileStore };
   },
   data() {
     return {
       teamSelected: {} as ITable,
-      optionSelected: '',
+      optionSelected: "",
       selectOpen: false,
-      teamOptions: teamOptions
+      teamOptions: teamOptions,
     };
   },
   props: {
@@ -41,7 +46,7 @@ export default {
     fixtures: {
       type: Array as PropType<IFixtures[]>,
       required: true,
-    }
+    },
   },
   computed: {
     sortedTable() {
@@ -52,7 +57,7 @@ export default {
     },
     isFilterApplied() {
       return this.fixtures.some((fixture: IFixtures) => {
-        fixture.result && (!fixture.status.includes("H") || !fixture.status.includes("LIVE"))
+        return fixture.result && (!fixture.status.includes("H") || !fixture.status.includes("LIVE"))
       });
     },
   },
@@ -67,10 +72,10 @@ export default {
       this.selectOpen = !this.selectOpen;
     },
     applyFilter() {
-      this.$emit("filterApplied", this.teamSelected, this.optionSelected)
+      this.$emit("filterApplied", this.teamSelected, this.optionSelected);
     },
     clearFilters() {
-      this.$emit("filterCleared")
+      this.$emit("filterCleared");
     },
   },
   components: { StandardButton, CustomSelect },
@@ -91,7 +96,7 @@ export default {
   box-shadow: 0px 0px 2px 0px black;
   background-color: var(--brasileiraoBlue);
 }
-.resetFiltersContainer{
+.resetFiltersContainer {
   display: none;
   height: 80px;
   width: 90vw;
@@ -103,7 +108,7 @@ export default {
   animation: hideContent 0.5s ease forwards;
 }
 
-.showFiltersContainer{
+.showFiltersContainer {
   animation: showContent 0.5s ease forwards;
   display: flex;
   justify-content: center;
@@ -164,14 +169,14 @@ export default {
   background-color: #ffffff88;
 }
 
-.opacityZero{
+.opacityZero {
   opacity: 0;
 }
 
-.opacityZero:hover{
+.opacityZero:hover {
   cursor: default;
 }
-.applyButton{
+.applyButton {
   width: 25vw;
   max-width: 300px;
 }
