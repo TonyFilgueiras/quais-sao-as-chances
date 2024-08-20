@@ -17,7 +17,7 @@
         :right="true"
       />
     </nav>
-    <div class="fixture" v-for="fixture in filteredFixtures" :key="fixture.id">
+    <div :class="['fixture', { finished: fixture.status === 'FT' }]" v-for="fixture in filteredFixtures" :key="fixture.id">
       <h2 :class="{ strikethrough: isPastFixture(fixture), liveGame: isGameLive(fixture) }">
         {{ formattedFixtureDate(fixture) }}
       </h2>
@@ -25,10 +25,10 @@
         <div
           :class="[
             'homeTeam',
-            { winning: fixture.homeTeamWinning },
-            { winner: fixture.result === 'home' },
-            { losing: fixture.homeTeamLosing },
-            { loser: fixture.result === 'away' },
+            { homeWinning: fixture.homeTeamWinning },
+            { homeWon: fixture.result === 'home' },
+            { homeLosing: fixture.homeTeamLosing },
+            { homeLost: fixture.result === 'away' },
             { drawing: fixture.drawing || fixture.result === 'draw' },
           ]"
           @mouseover="hoverTeam(fixture, true, false)"
@@ -41,7 +41,9 @@
           <div>
             <h2>{{ fixture.home_team }}</h2>
             <img class="team_logo" :src="fixture.home_logo" :alt="fixture.home_team" />
+            <h2 class="score" v-if="fixture.home_score !== null">{{ fixture.home_score }}</h2>
           </div>
+          <!-- <input type="text" class="score"/> -->
         </div>
         <h2
           :class="[
@@ -51,6 +53,7 @@
             { homeLosing: fixture.homeTeamLosing },
             { homeLost: fixture.result === 'away' },
             { drew: fixture.result === 'draw' },
+            { drawing: fixture.drawing || fixture.result === 'draw' },
           ]"
           @mouseover="hoverTeam(fixture, false, true)"
           @mouseout="resetStyles(fixture)"
@@ -61,9 +64,9 @@
         <div
           :class="[
             'awayTeam',
-            { winning: fixture.awayTeamWinning },
+            { homeLosing: fixture.awayTeamWinning },
             { winner: fixture.result === 'away' },
-            { losing: fixture.awayTeamLosing },
+            { homeWinning: fixture.awayTeamLosing },
             { loser: fixture.result === 'home' },
             { drawing: fixture.drawing || fixture.result === 'draw' },
           ]"
@@ -71,7 +74,9 @@
           @mouseout="resetStyles(fixture)"
           @click="selectWinner(fixture, 'away')"
         >
+          <!-- <input type="text" class="score"/> -->
           <div>
+            <h2 class="score" v-if="fixture.home_score !== null">{{ fixture.away_score }}</h2>
             <img class="team_logo" :src="fixture.away_logo" :alt="fixture.away_team" />
             <h2>{{ fixture.away_team }}</h2>
           </div>
@@ -133,15 +138,19 @@ export default defineComponent({
       }
     },
     selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
-      fixture.result = winner;
-      this.$emit("winnerSelected", fixture);
+      if (fixture.status !== "FT") {
+        fixture.result = winner;
+        this.$emit("winnerSelected", fixture);
+      }
     },
     hoverTeam(fixture: IFixtures, home: boolean, draw: boolean) {
-      fixture.homeTeamWinning = home && !draw;
-      fixture.awayTeamLosing = home && !draw;
-      fixture.awayTeamWinning = !home && !draw;
-      fixture.homeTeamLosing = !home && !draw;
-      fixture.drawing = draw;
+      if (fixture.status !== "FT") {
+        fixture.homeTeamWinning = home && !draw;
+        fixture.awayTeamLosing = home && !draw;
+        fixture.awayTeamWinning = !home && !draw;
+        fixture.homeTeamLosing = !home && !draw;
+        fixture.drawing = draw;
+      }
     },
     resetStyles(fixture: IFixtures) {
       fixture.homeTeamWinning = fixture.homeTeamLosing = fixture.awayTeamWinning = fixture.awayTeamLosing = fixture.drawing = false;
@@ -200,6 +209,9 @@ export default defineComponent({
   border-collapse: collapse;
   border: 1px solid #ddd;
 }
+.finished {
+  filter: brightness(0.5);
+}
 .fixtureMatches div {
   font-size: 0.7rem;
   display: flex;
@@ -223,6 +235,13 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
   width: 200px;
+  /* border: 1px solid purple; */
+}
+.homeTeam {
+  background: var(--myColor1);
+}
+.awayTeam {
+  background: var(--myColor2);
 }
 .status {
   color: gray;
@@ -240,16 +259,18 @@ export default defineComponent({
 }
 .draw {
   padding: 18px;
-  transition: --myColor1 0.5s, --myColor2 0.5s;
+  transition: all.5s, --myColor1 0.5s, --myColor2 0.5s;
   background: linear-gradient(120deg, var(--myColor1) 50%, var(--myColor2) 50%);
 }
 .winner {
   cursor: pointer;
-  background-color: #008f0088;
+  --myColor1: #008f0088;
+  --myColor2: #008f0088;
 }
 .loser {
   cursor: pointer;
-  background-color: #8a000088;
+  --myColor1: #8a000088;
+  --myColor2: #8a000088;
 }
 .homeWon {
   --myColor1: #008f0088;
@@ -259,35 +280,34 @@ export default defineComponent({
   --myColor1: #8a000088;
   --myColor2: #008f0088;
 }
-.draw:hover {
+.drawing {
   cursor: pointer;
   --myColor1: #eeff0088;
   --myColor2: #eeff0088;
-}
-.drawing {
-  cursor: pointer;
-  background: #eeff0088;
 }
 .drew {
   cursor: pointer;
   --myColor1: #eeff0088;
   --myColor2: #eeff0088;
 }
-.winning {
-  cursor: pointer;
-  background-color: #00ff0088;
-}
-.losing {
-  cursor: pointer;
-  background-color: #ff000088;
-}
 .homeWinning {
+  cursor: pointer;
   --myColor1: #00ff0088;
   --myColor2: #ff000088;
 }
 .homeLosing {
+  cursor: pointer;
   --myColor1: #ff000088;
   --myColor2: #00ff0088;
+}
+.score {
+  border: 1px solid white;
+  text-align: center;
+  /* margin: 20px 0; */
+  /* width: 30px; */
+  color: gray;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .strikethrough {
   color: gray;
