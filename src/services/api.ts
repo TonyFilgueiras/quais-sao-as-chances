@@ -41,7 +41,7 @@ export const fetchChampionships = async (): Promise<Championships[]> => {
 
 export const fetchChampionshipStandings = async (
   country: keyof Countries,
-  division: keyof typeof availableChampionships['brazil'],
+  division: keyof (typeof availableChampionships)["brazil"],
   season: number
 ): Promise<{ leagueInfo: ILeagueInfo; standingsTable: ITable[] }> => {
   try {
@@ -105,31 +105,30 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
     // Helper function to format the date and adjust time zone by -3 hours
     const formatDate = (dateString: string): string => {
       const date = new Date(dateString);
-    
+
       let hours = date.getUTCHours() - 3;
       let day = date.getUTCDate();
-    
+
       // Adjust if hours are negative (i.e., wrap to the previous day)
       if (hours < 0) {
         hours += 24;
         day -= 1;
       }
-    
+
       const adjustedDay = String(day).padStart(2, "0");
       const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // getUTCMonth() is zero-based
       const adjustedHours = String(hours).padStart(2, "0");
       const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-    
+
       // Extract the last two digits of the year
       const year = String(date.getUTCFullYear()).slice(-2);
-    
+
       return `${adjustedDay}/${month}/${year} ${adjustedHours}:${minutes}`;
     };
-    
 
     // Transform API data into IFixtures format
     const fixturesTable: IFixtures[] = data
-      .filter((fixture: Fixture) => fixture.fixture.status.short !== "FT")
+      // .filter((fixture: Fixture) => fixture.fixture.status.short !== "FT")
       .map((fixture: Fixture) => {
         // Extract the round number from the round string
         const roundMatch = fixture.league.round.match(/\d+$/);

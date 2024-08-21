@@ -140,6 +140,23 @@ export default defineComponent({
     selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
       if (fixture.status !== "FT") {
         fixture.result = winner;
+        switch (winner) {
+          case "draw":
+            fixture.home_score = 0;
+            fixture.away_score = 0;
+            break;
+          case "home":
+            fixture.home_score = 1;
+            fixture.away_score = 0;
+            break;
+          case "away":
+            fixture.home_score = 0;
+            fixture.away_score = 1;
+            break;
+
+          default:
+            break;
+        }
         this.$emit("winnerSelected", fixture);
       }
     },
@@ -210,7 +227,7 @@ export default defineComponent({
   border: 1px solid #ddd;
 }
 .finished {
-  filter: brightness(0.5);
+  filter: brightness(0.7);
 }
 .fixtureMatches div {
   font-size: 0.7rem;
@@ -301,7 +318,6 @@ export default defineComponent({
   --myColor2: #00ff0088;
 }
 .score {
-  border: 1px solid white;
   text-align: center;
   /* margin: 20px 0; */
   /* width: 30px; */

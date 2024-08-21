@@ -57,7 +57,7 @@ export default {
     },
     isFilterApplied() {
       return this.fixtures.some((fixture: IFixtures) => {
-        return fixture.result && (!fixture.status.includes("H") || !fixture.status.includes("LIVE"))
+        return fixture.result && (fixture.status.includes("S") || fixture.status.includes("TBD"))
       });
     },
   },

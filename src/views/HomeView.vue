@@ -35,7 +35,7 @@ import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import {fetchChampionshipFixtures, fetchChampionshipStandings} from "@/services/api";
+import { fetchChampionshipFixtures, fetchChampionshipStandings } from "@/services/api";
 import { updateTable } from "@/services/calculatePossibilities";
 import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
@@ -60,12 +60,11 @@ export default {
     }
     function updateTeamFixtures(team: ITable, option: string) {
       fixtures.value = updateTeamFixturesService(team, option, fixtures.value);
-
       displayTable.value = updateTable(table.value, fixtures.value);
     }
     function clearFixturesFilters() {
       fixtures.value.forEach((fixture) => {
-        if (fixture !== null && fixture !== undefined) {
+        if (fixture !== null && fixture !== undefined && fixture.status !== "FT" && !fixture.status.includes("H")) {
           delete fixture.result;
         }
       });
@@ -128,7 +127,7 @@ export default {
     async fetchLeagueTable(country: Countries, division: string) {
       try {
         // const resp = await api.getLeagueTable(country, division);
-        const {leagueInfo,standingsTable} = await fetchChampionshipStandings(country,division, 2024)
+        const { leagueInfo, standingsTable } = await fetchChampionshipStandings(country, division, 2024);
         this.table = standingsTable;
         this.leagueInfo = leagueInfo;
       } catch (err: any) {
@@ -189,13 +188,16 @@ export default {
 
       this.calculating = true;
 
-      if (this.fixtures.length > 300) {
+      const undefinedResults = this.fixtures.filter((fixture) => fixture.result === undefined);
+
+      if (undefinedResults.length > 300) {
         this.numOutcomes = 10000;
-      } else if (this.fixtures.length > 200) {
+      } else if (undefinedResults.length > 200) {
         this.numOutcomes = 25000;
       } else {
         this.numOutcomes = 50000;
       }
+
       let updatedFixtures: IFixtures[] = [];
       if (this.fixtures.length > 0) {
         updatedFixtures = this.fixtures.filter((fixture: IFixtures) => !fixture.result);
