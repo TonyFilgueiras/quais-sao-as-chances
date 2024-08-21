@@ -65,6 +65,8 @@ export default {
     function clearFixturesFilters() {
       fixtures.value.forEach((fixture) => {
         if (fixture !== null && fixture !== undefined && fixture.status !== "FT" && !fixture.status.includes("H")) {
+          fixture.home_score = null
+          fixture.away_score = null
           delete fixture.result;
         }
       });
