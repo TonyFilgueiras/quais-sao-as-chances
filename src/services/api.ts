@@ -105,34 +105,62 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
     // Helper function to format the date and adjust time zone by -3 hours
     const formatDate = (dateString: string): string => {
       const date = new Date(dateString);
-
+    
       let hours = date.getUTCHours() - 3;
       let day = date.getUTCDate();
-
+      let month = date.getUTCMonth() + 1; // Months are 0-based in JavaScript Date objects
+      let year = date.getUTCFullYear();
+    
       // Adjust if hours are negative (i.e., wrap to the previous day)
       if (hours < 0) {
         hours += 24;
         day -= 1;
+        
+        // If day goes to 0, roll back to the previous month
+        if (day === 0) {
+          month -= 1;
+    
+          // If month goes to 0, roll back to December of the previous year
+          if (month === 0) {
+            month = 12;
+            year -= 1;
+          }
+    
+          // Set day to the last day of the previous month
+          const daysInMonth = new Date(year, month, 0).getDate();
+          day = daysInMonth;
+        }
       }
-
+    
       const adjustedDay = String(day).padStart(2, "0");
-      const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // getUTCMonth() is zero-based
+      const adjustedMonth = String(month).padStart(2, "0");
       const adjustedHours = String(hours).padStart(2, "0");
       const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-
+    
       // Extract the last two digits of the year
-      const year = String(date.getUTCFullYear()).slice(-2);
-
-      return `${adjustedDay}/${month}/${year} ${adjustedHours}:${minutes}`;
+      const shortYear = String(year).slice(-2);
+    
+      return `${adjustedDay}/${adjustedMonth}/${shortYear} ${adjustedHours}:${minutes}`;
     };
+    
 
     // Transform API data into IFixtures format
     const fixturesTable: IFixtures[] = data
-      // .filter((fixture: Fixture) => fixture.fixture.status.short !== "FT")
       .map((fixture: Fixture) => {
-        // Extract the round number from the round string
         const roundMatch = fixture.league.round.match(/\d+$/);
         const roundNumber = roundMatch ? parseInt(roundMatch[0]) : null;
+
+        // Determine the result type with correct type assertion
+        let result: "home" | "away" | "draw" | undefined;
+        if (fixture.goals.home > fixture.goals.away) {
+          result = "home";
+        } else if (fixture.goals.away > fixture.goals.home) {
+          result = "away";
+        } else if (fixture.goals.home === fixture.goals.away && fixture.goals.away != null) {
+          result = "draw";
+        } else {
+          result = undefined;
+        }
 
         return {
           id: fixture.fixture.id,
@@ -140,25 +168,45 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
           round: roundNumber!, // Use the extracted round number
           home_logo: fixture.teams.home.logo,
           home_team: fixture.teams.home.name,
-          home_score: fixture.goals.home, // If you want to include the actual score
+          home_score: fixture.goals.home, // Include the actual score
           away_logo: fixture.teams.away.logo,
           away_team: fixture.teams.away.name,
-          away_score: fixture.goals.away, // If you want to include the actual score
+          away_score: fixture.goals.away, // Include the actual score
           homeTeamWinning: false,
           homeTeamLosing: false,
           awayTeamWinning: false,
           awayTeamLosing: false,
           drawing: false,
           status: fixture.fixture.status.short,
-          result:
-            fixture.goals.home > fixture.goals.away
-              ? "home"
-              : fixture.goals.away > fixture.goals.home
-              ? "away"
-              : fixture.goals.away == fixture.goals.home && fixture.goals.away != null
-              ? "draw"
-              : undefined,
+          result, // Correctly typed result
         };
+      })
+      .sort((a, b) => {
+        // Sort by round first
+        if (a.round !== b.round) {
+          return a.round - b.round;
+        }
+
+        // Parse the date strings into Date objects for accurate comparison
+        const parseDateString = (dateString: string): Date => {
+          const [day, month, yearAndTime] = dateString.split("/");
+          const [year, time] = yearAndTime.split(" ");
+          const [hours, minutes] = time.split(":");
+
+          return new Date(
+            parseInt(`20${year}`, 10), // Year
+            parseInt(month, 10) - 1, // Month (0-based index)
+            parseInt(day, 10), // Day
+            parseInt(hours, 10), // Hours
+            parseInt(minutes, 10) // Minutes
+          );
+        };
+
+        const dateA = parseDateString(a.date);
+        const dateB = parseDateString(b.date);
+
+        // Sort by date within the same round
+        return dateA.getTime() - dateB.getTime();
       });
 
     return fixturesTable;

@@ -29,8 +29,6 @@ export function updateTable(table: ITable[], fixtures: IFixtures[]) {
       const awayTeam = fixture.away_team;
       updateStandings(standings, homeTeam, fixture.home_score!, fixture.away_score!);
       updateStandings(standings, awayTeam, fixture.away_score!, fixture.home_score!);
-      console.log(`casa = ${fixture.home_team} gols = ${fixture.home_score}`)
-      console.log(`away = ${fixture.away_team} gols = ${fixture.away_score}`)
     } // Sort standings by points and then by wins
     sortStandings(standings);
 
