@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <div class="fixturesContainer" v-if="fixtures.length > 0">
     <nav class="fixturesNavigation">
@@ -29,12 +30,12 @@
             { homeWon: fixture.result === 'home' },
             { homeLosing: fixture.homeTeamLosing },
             { homeLost: fixture.result === 'away' },
-            { drawing: fixture.drawing},
-            { drew: fixture.result === 'draw' && !fixture.drawing},
+            { drawing: fixture.drawing },
+            { drew: fixture.result === 'draw' && !fixture.drawing },
           ]"
           @mouseover="hoverTeam(fixture, true, false)"
           @mouseout="resetStyles(fixture)"
-          @click="selectWinner(fixture, 'home')"
+          @click="setScore(fixture, 1, 0)"
         >
           <p :class="['status', { statusHiddenHome: !fixture.result }]">
             {{ fixture.result === "home" ? "V" : fixture.result === "draw" ? "E" : fixture.result === "away" ? "D" : "" }}
@@ -42,7 +43,16 @@
           <div>
             <h2>{{ fixture.home_team }}</h2>
             <img class="team_logo" :src="fixture.home_logo" :alt="fixture.home_team" />
-            <h2 class="score" v-if="fixture.home_score !== null">{{ fixture.home_score }}</h2>
+            <h2 class="score" v-if="fixture.home_score !== null && fixture.status == 'FT'">{{ fixture.home_score }}</h2>
+            <input
+              type="text"
+              v-if="fixture.status !== 'FT'"
+              class="score"
+              :value="fixture.home_score"
+              @mouseover.stop
+              @click.stop
+              @change="setScore(fixture, parseInt((<HTMLInputElement>$event.target).value), fixture.away_score ? fixture.away_score : 0)"
+            />
           </div>
           <!-- <input type="text" class="score"/> -->
         </div>
@@ -53,12 +63,12 @@
             { homeWon: fixture.result === 'home' },
             { homeLosing: fixture.homeTeamLosing },
             { homeLost: fixture.result === 'away' },
-            { drawing: fixture.drawing},
-            { drew: fixture.result === 'draw' && !fixture.drawing},
+            { drawing: fixture.drawing },
+            { drew: fixture.result === 'draw' && !fixture.drawing },
           ]"
           @mouseover="hoverTeam(fixture, false, true)"
           @mouseout="resetStyles(fixture)"
-          @click="selectWinner(fixture, 'draw')"
+          @click="setScore(fixture, 0, 0)"
         >
           X
         </h2>
@@ -69,16 +79,24 @@
             { homeLost: fixture.result === 'away' },
             { homeWinning: fixture.awayTeamLosing },
             { homeWon: fixture.result === 'home' },
-            { drawing: fixture.drawing},
-            { drew: fixture.result === 'draw' && !fixture.drawing},
+            { drawing: fixture.drawing },
+            { drew: fixture.result === 'draw' && !fixture.drawing },
           ]"
           @mouseover="hoverTeam(fixture, false, false)"
           @mouseout="resetStyles(fixture)"
-          @click="selectWinner(fixture, 'away')"
+          @click="setScore(fixture, 0, 1)"
         >
-          <!-- <input type="text" class="score"/> -->
           <div>
-            <h2 class="score" v-if="fixture.home_score !== null">{{ fixture.away_score }}</h2>
+            <input
+              type="text"
+              v-if="fixture.status !== 'FT'"
+              class="score"
+              :value="fixture.away_score"
+              @mouseover.stop
+              @click.stop
+              @change="setScore(fixture, fixture.home_score ? fixture.home_score : 0, parseInt((<HTMLInputElement>$event.target).value))"
+            />
+            <h2 class="score" v-if="fixture.home_score !== null && fixture.status == 'FT'">{{ fixture.away_score }}</h2>
             <img class="team_logo" :src="fixture.away_logo" :alt="fixture.away_team" />
             <h2>{{ fixture.away_team }}</h2>
           </div>
@@ -139,29 +157,30 @@ export default defineComponent({
         } while (this.filteredFixtures.length === 0);
       }
     },
-    selectWinner(fixture: IFixtures, winner: "draw" | "home" | "away") {
+    setScore(fixture: IFixtures, home_score: number | string, away_score: number | string) {
       if (fixture.status !== "FT") {
-        fixture.result = winner;
-        switch (winner) {
-          case "draw":
-            fixture.home_score = 0;
-            fixture.away_score = 0;
-            break;
-          case "home":
-            fixture.home_score = 1;
-            fixture.away_score = 0;
-            break;
-          case "away":
-            fixture.home_score = 0;
-            fixture.away_score = 1;
-            break;
+        // Ensure home_score and away_score are numbers
+        home_score = typeof home_score === "number" && !isNaN(home_score) ? home_score : 0;
+        away_score = typeof away_score === "number" && !isNaN(away_score) ? away_score : 0;
 
-          default:
-            break;
+        const winner = home_score > away_score ? "home" : away_score > home_score ? "away" : "draw";
+        fixture.result = winner;
+
+        if (home_score > 9) {
+          home_score = 9;
         }
+        if (away_score > 9) {
+          away_score = 9;
+        }
+
+        fixture.home_score = home_score;
+        fixture.away_score = away_score;
+
         this.$emit("winnerSelected", fixture);
+        fixture.result = winner;
       }
     },
+
     hoverTeam(fixture: IFixtures, home: boolean, draw: boolean) {
       if (fixture.status !== "FT") {
         fixture.homeTeamWinning = home && !draw;
@@ -311,7 +330,7 @@ export default defineComponent({
 .score {
   text-align: center;
   /* margin: 20px 0; */
-  /* width: 30px; */
+  max-width: 30px;
   color: gray;
   font-size: 2rem;
   font-weight: bold;
