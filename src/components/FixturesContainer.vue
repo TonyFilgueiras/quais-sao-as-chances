@@ -29,7 +29,8 @@
             { homeWon: fixture.result === 'home' },
             { homeLosing: fixture.homeTeamLosing },
             { homeLost: fixture.result === 'away' },
-            { drawing: fixture.drawing || fixture.result === 'draw' },
+            { drawing: fixture.drawing},
+            { drew: fixture.result === 'draw' && !fixture.drawing},
           ]"
           @mouseover="hoverTeam(fixture, true, false)"
           @mouseout="resetStyles(fixture)"
@@ -52,8 +53,8 @@
             { homeWon: fixture.result === 'home' },
             { homeLosing: fixture.homeTeamLosing },
             { homeLost: fixture.result === 'away' },
-            { drew: fixture.result === 'draw' },
-            { drawing: fixture.drawing || fixture.result === 'draw' },
+            { drawing: fixture.drawing},
+            { drew: fixture.result === 'draw' && !fixture.drawing},
           ]"
           @mouseover="hoverTeam(fixture, false, true)"
           @mouseout="resetStyles(fixture)"
@@ -65,10 +66,11 @@
           :class="[
             'awayTeam',
             { homeLosing: fixture.awayTeamWinning },
-            { winner: fixture.result === 'away' },
+            { homeLost: fixture.result === 'away' },
             { homeWinning: fixture.awayTeamLosing },
-            { loser: fixture.result === 'home' },
-            { drawing: fixture.drawing || fixture.result === 'draw' },
+            { homeWon: fixture.result === 'home' },
+            { drawing: fixture.drawing},
+            { drew: fixture.result === 'draw' && !fixture.drawing},
           ]"
           @mouseover="hoverTeam(fixture, false, false)"
           @mouseout="resetStyles(fixture)"
@@ -279,16 +281,6 @@ export default defineComponent({
   transition: all.5s, --myColor1 0.5s, --myColor2 0.5s;
   background: linear-gradient(120deg, var(--myColor1) 50%, var(--myColor2) 50%);
 }
-.winner {
-  cursor: pointer;
-  --myColor1: #008f0088;
-  --myColor2: #008f0088;
-}
-.loser {
-  cursor: pointer;
-  --myColor1: #8a000088;
-  --myColor2: #8a000088;
-}
 .homeWon {
   --myColor1: #008f0088;
   --myColor2: #8a000088;
@@ -303,9 +295,8 @@ export default defineComponent({
   --myColor2: #eeff0088;
 }
 .drew {
-  cursor: pointer;
-  --myColor1: #eeff0088;
-  --myColor2: #eeff0088;
+  --myColor1: #bbc90088;
+  --myColor2: #bbc90088;
 }
 .homeWinning {
   cursor: pointer;
