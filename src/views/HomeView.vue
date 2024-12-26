@@ -185,8 +185,8 @@ export default {
 
       const preLibertadoresSpot = winnersStore.brazil.serieA.preLibertadoresSpot;
       const sulAmericanaSpot = winnersStore.brazil.serieA.sulAmericanaSpot;
-      const championsSpot = winnersStore.england.premierLeague.championsSpot;
-      const europaSpot = winnersStore.england.premierLeague.europaSpot;
+      const championsSpot = winnersStore.england.premier.championsSpot;
+      const europaSpot = winnersStore.england.premier.europaSpot;
 
       this.calculating = true;
 

@@ -201,7 +201,7 @@ function updatePositions(
         break;
       case "england":
         switch (divisionChosen) {
-          case "premier-league":
+          case "premier":
             if (team.position === 1) {
               positionCounts.first[team.team_name] = (positionCounts.first[team.team_name] || 0) + 1;
               positionCounts.championsLeague[team.team_name] = (positionCounts.championsLeague[team.team_name] || 0) + 1;

@@ -7,7 +7,7 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
     const { position, team_name } = team;
     const { brazil, england } = winnersStore;
     const { serieA, serieB } = brazil;
-    const {premierLeague} = england
+    const {premier} = england
     switch (league.countryChosen) {
       case "brazil":
         switch (league.divisionChosen) {
@@ -58,20 +58,20 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
         break;
       case "england":
         switch (league.divisionChosen) {
-          case "premier-league":
+          case "premier":
             if (
-              (position > 1 && position <= premierLeague.championsSpot)
+              (position > 1 && position <= premier.championsSpot)
             ) {
               return "libertadores";
             }
             else if (
-              (position > premierLeague.championsSpot &&
-              position <= premierLeague.europaSpot) ||
+              (position > premier.championsSpot &&
+              position <= premier.europaSpot) ||
               team_name === england.FACupWinner
             ) {
               return "sulAmericana";
             } else if (
-              position > table.length - premierLeague.relegation && team_name !== england.FACupWinner
+              position > table.length - premier.relegation && team_name !== england.FACupWinner
             ) {
               return "relegation"
             }

@@ -20,6 +20,9 @@ const availableChampionships: Countries = {
     serieA: 71,
     serieB: 72,
   },
+  england: {
+    premier: 39,
+  }
   // You can add more countries and divisions as needed
 };
 
@@ -65,6 +68,8 @@ export const fetchChampionshipStandings = async (
       flag: data.league.flag,
       year: data.league.season,
     };
+
+    console.log(data)
 
     const standingsTable: ITable[] = data.league.standings[0].map((teamStanding: TeamStanding) => ({
       position: teamStanding.rank,

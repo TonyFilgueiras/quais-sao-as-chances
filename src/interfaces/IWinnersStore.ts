@@ -18,7 +18,7 @@ export interface IWinnersStore {
   },
   england: {
     FACupWinner: string
-    premierLeague: {
+    premier: {
       FACupWinnerTableSpot: number
       championsSpot: number
       europaSpot: number
