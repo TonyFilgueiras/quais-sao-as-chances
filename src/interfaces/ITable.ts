@@ -9,4 +9,4 @@ export default interface ITable {
     losses: number
     goal_difference: number
     points: number
-}
+} // working?
