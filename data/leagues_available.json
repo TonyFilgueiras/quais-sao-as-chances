@@ -10,5 +10,11 @@
     "country": "brazil",
     "division": "serieB",
     "img": "/quais-sao-as-chances/img/brasil.png"
+  },
+  {
+    "name": "Premier League",
+    "country": "england",
+    "division": "premier",
+    "img": "/quais-sao-as-chances/img/england.png"
   }
 ]
