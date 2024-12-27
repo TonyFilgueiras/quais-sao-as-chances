@@ -129,7 +129,7 @@ export default {
     async fetchLeagueTable(country: Countries, division: string) {
       try {
         // const resp = await api.getLeagueTable(country, division);
-        const { leagueInfo, standingsTable } = await fetchChampionshipStandings(country, division, 2024);
+        const { leagueInfo, standingsTable } = await fetchChampionshipStandings(country, division);
         this.table = standingsTable;
         this.leagueInfo = leagueInfo;
       } catch (err: any) {
@@ -138,7 +138,7 @@ export default {
     },
     async fetchLeagueFixtures(country: Countries, division: string) {
       try {
-        const resp = await fetchChampionshipFixtures(country, division, 2024);
+        const resp = await fetchChampionshipFixtures(country, division);
         this.fixtures = resp;
       } catch (err: any) {
         this.handleErrors(err);

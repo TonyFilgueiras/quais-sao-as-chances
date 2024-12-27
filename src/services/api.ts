@@ -22,20 +22,29 @@ const availableChampionships: Countries = {
   },
   england: {
     premier: 39,
-  }
-  // You can add more countries and divisions as needed
+  },
 };
 
+
+
 // Fetch all championships
-export const fetchChampionships = async (): Promise<Championships[]> => {
+export const fetchChampionships = async (
+  country: keyof Countries,
+  division: keyof (typeof availableChampionships)["brazil"]
+): Promise<Championships> => {
   try {
-    const response: AxiosResponse<Championships[]> = await axios.get(`${API_URL}/leagues`, {
+    const championshipId = availableChampionships[country][division];
+    const response: AxiosResponse<Response> = await axios.get(`${API_URL}/leagues`, {
+      params: {
+        id: championshipId,
+        current: true,
+      },
       headers: {
-        Authorization: `Bearer ${API_TOKEN}`,
-        "Content-Type": "application/json",
+        "x-rapidapi-key": API_TOKEN,
+        "x-rapidapi-host": "v3.football.api-sports.io",
       },
     });
-    return response.data;
+    return response.data.response[0];
   } catch (error) {
     console.error("Error fetching championships:", error);
     throw error;
@@ -44,15 +53,18 @@ export const fetchChampionships = async (): Promise<Championships[]> => {
 
 export const fetchChampionshipStandings = async (
   country: keyof Countries,
-  division: keyof (typeof availableChampionships)["brazil"],
-  season: number
+  division: keyof (typeof availableChampionships)["brazil"]
 ): Promise<{ leagueInfo: ILeagueInfo; standingsTable: ITable[] }> => {
   try {
     const championshipId = availableChampionships[country][division];
+
+    const LeagueData = await fetchChampionships(country, division);
+    const currentSeason = LeagueData.seasons[0].year;
+
     const response = await axios.get<Response>(`${API_URL}/standings`, {
       params: {
         league: championshipId,
-        season: season,
+        season: currentSeason,
       },
       headers: {
         "x-rapidapi-key": API_TOKEN,
@@ -69,7 +81,7 @@ export const fetchChampionshipStandings = async (
       year: data.league.season,
     };
 
-    console.log(data)
+    console.log(data);
 
     const standingsTable: ITable[] = data.league.standings[0].map((teamStanding: TeamStanding) => ({
       position: teamStanding.rank,
@@ -91,13 +103,17 @@ export const fetchChampionshipStandings = async (
   }
 };
 
-export const fetchChampionshipFixtures = async (country: keyof Countries, division: keyof Division, season: number): Promise<IFixtures[]> => {
+export const fetchChampionshipFixtures = async (country: keyof Countries, division: keyof Division): Promise<IFixtures[]> => {
   try {
     const championshipId = availableChampionships[country][division];
+
+    const LeagueData = await fetchChampionships(country, division);
+    const currentSeason = LeagueData.seasons[0].year;
+
     const response = await axios.get<Response>(`${API_URL}/fixtures`, {
       params: {
         league: championshipId,
-        season: season,
+        season: currentSeason,
       },
       headers: {
         "x-rapidapi-key": API_TOKEN,
@@ -110,44 +126,43 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
     // Helper function to format the date and adjust time zone by -3 hours
     const formatDate = (dateString: string): string => {
       const date = new Date(dateString);
-    
+
       let hours = date.getUTCHours() - 3;
       let day = date.getUTCDate();
       let month = date.getUTCMonth() + 1; // Months are 0-based in JavaScript Date objects
       let year = date.getUTCFullYear();
-    
+
       // Adjust if hours are negative (i.e., wrap to the previous day)
       if (hours < 0) {
         hours += 24;
         day -= 1;
-        
+
         // If day goes to 0, roll back to the previous month
         if (day === 0) {
           month -= 1;
-    
+
           // If month goes to 0, roll back to December of the previous year
           if (month === 0) {
             month = 12;
             year -= 1;
           }
-    
+
           // Set day to the last day of the previous month
           const daysInMonth = new Date(year, month, 0).getDate();
           day = daysInMonth;
         }
       }
-    
+
       const adjustedDay = String(day).padStart(2, "0");
       const adjustedMonth = String(month).padStart(2, "0");
       const adjustedHours = String(hours).padStart(2, "0");
       const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-    
+
       // Extract the last two digits of the year
       const shortYear = String(year).slice(-2);
-    
+
       return `${adjustedDay}/${adjustedMonth}/${shortYear} ${adjustedHours}:${minutes}`;
     };
-    
 
     // Transform API data into IFixtures format
     const fixturesTable: IFixtures[] = data
@@ -220,3 +235,7 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
     throw error;
   }
 };
+
+// export const getCupWinner = async (country: keyof Countries, division: keyof Division): Promise<any> => {
+  
+// }

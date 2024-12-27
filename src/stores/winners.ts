@@ -4,8 +4,8 @@ export const useWinnersStore = defineStore('winners', {
   state() {
     return {
       brazil: {
-        libertadoresWinner: '',
-        copaDoBrasilWinner: '',
+        libertadoresWinner: 'Botafogo',
+        copaDoBrasilWinner: 'Flamengo',
         serieA: {
           libertadoresWinnerTableSpot: 20,
           copaDoBrasilWinnerTableSpot: 20,
