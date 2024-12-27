@@ -4,8 +4,8 @@ export const useWinnersStore = defineStore('winners', {
   state() {
     return {
       brazil: {
-        libertadoresWinner: 'Botafogo',
-        copaDoBrasilWinner: 'Flamengo',
+        libertadoresWinner: 0,
+        copaDoBrasilWinner: 0,
         serieA: {
           libertadoresWinnerTableSpot: 20,
           copaDoBrasilWinnerTableSpot: 20,
@@ -20,7 +20,7 @@ export const useWinnersStore = defineStore('winners', {
         }
       },
       england: {
-        FACupWinner: "",
+        FACupWinner: 0,
         premier: {
           FACupWinnerTableSpot: 20,
           championsSpot: 4,
@@ -61,9 +61,16 @@ export const useWinnersStore = defineStore('winners', {
         this.brazil.serieA.sulAmericanaSpot += 1
       }
     },
-    setWinners(libertadores: string, copaDoBrasil: string) {
+    setWinners(libertadores: number, copaDoBrasil: number, country: string) {
       this.brazil.libertadoresWinner = libertadores
-      this.brazil.copaDoBrasilWinner = copaDoBrasil
+
+      if (country == "brazil") {
+        this.brazil.copaDoBrasilWinner = copaDoBrasil
+        
+      } else if (country == "england") {
+        this.england.FACupWinner = copaDoBrasil
+        
+      }
     },
     championsSpots() {
       this.england.premier.championsSpot = 4

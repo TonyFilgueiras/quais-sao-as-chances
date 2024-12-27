@@ -19,13 +19,17 @@ const availableChampionships: Countries = {
   brazil: {
     serieA: 71,
     serieB: 72,
+    cup: 73,
+    libertadores: 13,
+    sulAmericana: 11,
   },
   england: {
     premier: 39,
+    cup: 45,
+    libertadores: 2,
+    sulAmericana: 3,
   },
 };
-
-
 
 // Fetch all championships
 export const fetchChampionships = async (
@@ -53,18 +57,15 @@ export const fetchChampionships = async (
 
 export const fetchChampionshipStandings = async (
   country: keyof Countries,
-  division: keyof (typeof availableChampionships)["brazil"]
+  division: keyof (typeof availableChampionships)["brazil"],
+  season: number
 ): Promise<{ leagueInfo: ILeagueInfo; standingsTable: ITable[] }> => {
   try {
     const championshipId = availableChampionships[country][division];
-
-    const LeagueData = await fetchChampionships(country, division);
-    const currentSeason = LeagueData.seasons[0].year;
-
     const response = await axios.get<Response>(`${API_URL}/standings`, {
       params: {
         league: championshipId,
-        season: currentSeason,
+        season: season,
       },
       headers: {
         "x-rapidapi-key": API_TOKEN,
@@ -81,9 +82,8 @@ export const fetchChampionshipStandings = async (
       year: data.league.season,
     };
 
-    console.log(data);
-
     const standingsTable: ITable[] = data.league.standings[0].map((teamStanding: TeamStanding) => ({
+      id: teamStanding.team.id,
       position: teamStanding.rank,
       logo: teamStanding.team.logo,
       team_name: teamStanding.team.name,
@@ -103,17 +103,13 @@ export const fetchChampionshipStandings = async (
   }
 };
 
-export const fetchChampionshipFixtures = async (country: keyof Countries, division: keyof Division): Promise<IFixtures[]> => {
+export const fetchChampionshipFixtures = async (country: keyof Countries, division: keyof Division, season: number): Promise<IFixtures[]> => {
   try {
     const championshipId = availableChampionships[country][division];
-
-    const LeagueData = await fetchChampionships(country, division);
-    const currentSeason = LeagueData.seasons[0].year;
-
     const response = await axios.get<Response>(`${API_URL}/fixtures`, {
       params: {
         league: championshipId,
-        season: currentSeason,
+        season: season,
       },
       headers: {
         "x-rapidapi-key": API_TOKEN,
@@ -236,6 +232,124 @@ export const fetchChampionshipFixtures = async (country: keyof Countries, divisi
   }
 };
 
-// export const getCupWinner = async (country: keyof Countries, division: keyof Division): Promise<any> => {
-  
-// }
+export const getCupWinner = async (country: keyof Countries, season: number): Promise<number> => {
+  try {
+    const championshipId = availableChampionships[country]["cup"];
+    const response = await axios.get<Response>(`${API_URL}/fixtures`, {
+      params: {
+        league: championshipId,
+        season: season,
+        round: "final",
+      },
+      headers: {
+        "x-rapidapi-key": API_TOKEN,
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+    });
+
+    const final: Fixture[] = response.data.response;
+    const winnerTeamId = getWinnerTeamId(final);
+
+    return winnerTeamId || 0;
+  } catch (error) {
+    console.error(`Error fetching championship fixtures for ${country}:`, error);
+    throw error;
+  }
+};
+export const getLibertadoresWinner = async (country: keyof Countries, season: number): Promise<number> => {
+  try {
+    const championshipId = availableChampionships[country]["libertadores"];
+    const response = await axios.get<Response>(`${API_URL}/fixtures`, {
+      params: {
+        league: championshipId,
+        season: season,
+        round: "final",
+      },
+      headers: {
+        "x-rapidapi-key": API_TOKEN,
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+    });
+
+    const final: Fixture[] = response.data.response;
+    const winnerTeamId = getWinnerTeamId(final);
+
+    return winnerTeamId || 0;
+  } catch (error) {
+    console.error(`Error fetching championship fixtures for ${country}:`, error);
+    throw error;
+  }
+};
+
+export const getSulAmericanaWinner = async (country: keyof Countries, season: number): Promise<number> => {
+  try {
+    const championshipId = availableChampionships[country]["sulAmericana"];
+    const response = await axios.get<Response>(`${API_URL}/fixtures`, {
+      params: {
+        league: championshipId,
+        season: season,
+        round: "final",
+      },
+      headers: {
+        "x-rapidapi-key": API_TOKEN,
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+    });
+
+    const final: Fixture[] = response.data.response;
+    const winnerTeamId = getWinnerTeamId(final);
+
+    return winnerTeamId || 0;
+  } catch (error) {
+    console.error(`Error fetching championship fixtures for ${country}:`, error);
+    throw error;
+  }
+};
+
+const determineWinner = (game: Fixture): number | undefined => {
+  if (game.score.penalty.home !== null) {
+    return game.score.penalty.home > game.score.penalty.away ? game.teams.home.id : game.teams.away.id;
+  }
+
+  if (game.score.extratime.home !== null) {
+    return game.score.extratime.home > game.score.extratime.away ? game.teams.home.id : game.teams.away.id;
+  }
+
+  if (game.score.fulltime.home !== null) {
+    const team1Score = game.score.fulltime.home;
+    const team2Score = game.score.fulltime.away;
+
+    return team1Score > team2Score ? game.teams.home.id : game.teams.away.id;
+  }
+
+  return undefined;
+};
+
+const determineAggregateWinner = (game1: Fixture, game2: Fixture): number | undefined => {
+  if (game2.score.fulltime.home !== null) {
+    const team1Aggregate = game2.score.fulltime.home + game1.score.fulltime.away;
+    const team2Aggregate = game2.score.fulltime.away + game1.score.fulltime.home;
+
+    return team1Aggregate > team2Aggregate ? game2.teams.home.id : game2.teams.away.id;
+  }
+
+  return undefined;
+};
+
+const getWinnerTeamId = (final: Fixture[]): number | undefined => {
+  if (!final || final.length === 0) return undefined;
+
+  const game1 = final[0];
+  const game2 = final[1];
+
+  if (game2) {
+    const winnerTeamId = determineWinner(game2) ?? determineAggregateWinner(game1, game2);
+    if (winnerTeamId) return winnerTeamId;
+  }
+
+  if (game1) {
+    return determineWinner(game1);
+  }
+
+  return undefined;
+};

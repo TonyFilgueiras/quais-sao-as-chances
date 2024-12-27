@@ -35,7 +35,7 @@ import LoadingContainer from "@/components/LoadingContainer.vue";
 import type IFixtures from "@/interfaces/IFixtures";
 import type IPositionChances from "@/interfaces/IPositionChances";
 import type ITable from "@/interfaces/ITable";
-import { fetchChampionshipFixtures, fetchChampionshipStandings } from "@/services/api";
+import { fetchChampionshipFixtures, fetchChampionshipStandings, getCupWinner, fetchChampionships, getLibertadoresWinner } from "@/services/api";
 import { updateTable } from "@/services/calculatePossibilities";
 import { useWinnersStore } from "@/stores/winners";
 import { type Countries, useLeagueChosenStore } from "@/stores/leagueChosen";
@@ -65,8 +65,8 @@ export default {
     function clearFixturesFilters() {
       fixtures.value.forEach((fixture) => {
         if (fixture !== null && fixture !== undefined && fixture.status !== "FT" && !fixture.status.includes("H")) {
-          fixture.home_score = null
-          fixture.away_score = null
+          fixture.home_score = null;
+          fixture.away_score = null;
           delete fixture.result;
         }
       });
@@ -91,6 +91,7 @@ export default {
       championships: [],
       loading: true,
       calculating: true,
+      season: 0,
       progressBar: 0,
       error: "",
       chancesTable: {} as IPositionChances,
@@ -121,24 +122,45 @@ export default {
     async fetchData() {
       this.loading = true;
       this.error = "";
-      await this.fetchLeagueTable(this.countryChosen, this.divisionChosen);
+      await this.getCurrentSeason(this.countryChosen, this.divisionChosen);
+      await this.assingCupWinners(this.countryChosen, this.season);
+      await this.fetchLeagueTable(this.countryChosen, this.divisionChosen, this.season);
       this.displayTable = this.table;
-      await this.fetchLeagueFixtures(this.countryChosen, this.divisionChosen);
+      await this.fetchLeagueFixtures(this.countryChosen, this.divisionChosen, this.season);
       this.loading = false;
     },
-    async fetchLeagueTable(country: Countries, division: string) {
+    async getCurrentSeason(country: Countries, division: string) {
+      try {
+        const response = await fetchChampionships(country, division);
+        this.season = response.seasons[0].year;
+      } catch (err: any) {
+        this.handleErrors(err);
+      }
+    },
+    async assingCupWinners(country: Countries, season: number) {
+      try {
+        const winnersStore = useWinnersStore()
+        const cupWinner = await getCupWinner(country, season);
+        const libertadoresWinner = await getLibertadoresWinner(country, season);
+        winnersStore.setWinners(libertadoresWinner, cupWinner,country)
+
+      } catch (err: any) {
+        this.handleErrors(err);
+      }
+    },
+    async fetchLeagueTable(country: Countries, division: string, season: number) {
       try {
         // const resp = await api.getLeagueTable(country, division);
-        const { leagueInfo, standingsTable } = await fetchChampionshipStandings(country, division);
+        const { leagueInfo, standingsTable } = await fetchChampionshipStandings(country, division,season);
         this.table = standingsTable;
         this.leagueInfo = leagueInfo;
       } catch (err: any) {
         this.handleErrors(err);
       }
     },
-    async fetchLeagueFixtures(country: Countries, division: string) {
+    async fetchLeagueFixtures(country: Countries, division: string,season:number) {
       try {
-        const resp = await fetchChampionshipFixtures(country, division);
+        const resp = await fetchChampionshipFixtures(country, division, season);
         this.fixtures = resp;
       } catch (err: any) {
         this.handleErrors(err);
@@ -147,9 +169,9 @@ export default {
     updateWinnersTablePositions() {
       const winnersStore = useWinnersStore();
       try {
-        const libertadoresSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.libertadoresWinner);
-        const copaDoBrasilSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.brazil.copaDoBrasilWinner);
-        const FACupSpot = this.displayTable.find((team: ITable) => team.team_name === winnersStore.england.FACupWinner);
+        const libertadoresSpot = this.displayTable.find((team: ITable) => team.id === winnersStore.brazil.libertadoresWinner);
+        const copaDoBrasilSpot = this.displayTable.find((team: ITable) => team.id === winnersStore.brazil.copaDoBrasilWinner);
+        const FACupSpot = this.displayTable.find((team: ITable) => team.id === winnersStore.england.FACupWinner);
 
         let libertadoresPosition = 20;
         let copaDoBrasilPosition = 20;

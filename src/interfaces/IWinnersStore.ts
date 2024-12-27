@@ -1,7 +1,7 @@
 export interface IWinnersStore {
   brazil:{
-    libertadoresWinner: string;
-    copaDoBrasilWinner: string;
+    libertadoresWinner: number;
+    copaDoBrasilWinner: number;
     serieA: {
       libertadoresWinnerTableSpot: number;
       copaDoBrasilWinnerTableSpot: number;
@@ -17,7 +17,7 @@ export interface IWinnersStore {
   
   },
   england: {
-    FACupWinner: string
+    FACupWinner: number
     premier: {
       FACupWinnerTableSpot: number
       championsSpot: number

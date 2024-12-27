@@ -1,4 +1,5 @@
 export default interface ITable {
+    id: number
     position: number
     logo: string
     team_name: string
