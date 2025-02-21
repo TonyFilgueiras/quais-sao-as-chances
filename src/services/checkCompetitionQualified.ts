@@ -4,7 +4,7 @@ import type { IWinnersStore } from "@/interfaces/IWinnersStore";
 
 export default function createCompetitionChecker(league: ILeagueChosenStore, winnersStore: IWinnersStore, table: ITable[]) {
   return function (team: ITable) {
-    const { position, team_name } = team;
+    const { position, id } = team;
     const { brazil, england } = winnersStore;
     const { serieA, serieB } = brazil;
     const { premier } = england;
@@ -14,39 +14,39 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
           case "serieA":
             if (
               (position > 1 && position <= serieA.libertadoresSpot) ||
-              (team_name === brazil.libertadoresWinner && position !== 1) ||
-              (team_name === brazil.copaDoBrasilWinner && position !== 1)
+              (id === brazil.libertadoresWinner && position !== 1) ||
+              (id === brazil.copaDoBrasilWinner && position !== 1)
             ) {
               return "libertadores";
             } else if (
               position > serieA.libertadoresSpot &&
               position <= serieA.preLibertadoresSpot &&
-              team_name !== brazil.libertadoresWinner &&
-              team_name !== brazil.copaDoBrasilWinner
+              id !== brazil.libertadoresWinner &&
+              id !== brazil.copaDoBrasilWinner
             ) {
               return "preLibertadores";
             } else if (
               position > serieA.preLibertadoresSpot &&
               position <= serieA.sulAmericanaSpot &&
-              team_name !== brazil.libertadoresWinner &&
-              team_name !== brazil.copaDoBrasilWinner
+              id !== brazil.libertadoresWinner &&
+              id !== brazil.copaDoBrasilWinner
             ) {
               return "sulAmericana";
             }
 
-            if (position > table.length - serieA.relegation && team_name !== brazil.libertadoresWinner && team_name !== brazil.copaDoBrasilWinner) {
+            if (position > table.length - serieA.relegation && id !== brazil.libertadoresWinner && id !== brazil.copaDoBrasilWinner) {
               return "relegation";
             }
             break;
           case "serieB":
             if (
               (position > 1 && position <= serieB.promotion) ||
-              team_name === brazil.libertadoresWinner ||
-              team_name === brazil.copaDoBrasilWinner
+              id === brazil.libertadoresWinner ||
+              id === brazil.copaDoBrasilWinner
             ) {
               return "promotion";
             }
-            if (position > table.length - serieB.relegation && team_name !== brazil.libertadoresWinner && team_name !== brazil.copaDoBrasilWinner) {
+            if (position > table.length - serieB.relegation && id !== brazil.libertadoresWinner && id !== brazil.copaDoBrasilWinner) {
               return "relegation";
             }
             break;
@@ -59,9 +59,9 @@ export default function createCompetitionChecker(league: ILeagueChosenStore, win
           case "premier":
             if (position > 1 && position <= premier.championsSpot) {
               return "libertadores";
-            } else if ((position > premier.championsSpot && position <= premier.europaSpot) || team_name === england.FACupWinner) {
+            } else if ((position > premier.championsSpot && position <= premier.europaSpot) || id === england.FACupWinner) {
               return "sulAmericana";
-            } else if (position > table.length - premier.relegation && team_name !== england.FACupWinner) {
+            } else if (position > table.length - premier.relegation && id !== england.FACupWinner) {
               return "relegation";
             }
         }

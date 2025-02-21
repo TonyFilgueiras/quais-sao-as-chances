@@ -27,6 +27,14 @@ export const useWinnersStore = defineStore('winners', {
           europaSpot: 5,
           relegation: 3,
         }
+      },
+      spain: {
+        copaDelReyWinner: 0,
+        laLiga: {
+          championsSpot: 4,
+          europaSpot: 5,
+          relegation: 3,
+        }
       }
     }
   },

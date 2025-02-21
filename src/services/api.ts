@@ -29,6 +29,12 @@ const availableChampionships: Countries = {
     libertadores: 2,
     sulAmericana: 3,
   },
+  spain: {
+    laLiga: 140,
+    cup: 143,
+    libertadores: 2,
+    sulAmericana: 3,
+  }
 };
 
 // Fetch all championships

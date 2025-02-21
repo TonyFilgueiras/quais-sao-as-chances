@@ -24,6 +24,9 @@ export interface IWinnersStore {
       europaSpot: number
       relegation: number
     }
+  },
+  spain: {
+    
   }
 
   updateWinnersTablePosition(libertadoresTableSpot: number, copaDoBrasilWinnerTableSpot: number, FACupWinnerTableSpot: number): void;

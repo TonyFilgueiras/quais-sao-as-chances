@@ -16,5 +16,11 @@
     "country": "england",
     "division": "premier",
     "img": "/quais-sao-as-chances/img/england.png"
+  },
+  {
+    "name": "La Liga",
+    "country": "spain",
+    "division": "laLiga",
+    "img": "/quais-sao-as-chances/img/england.png"
   }
 ]
