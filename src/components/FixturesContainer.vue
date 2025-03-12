@@ -51,7 +51,7 @@
               :value="fixture.home_score"
               @mouseover.stop
               @click.stop
-              @change="setScore(fixture, parseInt((<HTMLInputElement>$event.target).value), fixture.away_score ? fixture.away_score : 0)"
+              @input="setScore(fixture, parseInt((<HTMLInputElement>$event.target).value), fixture.away_score ? fixture.away_score : 0)"
             />
           </div>
           <!-- <input type="text" class="score"/> -->
@@ -94,7 +94,7 @@
               :value="fixture.away_score"
               @mouseover.stop
               @click.stop
-              @change="setScore(fixture, fixture.home_score ? fixture.home_score : 0, parseInt((<HTMLInputElement>$event.target).value))"
+              @input="setScore(fixture, fixture.home_score ? fixture.home_score : 0, parseInt((<HTMLInputElement>$event.target).value))"
             />
             <h2 class="score" v-if="fixture.home_score !== null && fixture.status == 'FT'">{{ fixture.away_score }}</h2>
             <img class="team_logo" :src="fixture.away_logo" :alt="fixture.away_team" />
